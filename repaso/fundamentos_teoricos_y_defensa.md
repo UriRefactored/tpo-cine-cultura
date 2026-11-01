@@ -61,11 +61,24 @@ La ENCC utiliza un diseño muestral probabilístico estratificado. Para que los 
 * **Conclusión académica:** **La hipótesis NO se refuta.** El efecto del gaming en consola/PC es propio, robusto e independiente de la juventud o el poder adquisitivo.
 
 ### Modelo 2: Random Forest Classifier (Modelado Predictivo de Audiencia)
+* **Tipo de tarea:** **CLASIFICACIÓN BINARIA** (`RandomForestClassifier`), **no de regresión**.  
+  El target es categórico binario: $Y=1$ (asistió al cine en el año) vs $Y=0$ (no asistió).
 * **¿Por qué se eligió?**  
-  Para predecir la asistencia general al cine capturando interacciones no lineales y relaciones complejas entre variables (por ejemplo, personas de cierta edad con consumo intensivo de streaming y afinidad por géneros específicos).
-* **Parámetros aplicados:** 150 estimadores (*trees*), `max_depth=8` (para evitar sobreajuste / *overfitting*), y partición estratificada 80/20.
-* **Resultados:** **ROC-AUC = 0.795**, **Accuracy ponderada = 73.3%**.
-* **Feature Importance (Reducción de Impureza de Gini):** Demostró que la *diversidad de géneros en streaming* (0.114) y la *diversidad de juegos jugados* (0.046) se encuentran entre los predictores más fuertes de asistencia a salas, validando la tesis de un público audiovisual omnívoro.
+  Para predecir la propensión individual de asistencia al cine capturando interacciones no lineales y relaciones complejas entre variables (por ejemplo, personas de cierta edad con consumo intensivo de streaming y afinidad por géneros específicos).
+* **Parámetros aplicados:** 150 estimadores (*trees*), `max_depth=8` (poda para evitar sobreajuste / *overfitting*), `min_samples_split=10`, y partición estratificada 80/20.
+* **Métricas de Evaluación (Test Set independiente, $n=676$):**
+  * **ROC-AUC (Ponderado): 0.795 (~0.80):** Excelente capacidad discriminativa. El modelo tiene un 80% de probabilidad de rankear a un asistente real por encima de un no asistente (el azar es 0.50 y un modelo sólido en encuestas sociales ronda entre 0.75 y 0.85).
+  * **Accuracy (Exactitud global ponderada): 73.3%:** Acierta correctamente casi 3 de cada 4 casos.
+  * **Precision (Clase "Va al cine"): 64.3%:** De cada 10 personas que el modelo predice como cinéfilas, casi 6.5 efectivamente asisten.
+  * **Recall en no asistentes: 87.7%:** Extremadamente eficaz descartando a quienes no van al cine, minimizando el desperdicio publicitario.
+  * **Recall en asistentes: 43.4%:** Con el umbral estándar ($p > 0.50$) es un modelo conservador que prioriza la precisión sobre el volumen.
+* **Matriz de Confusión ($n=676$):**
+  ```text
+                       Predicho: NO VA     Predicho: SÍ VA
+  Realidad: NO VA            393                 55         <-- Solo 55 falsos positivos
+  Realidad: SÍ VA            129                 99         <-- 99 cinéfilos detectados limpios
+  ```
+* **Feature Importance (Reducción de Impureza de Gini):** Demostró que la *diversidad de géneros en streaming* (11.5%), la *edad* (11.3%), el *nivel educativo y NSE* (8.7%) y la *diversidad de videojuegos jugados* (4.6%) son los predictores más potentes de asistencia a salas.
 
 ### Modelo 3: K-Means Clustering (Segmentación No Supervisada de Audiencias)
 * **¿Por qué se eligió?**  
@@ -98,3 +111,7 @@ La ENCC utiliza un diseño muestral probabilístico estratificado. Para que los 
 
 ### P3: *"¿Cómo se conecta esto con la taquilla real del INCAA?"*
 > **Respuesta:** *"La ENCC nos muestra la demanda declarada, pero el INCAA nos muestra la plata real que se pagó en boleterías. Comprobamos que las 5 películas de franquicias de videojuegos vendieron 6.18 millones de entradas (el 8.4% de toda la taquilla argentina), y que los 3 géneros preferidos por los gamers core (Acción, Ciencia Ficción y Terror) concentraron más de 75 millones de entradas acumuladas. El caso de 'Five Nights at Freddy's' (1.2M de entradas) es el ejemplo perfecto de cómo el cruce entre Gaming y Terror llena salas en Argentina."*
+
+### P4: *"¿El modelo que entrenaron es de regresión o de clasificación? ¿Y qué tan bueno es?"*
+> **Respuesta:** *"Es 100% de **clasificación binaria** (`RandomForestClassifier` y `LogisticRegression`), porque la variable a predecir es categórica: si el individuo asiste al cine o no ($Y \in \{0, 1\}$). En cuanto a su rendimiento, el Random Forest es **muy sólido y realista**: alcanzó un **ROC-AUC de 0.795** y una **accuracy ponderada de 73.3%** sobre datos de prueba no vistos ($n=676$). Además, tiene una **especificidad de 87.7%** descartando a no asistentes y una **precisión de 64.3%**, lo que para el negocio de marketing es ideal porque evita el desperdicio publicitario en personas que no van a salas. El modelo fue podado a profundidad 8 (`max_depth=8`) para asegurar que generaliza bien sin sobreajuste."*
+
