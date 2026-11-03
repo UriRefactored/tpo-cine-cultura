@@ -20,8 +20,8 @@ import pandas as pd
 from pathlib import Path
 
 ENTRADA = Path("base-datos-encc-2022-2023.csv")
-SALIDA_CSV = Path("encc_limpia_ml.csv")
-SALIDA_DICC = Path("encc_diccionario_variables.json")
+SALIDA_CSV = Path("encc_encuesta_limpia_ml.csv")
+SALIDA_DICC = Path("diccionario_variables_encc.json")
 
 # Mapeos ordinales
 MAPA_CINE3_FREQ = {

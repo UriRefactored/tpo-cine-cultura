@@ -1,0 +1,900 @@
+codigo,titulo,titulo_norm,fecha_estreno,anio_estreno,mes_estreno,origen,tipo_origen,es_estreno_comercial,entradas,recaudacion_pesos,precio_medio_entrada,recaudacion_cero,precio_atipico,titulo_repetido_en_otro_origen,archivo_origen
+64220079,MINIONS: NACE UN VILLANO,minions nace un villano,2022-06-30,2022,6,Extranjeras,extranjera,True,4641601,2778544606,598.62,False,False,False,incaa_estrenos_comerciales.csv
+64220191,AVATAR: EL CAMINO DEL AGUA,avatar el camino del agua,2022-12-15,2022,12,Extranjeras,extranjera,True,3316165,3284723507,990.52,False,False,True,incaa_estrenos_comerciales.csv
+64220067,JURASSIC WORLD DOMINIO,jurassic world dominio,2022-06-02,2022,6,Extranjeras,extranjera,True,2455215,1447791197,589.68,False,False,False,incaa_estrenos_comerciales.csv
+64220081,THOR: AMOR Y TRUENO,thor amor y trueno,2022-07-06,2022,7,Extranjeras,extranjera,True,2115706,1438226929,679.79,False,False,False,incaa_estrenos_comerciales.csv
+64220055,DOCTOR STRANGE EN EL MULTIVERSO DE LA LOCURA,doctor strange en el multiverso de la locura,2022-05-04,2022,5,Extranjeras,extranjera,True,1992645,1236812600,620.69,False,False,False,incaa_estrenos_comerciales.csv
+64220072,LIGHTYEAR,lightyear,2022-06-16,2022,6,Extranjeras,extranjera,True,1619040,948418823,585.79,False,False,False,incaa_estrenos_comerciales.csv
+64220044,SONIC 2: LA PELICULA,sonic 2 la pelicula,2022-04-07,2022,4,Extranjeras,extranjera,True,1295715,650116927,501.74,False,False,False,incaa_estrenos_comerciales.csv
+64220025,BATMAN,batman,2022-03-02,2022,3,Extranjeras,extranjera,True,1286209,695545765,540.77,False,False,False,incaa_estrenos_comerciales.csv
+61220043,"ARGENTINA, 1985",argentina 1985,2022-09-29,2022,9,Nacionales,nacional,True,1160067,660213711,569.12,False,False,False,incaa_estrenos_comerciales.csv
+64220064,TOP GUN: MAVERICK,top gun maverick,2022-05-25,2022,5,Extranjeras,extranjera,True,1053999,644814763,611.78,False,False,False,incaa_estrenos_comerciales.csv
+64210158,"SING 2, VEN Y CANTA DE NUEVO",sing 2 ven y canta de nuevo,2022-01-06,2022,1,Extranjeras,extranjera,True,879367,387335529,440.47,False,False,False,incaa_estrenos_comerciales.csv
+31224018,30 NOCHES CON MI EX,30 noches con mi ex,2022-08-11,2022,8,Nacionales,nacional,True,811569,458368883,564.79,False,False,False,incaa_estrenos_comerciales.csv
+64220166,PANTERA NEGRA: WAKANDA POR SIEMPRE,pantera negra wakanda por siempre,2022-11-09,2022,11,Extranjeras,extranjera,True,791572,644635467,814.37,False,False,False,incaa_estrenos_comerciales.csv
+64220085,DC LIGA DE SUPERMASCOTAS,dc liga de supermascotas,2022-07-28,2022,7,Extranjeras,extranjera,True,746397,426755039,571.75,False,False,False,incaa_estrenos_comerciales.csv
+64220102,DRAGON BALL SUPER: SUPER HERO,dragon ball super super hero,2022-08-18,2022,8,Extranjeras,extranjera,True,625833,416454264,665.44,False,False,False,incaa_estrenos_comerciales.csv
+64220046,ANIMALES FANTASTICOS: LOS SECRETOS DE DUMBLEDORE,animales fantasticos los secretos de dumbledore,2022-04-14,2022,4,Extranjeras,extranjera,True,579996,293004641,505.18,False,False,False,incaa_estrenos_comerciales.csv
+64220078,EL TELEFONO NEGRO,el telefono negro,2022-06-23,2022,6,Extranjeras,extranjera,True,573674,315623862,550.18,False,False,False,incaa_estrenos_comerciales.csv
+64220145,BLACK ADAM,black adam,2022-10-20,2022,10,Extranjeras,extranjera,True,560220,371743370,663.57,False,False,False,incaa_estrenos_comerciales.csv
+64220018,UNCHARTED: FUERA DEL MAPA,uncharted fuera del mapa,2022-02-17,2022,2,Extranjeras,extranjera,True,548429,255175557,465.28,False,False,False,incaa_estrenos_comerciales.csv
+64220135,SONRIE,sonrie,2022-09-29,2022,9,Extranjeras,extranjera,True,447359,278856000,623.34,False,False,False,incaa_estrenos_comerciales.csv
+64220132,LA HUERFANA,la huerfana,2022-09-22,2022,9,Extranjeras,extranjera,True,440669,260116734,590.28,False,False,False,incaa_estrenos_comerciales.csv
+64220035,LOS TIPOS MALOS,los tipos malos,2022-03-17,2022,3,Extranjeras,extranjera,True,322161,156193745,484.83,False,False,False,incaa_estrenos_comerciales.csv
+64220000,SCREAM: GRITA,scream grita,2022-01-13,2022,1,Extranjeras,extranjera,True,302239,131660774,435.62,False,False,False,incaa_estrenos_comerciales.csv
+64220080,ELVIS,elvis,2022-07-14,2022,7,Extranjeras,extranjera,True,296548,171648422,578.82,False,False,False,incaa_estrenos_comerciales.csv
+64220091,TREN BALA,tren bala,2022-08-04,2022,8,Extranjeras,extranjera,True,294890,175075104,593.7,False,False,False,incaa_estrenos_comerciales.csv
+64220041,MORBIUS,morbius,2022-03-31,2022,3,Extranjeras,extranjera,True,288821,140830161,487.6,False,False,False,incaa_estrenos_comerciales.csv
+64220175,UN MUNDO EXTRAÑO,un mundo extrano,2022-11-24,2022,11,Extranjeras,extranjera,True,196421,134954033,687.07,False,False,False,incaa_estrenos_comerciales.csv
+64220014,EL EXORCISMO DE DIOS,el exorcismo de dios,2022-02-10,2022,2,Extranjeras,extranjera,True,162685,74821749,459.92,False,False,False,incaa_estrenos_comerciales.csv
+21224027,LA GALLINA TURULECA,la gallina turuleca,2022-07-14,2022,7,Nacionales,nacional,True,135158,69992454,517.86,False,False,False,incaa_estrenos_comerciales.csv
+64220126,PASAJE AL PARAISO,pasaje al paraiso,2022-09-15,2022,9,Extranjeras,extranjera,True,134976,79888166,591.87,False,False,False,incaa_estrenos_comerciales.csv
+64220156,"LILO, LILO, COCODRILO",lilo lilo cocodrilo,2022-10-27,2022,10,Extranjeras,extranjera,True,132767,83572420,629.47,False,False,False,incaa_estrenos_comerciales.csv
+64220170,EL MENU,el menu,2022-11-17,2022,11,Extranjeras,extranjera,True,127196,85936907,675.63,False,False,False,incaa_estrenos_comerciales.csv
+64220155,LA LUZ DEL DIABLO,la luz del diablo,2022-10-27,2022,10,Extranjeras,extranjera,True,123812,79204759,639.72,False,False,False,incaa_estrenos_comerciales.csv
+61220044,MÁS RESPETO QUE SOY TU MADRE,mas respeto que soy tu madre,2022-09-08,2022,9,Nacionales,nacional,True,121666,62197003,511.21,False,False,False,incaa_estrenos_comerciales.csv
+64220038,JUJUTSU KAISEN 0,jujutsu kaisen 0,2022-03-24,2022,3,Extranjeras,extranjera,True,119474,56414465,472.19,False,False,False,incaa_estrenos_comerciales.csv
+64220122,NO TE PREOCUPES CARIÑO,no te preocupes carino,2022-09-22,2022,9,Extranjeras,extranjera,True,111156,64856339,583.47,False,False,False,incaa_estrenos_comerciales.csv
+64220141,TADEO EL EXPLORADOR 3: LA MALDICION DE LA MOMIA,tadeo el explorador 3 la maldicion de la momia,2022-10-06,2022,10,Extranjeras,extranjera,True,108766,65265246,600.05,False,False,False,incaa_estrenos_comerciales.csv
+64220096,EL PERRO SAMURAI: LA LEYENDA DE KAKAMUCHO,el perro samurai la leyenda de kakamucho,2022-08-11,2022,8,Extranjeras,extranjera,True,106407,60735262,570.78,False,False,False,incaa_estrenos_comerciales.csv
+64220051,EL HOMBRE DEL NORTE,el hombre del norte,2022-04-21,2022,4,Extranjeras,extranjera,True,106385,50748149,477.02,False,False,False,incaa_estrenos_comerciales.csv
+64220146,HALLOWEEN: LA NOCHE FINAL,halloween la noche final,2022-10-13,2022,10,Extranjeras,extranjera,True,102923,66107759,642.3,False,False,False,incaa_estrenos_comerciales.csv
+31224006,ECOS DE UN CRIMEN,ecos de un crimen,2022-01-27,2022,1,Nacionales,nacional,True,102482,42137372,411.17,False,False,False,incaa_estrenos_comerciales.csv
+64220050,LA CIUDAD PERDIDA,la ciudad perdida,2022-04-21,2022,4,Extranjeras,extranjera,True,101238,47993397,474.07,False,False,False,incaa_estrenos_comerciales.csv
+64220007,MUERTE EN EL NILO,muerte en el nilo,2022-02-10,2022,2,Extranjeras,extranjera,True,100733,45435112,451.04,False,False,False,incaa_estrenos_comerciales.csv
+64220119,INVITACIÓN AL INFIERNO,invitacion al infierno,2022-09-08,2022,9,Extranjeras,extranjera,True,99916,59587382,596.37,False,False,False,incaa_estrenos_comerciales.csv
+64220068,TODO EN TODAS PARTES AL MISMO TIEMPO,todo en todas partes al mismo tiempo,2022-06-09,2022,6,Extranjeras,extranjera,True,97176,63382134,652.24,False,False,False,incaa_estrenos_comerciales.csv
+64220031,COMPETENCIA OFICIAL,competencia oficial,2022-03-15,2022,3,Extranjeras,extranjera,True,95955,44825264,467.15,False,False,False,incaa_estrenos_comerciales.csv
+64220104,¡NOP!,nop,2022-08-25,2022,8,Extranjeras,extranjera,True,92242,52927499,573.79,False,False,False,incaa_estrenos_comerciales.csv
+64220173,JEEPERS CREEPERS 4:LA REENCARNACION DEL DEMONIO,jeepers creepers 4 la reencarnacion del demonio,2022-11-17,2022,11,Extranjeras,extranjera,True,87214,58926260,675.65,False,False,False,incaa_estrenos_comerciales.csv
+21224026,UN CRIMEN ARGENTINO,un crimen argentino,2022-08-25,2022,8,Nacionales,nacional,True,77322,40754493,527.07,False,False,False,incaa_estrenos_comerciales.csv
+21224022,HOY SE ARREGLA EL MUNDO,hoy se arregla el mundo,2022-01-13,2022,1,Nacionales,nacional,True,72032,29139744,404.54,False,False,False,incaa_estrenos_comerciales.csv
+64220123,BARBARO,barbaro,2022-09-15,2022,9,Extranjeras,extranjera,True,70409,38295772,543.9,False,False,False,incaa_estrenos_comerciales.csv
+64220008,LICORICE PIZZA,licorice pizza,2022-01-27,2022,1,Extranjeras,extranjera,True,66605,29652001,445.19,False,False,False,incaa_estrenos_comerciales.csv
+64220161,ONE PIECE FILM RED,one piece film red,2022-10-27,2022,10,Extranjeras,extranjera,True,62847,44988462,715.84,False,False,False,incaa_estrenos_comerciales.csv
+64220090,LA HABITACION DEL HORROR,la habitacion del horror,2022-07-28,2022,7,Extranjeras,extranjera,True,60225,34092737,566.09,False,False,False,incaa_estrenos_comerciales.csv
+64220045,JACK EN LA CAJA MALDITA,jack en la caja maldita,2022-04-07,2022,4,Extranjeras,extranjera,True,58873,28233357,479.56,False,False,False,incaa_estrenos_comerciales.csv
+25224016,EN LA MIRA,en la mira,2022-04-28,2022,4,Nacionales,nacional,True,57692,25012110,433.55,False,False,False,incaa_estrenos_comerciales.csv
+64220061,ASESINO SIN MEMORIA,asesino sin memoria,2022-05-19,2022,5,Extranjeras,extranjera,True,54577,26717890,489.54,False,False,False,incaa_estrenos_comerciales.csv
+64220094,BESTIA,bestia,2022-08-11,2022,8,Extranjeras,extranjera,True,51361,30820006,600.07,False,False,False,incaa_estrenos_comerciales.csv
+64220069,GEMELO SINIESTRO,gemelo siniestro,2022-06-09,2022,6,Extranjeras,extranjera,True,49881,26411086,529.48,False,False,False,incaa_estrenos_comerciales.csv
+64220116,JACK EN LA CAJA MALDITA II: EL DESPERTAR,jack en la caja maldita ii el despertar,2022-09-01,2022,9,Extranjeras,extranjera,True,49647,27922244,562.42,False,False,False,incaa_estrenos_comerciales.csv
+64220012,MOONFALL,moonfall,2022-02-03,2022,2,Extranjeras,extranjera,True,49390,23513665,476.08,False,False,False,incaa_estrenos_comerciales.csv
+64220003,PASAJERO 666,pasajero 666,2022-02-03,2022,2,Extranjeras,extranjera,True,48236,20818831,431.6,False,False,False,incaa_estrenos_comerciales.csv
+64220001,EL CALLEJON DE LAS ALMAS PERDIDAS,el callejon de las almas perdidas,2022-01-27,2022,1,Extranjeras,extranjera,True,45848,19559496,426.62,False,False,False,incaa_estrenos_comerciales.csv
+64220182,NOCHE SIN PAZ,noche sin paz,2022-12-01,2022,12,Extranjeras,extranjera,True,41040,26934922,656.31,False,False,False,incaa_estrenos_comerciales.csv
+64220192,AGENTE SECRETO,agente secreto,2022-12-29,2022,12,Extranjeras,extranjera,True,41032,30185918,735.67,False,False,False,incaa_estrenos_comerciales.csv
+64220138,AMSTERDAM,amsterdam,2022-10-06,2022,10,Extranjeras,extranjera,True,39557,24558944,620.85,False,False,False,incaa_estrenos_comerciales.csv
+64220017,CORAZON DE FUEGO,corazon de fuego,2022-02-10,2022,2,Extranjeras,extranjera,True,39214,17349451,442.43,False,False,False,incaa_estrenos_comerciales.csv
+64220033,AMBULANCIA,ambulancia,2022-03-17,2022,3,Extranjeras,extranjera,True,39087,17193115,439.87,False,False,False,incaa_estrenos_comerciales.csv
+64220110,VERTIGO,vertigo,2022-09-01,2022,9,Extranjeras,extranjera,True,38924,20826959,535.07,False,False,False,incaa_estrenos_comerciales.csv
+64210169,THE KING' S MAN: EL ORIGEN,the king s man el origen,2022-01-06,2022,1,Extranjeras,extranjera,True,37244,16150836,433.65,False,False,False,incaa_estrenos_comerciales.csv
+64220056,LA MEDIUM,la medium,2022-05-12,2022,5,Extranjeras,extranjera,True,37121,19183380,516.78,False,False,False,incaa_estrenos_comerciales.csv
+64220024,LA LLAMADA FINAL,la llamada final,2022-02-24,2022,2,Extranjeras,extranjera,True,35571,15982199,449.3,False,False,False,incaa_estrenos_comerciales.csv
+64220176,AFTERSUN,aftersun,2022-11-24,2022,11,Extranjeras,extranjera,True,33500,21403606,638.91,False,False,False,incaa_estrenos_comerciales.csv
+64220002,SPENCER,spencer,2022-02-17,2022,2,Extranjeras,extranjera,True,32090,14665422,457.01,False,False,False,incaa_estrenos_comerciales.csv
+64220140,ESCALERA AL INFIERNO,escalera al infierno,2022-10-06,2022,10,Extranjeras,extranjera,True,31789,19861893,624.8,False,False,False,incaa_estrenos_comerciales.csv
+64220105,AFTER: AMOR INFINITO,after amor infinito,2022-08-26,2022,8,Extranjeras,extranjera,True,31097,16768726,539.24,False,False,False,incaa_estrenos_comerciales.csv
+64220088,PRINCESA POR ACCIDENTE,princesa por accidente,2022-09-08,2022,9,Extranjeras,extranjera,True,29793,16608184,557.45,False,False,False,incaa_estrenos_comerciales.csv
+64220142,VISTA POR ULTIMA VEZ,vista por ultima vez,2022-10-07,2022,10,Extranjeras,extranjera,True,29657,17219462,580.62,False,False,False,incaa_estrenos_comerciales.csv
+64220013,CASATE CONMIGO,casate conmigo,2022-02-10,2022,2,Extranjeras,extranjera,True,29360,12286151,418.47,False,False,False,incaa_estrenos_comerciales.csv
+64220092,BUENA SUERTE LEO GRANDE,buena suerte leo grande,2022-08-04,2022,8,Extranjeras,extranjera,True,28471,16272783,571.56,False,False,False,incaa_estrenos_comerciales.csv
+64210179,MY HERO ACADEMIA: MISION MUNDIAL DE HEROES,my hero academia mision mundial de heroes,2022-01-06,2022,1,Extranjeras,extranjera,True,26805,11616080,433.35,False,False,False,incaa_estrenos_comerciales.csv
+21234006,EL SUPLENTE,el suplente,2022-10-20,2022,10,Nacionales,nacional,True,25421,13543230,532.76,False,False,False,incaa_estrenos_comerciales.csv
+64220021,BELFAST,belfast,2022-02-24,2022,2,Extranjeras,extranjera,True,23838,11640026,488.3,False,False,False,incaa_estrenos_comerciales.csv
+64220125,EMERGENCIA EN EL AIRE,emergencia en el aire,2022-09-15,2022,9,Extranjeras,extranjera,True,22407,12818248,572.06,False,False,False,incaa_estrenos_comerciales.csv
+64220057,LLAMAS DE VENGANZA,llamas de venganza,2022-05-12,2022,5,Extranjeras,extranjera,True,22169,10816008,487.89,False,False,False,incaa_estrenos_comerciales.csv
+64220190,MAR DE SANGRE,mar de sangre,2022-12-08,2022,12,Extranjeras,extranjera,True,22153,15059357,679.79,False,False,False,incaa_estrenos_comerciales.csv
+64220010,MADRES PARALELAS,madres paralelas,2022-02-03,2022,2,Extranjeras,extranjera,True,19729,8615477,436.69,False,False,False,incaa_estrenos_comerciales.csv
+64220174,HASTA LOS HUESOS,hasta los huesos,2022-12-01,2022,12,Extranjeras,extranjera,True,19626,12756182,649.96,False,False,False,incaa_estrenos_comerciales.csv
+64220060,EL PESO DEL TALENTO,el peso del talento,2022-05-19,2022,5,Extranjeras,extranjera,True,17158,8033478,468.21,False,False,False,incaa_estrenos_comerciales.csv
+64220136,LA MUJER REY,la mujer rey,2022-09-29,2022,9,Extranjeras,extranjera,True,16666,9216942,553.04,False,False,False,incaa_estrenos_comerciales.csv
+64220028,KING,king,2022-03-10,2022,3,Extranjeras,extranjera,True,16323,7452305,456.55,False,False,False,incaa_estrenos_comerciales.csv
+21234002,LAS ROJAS,las rojas,2022-04-14,2022,4,Nacionales,nacional,True,15776,5696728,361.1,False,False,False,incaa_estrenos_comerciales.csv
+25224015,VIRUS: 32,virus 32,2022-04-21,2022,4,Nacionales,nacional,True,14757,6426461,435.49,False,False,False,incaa_estrenos_comerciales.csv
+21234029,PEQUEÑA FLOR,pequena flor,2022-06-23,2022,6,Nacionales,nacional,True,13468,3887427,288.64,False,False,False,incaa_estrenos_comerciales.csv
+64220049,DESESPERADA,desesperada,2022-04-21,2022,4,Extranjeras,extranjera,True,12950,6017369,464.66,False,False,False,incaa_estrenos_comerciales.csv
+64220160,EL ASCENSOR DEL DIABLO,el ascensor del diablo,2022-11-03,2022,11,Extranjeras,extranjera,True,12060,7603196,630.45,False,False,False,incaa_estrenos_comerciales.csv
+64220032,A CIEGAS,a ciegas,2022-03-17,2022,3,Extranjeras,extranjera,True,11728,5220331,445.12,False,False,False,incaa_estrenos_comerciales.csv
+64220184,JUEGO PERFECTO,juego perfecto,2022-12-01,2022,12,Extranjeras,extranjera,True,11654,7429716,637.52,False,False,False,incaa_estrenos_comerciales.csv
+64220108,LA CHICA SALVAJE,la chica salvaje,2022-09-01,2022,9,Extranjeras,extranjera,True,11611,6506354,560.36,False,False,False,incaa_estrenos_comerciales.csv
+64210173,BELLE,belle,2022-01-20,2022,1,Extranjeras,extranjera,True,11576,4802993,414.91,False,False,False,incaa_estrenos_comerciales.csv
+64220065,EL PEQUEÑO NINJA,el pequeno ninja,2022-05-26,2022,5,Extranjeras,extranjera,True,11535,5574904,483.3,False,False,False,incaa_estrenos_comerciales.csv
+64220115,CASABLANCA,casablanca,2022-10-13,2022,10,Extranjeras,extranjera,True,11047,21656173,1960.37,False,True,False,incaa_estrenos_comerciales.csv
+64220022,JACKASS POR SIEMPRE,jackass por siempre,2022-02-24,2022,2,Extranjeras,extranjera,True,10912,4821261,441.83,False,False,False,incaa_estrenos_comerciales.csv
+64210176,RIFKIN´S FESTIVAL,rifkin s festival,2022-01-20,2022,1,Extranjeras,extranjera,True,10748,4928297,458.53,False,False,False,incaa_estrenos_comerciales.csv
+61220053,ALGO QUE PASO EN AÑO NUEVO,algo que paso en ano nuevo,2022-12-01,2022,12,Nacionales,nacional,True,10238,2159696,210.95,False,False,False,incaa_estrenos_comerciales.csv
+64220124,MOONAGE DAY DREAM,moonage day dream,2022-09-15,2022,9,Extranjeras,extranjera,True,9914,6310167,636.49,False,False,False,incaa_estrenos_comerciales.csv
+64220097,MEN: TERROR EN LAS SOMBRAS,men terror en las sombras,2022-08-18,2022,8,Extranjeras,extranjera,True,9702,5612716,578.51,False,False,False,incaa_estrenos_comerciales.csv
+61220024,1982 LA GESTA,1982 la gesta,2022-10-20,2022,10,Nacionales,nacional,True,9472,5989473,632.33,False,False,False,incaa_estrenos_comerciales.csv
+64220011,HASTA LA MUERTE,hasta la muerte,2022-03-24,2022,3,Extranjeras,extranjera,True,8872,4232829,477.1,False,False,False,incaa_estrenos_comerciales.csv
+64220043,C´MON C´MON,c mon c mon,2022-04-07,2022,4,Extranjeras,extranjera,True,8762,3983218,454.6,False,False,False,incaa_estrenos_comerciales.csv
+64220089,UNA VILLA EN LA TOSCANA,una villa en la toscana,2022-07-28,2022,7,Extranjeras,extranjera,True,8693,4753743,546.85,False,False,False,incaa_estrenos_comerciales.csv
+64220154,LA SEÑORA HARRIS VA A PARIS,la senora harris va a paris,2022-10-27,2022,10,Extranjeras,extranjera,True,8272,5242293,633.74,False,False,False,incaa_estrenos_comerciales.csv
+61220018,"FRANKLIN, HISTORIA DE UN BILLETE",franklin historia de un billete,2022-05-19,2022,5,Nacionales,nacional,True,8194,2958396,361.04,False,False,False,incaa_estrenos_comerciales.csv
+64220076,DOG: UN VIAJE SALVAJE,dog un viaje salvaje,2022-06-23,2022,6,Extranjeras,extranjera,True,8103,4358658,537.91,False,False,False,incaa_estrenos_comerciales.csv
+21234015,CUANDO LA MIRO,cuando la miro,2022-09-15,2022,9,Nacionales,nacional,True,8041,2078910,258.54,False,False,False,incaa_estrenos_comerciales.csv
+64220029,SWORD ART ONLINE PROGRESSIVE: ARIA DE UNA NOCHE SIN ESTRELLAS,sword art online progressive aria de una noche sin estrellas,2022-03-10,2022,3,Extranjeras,extranjera,True,7291,3278556,449.67,False,False,False,incaa_estrenos_comerciales.csv
+64220042,LAS COSAS QUE NO TE CONTÉ,las cosas que no te conte,2022-04-07,2022,4,Extranjeras,extranjera,True,6983,3170169,453.98,False,False,False,incaa_estrenos_comerciales.csv
+64220059,TWENTY ONE PILOTS,twenty one pilots,2022-05-19,2022,5,Extranjeras,extranjera,True,6979,4147540,594.29,False,False,False,incaa_estrenos_comerciales.csv
+64220005,EL REGRESO DE GULLIVER,el regreso de gulliver,2022-02-03,2022,2,Extranjeras,extranjera,True,6855,3010056,439.1,False,False,False,incaa_estrenos_comerciales.csv
+64220103,FESTIVAL NICK JR,festival nick jr,2022-08-25,2022,8,Extranjeras,extranjera,True,6824,3506866,513.9,False,False,False,incaa_estrenos_comerciales.csv
+64220004,BODA NEGRA,boda negra,2022-01-20,2022,1,Extranjeras,extranjera,True,6813,2996542,439.83,False,False,False,incaa_estrenos_comerciales.csv
+64220054,EL BUEN PATRON,el buen patron,2022-04-28,2022,4,Extranjeras,extranjera,True,6447,3345426,518.91,False,False,False,incaa_estrenos_comerciales.csv
+64220037,EXODO,exodo,2022-03-24,2022,3,Extranjeras,extranjera,True,6421,2990032,465.66,False,False,False,incaa_estrenos_comerciales.csv
+64220053,DOWNTON ABBEY: UNA NUEVA ERA,downton abbey una nueva era,2022-04-28,2022,4,Extranjeras,extranjera,True,6325,3110975,491.85,False,False,False,incaa_estrenos_comerciales.csv
+64220128,MIRA COMO CORREN,mira como corren,2022-09-22,2022,9,Extranjeras,extranjera,True,6205,3293728,530.82,False,False,False,incaa_estrenos_comerciales.csv
+64220157,AMENAZA EXPLOSIVA,amenaza explosiva,2022-10-27,2022,10,Extranjeras,extranjera,True,6064,3559299,586.96,False,False,False,incaa_estrenos_comerciales.csv
+61220052,EL GERENTE,el gerente,2022-10-20,2022,10,Nacionales,nacional,True,6026,3330187,552.64,False,False,False,incaa_estrenos_comerciales.csv
+21224019,CADAVER EXQUISITO,cadaver exquisito,2022-06-09,2022,6,Nacionales,nacional,True,5524,1031095,186.66,False,False,False,incaa_estrenos_comerciales.csv
+64190246,DOLCE FINE GIORNATA,dolce fine giornata,2022-05-19,2022,5,Extranjeras,extranjera,True,5522,2716763,491.99,False,False,False,incaa_estrenos_comerciales.csv
+64220144,"ENNIO, EL MAESTRO",ennio el maestro,2022-10-06,2022,10,Extranjeras,extranjera,True,5513,3212432,582.7,False,False,False,incaa_estrenos_comerciales.csv
+64210067,ALICE Y EL ALCALDE,alice y el alcalde,2022-06-30,2022,6,Extranjeras,extranjera,True,5313,2788274,524.8,False,False,False,incaa_estrenos_comerciales.csv
+64220183,HISTORIA DE HONOR,historia de honor,2022-12-01,2022,12,Extranjeras,extranjera,True,5235,3381728,645.98,False,False,False,incaa_estrenos_comerciales.csv
+64220066,SHIRLEY,shirley,2022-06-02,2022,6,Extranjeras,extranjera,True,5190,2363824,455.46,False,False,False,incaa_estrenos_comerciales.csv
+64220137,EVANGELION 3.0 + 1.01,evangelion 3 0 1 01,2022-09-29,2022,9,Extranjeras,extranjera,True,5138,3795660,738.74,False,False,False,incaa_estrenos_comerciales.csv
+64210178,AGENTES 355,agentes 355,2022-01-20,2022,1,Extranjeras,extranjera,True,5102,2186973,428.65,False,False,False,incaa_estrenos_comerciales.csv
+25214083,YO TRAIDOR,yo traidor,2022-01-06,2022,1,Nacionales,nacional,True,4999,1538589,307.78,False,False,False,incaa_estrenos_comerciales.csv
+31224021,PARQUE CENTRAL,parque central,2022-12-22,2022,12,Nacionales,nacional,True,4988,3256014,652.77,False,False,False,incaa_estrenos_comerciales.csv
+64220082,MEMORIA,memoria,2022-07-07,2022,7,Extranjeras,extranjera,True,4665,1684641,361.12,False,False,False,incaa_estrenos_comerciales.csv
+64220178,ELLA DIJO,ella dijo,2022-11-24,2022,11,Extranjeras,extranjera,True,4641,2893493,623.46,False,False,False,incaa_estrenos_comerciales.csv
+21234038,ALGO INCORRECTO,algo incorrecto,2022-10-05,2022,10,Nacionales,nacional,True,4545,834338,183.57,False,False,False,incaa_estrenos_comerciales.csv
+64220030,MILAGRO EN LA CUEVA,milagro en la cueva,2022-03-10,2022,3,Extranjeras,extranjera,True,4451,2043355,459.08,False,False,False,incaa_estrenos_comerciales.csv
+21214042,AXIOMAS,axiomas,2022-03-10,2022,3,Nacionales,nacional,True,4428,978767,221.04,False,False,False,incaa_estrenos_comerciales.csv
+31224013,LUNATICOS,lunaticos,2022-08-04,2022,8,Nacionales,nacional,True,4290,786351,183.3,False,False,False,incaa_estrenos_comerciales.csv
+64220101,MASCULINO FEMENINO,masculino femenino,2022-08-18,2022,8,Extranjeras,extranjera,True,4241,2304068,543.28,False,False,False,incaa_estrenos_comerciales.csv
+64220148,FUERZA BRUTA,fuerza bruta,2022-10-13,2022,10,Extranjeras,extranjera,True,4237,2197474,518.64,False,False,False,incaa_estrenos_comerciales.csv
+64220077,MAMMA ROMA,mamma roma,2022-06-23,2022,6,Extranjeras,extranjera,True,4232,2269850,536.35,False,False,False,incaa_estrenos_comerciales.csv
+64220048,SEVENTEEN POWER OF LOVE,seventeen power of love,2022-04-20,2022,4,Extranjeras,extranjera,True,4028,2440415,605.86,False,False,False,incaa_estrenos_comerciales.csv
+21224013,AZOR,azor,2022-03-22,2022,3,Nacionales,nacional,True,3856,769824,199.64,False,False,False,incaa_estrenos_comerciales.csv
+51220030,"BOMBONERA, LA PELICULA",bombonera la pelicula,2022-05-19,2022,5,Nacionales,nacional,True,3746,1038139,277.13,False,False,False,incaa_estrenos_comerciales.csv
+64220016,THE BEATLES GET BACK: EL ÚLTIMO CONCIERTO,the beatles get back el ultimo concierto,2022-02-10,2022,2,Extranjeras,extranjera,True,3481,2617440,751.92,False,False,False,incaa_estrenos_comerciales.csv
+64220111,POLTERGEIST: JUEGOS DIABOLICOS,poltergeist juegos diabolicos,2022-09-15,2022,9,Extranjeras,extranjera,True,3480,1935737,556.25,False,False,False,incaa_estrenos_comerciales.csv
+64220185,EL DILEMA DE MR. HAFFMANN,el dilema de mr haffmann,2022-12-01,2022,12,Extranjeras,extranjera,True,3466,2313406,667.46,False,False,False,incaa_estrenos_comerciales.csv
+64220159,"BARDO, FALSA CRONICA DE UNAS CUANTAS VERDADES",bardo falsa cronica de unas cuantas verdades,2022-11-03,2022,11,Extranjeras,extranjera,True,3446,2098092,608.85,False,False,False,incaa_estrenos_comerciales.csv
+64220139,EL CHEF,el chef,2022-10-06,2022,10,Extranjeras,extranjera,True,3440,3009051,874.72,False,False,False,incaa_estrenos_comerciales.csv
+64210100,UN AMOR CERCA DEL PARAÍSO,un amor cerca del paraiso,2022-05-12,2022,5,Extranjeras,extranjera,True,3350,1438004,429.25,False,False,False,incaa_estrenos_comerciales.csv
+21224025,EL MONTE,el monte,2022-08-18,2022,8,Nacionales,nacional,True,3316,738038,222.57,False,False,False,incaa_estrenos_comerciales.csv
+64220149,CRONICAS DE UN AFFAIR,cronicas de un affair,2022-10-20,2022,10,Extranjeras,extranjera,True,3282,1830962,557.88,False,False,False,incaa_estrenos_comerciales.csv
+21224035,SISTEMA K.E.OP/S,sistema k e op s,2022-05-12,2022,5,Nacionales,nacional,True,3243,863926,266.4,False,False,False,incaa_estrenos_comerciales.csv
+64220181,NCT DREAM THE MOVIE: IN A DREAM,nct dream the movie in a dream,2022-11-29,2022,11,Extranjeras,extranjera,True,3240,2303034,710.81,False,False,False,incaa_estrenos_comerciales.csv
+64220074,EL ULTIMO JUEGO,el ultimo juego,2022-06-16,2022,6,Extranjeras,extranjera,True,3228,1800361,557.73,False,False,False,incaa_estrenos_comerciales.csv
+31224011,BAHIA BLANCA,bahia blanca,2022-07-07,2022,7,Nacionales,nacional,True,3228,597307,185.04,False,False,False,incaa_estrenos_comerciales.csv
+64220084,UNA RECETA PERFECTA,una receta perfecta,2022-07-21,2022,7,Extranjeras,extranjera,True,3225,1600533,496.29,False,False,False,incaa_estrenos_comerciales.csv
+64220134,SUPER QUIEN,super quien,2022-09-29,2022,9,Extranjeras,extranjera,True,3134,1688739,538.84,False,False,False,incaa_estrenos_comerciales.csv
+64210175,"LAS COSAS QUE DECIMOS, LAS COSAS QUE HACEMOS",las cosas que decimos las cosas que hacemos,2022-02-03,2022,2,Extranjeras,extranjera,True,3128,1112518,355.66,False,False,False,incaa_estrenos_comerciales.csv
+64210177,LA ULTIMA NOCHE,la ultima noche,2022-01-13,2022,1,Extranjeras,extranjera,True,3125,1365206,436.87,False,False,False,incaa_estrenos_comerciales.csv
+20234008,EL COSO,el coso,2022-11-15,2022,11,Nacionales,nacional,True,3111,873510,280.78,False,False,False,incaa_estrenos_comerciales.csv
+21224036,CAMILA SALDRA ESTA NOCHE,camila saldra esta noche,2022-05-26,2022,5,Nacionales,nacional,True,3035,588543,193.92,False,False,False,incaa_estrenos_comerciales.csv
+64220070,UNA PASTELERIA EN NOTTING HILL,una pasteleria en notting hill,2022-06-09,2022,6,Extranjeras,extranjera,True,2993,1561059,521.57,False,False,False,incaa_estrenos_comerciales.csv
+31224017,PERROS DEL VIENTO,perros del viento,2022-09-15,2022,9,Nacionales,nacional,True,2993,566864,189.4,False,False,False,incaa_estrenos_comerciales.csv
+21234003,NATALIA NATALIA,natalia natalia,2022-11-24,2022,11,Nacionales,nacional,True,2989,869591,290.93,False,False,False,incaa_estrenos_comerciales.csv
+64220100,SOLO LAS BESTIAS,solo las bestias,2022-08-18,2022,8,Extranjeras,extranjera,True,2961,1433558,484.15,False,False,False,incaa_estrenos_comerciales.csv
+61220006,NOCHE AMERICANA,noche americana,2022-02-17,2022,2,Nacionales,nacional,True,2942,1021880,347.34,False,False,False,incaa_estrenos_comerciales.csv
+64220151,EL FOTOGRAFO DE MINAMATA,el fotografo de minamata,2022-10-20,2022,10,Extranjeras,extranjera,True,2902,1573866,542.34,False,False,False,incaa_estrenos_comerciales.csv
+61220036,EL DESARMADERO,el desarmadero,2022-10-03,2022,10,Nacionales,nacional,True,2889,631373,218.54,False,False,False,incaa_estrenos_comerciales.csv
+64220172,ATRAPADA,atrapada,2022-11-17,2022,11,Extranjeras,extranjera,True,2834,1759105,620.71,False,False,False,incaa_estrenos_comerciales.csv
+64220127,LA CONFERENCIA,la conferencia,2022-09-15,2022,9,Extranjeras,extranjera,True,2795,1431135,512.03,False,False,False,incaa_estrenos_comerciales.csv
+64220015,JUSTICIEROS,justicieros,2022-02-17,2022,2,Extranjeras,extranjera,True,2793,1210210,433.3,False,False,False,incaa_estrenos_comerciales.csv
+31224020,MATAR A LA BESTIA,matar a la bestia,2022-05-05,2022,5,Nacionales,nacional,True,2792,563776,201.93,False,False,False,incaa_estrenos_comerciales.csv
+21224028,SUBLIME,sublime,2022-11-16,2022,11,Nacionales,nacional,True,2779,693913,249.7,False,False,False,incaa_estrenos_comerciales.csv
+64220109,EL BRINDIS,el brindis,2022-09-01,2022,9,Extranjeras,extranjera,True,2750,1372996,499.27,False,False,False,incaa_estrenos_comerciales.csv
+21224034,EL HOMBRE INCONCLUSO,el hombre inconcluso,2022-11-24,2022,11,Nacionales,nacional,True,2728,826244,302.88,False,False,False,incaa_estrenos_comerciales.csv
+20224006,"TELMA, EL CINE Y EL SOLDADO",telma el cine y el soldado,2022-06-02,2022,6,Nacionales,nacional,True,2705,306334,113.25,False,False,False,incaa_estrenos_comerciales.csv
+21224008,RE GRANCHIO,re granchio,2022-02-24,2022,2,Nacionales,nacional,True,2649,485295,183.2,False,False,False,incaa_estrenos_comerciales.csv
+64220034,TERROR EN EL ESTUDIO 666,terror en el estudio 666,2022-03-17,2022,3,Extranjeras,extranjera,True,2600,1143821,439.93,False,False,False,incaa_estrenos_comerciales.csv
+64220047,EL JOVEN AHMED,el joven ahmed,2022-04-14,2022,4,Extranjeras,extranjera,True,2525,1034818,409.83,False,False,False,incaa_estrenos_comerciales.csv
+21234021,PAULA,paula,2022-12-22,2022,12,Nacionales,nacional,True,2446,996996,407.6,False,False,False,incaa_estrenos_comerciales.csv
+51220017,RANCHO,rancho,2022-06-02,2022,6,Nacionales,nacional,True,2427,542635,223.58,False,False,False,incaa_estrenos_comerciales.csv
+64220040,LA RUEDA DE LA FORTUNA Y LA FANTASIA,la rueda de la fortuna y la fantasia,2022-03-31,2022,3,Extranjeras,extranjera,True,2388,852598,357.03,False,False,False,incaa_estrenos_comerciales.csv
+21234005,SIETE PERROS,siete perros,2022-09-22,2022,9,Nacionales,nacional,True,2349,702213,298.94,False,False,False,incaa_estrenos_comerciales.csv
+21234001,BIENVENIDOS AL INFIERNO,bienvenidos al infierno,2022-09-01,2022,9,Nacionales,nacional,True,2260,942726,417.14,False,False,False,incaa_estrenos_comerciales.csv
+25224062,LEGIONES,legiones,2022-12-01,2022,12,Nacionales,nacional,True,2246,1364961,607.73,False,False,False,incaa_estrenos_comerciales.csv
+21224011,BAJO LA CORTEZA,bajo la corteza,2022-03-03,2022,3,Nacionales,nacional,True,2236,540673,241.8,False,False,False,incaa_estrenos_comerciales.csv
+64220165,MEDJUGORJE,medjugorje,2022-12-08,2022,12,Extranjeras,extranjera,True,2229,1665540,747.21,False,False,False,incaa_estrenos_comerciales.csv
+21224020,PANASH,panash,2022-07-07,2022,7,Nacionales,nacional,True,2190,174158,79.52,False,False,False,incaa_estrenos_comerciales.csv
+64220107,SUEÑOS DE LIBERTAD,suenos de libertad,2022-09-08,2022,9,Extranjeras,extranjera,True,2172,1134200,522.19,False,False,False,incaa_estrenos_comerciales.csv
+64220062,BOBS BURGERS: LA PELICULA,bobs burgers la pelicula,2022-05-26,2022,5,Extranjeras,extranjera,True,2163,1043706,482.53,False,False,False,incaa_estrenos_comerciales.csv
+21234025,LA CHICA NUEVA,la chica nueva,2022-10-27,2022,10,Nacionales,nacional,True,2145,364271,169.82,False,False,False,incaa_estrenos_comerciales.csv
+21234012,EL LIBRO DE LOS PLACERES,el libro de los placeres,2022-12-08,2022,12,Nacionales,nacional,True,2140,773729,361.56,False,False,False,incaa_estrenos_comerciales.csv
+51210014,"RICARDO VILCA -QUEBRADA, MÚSICA Y SILENCIO",ricardo vilca quebrada musica y silencio,2022-07-28,2022,7,Nacionales,nacional,True,2105,1377310,654.3,False,False,False,incaa_estrenos_comerciales.csv
+21224023,LAS INTEMPERIES,las intemperies,2022-07-21,2022,7,Nacionales,nacional,True,2090,188588,90.23,False,False,False,incaa_estrenos_comerciales.csv
+31224004,EL ULTIMO ZOMBI,el ultimo zombi,2022-04-07,2022,4,Nacionales,nacional,True,2031,656118,323.05,False,False,False,incaa_estrenos_comerciales.csv
+64220087,NUNCA VOLVERA A NEVAR,nunca volvera a nevar,2022-08-25,2022,8,Extranjeras,extranjera,True,2006,929735,463.48,False,False,False,incaa_estrenos_comerciales.csv
+64220177,PINOCHO DE GUILLERMO DEL TORO,pinocho de guillermo del toro,2022-11-24,2022,11,Extranjeras,extranjera,True,1913,980830,512.72,False,False,False,incaa_estrenos_comerciales.csv
+64220131,PEQUEÑOS MOMENTOS DE FELICIDAD,pequenos momentos de felicidad,2022-09-22,2022,9,Extranjeras,extranjera,True,1866,942846,505.28,False,False,False,incaa_estrenos_comerciales.csv
+21234004,EL PARAISO,el paraiso,2022-09-08,2022,9,Nacionales,nacional,True,1839,418283,227.45,False,False,False,incaa_estrenos_comerciales.csv
+64220189,RUIDO DE FONDO,ruido de fondo,2022-12-09,2022,12,Extranjeras,extranjera,True,1824,893243,489.72,False,False,False,incaa_estrenos_comerciales.csv
+20224010,HERBARIA,herbaria,2022-12-01,2022,12,Nacionales,nacional,True,1824,539029,295.52,False,False,False,incaa_estrenos_comerciales.csv
+21224007,JESÚS LÓPEZ,jesus lopez,2022-02-03,2022,2,Nacionales,nacional,True,1775,244934,137.99,False,False,False,incaa_estrenos_comerciales.csv
+31224023,JUANA BANANA,juana banana,2022-11-17,2022,11,Nacionales,nacional,True,1754,453518,258.56,False,False,False,incaa_estrenos_comerciales.csv
+31224002,LAS NOCHES SON DE LOS MONSTRUOS,las noches son de los monstruos,2022-03-10,2022,3,Nacionales,nacional,True,1727,236053,136.68,False,False,False,incaa_estrenos_comerciales.csv
+64220118,ERASE UNA VEZ UN GENIO,erase una vez un genio,2022-09-08,2022,9,Extranjeras,extranjera,True,1726,933940,541.1,False,False,False,incaa_estrenos_comerciales.csv
+64220130,DIO: DREAMERS NEVER DIE,dio dreamers never die,2022-09-28,2022,9,Extranjeras,extranjera,True,1725,1219343,706.87,False,False,False,incaa_estrenos_comerciales.csv
+31234001,METE MIEDO,mete miedo,2022-09-29,2022,9,Nacionales,nacional,True,1717,709364,413.14,False,False,False,incaa_estrenos_comerciales.csv
+31224027,DESPUES DEL RECREO,despues del recreo,2022-04-21,2022,4,Nacionales,nacional,True,1671,427930,256.09,False,False,False,incaa_estrenos_comerciales.csv
+64220019,DIGIMON ADVENTURE: LA ULTIMA EVOLUCION,digimon adventure la ultima evolucion,2022-02-24,2022,2,Extranjeras,extranjera,True,1662,929851,559.48,False,False,False,incaa_estrenos_comerciales.csv
+64220121,EL REINO DE TERRACOTA,el reino de terracota,2022-09-15,2022,9,Extranjeras,extranjera,True,1648,999874,606.72,False,False,False,incaa_estrenos_comerciales.csv
+64220153,ASTRO - STARGAZER: ASTROSCOPE,astro stargazer astroscope,2022-10-27,2022,10,Extranjeras,extranjera,True,1646,1231335,748.08,False,False,False,incaa_estrenos_comerciales.csv
+64220152,NO ODIARAS,no odiaras,2022-10-27,2022,10,Extranjeras,extranjera,True,1644,744634,452.94,False,False,False,incaa_estrenos_comerciales.csv
+41214001,OLAF,olaf,2022-07-21,2022,7,Nacionales,nacional,True,1612,103840,64.42,False,True,False,incaa_estrenos_comerciales.csv
+21244021,MATADERO,matadero,2022-12-01,2022,12,Nacionales,nacional,True,1598,509943,319.11,False,False,False,incaa_estrenos_comerciales.csv
+20224001,R J W,r j w,2022-03-24,2022,3,Nacionales,nacional,True,1592,118025,74.14,False,True,False,incaa_estrenos_comerciales.csv
+64220020,EL HOMBRE QUE VENDIÓ SU PIEL,el hombre que vendio su piel,2022-02-24,2022,2,Extranjeras,extranjera,True,1570,535560,341.12,False,False,False,incaa_estrenos_comerciales.csv
+21224021,MANTO DE GEMAS,manto de gemas,2022-07-07,2022,7,Nacionales,nacional,True,1563,262302,167.82,False,False,False,incaa_estrenos_comerciales.csv
+64220143,EXO PLANET #5 - EXPLORATION,exo planet 5 exploration,2022-10-15,2022,10,Extranjeras,extranjera,True,1559,1283895,823.54,False,False,False,incaa_estrenos_comerciales.csv
+61210001,EL TIEMPO PERDIDO,el tiempo perdido,2022-11-05,2022,11,Nacionales,nacional,True,1558,451056,289.51,False,False,False,incaa_estrenos_comerciales.csv
+64220180,TENGAMOS LA FIESTA EN PAZ,tengamos la fiesta en paz,2022-12-08,2022,12,Extranjeras,extranjera,True,1554,1081556,695.98,False,False,False,incaa_estrenos_comerciales.csv
+64220147,66 PREGUNTAS A LA LUNA,66 preguntas a la luna,2022-10-13,2022,10,Extranjeras,extranjera,True,1485,609997,410.77,False,False,False,incaa_estrenos_comerciales.csv
+31224009,VUELTA AL PERRO,vuelta al perro,2022-05-05,2022,5,Nacionales,nacional,True,1480,230461,155.72,False,False,False,incaa_estrenos_comerciales.csv
+64220188,TODO SUCEDE EN TEL AVIV,todo sucede en tel aviv,2022-12-08,2022,12,Extranjeras,extranjera,True,1477,692357,468.76,False,False,False,incaa_estrenos_comerciales.csv
+21224015,EL EMPLEADO Y EL PATRON,el empleado y el patron,2022-01-13,2022,1,Nacionales,nacional,True,1470,134920,91.78,False,False,False,incaa_estrenos_comerciales.csv
+30224006,UNA MIRADA HONESTA,una mirada honesta,2022-11-03,2022,11,Nacionales,nacional,True,1435,257475,179.43,False,False,False,incaa_estrenos_comerciales.csv
+21224017,PIEDRA NOCHE,piedra noche,2022-01-27,2022,1,Nacionales,nacional,True,1432,163853,114.42,False,False,False,incaa_estrenos_comerciales.csv
+64220098,LOURDES,lourdes,2022-10-13,2022,10,Extranjeras,extranjera,True,1408,848050,602.31,False,False,False,incaa_estrenos_comerciales.csv
+31234007,NO QUIERO SER POLVO,no quiero ser polvo,2022-12-22,2022,12,Nacionales,nacional,True,1394,670255,480.81,False,False,False,incaa_estrenos_comerciales.csv
+30234002,OIANT: MUSICA PARA UN FUTURO ANCESTRAL,oiant musica para un futuro ancestral,2022-06-17,2022,6,Nacionales,nacional,True,1386,85607,61.77,False,True,False,incaa_estrenos_comerciales.csv
+21234008,LOS INOPORTUNOS,los inoportunos,2022-12-08,2022,12,Nacionales,nacional,True,1383,479458,346.68,False,False,False,incaa_estrenos_comerciales.csv
+61220002,LAS COSAS DONDE YA NO ESTABAN,las cosas donde ya no estaban,2022-06-17,2022,6,Nacionales,nacional,True,1378,106801,77.5,False,False,False,incaa_estrenos_comerciales.csv
+51210048,LAS CERCANAS,las cercanas,2022-02-24,2022,2,Nacionales,nacional,True,1352,117132,86.64,False,False,False,incaa_estrenos_comerciales.csv
+20224009,LA TARA,la tara,2022-12-01,2022,12,Nacionales,nacional,True,1337,289153,216.27,False,False,False,incaa_estrenos_comerciales.csv
+51220018,CAFRUNE,cafrune,2022-07-07,2022,7,Nacionales,nacional,True,1333,173712,130.32,False,False,False,incaa_estrenos_comerciales.csv
+51214001,MISERERE,miserere,2022-03-17,2022,3,Nacionales,nacional,True,1329,164340,123.66,False,False,False,incaa_estrenos_comerciales.csv
+64220027,VOCES DORADAS,voces doradas,2022-03-03,2022,3,Extranjeras,extranjera,True,1310,483121,368.79,False,False,False,incaa_estrenos_comerciales.csv
+64220095,ESCLAVOS Y REYES,esclavos y reyes,2022-09-08,2022,9,Extranjeras,extranjera,True,1296,767600,592.28,False,False,False,incaa_estrenos_comerciales.csv
+64220036,LOS OJOS DE TAMMY FAYE,los ojos de tammy faye,2022-03-24,2022,3,Extranjeras,extranjera,True,1295,604179,466.55,False,False,False,incaa_estrenos_comerciales.csv
+61220017,MAQUINA PARA VER EL ALMA,maquina para ver el alma,2022-05-05,2022,5,Nacionales,nacional,True,1247,169191,135.68,False,False,False,incaa_estrenos_comerciales.csv
+51220005,RECATATE CON LOS PIBES,recatate con los pibes,2022-05-19,2022,5,Nacionales,nacional,True,1212,64441,53.17,False,True,False,incaa_estrenos_comerciales.csv
+64220171,NOSOTRAS,nosotras,2022-11-17,2022,11,Extranjeras,extranjera,True,1181,579627,490.79,False,False,False,incaa_estrenos_comerciales.csv
+51220057,VIKINGA,vikinga,2022-10-03,2022,10,Nacionales,nacional,True,1181,103790,87.88,False,False,False,incaa_estrenos_comerciales.csv
+64220063,MI MEJOR AMIGO,mi mejor amigo,2022-05-26,2022,5,Extranjeras,extranjera,True,1066,439049,411.87,False,False,False,incaa_estrenos_comerciales.csv
+21244024,ENCINTADOS,encintados,2022-11-10,2022,11,Nacionales,nacional,True,1054,75937,72.05,False,True,False,incaa_estrenos_comerciales.csv
+61220014,HÉKATE,hekate,2022-06-23,2022,6,Nacionales,nacional,True,1049,79566,75.85,False,False,False,incaa_estrenos_comerciales.csv
+20234003,"EXPUESTA, ANDY CHERNIAVSKY",expuesta andy cherniavsky,2022-12-08,2022,12,Nacionales,nacional,True,1024,338076,330.15,False,False,False,incaa_estrenos_comerciales.csv
+21224031,RUIDO,ruido,2022-10-13,2022,10,Nacionales,nacional,True,1021,187528,183.67,False,False,False,incaa_estrenos_comerciales.csv
+41224001,CAMINO AL EXITO,camino al exito,2022-09-22,2022,9,Nacionales,nacional,True,1018,90516,88.92,False,False,False,incaa_estrenos_comerciales.csv
+21214049,HUSEK,husek,2022-01-06,2022,1,Nacionales,nacional,True,1012,212183,209.67,False,False,False,incaa_estrenos_comerciales.csv
+30234004,PORNOMELANCOLIA,pornomelancolia,2022-12-15,2022,12,Nacionales,nacional,True,1002,187795,187.42,False,False,False,incaa_estrenos_comerciales.csv
+30224002,"STUD, FREE PUB",stud free pub,2022-05-26,2022,5,Nacionales,nacional,True,997,239989,240.71,False,False,False,incaa_estrenos_comerciales.csv
+21224024,PUNTO ROJO,punto rojo,2022-02-17,2022,2,Nacionales,nacional,True,996,62015,62.26,False,True,False,incaa_estrenos_comerciales.csv
+21224004,LA ENCOMIENDA,la encomienda,2022-01-20,2022,1,Nacionales,nacional,True,983,64087,65.2,False,True,False,incaa_estrenos_comerciales.csv
+51220031,PARTIDOS,partidos,2022-08-04,2022,8,Nacionales,nacional,True,979,91707,93.67,False,False,False,incaa_estrenos_comerciales.csv
+21214003,EL PAIS DE LAS ULTIMAS COSAS,el pais de las ultimas cosas,2022-03-10,2022,3,Nacionales,nacional,True,977,236120,241.68,False,False,False,incaa_estrenos_comerciales.csv
+51220037,LA REBELION DE LAS FLORES,la rebelion de las flores,2022-10-13,2022,10,Nacionales,nacional,True,977,99908,102.26,False,False,False,incaa_estrenos_comerciales.csv
+31224026,EL LADO SALVAJE,el lado salvaje,2022-12-01,2022,12,Nacionales,nacional,True,975,172036,176.45,False,False,False,incaa_estrenos_comerciales.csv
+61220005,LXS DESOBEDIENTES,lxs desobedientes,2022-05-29,2022,5,Nacionales,nacional,True,971,362708,373.54,False,False,False,incaa_estrenos_comerciales.csv
+20224005,EL LARGO VIAJE DE ALEJANDRO BORDON,el largo viaje de alejandro bordon,2022-04-21,2022,4,Nacionales,nacional,True,960,61520,64.08,False,True,False,incaa_estrenos_comerciales.csv
+64220009,"PASION, AMOR Y MUERTE",pasion amor y muerte,2022-02-24,2022,2,Extranjeras,extranjera,True,955,429825,450.08,False,False,False,incaa_estrenos_comerciales.csv
+31224010,QUE TODO SE DETENGA,que todo se detenga,2022-08-26,2022,8,Nacionales,nacional,True,954,63773,66.85,False,True,False,incaa_estrenos_comerciales.csv
+21204031,LA DOSIS,la dosis,2022-03-17,2022,3,Nacionales,nacional,True,948,81331,85.79,False,False,False,incaa_estrenos_comerciales.csv
+51220033,MAREA VERDE,marea verde,2022-07-07,2022,7,Nacionales,nacional,True,948,68367,72.12,False,True,False,incaa_estrenos_comerciales.csv
+61220048,LA EDAD MEDIA,la edad media,2022-10-07,2022,10,Nacionales,nacional,True,931,237350,254.94,False,False,False,incaa_estrenos_comerciales.csv
+51210023,GIGANTES,gigantes,2022-08-04,2022,8,Nacionales,nacional,True,884,1273185,1440.25,False,False,False,incaa_estrenos_comerciales.csv
+31234002,EXISTIR,existir,2022-10-06,2022,10,Nacionales,nacional,True,883,56067,63.5,False,True,False,incaa_estrenos_comerciales.csv
+31234021,LA LUZ MALA,la luz mala,2022-12-01,2022,12,Nacionales,nacional,True,871,157254,180.54,False,False,False,incaa_estrenos_comerciales.csv
+51184006,ATLAS,atlas,2022-03-04,2022,3,Nacionales,nacional,True,868,174620,201.18,False,False,False,incaa_estrenos_comerciales.csv
+20224004,LA LUNA REPRESENTA MI CORAZÓN,la luna representa mi corazon,2022-02-10,2022,2,Nacionales,nacional,True,859,80864,94.14,False,False,False,incaa_estrenos_comerciales.csv
+61220012,MARIA LUISA BEMBERG EL ECO DE MI VOZ,maria luisa bemberg el eco de mi voz,2022-04-14,2022,4,Nacionales,nacional,True,835,158584,189.92,False,False,False,incaa_estrenos_comerciales.csv
+61220045,LA PROVISORIA,la provisoria,2022-10-20,2022,10,Nacionales,nacional,True,832,54888,65.97,False,True,False,incaa_estrenos_comerciales.csv
+51220038,EAMI,eami,2022-06-03,2022,6,Nacionales,nacional,True,826,148335,179.58,False,False,False,incaa_estrenos_comerciales.csv
+64220179,A CONCERT FOR GEORGE,a concert for george,2022-11-29,2022,11,Extranjeras,extranjera,True,812,598540,737.12,False,False,False,incaa_estrenos_comerciales.csv
+20224003,CHANGO LA LUZ DESCUBRE,chango la luz descubre,2022-01-02,2022,1,Nacionales,nacional,True,806,88189,109.42,False,False,False,incaa_estrenos_comerciales.csv
+51220044,ZEW,zew,2022-10-13,2022,10,Nacionales,nacional,True,767,82398,107.43,False,False,False,incaa_estrenos_comerciales.csv
+21224030,EL CASTIGO,el castigo,2022-09-01,2022,9,Nacionales,nacional,True,761,63571,83.54,False,False,False,incaa_estrenos_comerciales.csv
+30224007,OPERA VILLERA,opera villera,2022-08-18,2022,8,Nacionales,nacional,True,761,48977,64.36,False,True,False,incaa_estrenos_comerciales.csv
+64220083,"GOODBYE, DONGLEES",goodbye donglees,2022-08-04,2022,8,Extranjeras,extranjera,True,758,654136,862.98,False,False,False,incaa_estrenos_comerciales.csv
+21234018,LUZ MALA,luz mala,2022-11-17,2022,11,Nacionales,nacional,True,729,278329,381.8,False,False,False,incaa_estrenos_comerciales.csv
+64220071,FREE THE FINAL STROKE 2,free the final stroke 2,2022-06-23,2022,6,Extranjeras,extranjera,True,707,539339,762.86,False,False,False,incaa_estrenos_comerciales.csv
+64220158,LITTLE JOE: EL NEGOCIO DE LA FELICIDAD,little joe el negocio de la felicidad,2022-11-03,2022,11,Extranjeras,extranjera,True,705,307636,436.36,False,False,False,incaa_estrenos_comerciales.csv
+64220086,LADY DI,lady di,2022-09-01,2022,9,Extranjeras,extranjera,True,703,418980,595.99,False,False,False,incaa_estrenos_comerciales.csv
+61210046,AIRE FRESCO,aire fresco,2022-03-31,2022,3,Nacionales,nacional,True,688,49410,71.82,False,True,False,incaa_estrenos_comerciales.csv
+41234002,CENIZAS AL MAR,cenizas al mar,2022-09-22,2022,9,Nacionales,nacional,True,685,42364,61.85,False,True,False,incaa_estrenos_comerciales.csv
+31224025,CUANDO OSCURECE,cuando oscurece,2022-11-24,2022,11,Nacionales,nacional,True,681,116490,171.06,False,False,False,incaa_estrenos_comerciales.csv
+61220039,¿QUE HAGO EN ESTE MUNOD TAN VISUAL?,que hago en este munod tan visual,2022-10-27,2022,10,Nacionales,nacional,True,680,234173,344.37,False,False,False,incaa_estrenos_comerciales.csv
+64220167,LIAM GALLAGHER - KNEBWORTH 22,liam gallagher knebworth 22,2022-11-17,2022,11,Extranjeras,extranjera,True,678,456937,673.95,False,False,False,incaa_estrenos_comerciales.csv
+51220021,OPERACIÓN CHOCOLATE,operacion chocolate,2022-09-01,2022,9,Nacionales,nacional,True,678,75303,111.07,False,False,False,incaa_estrenos_comerciales.csv
+51210036,MADRE PLANTA,madre planta,2022-04-14,2022,4,Nacionales,nacional,True,672,44709,66.53,False,True,False,incaa_estrenos_comerciales.csv
+61220019,CORSINI INTERPRETA A BLOMBERG Y MACIEL,corsini interpreta a blomberg y maciel,2022-05-21,2022,5,Nacionales,nacional,True,667,139552,209.22,False,False,False,incaa_estrenos_comerciales.csv
+64220162,DURAN DURAN: A HOLLYWOOD HIGH,duran duran a hollywood high,2022-11-03,2022,11,Extranjeras,extranjera,True,652,447254,685.97,False,False,False,incaa_estrenos_comerciales.csv
+64220052,DESIERTO PARTICULAR,desierto particular,2022-04-28,2022,4,Extranjeras,extranjera,True,640,255362,399.0,False,False,False,incaa_estrenos_comerciales.csv
+51210032,EL ENCANTO DE LA MOSCA,el encanto de la mosca,2022-04-07,2022,4,Nacionales,nacional,True,633,52206,82.47,False,False,False,incaa_estrenos_comerciales.csv
+21224033,BLACK IS BELTZA 2 AINHOA,black is beltza 2 ainhoa,2022-10-20,2022,10,Nacionales,nacional,True,628,58249,92.75,False,False,False,incaa_estrenos_comerciales.csv
+51210042,QUE SERA DEL VERANO,que sera del verano,2022-07-21,2022,7,Nacionales,nacional,True,613,112963,184.28,False,False,False,incaa_estrenos_comerciales.csv
+61220029,EL OSCURO LUGAR DONDE HABITNA,el oscuro lugar donde habitna,2022-06-23,2022,6,Nacionales,nacional,True,603,51267,85.02,False,False,False,incaa_estrenos_comerciales.csv
+31224028,LA LEY DEL EMBUDO,la ley del embudo,2022-12-15,2022,12,Nacionales,nacional,True,581,80668,138.84,False,False,False,incaa_estrenos_comerciales.csv
+64220006,EL TERRITORIO DEL AMOR,el territorio del amor,2022-02-17,2022,2,Extranjeras,extranjera,True,580,740180,1276.17,False,False,False,incaa_estrenos_comerciales.csv
+61220022,TU FORMA DE VER EL MUNDO,tu forma de ver el mundo,2022-06-23,2022,6,Nacionales,nacional,True,578,42669,73.82,False,True,False,incaa_estrenos_comerciales.csv
+21214002,SECTOR VIP,sector vip,2022-02-17,2022,2,Nacionales,nacional,True,577,41285,71.55,False,True,False,incaa_estrenos_comerciales.csv
+30224003,EXTRANJERO,extranjero,2022-10-20,2022,10,Nacionales,nacional,True,573,47167,82.32,False,False,False,incaa_estrenos_comerciales.csv
+51220020,LA OTRA PARTE,la otra parte,2022-04-09,2022,4,Nacionales,nacional,True,560,45112,80.56,False,False,False,incaa_estrenos_comerciales.csv
+64220168,TIERRA SANTA. EL ÚLTIMO PEREGRINO,tierra santa el ultimo peregrino,2022-11-24,2022,11,Extranjeras,extranjera,True,558,421180,754.8,False,False,False,incaa_estrenos_comerciales.csv
+51220027,AMASANDO FUTURO,amasando futuro,2022-07-07,2022,7,Nacionales,nacional,True,556,39352,70.78,False,True,False,incaa_estrenos_comerciales.csv
+21204025,GOLONDRINAS,golondrinas,2022-06-02,2022,6,Nacionales,nacional,True,555,38925,70.14,False,True,False,incaa_estrenos_comerciales.csv
+61220004,LOS PASEOS,los paseos,2022-02-10,2022,2,Nacionales,nacional,True,542,38933,71.83,False,True,False,incaa_estrenos_comerciales.csv
+61220030,ALUVION,aluvion,2022-07-01,2022,7,Nacionales,nacional,True,542,34013,62.75,False,True,False,incaa_estrenos_comerciales.csv
+64220120,THE RETALIATORS,the retaliators,2022-09-14,2022,9,Extranjeras,extranjera,True,530,535100,1009.62,False,False,False,incaa_estrenos_comerciales.csv
+31224022,ATANDO CABOS,atando cabos,2022-10-13,2022,10,Nacionales,nacional,True,530,34827,65.71,False,True,False,incaa_estrenos_comerciales.csv
+25224049,ZAHORI,zahori,2022-10-27,2022,10,Nacionales,nacional,True,523,42224,80.73,False,False,False,incaa_estrenos_comerciales.csv
+61220027,LOS LIBROS CAUTIVOS,los libros cautivos,2022-06-23,2022,6,Nacionales,nacional,True,521,50978,97.85,False,False,False,incaa_estrenos_comerciales.csv
+31214002,SANTA,santa,2022-06-17,2022,6,Nacionales,nacional,True,521,39719,76.24,False,False,False,incaa_estrenos_comerciales.csv
+61220049,RIO TURBIO,rio turbio,2022-09-29,2022,9,Nacionales,nacional,True,520,84699,162.88,False,False,False,incaa_estrenos_comerciales.csv
+31234010,EL CASO MONROY,el caso monroy,2022-10-06,2022,10,Nacionales,nacional,True,512,35582,69.5,False,True,False,incaa_estrenos_comerciales.csv
+51220026,RETRATOS DEL FUTURO,retratos del futuro,2022-06-30,2022,6,Nacionales,nacional,True,503,36528,72.62,False,True,False,incaa_estrenos_comerciales.csv
+64210029,ERASE UNA VEZ,erase una vez,2022-09-08,2022,9,Extranjeras,extranjera,True,495,307477,621.17,False,False,False,incaa_estrenos_comerciales.csv
+51220056,"AVOMPLA, ANTES DE NAVIDAD",avompla antes de navidad,2022-12-08,2022,12,Nacionales,nacional,True,493,66473,134.83,False,False,False,incaa_estrenos_comerciales.csv
+51194009,TODO LO QUE SE OLVIDA EN UN INSTANTE,todo lo que se olvida en un instante,2022-07-28,2022,7,Nacionales,nacional,True,479,82097,171.39,False,False,False,incaa_estrenos_comerciales.csv
+30234003,3DT,3dt,2022-11-04,2022,11,Nacionales,nacional,True,473,25341,53.58,False,True,False,incaa_estrenos_comerciales.csv
+51210031,FUI ALAN POR UN AÑO,fui alan por un ano,2022-04-07,2022,4,Nacionales,nacional,True,471,32477,68.95,False,True,False,incaa_estrenos_comerciales.csv
+51210046,8 CUENTOS SOBRE MI HIPOACUSIA,8 cuentos sobre mi hipoacusia,2022-08-11,2022,8,Nacionales,nacional,True,459,48567,105.81,False,False,False,incaa_estrenos_comerciales.csv
+61220008,ULTIMA PIEZA,ultima pieza,2022-04-07,2022,4,Nacionales,nacional,True,458,33440,73.01,False,True,False,incaa_estrenos_comerciales.csv
+21234017,REBELION,rebelion,2022-11-10,2022,11,Nacionales,nacional,True,458,33199,72.49,False,True,False,incaa_estrenos_comerciales.csv
+51220022,LOS QUE NO QUIEREN VER,los que no quieren ver,2022-08-04,2022,8,Nacionales,nacional,True,455,28949,63.62,False,True,False,incaa_estrenos_comerciales.csv
+51220001,NIDO,nido,2022-02-10,2022,2,Nacionales,nacional,True,454,28309,62.35,False,True,False,incaa_estrenos_comerciales.csv
+64220093,AMPARO OCHOA “SE ME REVENTO EL BARZON”,amparo ochoa se me revento el barzon,2022-10-07,2022,10,Extranjeras,extranjera,True,452,65177,144.2,False,False,False,incaa_estrenos_comerciales.csv
+51220039,LA CASA DE LOS TIOS,la casa de los tios,2022-08-20,2022,8,Nacionales,nacional,True,436,31645,72.58,False,True,False,incaa_estrenos_comerciales.csv
+20234002,MARQUETALIA,marquetalia,2022-08-18,2022,8,Nacionales,nacional,True,433,24976,57.68,False,True,False,incaa_estrenos_comerciales.csv
+31224019,CONTANDO OVEJAS,contando ovejas,2022-09-01,2022,9,Nacionales,nacional,True,430,30584,71.13,False,True,False,incaa_estrenos_comerciales.csv
+51220059,UN HOMBRE DE CINE,un hombre de cine,2022-10-09,2022,10,Nacionales,nacional,True,425,66012,155.32,False,False,False,incaa_estrenos_comerciales.csv
+51210041,EL FULGOR,el fulgor,2022-05-19,2022,5,Nacionales,nacional,True,424,64125,151.24,False,False,False,incaa_estrenos_comerciales.csv
+51210040,HIJAS DE LA COMEDIA,hijas de la comedia,2022-05-19,2022,5,Nacionales,nacional,True,424,24343,57.41,False,True,False,incaa_estrenos_comerciales.csv
+20234001,NUESTRA BRONCA,nuestra bronca,2022-11-24,2022,11,Nacionales,nacional,True,416,51200,123.08,False,False,False,incaa_estrenos_comerciales.csv
+61220037,AMANCAY,amancay,2022-08-25,2022,8,Nacionales,nacional,True,415,80018,192.81,False,False,False,incaa_estrenos_comerciales.csv
+21204047,ANGELICA,angelica,2022-06-09,2022,6,Nacionales,nacional,True,407,54067,132.84,False,False,False,incaa_estrenos_comerciales.csv
+51220013,LA REPARACIÓN,la reparacion,2022-06-09,2022,6,Nacionales,nacional,True,380,27340,71.95,False,True,False,incaa_estrenos_comerciales.csv
+64220186,TAKAGI: LA MAESTRA DE LAS BROMAS,takagi la maestra de las bromas,2022-12-01,2022,12,Extranjeras,extranjera,True,373,300758,806.32,False,False,False,incaa_estrenos_comerciales.csv
+51210005,SUEÑOS,suenos,2022-01-27,2022,1,Nacionales,nacional,True,370,27681,74.81,False,False,False,incaa_estrenos_comerciales.csv
+61220025,NO EXISTEN TREINTA Y SEIS MANERAS DE MOSTRAR COMO UN HOMBRE SE SUBE A UN CABALLO,no existen treinta y seis maneras de mostrar como un hombre se sube a un caballo,2022-06-16,2022,6,Nacionales,nacional,True,367,64950,176.98,False,False,False,incaa_estrenos_comerciales.csv
+51220010,ADIOS A LA MEMORIA,adios a la memoria,2022-03-24,2022,3,Nacionales,nacional,True,354,25645,72.44,False,True,False,incaa_estrenos_comerciales.csv
+21204043,GIRO DE ASES,giro de ases,2022-07-14,2022,7,Nacionales,nacional,True,347,20618,59.42,False,True,False,incaa_estrenos_comerciales.csv
+61220009,EL CAMINO ETERNO,el camino eterno,2022-04-07,2022,4,Nacionales,nacional,True,343,27837,81.16,False,False,False,incaa_estrenos_comerciales.csv
+51220015,OTRA CONDENA,otra condena,2022-03-17,2022,3,Nacionales,nacional,True,339,22594,66.65,False,True,False,incaa_estrenos_comerciales.csv
+61220050,APPS,apps,2022-10-27,2022,10,Nacionales,nacional,True,337,63528,188.51,False,False,False,incaa_estrenos_comerciales.csv
+61220040,DE ITALIA A ESPAÑA POR OLIVOS,de italia a espana por olivos,2022-11-03,2022,11,Nacionales,nacional,True,329,25257,76.77,False,False,False,incaa_estrenos_comerciales.csv
+51220041,AÑOS CORTOS DIAS ETERNOS,anos cortos dias eternos,2022-09-21,2022,9,Nacionales,nacional,True,314,47185,150.27,False,False,False,incaa_estrenos_comerciales.csv
+51210043,EL PISO DEL VIENTO,el piso del viento,2022-02-10,2022,2,Nacionales,nacional,True,314,17917,57.06,False,True,False,incaa_estrenos_comerciales.csv
+51220046,ME BUSCO LEJOS,me busco lejos,2022-11-06,2022,11,Nacionales,nacional,True,294,42611,144.94,False,False,False,incaa_estrenos_comerciales.csv
+61210047,EL CURANDERO,el curandero,2022-02-15,2022,2,Nacionales,nacional,True,293,119710,408.57,False,False,False,incaa_estrenos_comerciales.csv
+20204010,"BUITRES, LA CARA SALVAJE DEL CAPITALISMO",buitres la cara salvaje del capitalismo,2022-02-03,2022,2,Nacionales,nacional,True,292,16323,55.9,False,True,False,incaa_estrenos_comerciales.csv
+51220050,ELDORADO,eldorado,2022-09-29,2022,9,Nacionales,nacional,True,290,20633,71.15,False,True,False,incaa_estrenos_comerciales.csv
+51210024,AMERICO,americo,2022-08-11,2022,8,Nacionales,nacional,True,283,148162,523.54,False,False,False,incaa_estrenos_comerciales.csv
+51220048,EL PUEBLO DE DIOS,el pueblo de dios,2022-10-27,2022,10,Nacionales,nacional,True,282,26360,93.48,False,False,False,incaa_estrenos_comerciales.csv
+64220133,ANDRE RIEU HAPPY DAYS ARE HERE AGAIN 2022,andre rieu happy days are here again 2022,2022-09-23,2022,9,Extranjeras,extranjera,True,280,155240,554.43,False,False,False,incaa_estrenos_comerciales.csv
+51220025,SIETE RITMOS,siete ritmos,2022-05-12,2022,5,Nacionales,nacional,True,280,64064,228.8,False,False,False,incaa_estrenos_comerciales.csv
+64210167,LA VERDAD SOBRE LA DOLCE VITA,la verdad sobre la dolce vita,2022-01-06,2022,1,Extranjeras,extranjera,True,274,120906,441.26,False,False,False,incaa_estrenos_comerciales.csv
+61220031,SERPIENTE EL LUCHADOR,serpiente el luchador,2022-09-15,2022,9,Nacionales,nacional,True,271,24390,90.0,False,False,False,incaa_estrenos_comerciales.csv
+61220051,EL CAMINO DE MARTIN NEGRI,el camino de martin negri,2022-11-10,2022,11,Nacionales,nacional,True,271,15689,57.89,False,True,False,incaa_estrenos_comerciales.csv
+61190034,EL LABERINTO DE LAS LUNAS,el laberinto de las lunas,2022-06-26,2022,6,Nacionales,nacional,True,266,1100,4.14,False,True,False,incaa_estrenos_comerciales.csv
+51220002,FUEGO EN CASABINDO,fuego en casabindo,2022-05-12,2022,5,Nacionales,nacional,True,264,16889,63.97,False,True,False,incaa_estrenos_comerciales.csv
+64220163,PA'TRÁS NI PA'TOMAR IMPULSO,pa tras ni pa tomar impulso,2022-11-03,2022,11,Extranjeras,extranjera,True,260,40258,154.84,False,False,False,incaa_estrenos_comerciales.csv
+51210010,LA ISLA DE LOS SECRETOS,la isla de los secretos,2022-03-24,2022,3,Nacionales,nacional,True,259,14768,57.02,False,True,False,incaa_estrenos_comerciales.csv
+21204006,HACER LA VIDA,hacer la vida,2022-01-20,2022,1,Nacionales,nacional,True,257,21315,82.94,False,False,False,incaa_estrenos_comerciales.csv
+51220023,ESQUI,esqui,2022-11-10,2022,11,Nacionales,nacional,True,256,20340,79.45,False,False,False,incaa_estrenos_comerciales.csv
+51220055,EL NACIONAL,el nacional,2022-10-27,2022,10,Nacionales,nacional,True,255,77986,305.83,False,False,False,incaa_estrenos_comerciales.csv
+51220034,APUNTES DESDE EL ENCIERRO,apuntes desde el encierro,2022-06-16,2022,6,Nacionales,nacional,True,249,17722,71.17,False,True,False,incaa_estrenos_comerciales.csv
+51210044,SARA MAMANI,sara mamani,2022-04-14,2022,4,Nacionales,nacional,True,245,20289,82.81,False,False,False,incaa_estrenos_comerciales.csv
+51200020,BUFONES DE LA RISASTENCIA,bufones de la risastencia,2022-01-20,2022,1,Nacionales,nacional,True,244,16887,69.21,False,True,False,incaa_estrenos_comerciales.csv
+31234005,LAS PUERTAS DE TAQUIMILAN,las puertas de taquimilan,2022-12-29,2022,12,Nacionales,nacional,True,241,86349,358.29,False,False,False,incaa_estrenos_comerciales.csv
+61220028,LOS HIJOS DEL VIENTO,los hijos del viento,2022-08-25,2022,8,Nacionales,nacional,True,239,18886,79.02,False,False,False,incaa_estrenos_comerciales.csv
+51220006,BOROM TAXI,borom taxi,2022-03-31,2022,3,Nacionales,nacional,True,238,15496,65.11,False,True,False,incaa_estrenos_comerciales.csv
+64220075,GEORGE MICHAEL FREEDOM UNCUT,george michael freedom uncut,2022-06-22,2022,6,Extranjeras,extranjera,True,218,132588,608.2,False,False,False,incaa_estrenos_comerciales.csv
+64220187,EL REY CIERVO,el rey ciervo,2022-12-13,2022,12,Extranjeras,extranjera,True,217,440198,2028.56,False,True,False,incaa_estrenos_comerciales.csv
+61220054,BAJO SUPERFICIE,bajo superficie,2022-12-01,2022,12,Nacionales,nacional,True,214,182900,854.67,False,False,False,incaa_estrenos_comerciales.csv
+51220052,EL HEMISFERIO NOCTURNO DE LA TIERRA,el hemisferio nocturno de la tierra,2022-09-15,2022,9,Nacionales,nacional,True,211,13477,63.87,False,True,False,incaa_estrenos_comerciales.csv
+51220007,FANTARIAS,fantarias,2022-07-14,2022,7,Nacionales,nacional,True,211,13255,62.82,False,True,False,incaa_estrenos_comerciales.csv
+51220047,ZOOFOBIA,zoofobia,2022-11-03,2022,11,Nacionales,nacional,True,209,17356,83.04,False,False,False,incaa_estrenos_comerciales.csv
+61220033,CORTE,corte,2022-09-22,2022,9,Nacionales,nacional,True,207,13128,63.42,False,True,False,incaa_estrenos_comerciales.csv
+61220035,MARCHIOLI CAMINO AL FESTIVAL,marchioli camino al festival,2022-08-04,2022,8,Nacionales,nacional,True,198,42258,213.42,False,False,False,incaa_estrenos_comerciales.csv
+64220073,LA VOZ DEL AMOR,la voz del amor,2022-06-16,2022,6,Extranjeras,extranjera,True,187,104419,558.39,False,False,False,incaa_estrenos_comerciales.csv
+51220016,EL CAMPO LUMINOSO,el campo luminoso,2022-09-03,2022,9,Nacionales,nacional,True,185,22459,121.4,False,False,False,incaa_estrenos_comerciales.csv
+51220043,TERROR FAMILIAR,terror familiar,2022-10-27,2022,10,Nacionales,nacional,True,183,15233,83.24,False,False,False,incaa_estrenos_comerciales.csv
+61210023,"NORMA ALEANDRO, EL VUELO DE LA MARIPOSA",norma aleandro el vuelo de la mariposa,2022-06-09,2022,6,Nacionales,nacional,True,180,15855,88.08,False,False,False,incaa_estrenos_comerciales.csv
+64220169,LA CAIDA,la caida,2022-11-10,2022,11,Extranjeras,extranjera,True,177,86164,486.8,False,False,False,incaa_estrenos_comerciales.csv
+21204019,LINA DE LIMA,lina de lima,2022-03-03,2022,3,Nacionales,nacional,True,168,20918,124.51,False,False,False,incaa_estrenos_comerciales.csv
+51220028,ESTRELLA ROJA,estrella roja,2022-11-03,2022,11,Nacionales,nacional,True,157,49050,312.42,False,False,False,incaa_estrenos_comerciales.csv
+51210047,I NOSTRI GIORNI (NUESTROS DIAS),i nostri giorni nuestros dias,2022-04-28,2022,4,Nacionales,nacional,True,145,9070,62.55,False,True,False,incaa_estrenos_comerciales.csv
+61220020,LOCOMOTORA,locomotora,2022-05-19,2022,5,Nacionales,nacional,True,144,8648,60.06,False,True,False,incaa_estrenos_comerciales.csv
+61220021,LA ESENCIA DE LOS OTROS,la esencia de los otros,2022-05-19,2022,5,Nacionales,nacional,True,139,22882,164.62,False,False,False,incaa_estrenos_comerciales.csv
+51220032,SOY ROCIO,soy rocio,2022-06-23,2022,6,Nacionales,nacional,True,134,31350,233.96,False,False,False,incaa_estrenos_comerciales.csv
+21214017,HOMELESS,homeless,2022-07-14,2022,7,Nacionales,nacional,True,133,9691,72.86,False,True,False,incaa_estrenos_comerciales.csv
+61194006,MONTE ADENTRO,monte adentro,2022-03-10,2022,3,Nacionales,nacional,True,125,7507,60.06,False,True,False,incaa_estrenos_comerciales.csv
+51220012,EN EL NOMBRE DEL LITIO,en el nombre del litio,2022-11-03,2022,11,Nacionales,nacional,True,123,8885,72.24,False,True,False,incaa_estrenos_comerciales.csv
+20204020,RESET,reset,2022-09-15,2022,9,Nacionales,nacional,True,117,6656,56.89,False,True,False,incaa_estrenos_comerciales.csv
+51200008,ABUELAS,abuelas,2022-04-07,2022,4,Nacionales,nacional,True,97,33950,350.0,False,False,False,incaa_estrenos_comerciales.csv
+61220010,LO QUE EL CUERPO DEBE,lo que el cuerpo debe,2022-03-19,2022,3,Nacionales,nacional,True,95,15427,162.39,False,False,False,incaa_estrenos_comerciales.csv
+61220013,EL TEOREMA DE MOSNER,el teorema de mosner,2022-06-02,2022,6,Nacionales,nacional,True,94,5539,58.93,False,True,False,incaa_estrenos_comerciales.csv
+61220034,GONZALO,gonzalo,2022-08-19,2022,8,Nacionales,nacional,True,90,18610,206.78,False,False,False,incaa_estrenos_comerciales.csv
+61194015,MORONDANGA,morondanga,2022-06-02,2022,6,Nacionales,nacional,True,85,8656,101.84,False,False,False,incaa_estrenos_comerciales.csv
+61220046,LAS POETAS VISITAN A JUANA BIGNOZZI,las poetas visitan a juana bignozzi,2022-09-21,2022,9,Nacionales,nacional,True,81,24200,298.77,False,False,False,incaa_estrenos_comerciales.csv
+51220049,"MARICA ESPECTRO, PIRATAS DEL DELTA",marica espectro piratas del delta,2022-08-18,2022,8,Nacionales,nacional,True,77,3450,44.81,False,True,False,incaa_estrenos_comerciales.csv
+51220004,(...) EL MISMO RIO,el mismo rio,2022-05-12,2022,5,Nacionales,nacional,True,73,20986,287.48,False,False,False,incaa_estrenos_comerciales.csv
+64220099,DOS TIEMPOS,dos tiempos,2022-08-18,2022,8,Extranjeras,extranjera,True,65,4962,76.34,False,False,False,incaa_estrenos_comerciales.csv
+61210048,EL SEÑOR DE LOS ARBOLES,el senor de los arboles,2022-04-24,2022,4,Nacionales,nacional,True,60,12000,200.0,False,False,False,incaa_estrenos_comerciales.csv
+31204008,LLENO DE RUIDO Y DOLOR,lleno de ruido y dolor,2022-09-22,2022,9,Nacionales,nacional,True,59,3080,52.2,False,True,False,incaa_estrenos_comerciales.csv
+21204033,KARAKOL,karakol,2022-03-03,2022,3,Nacionales,nacional,True,51,3864,75.76,False,False,False,incaa_estrenos_comerciales.csv
+61220057,UN LIBRO NACE,un libro nace,2022-11-23,2022,11,Nacionales,nacional,True,47,14350,305.32,False,False,False,incaa_estrenos_comerciales.csv
+61170059,A LOS NIÑOS LA BELLEZA,a los ninos la belleza,2022-02-11,2022,2,Nacionales,nacional,True,40,3786,94.65,False,False,False,incaa_estrenos_comerciales.csv
+51220060,MUNDO SALAMONE,mundo salamone,2022-09-29,2022,9,Nacionales,nacional,True,36,231009,6416.92,False,True,False,incaa_estrenos_comerciales.csv
+21204037,LEJOS DE CASA,lejos de casa,2022-03-03,2022,3,Nacionales,nacional,True,34,3727,109.62,False,False,False,incaa_estrenos_comerciales.csv
+20214002,CERRO QUEMADO,cerro quemado,2022-01-20,2022,1,Nacionales,nacional,True,34,3189,93.79,False,False,False,incaa_estrenos_comerciales.csv
+51194013,LOS HOMBRES QUE SUEÑAN CON ANIMALES,los hombres que suenan con animales,2022-06-23,2022,6,Nacionales,nacional,True,31,2500,80.65,False,False,False,incaa_estrenos_comerciales.csv
+51190032,EL ARBOL NEGRO,el arbol negro,2022-09-29,2022,9,Nacionales,nacional,True,25,1650,66.0,False,True,False,incaa_estrenos_comerciales.csv
+21050044,ESPEJO PARA CUANDO ME PRUEBE E,espejo para cuando me pruebe e,2022-05-12,2022,5,Nacionales,nacional,True,15,3886,259.07,False,False,False,incaa_estrenos_comerciales.csv
+30224004,DESPUES DE CATAN,despues de catan,2022-10-27,2022,10,Nacionales,nacional,True,12,1193,99.42,False,False,False,incaa_estrenos_comerciales.csv
+61220007,CHICAS ROLINGAS,chicas rolingas,2022-02-19,2022,2,Nacionales,nacional,True,8,2000,250.0,False,False,False,incaa_estrenos_comerciales.csv
+61210011,30 DIAS ANTES,30 dias antes,2022-09-17,2022,9,Nacionales,nacional,True,4,1000,250.0,False,False,False,incaa_estrenos_comerciales.csv
+61200035,TRANSOCEANICAS,transoceanicas,2022-11-16,2022,11,Nacionales,nacional,True,2,200,100.0,False,False,False,incaa_estrenos_comerciales.csv
+64230127,BARBIE,barbie,2023-07-20,2023,7,Extranjeras,extranjera,True,3562856,4253112690,1193.74,False,False,False,incaa_estrenos_comerciales.csv
+64230074,SUPER MARIO BROS. LA PELICULA,super mario bros la pelicula,2023-04-05,2023,4,Extranjeras,extranjera,True,3015606,3140910150,1041.55,False,False,False,incaa_estrenos_comerciales.csv
+64230116,ELEMENTOS,elementos,2023-06-15,2023,6,Extranjeras,extranjera,True,2633079,3131127662,1189.15,False,False,False,incaa_estrenos_comerciales.csv
+64230106,RAPIDOS Y FURIOSOS X,rapidos y furiosos x,2023-05-18,2023,5,Extranjeras,extranjera,True,2329300,3042314707,1306.11,False,False,False,incaa_estrenos_comerciales.csv
+64230095,GUARDIANES DE LA GALAXIA VOL 3,guardianes de la galaxia vol 3,2023-05-03,2023,5,Extranjeras,extranjera,True,1430164,1563732579,1093.39,False,False,False,incaa_estrenos_comerciales.csv
+64230108,LA SIRENITA,la sirenita,2023-05-25,2023,5,Extranjeras,extranjera,True,1385516,1578833654,1139.53,False,False,False,incaa_estrenos_comerciales.csv
+64230163,LA MONJA II,la monja ii,2023-09-07,2023,9,Extranjeras,extranjera,True,1293020,1848333089,1429.47,False,False,False,incaa_estrenos_comerciales.csv
+64230200,FIVE NIGHTS AT FREDDY'S,five nights at freddy s,2023-10-26,2023,10,Extranjeras,extranjera,True,1202673,2087162005,1735.44,False,False,False,incaa_estrenos_comerciales.csv
+64230128,OPPENHEIMER,oppenheimer,2023-07-20,2023,7,Extranjeras,extranjera,True,1167395,1518019555,1300.35,False,False,False,incaa_estrenos_comerciales.csv
+25234072,MUCHACHOS. LA PELICULA DE LA GENTE,muchachos la pelicula de la gente,2023-12-07,2023,12,Nacionales,nacional,True,1145881,2504681204,2185.81,False,False,False,incaa_estrenos_comerciales.csv
+64230161,SONIDO DE LIBERTAD,sonido de libertad,2023-08-31,2023,8,Extranjeras,extranjera,True,1109265,1454355240,1311.1,False,False,False,incaa_estrenos_comerciales.csv
+64230111,SPIDER-MAN: A TRAVES DEL SPIDER-VERSO,spider man a traves del spider verso,2023-06-01,2023,6,Extranjeras,extranjera,True,966645,1034171693,1069.86,False,False,False,incaa_estrenos_comerciales.csv
+64230114,TRANSFORMERS: EL DESPERTAR DE LAS BESTIAS,transformers el despertar de las bestias,2023-06-08,2023,6,Extranjeras,extranjera,True,911715,1123704971,1232.52,False,False,False,incaa_estrenos_comerciales.csv
+64230226,WONKA,wonka,2023-12-07,2023,12,Extranjeras,extranjera,True,857939,2003829500,2335.63,False,False,False,incaa_estrenos_comerciales.csv
+64230030,ANT-MAN AND THE WASP: QUANTUMANIA,ant man and the wasp quantumania,2023-02-16,2023,2,Extranjeras,extranjera,True,788520,739599701,937.96,False,False,False,incaa_estrenos_comerciales.csv
+64230124,LA NOCHE DEL DEMONIO: LA PUERTA ROJA,la noche del demonio la puerta roja,2023-07-06,2023,7,Extranjeras,extranjera,True,755277,873416128,1156.42,False,False,False,incaa_estrenos_comerciales.csv
+64230133,MEGALODON 2: EL GRAN ABISMO,megalodon 2 el gran abismo,2023-08-03,2023,8,Extranjeras,extranjera,True,728231,1029516607,1413.72,False,False,False,incaa_estrenos_comerciales.csv
+64230117,FLASH,flash,2023-06-13,2023,6,Extranjeras,extranjera,True,585876,736109477,1256.43,False,False,False,incaa_estrenos_comerciales.csv
+61230007,LA EXTORSION,la extorsion,2023-04-06,2023,4,Nacionales,nacional,True,547917,493356434,900.42,False,False,False,incaa_estrenos_comerciales.csv
+64230082,EVIL DEAD: EL DESPERTAR,evil dead el despertar,2023-04-20,2023,4,Extranjeras,extranjera,True,526815,508242578,964.75,False,False,False,incaa_estrenos_comerciales.csv
+64230061,JOHN WICK 4,john wick 4,2023-03-23,2023,3,Extranjeras,extranjera,True,525253,492196216,937.07,False,False,False,incaa_estrenos_comerciales.csv
+61234008,ELIJO CREER,elijo creer,2023-12-07,2023,12,Nacionales,nacional,True,481586,992417888,2060.73,False,False,False,incaa_estrenos_comerciales.csv
+64230126,MISION: IMPOSIBLE - SENTENCIA MORTAL PARTE UNO,mision imposible sentencia mortal parte uno,2023-07-13,2023,7,Extranjeras,extranjera,True,472128,587880619,1245.17,False,False,False,incaa_estrenos_comerciales.csv
+64230120,INDIANA JONES Y EL DIAL DEL DESTINO,indiana jones y el dial del destino,2023-06-29,2023,6,Extranjeras,extranjera,True,455411,543025818,1192.39,False,False,False,incaa_estrenos_comerciales.csv
+64230216,NAPOLEON,napoleon,2023-11-23,2023,11,Extranjeras,extranjera,True,435813,927444308,2128.08,False,False,False,incaa_estrenos_comerciales.csv
+64230235,AQUAMAN Y EL REINO PERDIDO,aquaman y el reino perdido,2023-12-20,2023,12,Extranjeras,extranjera,True,424901,1136502866,2674.75,False,False,False,incaa_estrenos_comerciales.csv
+64230010,M3GAN,m3gan,2023-01-19,2023,1,Extranjeras,extranjera,True,387497,284782786,734.93,False,False,False,incaa_estrenos_comerciales.csv
+64230213,LOS JUEGOS DEL HAMBRE: BALADA DE PAJAROS CANTORES Y SERPIENTES,los juegos del hambre balada de pajaros cantores y serpientes,2023-11-16,2023,11,Extranjeras,extranjera,True,376148,745961367,1983.16,False,False,False,incaa_estrenos_comerciales.csv
+64230184,EL EXORCISTA: CREYENTES,el exorcista creyentes,2023-10-05,2023,10,Extranjeras,extranjera,True,371661,619208776,1666.06,False,False,False,incaa_estrenos_comerciales.csv
+64230148,TORTUGAS NINJA: CAOS MUTANTE,tortugas ninja caos mutante,2023-08-17,2023,8,Extranjeras,extranjera,True,371247,524667391,1413.26,False,False,False,incaa_estrenos_comerciales.csv
+64230143,HABLAME,hablame,2023-08-08,2023,8,Extranjeras,extranjera,True,352228,448889307,1274.43,False,False,False,incaa_estrenos_comerciales.csv
+64230032,CREED III,creed iii,2023-03-02,2023,3,Extranjeras,extranjera,True,346970,289763284,835.12,False,False,False,incaa_estrenos_comerciales.csv
+64230174,PAW PATROL: LA SUPER PELICULA,paw patrol la super pelicula,2023-09-23,2023,9,Extranjeras,extranjera,True,343658,452281469,1316.08,False,False,False,incaa_estrenos_comerciales.csv
+64230199,TROLLS 3: SE ARMO LA BANDA,trolls 3 se armo la banda,2023-10-26,2023,10,Extranjeras,extranjera,True,327434,594931559,1816.95,False,False,False,incaa_estrenos_comerciales.csv
+21244003,CUANDO ACECHA LA MALDAD,cuando acecha la maldad,2023-11-09,2023,11,Nacionales,nacional,True,314471,562060895,1787.32,False,False,False,incaa_estrenos_comerciales.csv
+64230077,EL EXORCISTA DEL PAPA,el exorcista del papa,2023-04-13,2023,4,Extranjeras,extranjera,True,292231,263916923,903.11,False,False,False,incaa_estrenos_comerciales.csv
+64230180,EL JUEGO DEL MIEDO 10,el juego del miedo 10,2023-09-28,2023,9,Extranjeras,extranjera,True,290412,382869034,1318.37,False,False,False,incaa_estrenos_comerciales.csv
+64230039,LA BALLENA,la ballena,2023-03-02,2023,3,Extranjeras,extranjera,True,283083,230620212,814.67,False,False,False,incaa_estrenos_comerciales.csv
+64230121,KRAKENS Y SIRENAS: CONOCE A LOS GILLMAN,krakens y sirenas conoce a los gillman,2023-06-29,2023,6,Extranjeras,extranjera,True,273046,282479094,1034.55,False,False,True,incaa_estrenos_comerciales.csv
+64230205,THE MARVELS,the marvels,2023-11-09,2023,11,Extranjeras,extranjera,True,255704,514042676,2010.3,False,False,False,incaa_estrenos_comerciales.csv
+64230044,SCREAM 6 (GRITA),scream 6 grita,2023-03-09,2023,3,Extranjeras,extranjera,True,242227,215360256,889.08,False,False,False,incaa_estrenos_comerciales.csv
+64230049,¡SHAZAM! LA FURIA DE LOS DIOSES,shazam la furia de los dioses,2023-03-16,2023,3,Extranjeras,extranjera,True,204335,178595476,874.03,False,False,False,incaa_estrenos_comerciales.csv
+64230020,EL VIAJE DE CHIHIRO,el viaje de chihiro,2023-03-23,2023,3,Extranjeras,extranjera,True,184468,150198483,814.23,False,False,False,incaa_estrenos_comerciales.csv
+64230190,EL JUSTICIERO: CAPITULO FINAL,el justiciero capitulo final,2023-10-12,2023,10,Extranjeras,extranjera,True,179025,300049734,1676.02,False,False,False,incaa_estrenos_comerciales.csv
+64230094,MISANTROPO,misantropo,2023-05-03,2023,5,Extranjeras,extranjera,True,177283,173995197,981.45,False,False,False,incaa_estrenos_comerciales.csv
+64230145,BLUE BEETLE,blue beetle,2023-08-17,2023,8,Extranjeras,extranjera,True,174035,234843968,1349.41,False,False,False,incaa_estrenos_comerciales.csv
+64230028,LAS MOMIAS Y EL ANILLO PERDIDO,las momias y el anillo perdido,2023-02-23,2023,2,Extranjeras,extranjera,True,160830,127992128,795.82,False,False,False,incaa_estrenos_comerciales.csv
+21234037,CASI MUERTA,casi muerta,2023-07-06,2023,7,Nacionales,nacional,True,154028,148010155,960.93,False,False,False,incaa_estrenos_comerciales.csv
+64230193,LOS ASESINOS DE LA LUNA,los asesinos de la luna,2023-10-19,2023,10,Extranjeras,extranjera,True,143185,262298666,1831.89,False,False,False,incaa_estrenos_comerciales.csv
+21244005,PUAN,puan,2023-10-05,2023,10,Nacionales,nacional,True,141115,180461953,1278.83,False,False,False,incaa_estrenos_comerciales.csv
+64230130,MANSIÓN EMBRUJADA,mansion embrujada,2023-07-27,2023,7,Extranjeras,extranjera,True,133601,170790478,1278.36,False,False,False,incaa_estrenos_comerciales.csv
+64230109,BOOGEYMAN: TU MIEDO ES REAL,boogeyman tu miedo es real,2023-06-01,2023,6,Extranjeras,extranjera,True,130009,135465941,1041.97,False,False,False,incaa_estrenos_comerciales.csv
+64230166,CACERIA EN VENECIA,caceria en venecia,2023-09-14,2023,9,Extranjeras,extranjera,True,120934,172669203,1427.8,False,False,False,incaa_estrenos_comerciales.csv
+64230152,GRAN TURISMO: DE JUGADOR A CORREDOR,gran turismo de jugador a corredor,2023-08-24,2023,8,Extranjeras,extranjera,True,118335,175124619,1479.91,False,False,False,incaa_estrenos_comerciales.csv
+64230063,CALABOZOS Y DRAGONES: HONOR ENTRE LADRONES,calabozos y dragones honor entre ladrones,2023-03-29,2023,3,Extranjeras,extranjera,True,106536,92773345,870.82,False,False,False,incaa_estrenos_comerciales.csv
+64230007,"TERRIFIER, EL PAYASO SINIESTRO",terrifier el payaso siniestro,2023-01-12,2023,1,Extranjeras,extranjera,True,105355,82844637,786.34,False,False,False,incaa_estrenos_comerciales.csv
+31244010,NO ME ROMPAN,no me rompan,2023-09-21,2023,9,Nacionales,nacional,True,96152,122148219,1270.37,False,False,False,incaa_estrenos_comerciales.csv
+64230018,LLAMAN A LA PUERTA,llaman a la puerta,2023-02-02,2023,2,Extranjeras,extranjera,True,92238,61125345,662.69,False,False,False,incaa_estrenos_comerciales.csv
+64230176,RESISTENCIA,resistencia,2023-09-25,2023,9,Extranjeras,extranjera,True,91245,116945421,1281.66,False,False,False,incaa_estrenos_comerciales.csv
+64230047,DEMON SLAYER: TO THE SWORDSMITH VILLAGE,demon slayer to the swordsmith village,2023-03-09,2023,3,Extranjeras,extranjera,True,90604,72309655,798.08,False,False,False,incaa_estrenos_comerciales.csv
+64230029,EL ARO 4,el aro 4,2023-02-09,2023,2,Extranjeras,extranjera,True,90445,56068679,619.92,False,False,False,incaa_estrenos_comerciales.csv
+64230014,ALERTA EXTREMA,alerta extrema,2023-01-26,2023,1,Extranjeras,extranjera,True,74998,52367426,698.25,False,False,False,incaa_estrenos_comerciales.csv
+21234041,BLONDI,blondi,2023-06-01,2023,6,Nacionales,nacional,True,72612,57885935,797.2,False,False,False,incaa_estrenos_comerciales.csv
+64230013,LOS FABELMAN,los fabelman,2023-01-26,2023,1,Extranjeras,extranjera,True,70208,54329290,773.83,False,False,False,incaa_estrenos_comerciales.csv
+64230057,ASFIXIADOS,asfixiados,2023-03-23,2023,3,Extranjeras,extranjera,True,67992,55724439,819.57,False,False,False,incaa_estrenos_comerciales.csv
+64230066,13 EXORCISMOS,13 exorcismos,2023-03-30,2023,3,Extranjeras,extranjera,True,65777,57262383,870.55,False,False,False,incaa_estrenos_comerciales.csv
+64230009,BABYLON,babylon,2023-01-21,2023,1,Extranjeras,extranjera,True,64843,49289376,760.13,False,False,False,incaa_estrenos_comerciales.csv
+64230159,CONTRARRELOJ,contrarreloj,2023-08-31,2023,8,Extranjeras,extranjera,True,60710,83494719,1375.3,False,False,False,incaa_estrenos_comerciales.csv
+64230175,LOS INDESTRUCTIBLES 4,los indestructibles 4,2023-09-21,2023,9,Extranjeras,extranjera,True,55421,74996388,1353.21,False,False,False,incaa_estrenos_comerciales.csv
+64230186,TAYLOR SWIFT: THE ERAS TOUR,taylor swift the eras tour,2023-10-13,2023,10,Extranjeras,extranjera,True,48972,236551433,4830.34,False,True,False,incaa_estrenos_comerciales.csv
+64230165,GUARDIANES DEL MUSEO,guardianes del museo,2023-09-07,2023,9,Extranjeras,extranjera,True,48709,62905457,1291.45,False,False,False,incaa_estrenos_comerciales.csv
+64230035,OFRENDA AL DEMONIO,ofrenda al demonio,2023-02-23,2023,2,Extranjeras,extranjera,True,48079,36908268,767.66,False,False,False,incaa_estrenos_comerciales.csv
+64230228,VIERNES NEGRO,viernes negro,2023-12-07,2023,12,Extranjeras,extranjera,True,45173,92506126,2047.82,False,False,False,incaa_estrenos_comerciales.csv
+21224032,EL METODO TANGALANGA,el metodo tangalanga,2023-01-19,2023,1,Nacionales,nacional,True,43129,27608442,640.14,False,False,False,incaa_estrenos_comerciales.csv
+64230089,LOS CABALLEROS DEL ZODÍACO: SAINT SEIYA - EL INICIO,los caballeros del zodiaco saint seiya el inicio,2023-04-27,2023,4,Extranjeras,extranjera,True,42534,38783225,911.82,False,False,False,incaa_estrenos_comerciales.csv
+64230243,PRISCILLA,priscilla,2023-12-28,2023,12,Extranjeras,extranjera,True,40785,98839603,2423.43,False,False,False,incaa_estrenos_comerciales.csv
+61230040,LA URUGUAYA,la uruguaya,2023-08-17,2023,8,Nacionales,nacional,True,40188,49108215,1221.96,False,False,False,incaa_estrenos_comerciales.csv
+64230015,LOS ESPIRITUS DE LA ISLA,los espiritus de la isla,2023-02-02,2023,2,Extranjeras,extranjera,True,40145,30159803,751.27,False,False,False,incaa_estrenos_comerciales.csv
+64230003,UN VECINO GRUÑÓN,un vecino grunon,2023-01-12,2023,1,Extranjeras,extranjera,True,38518,29689812,770.8,False,False,False,incaa_estrenos_comerciales.csv
+64230204,HIPNOSIS: ARMA INVISIBLE,hipnosis arma invisible,2023-10-28,2023,10,Extranjeras,extranjera,True,37943,62117398,1637.12,False,False,False,incaa_estrenos_comerciales.csv
+64230068,AIR: LA HISTORIA DETRAS DEL LOGO,air la historia detras del logo,2023-04-06,2023,4,Extranjeras,extranjera,True,37678,35720621,948.05,False,False,False,incaa_estrenos_comerciales.csv
+64230153,DRACULA: MAR DE SANGRE,dracula mar de sangre,2023-08-24,2023,8,Extranjeras,extranjera,True,37637,49330385,1310.69,False,False,False,incaa_estrenos_comerciales.csv
+64230022,BTS YET TO COME IN CINEMAS,bts yet to come in cinemas,2023-01-26,2023,1,Extranjeras,extranjera,True,36756,101231572,2754.15,False,False,False,incaa_estrenos_comerciales.csv
+64230021,MI VECINO TOTORO,mi vecino totoro,2023-02-09,2023,2,Extranjeras,extranjera,True,33573,58074311,1729.79,False,False,False,incaa_estrenos_comerciales.csv
+64230051,65: AL BORDE DE LA EXTINCION,65 al borde de la extincion,2023-03-16,2023,3,Extranjeras,extranjera,True,32627,26475441,811.46,False,False,False,incaa_estrenos_comerciales.csv
+64230140,ASTEROID CITY,asteroid city,2023-08-10,2023,8,Extranjeras,extranjera,True,32490,40436196,1244.57,False,False,False,incaa_estrenos_comerciales.csv
+64230078,SUZUME,suzume,2023-04-13,2023,4,Extranjeras,extranjera,True,31181,28212507,904.8,False,False,False,incaa_estrenos_comerciales.csv
+64230026,TÁR,tar,2023-02-09,2023,2,Extranjeras,extranjera,True,31159,23237009,745.76,False,False,False,incaa_estrenos_comerciales.csv
+64230220,HOJAS DE OTOÑO,hojas de otono,2023-11-30,2023,11,Extranjeras,extranjera,True,30355,55134914,1816.34,False,False,False,incaa_estrenos_comerciales.csv
+64230230,LA SOCIEDAD DE LA NIEVE,la sociedad de la nieve,2023-12-14,2023,12,Extranjeras,extranjera,True,30349,67471951,2223.2,False,False,False,incaa_estrenos_comerciales.csv
+64230137,HAZME EL FAVOR,hazme el favor,2023-08-03,2023,8,Extranjeras,extranjera,True,29284,33940964,1159.03,False,False,False,incaa_estrenos_comerciales.csv
+64230237,NO LO ABRAS,no lo abras,2023-12-21,2023,12,Extranjeras,extranjera,True,29077,62242669,2140.62,False,False,False,incaa_estrenos_comerciales.csv
+64230170,LA TRAVIESA HADA DE LOS DIENTES,la traviesa hada de los dientes,2023-09-14,2023,9,Extranjeras,extranjera,True,27122,35993258,1327.09,False,False,False,incaa_estrenos_comerciales.csv
+64230156,TOC TOC TOC,toc toc toc,2023-08-24,2023,8,Extranjeras,extranjera,True,26580,32480289,1221.98,False,False,False,incaa_estrenos_comerciales.csv
+64230056,LOUIS TOMLINSON: ALL OF THOSE VOICES,louis tomlinson all of those voices,2023-03-16,2023,3,Extranjeras,extranjera,True,25815,37542433,1454.29,False,False,False,incaa_estrenos_comerciales.csv
+64230081,COLDPLAY AT RIVER PLATE,coldplay at river plate,2023-04-19,2023,4,Extranjeras,extranjera,True,25453,38275673,1503.78,False,False,False,incaa_estrenos_comerciales.csv
+64230138,THE FIRST SLAM DUNK,the first slam dunk,2023-08-03,2023,8,Extranjeras,extranjera,True,24963,30356688,1216.07,False,False,False,incaa_estrenos_comerciales.csv
+64230168,AFTER PARA SIEMPRE,after para siempre,2023-09-14,2023,9,Extranjeras,extranjera,True,23940,33223392,1387.78,False,False,False,incaa_estrenos_comerciales.csv
+21234016,EMPIEZA EL BAILE,empieza el baile,2023-04-20,2023,4,Nacionales,nacional,True,23684,15515836,655.12,False,False,False,incaa_estrenos_comerciales.csv
+64230040,LA MALDICION DE LA NOVIA,la maldicion de la novia,2023-03-02,2023,3,Extranjeras,extranjera,True,22728,18065475,794.86,False,False,False,incaa_estrenos_comerciales.csv
+64230062,"WINNIE POOH, MIEL Y SANGRE",winnie pooh miel y sangre,2023-03-23,2023,3,Extranjeras,extranjera,True,21879,17949125,820.38,False,False,False,incaa_estrenos_comerciales.csv
+64230023,ROCK DOG 3 ROCKEANDO JUNTOS,rock dog 3 rockeando juntos,2023-02-02,2023,2,Extranjeras,extranjera,True,21659,14805056,683.55,False,False,False,incaa_estrenos_comerciales.csv
+21244014,NORMA,norma,2023-10-19,2023,10,Nacionales,nacional,True,21530,25147555,1168.02,False,False,False,incaa_estrenos_comerciales.csv
+64230058,LA PRINCESA MONONOKE,la princesa mononoke,2023-04-20,2023,4,Extranjeras,extranjera,True,19656,60598783,3082.97,False,False,False,incaa_estrenos_comerciales.csv
+64230004,AGENTE FORTUNE,agente fortune,2023-01-12,2023,1,Extranjeras,extranjera,True,19195,14824768,772.32,False,False,False,incaa_estrenos_comerciales.csv
+64230223,JUEGA O MUERE,juega o muere,2023-11-30,2023,11,Extranjeras,extranjera,True,17849,33046997,1851.48,False,False,False,incaa_estrenos_comerciales.csv
+64230202,EL SACRAMENTO DEL DIABLO,el sacramento del diablo,2023-11-02,2023,11,Extranjeras,extranjera,True,17397,24674809,1418.34,False,False,False,incaa_estrenos_comerciales.csv
+61230072,EL DUELO,el duelo,2023-10-12,2023,10,Nacionales,nacional,True,16429,23184202,1411.18,False,False,False,incaa_estrenos_comerciales.csv
+21244001,LOS DELINCUENTES,los delincuentes,2023-10-26,2023,10,Nacionales,nacional,True,16392,19113031,1166.0,False,False,True,incaa_estrenos_comerciales.csv
+64230027,QUIERO BAILAR CON ALGUIEN,quiero bailar con alguien,2023-02-09,2023,2,Extranjeras,extranjera,True,16163,9735601,602.34,False,False,False,incaa_estrenos_comerciales.csv
+64230217,UNA CIGÜEÑA EN APUROS: LA JOYA PERDIDA,una ciguena en apuros la joya perdida,2023-11-23,2023,11,Extranjeras,extranjera,True,16034,24922073,1554.33,False,False,False,incaa_estrenos_comerciales.csv
+64230211,SIMON,simon,2023-11-30,2023,11,Extranjeras,extranjera,True,15992,35318382,2208.5,False,False,False,incaa_estrenos_comerciales.csv
+64230162,ESCAPE BAJO FUEGO,escape bajo fuego,2023-08-31,2023,8,Extranjeras,extranjera,True,15594,21767699,1395.9,False,False,False,incaa_estrenos_comerciales.csv
+64230053,COMUNION CON EL DIABLO,comunion con el diablo,2023-03-16,2023,3,Extranjeras,extranjera,True,15076,12570594,833.81,False,False,False,incaa_estrenos_comerciales.csv
+64230046,QUIZAS PARA SIEMPRE,quizas para siempre,2023-03-09,2023,3,Extranjeras,extranjera,True,14908,12199982,818.35,False,False,False,incaa_estrenos_comerciales.csv
+64230173,VAMPIRO AL RESCATE,vampiro al rescate,2023-09-21,2023,9,Extranjeras,extranjera,True,14450,19042416,1317.81,False,False,False,incaa_estrenos_comerciales.csv
+61234007,FINDE,finde,2023-08-10,2023,8,Nacionales,nacional,True,14361,5335691,371.54,False,False,False,incaa_estrenos_comerciales.csv
+64230060,OSO INTOXICADO,oso intoxicado,2023-03-23,2023,3,Extranjeras,extranjera,True,14334,11719619,817.61,False,False,False,incaa_estrenos_comerciales.csv
+64230147,THE QUIET GIRL,the quiet girl,2023-08-17,2023,8,Extranjeras,extranjera,True,13255,15001870,1131.79,False,False,False,incaa_estrenos_comerciales.csv
+64230214,EL DEMONIO ENTRE NOSOTROS,el demonio entre nosotros,2023-11-16,2023,11,Extranjeras,extranjera,True,12565,23074249,1836.39,False,False,False,incaa_estrenos_comerciales.csv
+64230105,NO DESCANSARAS,no descansaras,2023-05-18,2023,5,Extranjeras,extranjera,True,12458,12044872,966.84,False,False,False,incaa_estrenos_comerciales.csv
+31234027,OBJETOS,objetos,2023-05-18,2023,5,Nacionales,nacional,True,12378,10576804,854.48,False,False,False,incaa_estrenos_comerciales.csv
+61230062,EL RAPTO,el rapto,2023-10-26,2023,10,Nacionales,nacional,True,12137,21290818,1754.21,False,False,False,incaa_estrenos_comerciales.csv
+21234032,LAS FIESTAS,las fiestas,2023-01-05,2023,1,Nacionales,nacional,True,12013,6245492,519.89,False,False,False,incaa_estrenos_comerciales.csv
+64230221,DIGIMON ADVENTURE 02: THE BEGINNING,digimon adventure 02 the beginning,2023-11-30,2023,11,Extranjeras,extranjera,True,11397,20916762,1835.29,False,False,False,incaa_estrenos_comerciales.csv
+64230036,CLOSE,close,2023-03-02,2023,3,Extranjeras,extranjera,True,11395,7488420,657.17,False,False,False,incaa_estrenos_comerciales.csv
+64230242,LA SECTA DEL HIMALAYA,la secta del himalaya,2023-12-28,2023,12,Extranjeras,extranjera,True,11306,24190799,2139.64,False,False,False,incaa_estrenos_comerciales.csv
+64230103,CUANDO ELLAS QUIERN MAS,cuando ellas quiern mas,2023-05-11,2023,5,Extranjeras,extranjera,True,11241,11296077,1004.9,False,False,False,incaa_estrenos_comerciales.csv
+64230092,SOMBRAS DE UN CRIMEN,sombras de un crimen,2023-04-27,2023,4,Extranjeras,extranjera,True,10822,10444381,965.11,False,False,False,incaa_estrenos_comerciales.csv
+31234029,FRAGMENTADA,fragmentada,2023-08-03,2023,8,Nacionales,nacional,True,10271,10168064,989.98,False,False,False,incaa_estrenos_comerciales.csv
+64230233,LA MALDICION DEL QUEEN MARY,la maldicion del queen mary,2023-12-14,2023,12,Extranjeras,extranjera,True,10073,22410320,2224.79,False,False,False,incaa_estrenos_comerciales.csv
+64230037,DESCONECTADA,desconectada,2023-03-02,2023,3,Extranjeras,extranjera,True,9955,7608780,764.32,False,False,False,incaa_estrenos_comerciales.csv
+51230008,ERRANTE: LA CONQUISTA DEL HOGAR,errante la conquista del hogar,2023-06-08,2023,6,Nacionales,nacional,True,9727,10314706,1060.42,False,False,True,incaa_estrenos_comerciales.csv
+61230042,DOBLE DISCURSO,doble discurso,2023-07-27,2023,7,Nacionales,nacional,True,9551,5934134,621.31,False,False,False,incaa_estrenos_comerciales.csv
+64230076,MARAVILLOSO DESASTRE,maravilloso desastre,2023-04-13,2023,4,Extranjeras,extranjera,True,9228,7849229,850.59,False,False,False,incaa_estrenos_comerciales.csv
+64230045,ELLAS HABLAN,ellas hablan,2023-03-09,2023,3,Extranjeras,extranjera,True,8845,7266357,821.52,False,False,False,incaa_estrenos_comerciales.csv
+31234003,CHAU BUENOS AIRES,chau buenos aires,2023-12-14,2023,12,Nacionales,nacional,True,8797,6382926,725.58,False,False,False,incaa_estrenos_comerciales.csv
+64230115,MAREMOTO,maremoto,2023-06-08,2023,6,Extranjeras,extranjera,True,8410,8853688,1052.76,False,False,False,incaa_estrenos_comerciales.csv
+64230101,CRIA SINIESTRA,cria siniestra,2023-05-09,2023,5,Extranjeras,extranjera,True,8200,8161146,995.26,False,False,False,incaa_estrenos_comerciales.csv
+64230085,RENFIELD: ASISTENTE DE VAMPIRO,renfield asistente de vampiro,2023-04-20,2023,4,Extranjeras,extranjera,True,8185,7033239,859.28,False,False,False,incaa_estrenos_comerciales.csv
+64230005,CON AMOR Y FURIA,con amor y furia,2023-01-12,2023,1,Extranjeras,extranjera,True,8074,6267052,776.2,False,False,False,incaa_estrenos_comerciales.csv
+64230006,TRES DESEOS PARA CENICIENTA,tres deseos para cenicienta,2023-01-12,2023,1,Extranjeras,extranjera,True,7897,6018170,762.08,False,False,False,incaa_estrenos_comerciales.csv
+64230203,SIN AIRE,sin aire,2023-11-02,2023,11,Extranjeras,extranjera,True,7661,12434434,1623.08,False,False,False,incaa_estrenos_comerciales.csv
+64230102,AMOR A PRIMER MENSAJE,amor a primer mensaje,2023-05-11,2023,5,Extranjeras,extranjera,True,7269,6876848,946.05,False,False,False,incaa_estrenos_comerciales.csv
+11920998,BLANCA NIEVES Y LOS 7 ENANOS,blanca nieves y los 7 enanos,2023-10-05,2023,10,Extranjeras,extranjera,True,7264,9438032,1299.29,False,False,False,incaa_estrenos_comerciales.csv
+64230231,VENGANZA SILENCIOSA,venganza silenciosa,2023-12-14,2023,12,Extranjeras,extranjera,True,7121,15484274,2174.45,False,False,False,incaa_estrenos_comerciales.csv
+64230079,LOS 3 MOSQUETEROS,los 3 mosqueteros,2023-04-13,2023,4,Extranjeras,extranjera,True,7067,6273364,887.7,False,False,False,incaa_estrenos_comerciales.csv
+64230122,EXTRAÑEZA,extraneza,2023-07-06,2023,7,Extranjeras,extranjera,True,6999,5727401,818.32,False,False,False,incaa_estrenos_comerciales.csv
+64230224,OLDBOY,oldboy,2023-11-30,2023,11,Extranjeras,extranjera,True,6955,14738699,2119.15,False,False,False,incaa_estrenos_comerciales.csv
+21244008,ARTURO A LOS 30,arturo a los 30,2023-10-05,2023,10,Nacionales,nacional,True,6861,4733756,689.95,False,False,False,incaa_estrenos_comerciales.csv
+64230033,IMPERIO DE LUZ,imperio de luz,2023-02-23,2023,2,Extranjeras,extranjera,True,6795,5657063,832.53,False,False,False,incaa_estrenos_comerciales.csv
+20024001,ADENTRO MIO ESTOY BAILANDO,adentro mio estoy bailando,2023-11-23,2023,11,Nacionales,nacional,True,6738,10109903,1500.43,False,False,False,incaa_estrenos_comerciales.csv
+64230097,EL CIELO NO PUEDE ESPERAR,el cielo no puede esperar,2023-05-11,2023,5,Extranjeras,extranjera,True,6687,6427810,961.24,False,False,False,incaa_estrenos_comerciales.csv
+64230132,EL EXORCISMO DEL DEMONIO,el exorcismo del demonio,2023-07-27,2023,7,Extranjeras,extranjera,True,6474,7682439,1186.66,False,False,False,incaa_estrenos_comerciales.csv
+21234031,UNA FLOR EN EL BARRO,una flor en el barro,2023-09-28,2023,9,Nacionales,nacional,True,6451,5347107,828.88,False,False,False,incaa_estrenos_comerciales.csv
+64230169,CIELO ROJO,cielo rojo,2023-09-14,2023,9,Extranjeras,extranjera,True,6332,6996043,1104.87,False,False,False,incaa_estrenos_comerciales.csv
+64230185,DUMBO,dumbo,2023-10-19,2023,10,Extranjeras,extranjera,True,6023,8426858,1399.11,False,False,False,incaa_estrenos_comerciales.csv
+31234022,EL NIDO,el nido,2023-01-26,2023,1,Nacionales,nacional,True,6019,3144395,522.41,False,False,False,incaa_estrenos_comerciales.csv
+64230059,EL HIJO,el hijo,2023-03-23,2023,3,Extranjeras,extranjera,True,6007,5155805,858.3,False,False,False,incaa_estrenos_comerciales.csv
+64230207,ATENTADO EN EL AIRE,atentado en el aire,2023-11-09,2023,11,Extranjeras,extranjera,True,5871,10320973,1757.96,False,False,False,incaa_estrenos_comerciales.csv
+64230158,CORSAGE. LA EMPERATRIZ REBELDE,corsage la emperatriz rebelde,2023-08-31,2023,8,Extranjeras,extranjera,True,5863,6483826,1105.89,False,False,False,incaa_estrenos_comerciales.csv
+64230142,LOS RESCATADORES. REGRESO AL PLANETA TIERRA,los rescatadores regreso al planeta tierra,2023-08-10,2023,8,Extranjeras,extranjera,True,5797,6207733,1070.85,False,False,False,incaa_estrenos_comerciales.csv
+64230201,ESE CRIMEN ES MIO,ese crimen es mio,2023-11-02,2023,11,Extranjeras,extranjera,True,5509,7114545,1291.44,False,False,False,incaa_estrenos_comerciales.csv
+64230091,LA HEREDERA DE LA MAFIA,la heredera de la mafia,2023-04-27,2023,4,Extranjeras,extranjera,True,5504,5059039,919.16,False,False,False,incaa_estrenos_comerciales.csv
+20234011,"ROBERTO ""POLACO"" GOYENECHE. LAS FORMAS DE LA NOCHE",roberto polaco goyeneche las formas de la noche,2023-11-16,2023,11,Nacionales,nacional,True,5464,2702869,494.67,False,False,False,incaa_estrenos_comerciales.csv
+64230146,PASAJES,pasajes,2023-08-17,2023,8,Extranjeras,extranjera,True,5406,5360517,991.59,False,False,False,incaa_estrenos_comerciales.csv
+21244039,ALMAMULA,almamula,2023-08-24,2023,8,Nacionales,nacional,True,5351,4619327,863.26,False,False,False,incaa_estrenos_comerciales.csv
+61220062,TRENQUE LAUQUEN,trenque lauquen,2023-02-11,2023,2,Nacionales,nacional,True,5233,3654422,698.34,False,False,False,incaa_estrenos_comerciales.csv
+64230080,METALLICA 72 SEASON,metallica 72 season,2023-04-13,2023,4,Extranjeras,extranjera,True,5188,7858407,1514.73,False,False,False,incaa_estrenos_comerciales.csv
+31244001,UN PAJARO AZUL,un pajaro azul,2023-11-23,2023,11,Nacionales,nacional,True,5153,3305823,641.53,False,False,False,incaa_estrenos_comerciales.csv
+20234009,EL JUICIO,el juicio,2023-04-07,2023,4,Nacionales,nacional,True,5141,2630156,511.6,False,False,False,incaa_estrenos_comerciales.csv
+64230001,LOS JÓVENES AMANTES,los jovenes amantes,2023-01-08,2023,1,Extranjeras,extranjera,True,5122,3447757,673.13,False,False,False,incaa_estrenos_comerciales.csv
+64230225,RENAISSANCE: A FILM BY BEYONCÉ,renaissance a film by beyonce,2023-12-01,2023,12,Extranjeras,extranjera,True,5102,19340911,3790.85,False,False,False,incaa_estrenos_comerciales.csv
+64230090,"SKINAMARINK, EL DESPERTAR DEL MAL",skinamarink el despertar del mal,2023-04-27,2023,4,Extranjeras,extranjera,True,5059,5017499,991.8,False,False,False,incaa_estrenos_comerciales.csv
+21234007,LA RESIDENCIA,la residencia,2023-02-23,2023,2,Nacionales,nacional,True,4966,1768674,356.16,False,False,False,incaa_estrenos_comerciales.csv
+21244031,LA INVITADA,la invitada,2023-12-21,2023,12,Nacionales,nacional,True,4946,5842383,1181.23,False,False,False,incaa_estrenos_comerciales.csv
+64230171,EXTRAÑA FORMA DE VIDA,extrana forma de vida,2023-09-21,2023,9,Extranjeras,extranjera,True,4907,5588639,1138.91,False,False,False,incaa_estrenos_comerciales.csv
+64230016,BILLIE EILISH LIVE AT THE O2,billie eilish live at the o2,2023-01-27,2023,1,Extranjeras,extranjera,True,4888,4086678,836.06,False,False,False,incaa_estrenos_comerciales.csv
+61230049,OLIVA,oliva,2023-09-07,2023,9,Nacionales,nacional,True,4712,4503277,955.7,False,False,False,incaa_estrenos_comerciales.csv
+41234003,LENNONS,lennons,2023-10-05,2023,10,Nacionales,nacional,True,4700,3823500,813.51,False,False,False,incaa_estrenos_comerciales.csv
+64230229,GOL GANA,gol gana,2023-12-14,2023,12,Extranjeras,extranjera,True,4680,10699237,2286.16,False,False,False,incaa_estrenos_comerciales.csv
+64230183,AS BESTAS,as bestas,2023-10-05,2023,10,Extranjeras,extranjera,True,4537,5153514,1135.89,False,False,False,incaa_estrenos_comerciales.csv
+64230178,EL CONFORMISTA,el conformista,2023-09-28,2023,9,Extranjeras,extranjera,True,4528,6460644,1426.82,False,False,False,incaa_estrenos_comerciales.csv
+64230034,EL TRIANGULO DE LA TRISTEZA,el triangulo de la tristeza,2023-02-23,2023,2,Extranjeras,extranjera,True,4488,3447932,768.26,False,False,False,incaa_estrenos_comerciales.csv
+21234030,EL VASCO,el vasco,2023-09-14,2023,9,Nacionales,nacional,True,4296,3393159,789.84,False,False,False,incaa_estrenos_comerciales.csv
+64230112,MI PAPA ES UN PELIGRO,mi papa es un peligro,2023-06-01,2023,6,Extranjeras,extranjera,True,4269,3672692,860.32,False,False,False,incaa_estrenos_comerciales.csv
+64230119,UNA FEMMINA,una femmina,2023-06-22,2023,6,Extranjeras,extranjera,True,4263,3273319,767.84,False,False,False,incaa_estrenos_comerciales.csv
+31234013,LA BRUJA DE HITLER,la bruja de hitler,2023-06-08,2023,6,Nacionales,nacional,True,4245,1600414,377.01,False,False,False,incaa_estrenos_comerciales.csv
+61230033,"CAMBIO, CAMBIO",cambio cambio,2023-11-16,2023,11,Nacionales,nacional,True,4209,3834666,911.06,False,False,False,incaa_estrenos_comerciales.csv
+64230064,EL FALSIFICADOR,el falsificador,2023-03-30,2023,3,Extranjeras,extranjera,True,4132,2934605,710.21,False,False,False,incaa_estrenos_comerciales.csv
+25234018,HUMO BAJO EL AGUA,humo bajo el agua,2023-04-20,2023,4,Nacionales,nacional,True,4092,1905469,465.66,False,False,False,incaa_estrenos_comerciales.csv
+64230024,KAGUYA-SAMA: LOVE IS WAR THE FIRST KISS THAT NEVER ENDS MOVIE,kaguya sama love is war the first kiss that never ends movie,2023-02-09,2023,2,Extranjeras,extranjera,True,3972,3883991,977.84,False,False,False,incaa_estrenos_comerciales.csv
+25234014,RINOCERONTE,rinoceronte,2023-03-23,2023,3,Nacionales,nacional,True,3850,1399088,363.4,False,False,False,incaa_estrenos_comerciales.csv
+64230031,ROJO PROFUNDO,rojo profundo,2023-02-16,2023,2,Extranjeras,extranjera,True,3836,3016729,786.43,False,False,False,incaa_estrenos_comerciales.csv
+64230118,ASPROMONTE. LA TIERRA DE LOS ULTIMOS,aspromonte la tierra de los ultimos,2023-06-15,2023,6,Extranjeras,extranjera,True,3824,2763002,722.54,False,False,False,incaa_estrenos_comerciales.csv
+64230073,PURGATORIO,purgatorio,2023-03-30,2023,3,Extranjeras,extranjera,True,3732,3243316,869.06,False,False,False,incaa_estrenos_comerciales.csv
+64230017,PEARL,pearl,2023-02-23,2023,2,Extranjeras,extranjera,True,3649,2908915,797.18,False,False,False,incaa_estrenos_comerciales.csv
+64230054,LA NOCHE DEL CRIMEN,la noche del crimen,2023-03-23,2023,3,Extranjeras,extranjera,True,3613,2263014,626.35,False,False,False,incaa_estrenos_comerciales.csv
+21234024,LA SUDESTADA,la sudestada,2023-05-11,2023,5,Nacionales,nacional,True,3606,1610900,446.73,False,False,False,incaa_estrenos_comerciales.csv
+61230006,LOS BASTARDOS,los bastardos,2023-03-30,2023,3,Nacionales,nacional,True,3567,548790,153.85,False,True,False,incaa_estrenos_comerciales.csv
+64230195,LA CONSPIRACIÓN DEL DIABLO,la conspiracion del diablo,2023-10-19,2023,10,Extranjeras,extranjera,True,3517,5313720,1510.87,False,False,False,incaa_estrenos_comerciales.csv
+41224003,JUEGO DE BRUJAS,juego de brujas,2023-06-22,2023,6,Nacionales,nacional,True,3516,2378627,676.52,False,False,False,incaa_estrenos_comerciales.csv
+64230219,NEFARIUS,nefarius,2023-11-30,2023,11,Extranjeras,extranjera,True,3486,6161332,1767.45,False,False,False,incaa_estrenos_comerciales.csv
+31234006,CUENTOS DE LA TIERRA,cuentos de la tierra,2023-04-27,2023,4,Nacionales,nacional,True,3406,582816,171.11,False,False,False,incaa_estrenos_comerciales.csv
+64230099,EL TRIUNFO,el triunfo,2023-05-11,2023,5,Extranjeras,extranjera,True,3397,2779552,818.24,False,False,False,incaa_estrenos_comerciales.csv
+61230059,ELENA SABE,elena sabe,2023-11-16,2023,11,Nacionales,nacional,True,3386,4506591,1330.95,False,False,False,incaa_estrenos_comerciales.csv
+64150058,FROZEN FIEBRE CONGELADA,frozen fiebre congelada,2023-10-19,2023,10,Extranjeras,extranjera,True,3278,5504711,1679.29,False,False,False,incaa_estrenos_comerciales.csv
+64230141,EL COLIBRI,el colibri,2023-08-10,2023,8,Extranjeras,extranjera,True,3255,2644957,812.58,False,False,False,incaa_estrenos_comerciales.csv
+21234019,BILL 79,bill 79,2023-05-11,2023,5,Nacionales,nacional,True,3253,765282,235.25,False,False,False,incaa_estrenos_comerciales.csv
+31234008,PAPÁ AL RESCATE,papa al rescate,2023-02-16,2023,2,Nacionales,nacional,True,3155,547941,173.67,False,False,False,incaa_estrenos_comerciales.csv
+61230074,MANUEL UGARTE - EL DESTINO DE UN CONTINENTE,manuel ugarte el destino de un continente,2023-11-23,2023,11,Nacionales,nacional,True,3088,941109,304.76,False,False,False,incaa_estrenos_comerciales.csv
+64230135,LOS HIJOS DE OTROS,los hijos de otros,2023-08-03,2023,8,Extranjeras,extranjera,True,3025,2236767,739.43,False,False,False,incaa_estrenos_comerciales.csv
+64230222,NCT NATION: TO THE WORLD IN CINEMAS,nct nation to the world in cinemas,2023-12-06,2023,12,Extranjeras,extranjera,True,2930,6347282,2166.31,False,False,False,incaa_estrenos_comerciales.csv
+64230154,BEAU TIENE MIEDO,beau tiene miedo,2023-08-24,2023,8,Extranjeras,extranjera,True,2907,2645006,909.87,False,False,False,incaa_estrenos_comerciales.csv
+64230136,TERROR EN LA OPERA,terror en la opera,2023-08-03,2023,8,Extranjeras,extranjera,True,2863,2461615,859.8,False,False,False,incaa_estrenos_comerciales.csv
+64230227,MAESTRO,maestro,2023-12-07,2023,12,Extranjeras,extranjera,True,2852,5273415,1849.02,False,False,False,incaa_estrenos_comerciales.csv
+64230065,"SWORD ART ONLINE, LA PELÍCULA: PROGRESSIVE - SCHERZO DE UNA PROFUNDA OSCURIDAD",sword art online la pelicula progressive scherzo de una profunda oscuridad,2023-03-23,2023,3,Extranjeras,extranjera,True,2812,2405848,855.56,False,False,False,incaa_estrenos_comerciales.csv
+61220063,EL UCUMAR,el ucumar,2023-02-02,2023,2,Nacionales,nacional,True,2801,1199946,428.4,False,False,False,incaa_estrenos_comerciales.csv
+21244002,CAMINEMOS VALENTINA,caminemos valentina,2023-09-14,2023,9,Nacionales,nacional,True,2799,2314337,826.84,False,False,False,incaa_estrenos_comerciales.csv
+21244007,AUXILIO,auxilio,2023-10-19,2023,10,Nacionales,nacional,True,2797,3171135,1133.76,False,False,False,incaa_estrenos_comerciales.csv
+20234015,EL VILLANO,el villano,2023-12-08,2023,12,Nacionales,nacional,True,2794,2332072,834.67,False,False,False,incaa_estrenos_comerciales.csv
+64230172,BLUE JEAN,blue jean,2023-09-21,2023,9,Extranjeras,extranjera,True,2755,3074770,1116.07,False,False,False,incaa_estrenos_comerciales.csv
+64230019,ALCARRÁS,alcarras,2023-02-02,2023,2,Extranjeras,extranjera,True,2744,1243779,453.27,False,False,False,incaa_estrenos_comerciales.csv
+64230196,LA MONTAÑA,la montana,2023-10-26,2023,10,Extranjeras,extranjera,True,2722,3460480,1271.3,False,False,False,incaa_estrenos_comerciales.csv
+64230113,MEDUSA DELUXE,medusa deluxe,2023-06-08,2023,6,Extranjeras,extranjera,True,2699,1715900,635.75,False,False,False,incaa_estrenos_comerciales.csv
+20234012,EL CASTILLO,el castillo,2023-11-30,2023,11,Nacionales,nacional,True,2662,2433093,914.01,False,False,False,incaa_estrenos_comerciales.csv
+64230075,2 O 3 COSAS QUE YO SE DE ELLA,2 o 3 cosas que yo se de ella,2023-04-06,2023,4,Extranjeras,extranjera,True,2629,1548742,589.1,False,False,False,incaa_estrenos_comerciales.csv
+21234009,SOBRE LAS NUBES,sobre las nubes,2023-03-02,2023,3,Nacionales,nacional,True,2623,1128878,430.38,False,False,False,incaa_estrenos_comerciales.csv
+21234022,TRES HERMANOS,tres hermanos,2023-04-13,2023,4,Nacionales,nacional,True,2507,1023834,408.39,False,False,False,incaa_estrenos_comerciales.csv
+25234054,UNICORNIO,unicornio,2023-09-28,2023,9,Nacionales,nacional,True,2495,963060,386.0,False,False,False,incaa_estrenos_comerciales.csv
+64230191,SIMONE,simone,2023-10-12,2023,10,Extranjeras,extranjera,True,2492,3393514,1361.76,False,False,False,incaa_estrenos_comerciales.csv
+61224001,SEREMOS MILLONES,seremos millones,2023-06-29,2023,6,Nacionales,nacional,True,2488,541897,217.8,False,False,False,incaa_estrenos_comerciales.csv
+64230107,CONSPIRACION DIVINA,conspiracion divina,2023-05-18,2023,5,Extranjeras,extranjera,True,2482,2052032,826.77,False,False,False,incaa_estrenos_comerciales.csv
+21234039,VEN A MI CASA ESTA NAVIDAD,ven a mi casa esta navidad,2023-12-07,2023,12,Nacionales,nacional,True,2430,600396,247.08,False,False,False,incaa_estrenos_comerciales.csv
+31224015,LOS INVENTADOS,los inventados,2023-03-02,2023,3,Nacionales,nacional,True,2344,456923,194.93,False,False,False,incaa_estrenos_comerciales.csv
+64230164,EL CONDE,el conde,2023-09-07,2023,9,Extranjeras,extranjera,True,2321,1989530,857.19,False,False,False,incaa_estrenos_comerciales.csv
+64230157,PODERES OCULTOS,poderes ocultos,2023-08-31,2023,8,Extranjeras,extranjera,True,2255,3003951,1332.13,False,False,False,incaa_estrenos_comerciales.csv
+64230084,MIS HERMANOS Y YO,mis hermanos y yo,2023-04-20,2023,4,Extranjeras,extranjera,True,2253,1308636,580.84,False,False,False,incaa_estrenos_comerciales.csv
+21234014,EL SIERVO INUTIL,el siervo inutil,2023-05-18,2023,5,Nacionales,nacional,True,2234,838715,375.43,False,False,False,incaa_estrenos_comerciales.csv
+31234024,CRYSTAL SPA,crystal spa,2023-09-07,2023,9,Nacionales,nacional,True,2228,2120415,951.71,False,False,False,incaa_estrenos_comerciales.csv
+21234028,REPARO,reparo,2023-04-13,2023,4,Nacionales,nacional,True,2223,354153,159.31,False,False,False,incaa_estrenos_comerciales.csv
+64230197,EL ASESINO,el asesino,2023-10-26,2023,10,Extranjeras,extranjera,True,2207,3581033,1622.58,False,False,False,incaa_estrenos_comerciales.csv
+21234033,TEMAS PROPIOS,temas propios,2023-09-14,2023,9,Nacionales,nacional,True,2110,1893034,897.17,False,False,False,incaa_estrenos_comerciales.csv
+61234005,CLORINDO TESTA,clorindo testa,2023-07-15,2023,7,Nacionales,nacional,True,2103,1265136,601.59,False,False,False,incaa_estrenos_comerciales.csv
+64230088,MARCA DE VIDA,marca de vida,2023-04-27,2023,4,Extranjeras,extranjera,True,2046,1670734,816.59,False,False,False,incaa_estrenos_comerciales.csv
+21244009,LA BURBUJA,la burbuja,2023-12-21,2023,12,Nacionales,nacional,True,2022,818055,404.58,False,False,False,incaa_estrenos_comerciales.csv
+31234028,REINA ANIMAL,reina animal,2023-11-02,2023,11,Nacionales,nacional,True,2018,1755229,869.79,False,False,False,incaa_estrenos_comerciales.csv
+31234026,ALMA,alma,2023-07-27,2023,7,Nacionales,nacional,True,1984,688022,346.79,False,False,False,incaa_estrenos_comerciales.csv
+64230144,PORORO,pororo,2023-08-10,2023,8,Extranjeras,extranjera,True,1970,2372842,1204.49,False,False,False,incaa_estrenos_comerciales.csv
+64230067,LOS CINCO DIABLOS,los cinco diablos,2023-03-30,2023,3,Extranjeras,extranjera,True,1967,1085032,551.62,False,False,False,incaa_estrenos_comerciales.csv
+64230093,KOMPROMAT: EL EXPEDIENTE RUSO,kompromat el expediente ruso,2023-04-27,2023,4,Extranjeras,extranjera,True,1964,1570371,799.58,False,False,False,incaa_estrenos_comerciales.csv
+64230096,VERA,vera,2023-05-04,2023,5,Extranjeras,extranjera,True,1958,767382,391.92,False,False,False,incaa_estrenos_comerciales.csv
+51230028,"HEDY CRILLA, MAESTRA DE ACTORES",hedy crilla maestra de actores,2023-09-14,2023,9,Nacionales,nacional,True,1935,1134283,586.19,False,False,False,incaa_estrenos_comerciales.csv
+64230236,LOS TRES MOSQUETEROS: MILADY,los tres mosqueteros milady,2023-12-21,2023,12,Extranjeras,extranjera,True,1924,4228403,2197.71,False,False,False,incaa_estrenos_comerciales.csv
+31234014,LA LARGA VIDA DE LOS RECUERDOS,la larga vida de los recuerdos,2023-06-15,2023,6,Nacionales,nacional,True,1906,296915,155.78,False,False,False,incaa_estrenos_comerciales.csv
+21244004,"NO VA MAS, EL DIABLO NO JUEGA A LOS DADOS",no va mas el diablo no juega a los dados,2023-12-18,2023,12,Nacionales,nacional,True,1902,1463356,769.38,False,False,False,incaa_estrenos_comerciales.csv
+51230043,LA VIDA A OSCURAS,la vida a oscuras,2023-07-13,2023,7,Nacionales,nacional,True,1889,1478318,782.59,False,False,False,incaa_estrenos_comerciales.csv
+70230001,LOS MEDICOS DE NIETZSCHE,los medicos de nietzsche,2023-08-17,2023,8,Nacionales,nacional,True,1887,556172,294.74,False,False,False,incaa_estrenos_comerciales.csv
+21234026,CARBON,carbon,2023-02-23,2023,2,Nacionales,nacional,True,1873,893483,477.03,False,False,False,incaa_estrenos_comerciales.csv
+64230194,SU UNICO HIJO,su unico hijo,2023-10-19,2023,10,Extranjeras,extranjera,True,1861,3009877,1617.34,False,False,False,incaa_estrenos_comerciales.csv
+21234010,1976,1976,2023-03-16,2023,3,Nacionales,nacional,True,1837,750034,408.29,False,False,False,incaa_estrenos_comerciales.csv
+31244013,DESTINO PASIONAL,destino pasional,2023-06-29,2023,6,Nacionales,nacional,True,1808,662760,366.57,False,False,False,incaa_estrenos_comerciales.csv
+64230188,MILAGRO,milagro,2023-10-12,2023,10,Extranjeras,extranjera,True,1789,1933417,1080.72,False,False,False,incaa_estrenos_comerciales.csv
+25234011,HIJA,hija,2023-03-09,2023,3,Nacionales,nacional,True,1738,551337,317.22,False,False,False,incaa_estrenos_comerciales.csv
+64230125,MI QUERIDO MONSTRUO,mi querido monstruo,2023-07-06,2023,7,Extranjeras,extranjera,True,1730,1848016,1068.22,False,False,False,incaa_estrenos_comerciales.csv
+20224007,EL SILENCIO DE LOS HOMBRES,el silencio de los hombres,2023-01-13,2023,1,Nacionales,nacional,True,1660,780049,469.91,False,False,False,incaa_estrenos_comerciales.csv
+64230189,KANDISHA - MUJER DEMONIO,kandisha mujer demonio,2023-10-12,2023,10,Extranjeras,extranjera,True,1659,2687652,1620.04,False,False,False,incaa_estrenos_comerciales.csv
+61230014,EL ULTIMO OTOÑO,el ultimo otono,2023-05-25,2023,5,Nacionales,nacional,True,1649,258191,156.57,False,False,False,incaa_estrenos_comerciales.csv
+64230192,CROSSROADS GLOBAL FAN EVENT,crossroads global fan event,2023-10-23,2023,10,Extranjeras,extranjera,True,1645,2524399,1534.59,False,False,False,incaa_estrenos_comerciales.csv
+61230055,ARGENTINA SALVAJE,argentina salvaje,2023-08-31,2023,8,Nacionales,nacional,True,1613,494500,306.57,False,False,False,incaa_estrenos_comerciales.csv
+31254009,DOS MANZANAS,dos manzanas,2023-12-14,2023,12,Nacionales,nacional,True,1601,503390,314.42,False,False,False,incaa_estrenos_comerciales.csv
+64230012,HOLY SPIDER,holy spider,2023-01-26,2023,1,Extranjeras,extranjera,True,1594,655798,411.42,False,False,False,incaa_estrenos_comerciales.csv
+61230013,LOS OLVIDADOS: CICATRICES,los olvidados cicatrices,2023-04-27,2023,4,Nacionales,nacional,True,1580,1230310,778.68,False,False,False,incaa_estrenos_comerciales.csv
+64230038,COMO COMPLACER A UNA MUJER,como complacer a una mujer,2023-03-02,2023,3,Extranjeras,extranjera,True,1565,1044898,667.67,False,False,False,incaa_estrenos_comerciales.csv
+64230155,NCT 127 1ST TOUR SEOUL: NEO CITY - THE ORIGIN,nct 127 1st tour seoul neo city the origin,2023-08-25,2023,8,Extranjeras,extranjera,True,1559,2429878,1558.61,False,False,False,incaa_estrenos_comerciales.csv
+61230004,CONTROL ZETA,control zeta,2023-04-27,2023,4,Nacionales,nacional,True,1553,260554,167.77,False,False,False,incaa_estrenos_comerciales.csv
+61230070,PARTIDA,partida,2023-11-23,2023,11,Nacionales,nacional,True,1537,1603942,1043.55,False,False,False,incaa_estrenos_comerciales.csv
+64230239,GRI!@#: UN SINIESTRO CUENTO DE NAVIDAD,gri un siniestro cuento de navidad,2023-12-21,2023,12,Extranjeras,extranjera,True,1530,2903729,1897.86,False,False,False,incaa_estrenos_comerciales.csv
+51230002,EN CUMPLIMIENTO DEL DEBER,en cumplimiento del deber,2023-02-09,2023,2,Nacionales,nacional,True,1526,201733,132.2,False,True,False,incaa_estrenos_comerciales.csv
+31234004,LA REINA DESNUDA,la reina desnuda,2023-02-16,2023,2,Nacionales,nacional,True,1510,309498,204.97,False,False,False,incaa_estrenos_comerciales.csv
+31234012,LA BARBARIE,la barbarie,2023-05-11,2023,5,Nacionales,nacional,True,1485,601293,404.91,False,False,False,incaa_estrenos_comerciales.csv
+64230043,EL ENGAÑO,el engano,2023-03-09,2023,3,Extranjeras,extranjera,True,1466,654946,446.76,False,False,False,incaa_estrenos_comerciales.csv
+31234011,UN BOSQUE EN SILENCIO,un bosque en silencio,2023-03-30,2023,3,Nacionales,nacional,True,1432,670376,468.14,False,False,False,incaa_estrenos_comerciales.csv
+61230044,AMIGAS EN UN CAMINO DE CAMPO,amigas en un camino de campo,2023-08-03,2023,8,Nacionales,nacional,True,1409,784191,556.56,False,False,False,incaa_estrenos_comerciales.csv
+20234016,MÉXICO ´71,mexico 71,2023-12-14,2023,12,Nacionales,nacional,True,1399,439300,314.01,False,False,False,incaa_estrenos_comerciales.csv
+64230209,LO QUE NO VEMOS,lo que no vemos,2023-11-09,2023,11,Extranjeras,extranjera,True,1393,1728749,1241.03,False,False,False,incaa_estrenos_comerciales.csv
+21234034,SOLTERA CODICIADA 2,soltera codiciada 2,2023-08-03,2023,8,Nacionales,nacional,True,1392,367796,264.22,False,False,False,incaa_estrenos_comerciales.csv
+64230208,CÓMO TENER SEXO,como tener sexo,2023-11-09,2023,11,Extranjeras,extranjera,True,1341,1653263,1232.86,False,False,False,incaa_estrenos_comerciales.csv
+64230123,KARAOKE,karaoke,2023-07-06,2023,7,Extranjeras,extranjera,True,1340,837085,624.69,False,False,False,incaa_estrenos_comerciales.csv
+64230134,MAMAMOO MY CON THE MOVIE,mamamoo my con the movie,2023-08-09,2023,8,Extranjeras,extranjera,True,1307,2354035,1801.1,False,False,False,incaa_estrenos_comerciales.csv
+61230039,NUESTROS DIAS MAS FELICES,nuestros dias mas felices,2023-07-30,2023,7,Nacionales,nacional,True,1283,523036,407.67,False,False,False,incaa_estrenos_comerciales.csv
+61220066,ME ENCONTRARAS EN LO PROFUNDO DEL ABISMO,me encontraras en lo profundo del abismo,2023-07-06,2023,7,Nacionales,nacional,True,1266,226291,178.74,False,False,False,incaa_estrenos_comerciales.csv
+61220061,HACE MUCHO QUE NO DUERMO,hace mucho que no duermo,2023-09-21,2023,9,Nacionales,nacional,True,1205,626191,519.66,False,False,False,incaa_estrenos_comerciales.csv
+64230050,SINTIENDOLO MUCHO,sintiendolo mucho,2023-03-16,2023,3,Extranjeras,extranjera,True,1173,930594,793.35,False,False,False,incaa_estrenos_comerciales.csv
+61230022,EL VAIVÉN DE LAS ESCUELAS,el vaiven de las escuelas,2023-07-06,2023,7,Nacionales,nacional,True,1171,212052,181.09,False,False,False,incaa_estrenos_comerciales.csv
+21234013,ULTIMO RECURSO,ultimo recurso,2023-05-09,2023,5,Nacionales,nacional,True,1170,287046,245.34,False,False,False,incaa_estrenos_comerciales.csv
+51230013,NUESTRA VENGANZA ES SER FELICES,nuestra venganza es ser felices,2023-07-27,2023,7,Nacionales,nacional,True,1149,353182,307.38,False,False,False,incaa_estrenos_comerciales.csv
+21234035,MILONGA,milonga,2023-08-24,2023,8,Nacionales,nacional,True,1139,283376,248.79,False,False,False,incaa_estrenos_comerciales.csv
+61230035,LA MUJER DE VIDRIO,la mujer de vidrio,2023-07-02,2023,7,Nacionales,nacional,True,1138,448864,394.43,False,False,False,incaa_estrenos_comerciales.csv
+61234002,LA CALMA,la calma,2023-10-12,2023,10,Nacionales,nacional,True,1110,791791,713.33,False,False,False,incaa_estrenos_comerciales.csv
+21234036,LEGITIMA DEFENSA,legitima defensa,2023-02-23,2023,2,Nacionales,nacional,True,1098,150008,136.62,False,True,False,incaa_estrenos_comerciales.csv
+61230027,RETRATO DE UN AMANECER,retrato de un amanecer,2023-07-13,2023,7,Nacionales,nacional,True,1095,272989,249.31,False,False,False,incaa_estrenos_comerciales.csv
+31234018,LA CRECIDA,la crecida,2023-07-06,2023,7,Nacionales,nacional,True,1095,241662,220.7,False,False,True,incaa_estrenos_comerciales.csv
+64230008,DETECTIVE CONAN: LA BALA SCARLATA,detective conan la bala scarlata,2023-01-19,2023,1,Extranjeras,extranjera,True,1064,769570,723.28,False,False,False,incaa_estrenos_comerciales.csv
+20254012,"SEBASTIAN MORO, EL CAMINANTE",sebastian moro el caminante,2023-06-01,2023,6,Nacionales,nacional,True,1032,207454,201.02,False,False,False,incaa_estrenos_comerciales.csv
+21234011,EL ULTIMO HEREJE,el ultimo hereje,2023-03-02,2023,3,Nacionales,nacional,True,1028,154593,150.38,False,True,False,incaa_estrenos_comerciales.csv
+51230016,"MARIQUITA, MUJER REVOLUCÓN",mariquita mujer revolucon,2023-05-25,2023,5,Nacionales,nacional,True,1012,367986,363.62,False,False,False,incaa_estrenos_comerciales.csv
+20234007,"VIEDMA, LA CAPITAL QUE NO FUE",viedma la capital que no fue,2023-05-04,2023,5,Nacionales,nacional,True,1012,201550,199.16,False,False,False,incaa_estrenos_comerciales.csv
+20224008,"BAJAR, SUBIR, BAJAR",bajar subir bajar,2023-02-23,2023,2,Nacionales,nacional,True,999,151027,151.18,False,True,False,incaa_estrenos_comerciales.csv
+51230033,PULSANDO LA VIDA,pulsando la vida,2023-08-17,2023,8,Nacionales,nacional,True,962,772264,802.77,False,False,False,incaa_estrenos_comerciales.csv
+21234027,LA PIEDAD,la piedad,2023-03-02,2023,3,Nacionales,nacional,True,931,332178,356.8,False,False,False,incaa_estrenos_comerciales.csv
+31234009,EL ROSTRO DE LA MEDUSA,el rostro de la medusa,2023-03-09,2023,3,Nacionales,nacional,True,926,130789,141.24,False,True,False,incaa_estrenos_comerciales.csv
+31234030,VIRGEN ROSA,virgen rosa,2023-12-14,2023,12,Nacionales,nacional,True,923,1175300,1273.35,False,False,False,incaa_estrenos_comerciales.csv
+61230019,MAELSTRÖM 2001,maelstrom 2001,2023-05-18,2023,5,Nacionales,nacional,True,910,304471,334.58,False,False,False,incaa_estrenos_comerciales.csv
+51230059,"HISTORIA DEL AGUA DE MENDOZA, DE CÓMO SE PROTEGIÓ, SE PERDIÓ, COMENZÓ LA LUCHA Y SE RECUPERÓ EN DIEZ DÍAS",historia del agua de mendoza de como se protegio se perdio comenzo la lucha y se recupero en diez dias,2023-12-14,2023,12,Nacionales,nacional,True,907,610691,673.31,False,False,False,incaa_estrenos_comerciales.csv
+20234014,QUIERO VOLVERME TIEMPO,quiero volverme tiempo,2023-10-05,2023,10,Nacionales,nacional,True,884,273372,309.24,False,False,False,incaa_estrenos_comerciales.csv
+51230034,PIBAS SUPERPODEROSAS,pibas superpoderosas,2023-10-26,2023,10,Nacionales,nacional,True,883,293738,332.66,False,False,False,incaa_estrenos_comerciales.csv
+21244013,LAS PREÑADAS,las prenadas,2023-02-09,2023,2,Nacionales,nacional,True,875,152550,174.34,False,False,False,incaa_estrenos_comerciales.csv
+64230240,"QUI RIDO IO, EL REY DE LA COMEDIA",qui rido io el rey de la comedia,2023-12-21,2023,12,Extranjeras,extranjera,True,859,1576953,1835.8,False,False,False,incaa_estrenos_comerciales.csv
+64230131,LOCAS EN APUROS,locas en apuros,2023-07-27,2023,7,Extranjeras,extranjera,True,851,883353,1038.02,False,False,False,incaa_estrenos_comerciales.csv
+25234070,"NO SON 30 PESOS - CHILE, GENEALOGÍA DE UNA INSURRECCIÓN",no son 30 pesos chile genealogia de una insurreccion,2023-12-08,2023,12,Nacionales,nacional,True,851,339118,398.49,False,False,False,incaa_estrenos_comerciales.csv
+20234006,CANNABIS MEDICINAL,cannabis medicinal,2023-05-11,2023,5,Nacionales,nacional,True,841,139282,165.61,False,False,False,incaa_estrenos_comerciales.csv
+64230139,EL LIBRO DE LOS DESEOS,el libro de los deseos,2023-08-10,2023,8,Extranjeras,extranjera,True,829,966936,1166.39,False,False,False,incaa_estrenos_comerciales.csv
+64230087,LABERINTO MORTAL,laberinto mortal,2023-04-27,2023,4,Extranjeras,extranjera,True,798,808601,1013.28,False,False,False,incaa_estrenos_comerciales.csv
+51230021,CROSS DREAMERS,cross dreamers,2023-06-22,2023,6,Nacionales,nacional,True,793,219527,276.83,False,False,False,incaa_estrenos_comerciales.csv
+64230150,"JULIO, FELICES POR SIEMPRE",julio felices por siempre,2023-08-24,2023,8,Extranjeras,extranjera,True,790,372620,471.67,False,False,False,incaa_estrenos_comerciales.csv
+51230032,GAMBARO,gambaro,2023-08-24,2023,8,Nacionales,nacional,True,790,229963,291.09,False,False,False,incaa_estrenos_comerciales.csv
+21234040,RADIO ORIENTE,radio oriente,2023-10-12,2023,10,Nacionales,nacional,True,783,214745,274.26,False,False,False,incaa_estrenos_comerciales.csv
+20234017,GUAPO´Y,guapo y,2023-09-21,2023,9,Nacionales,nacional,True,778,204514,262.87,False,False,False,incaa_estrenos_comerciales.csv
+31234020,LOS TERRENOS,los terrenos,2023-06-29,2023,6,Nacionales,nacional,True,768,141718,184.53,False,False,False,incaa_estrenos_comerciales.csv
+31244006,UNA SOLA PRIMAVERA,una sola primavera,2023-12-07,2023,12,Nacionales,nacional,True,757,1098500,1451.12,False,False,False,incaa_estrenos_comerciales.csv
+64230129,ASUNTOS DE DIVAN,asuntos de divan,2023-07-20,2023,7,Extranjeras,extranjera,True,755,517640,685.62,False,False,False,incaa_estrenos_comerciales.csv
+30234005,"MACONGO, LA CORDOBA AFRICANA",macongo la cordoba africana,2023-09-28,2023,9,Nacionales,nacional,True,752,643500,855.72,False,False,False,incaa_estrenos_comerciales.csv
+51220071,SOBREVIVIENTES,sobrevivientes,2023-04-13,2023,4,Nacionales,nacional,True,736,115884,157.45,False,False,False,incaa_estrenos_comerciales.csv
+51230005,ELLA VA DE LARGO,ella va de largo,2023-03-16,2023,3,Nacionales,nacional,True,736,107773,146.43,False,True,False,incaa_estrenos_comerciales.csv
+51220008,PLAN PARA BUENOS AIRES,plan para buenos aires,2023-01-12,2023,1,Nacionales,nacional,True,734,125736,171.3,False,False,False,incaa_estrenos_comerciales.csv
+51230050,CATALOGO PARA UNA FAMILIA,catalogo para una familia,2023-10-06,2023,10,Nacionales,nacional,True,730,320350,438.84,False,False,False,incaa_estrenos_comerciales.csv
+51230003,DANUBIO,danubio,2023-03-30,2023,3,Nacionales,nacional,True,712,183150,257.23,False,False,True,incaa_estrenos_comerciales.csv
+61190005,LA FLOR,la flor,2023-08-10,2023,8,Nacionales,nacional,True,712,141680,198.99,False,False,False,incaa_estrenos_comerciales.csv
+21244016,EL OTRO HIJO,el otro hijo,2023-11-16,2023,11,Nacionales,nacional,True,710,195691,275.62,False,False,False,incaa_estrenos_comerciales.csv
+64230198,SHINEE: THE SHINING,shinee the shining,2023-10-26,2023,10,Extranjeras,extranjera,True,709,1564060,2206.01,False,False,False,incaa_estrenos_comerciales.csv
+20244003,ME GUSTA CUANDO HABLAS,me gusta cuando hablas,2023-11-16,2023,11,Nacionales,nacional,True,706,237454,336.34,False,False,False,incaa_estrenos_comerciales.csv
+61230010,BUENOS AIRES BZ,buenos aires bz,2023-04-06,2023,4,Nacionales,nacional,True,701,119045,169.82,False,False,False,incaa_estrenos_comerciales.csv
+51230011,TE PROMETO UNA LARGA AMISTAD,te prometo una larga amistad,2023-04-27,2023,4,Nacionales,nacional,True,700,113725,162.46,False,False,False,incaa_estrenos_comerciales.csv
+41244001,DESPIERTA MAMA,despierta mama,2023-12-14,2023,12,Nacionales,nacional,True,695,259100,372.81,False,False,False,incaa_estrenos_comerciales.csv
+21234042,EN VOS CONFIO,en vos confio,2023-11-30,2023,11,Nacionales,nacional,True,683,250509,366.78,False,False,False,incaa_estrenos_comerciales.csv
+51220054,SEXO Y REVOLUCION,sexo y revolucion,2023-11-09,2023,11,Nacionales,nacional,True,677,203591,300.73,False,False,False,incaa_estrenos_comerciales.csv
+31244002,EL FANTASMA,el fantasma,2023-09-07,2023,9,Nacionales,nacional,True,673,168143,249.84,False,False,False,incaa_estrenos_comerciales.csv
+61230017,CRUZAR EL MURO,cruzar el muro,2023-08-03,2023,8,Nacionales,nacional,True,663,225564,340.22,False,False,False,incaa_estrenos_comerciales.csv
+64230215,LA MAMÁ Y LA PUTA,la mama y la puta,2023-11-23,2023,11,Extranjeras,extranjera,True,662,929436,1403.98,False,False,False,incaa_estrenos_comerciales.csv
+61230067,DESDE LA ÚLTIMA VEZ QUE NOS VIMOS,desde la ultima vez que nos vimos,2023-10-19,2023,10,Nacionales,nacional,True,661,209327,316.68,False,False,False,incaa_estrenos_comerciales.csv
+51230020,"VARSAVSKY, EL CIENTIFICO REBELDE",varsavsky el cientifico rebelde,2023-06-15,2023,6,Nacionales,nacional,True,652,103845,159.27,False,False,False,incaa_estrenos_comerciales.csv
+61230021,LA BERISO,la beriso,2023-05-11,2023,5,Nacionales,nacional,True,640,82610,129.08,False,True,False,incaa_estrenos_comerciales.csv
+20234005,EL LIBRO DE LOS JUECES,el libro de los jueces,2023-05-18,2023,5,Nacionales,nacional,True,635,97252,153.15,False,True,False,incaa_estrenos_comerciales.csv
+64230042,MADRE VEN,madre ven,2023-03-02,2023,3,Extranjeras,extranjera,True,631,527380,835.78,False,False,False,incaa_estrenos_comerciales.csv
+51224001,UNA MUJER,una mujer,2023-02-12,2023,2,Nacionales,nacional,True,628,156375,249.0,False,False,False,incaa_estrenos_comerciales.csv
+41234004,DUO,duo,2023-05-25,2023,5,Nacionales,nacional,True,627,101876,162.48,False,False,False,incaa_estrenos_comerciales.csv
+51230042,QUEMENLOS,quemenlos,2023-11-03,2023,11,Nacionales,nacional,True,618,168332,272.38,False,False,False,incaa_estrenos_comerciales.csv
+51210045,EL CISNE EQUIVOCADO,el cisne equivocado,2023-05-11,2023,5,Nacionales,nacional,True,588,892096,1517.17,False,False,False,incaa_estrenos_comerciales.csv
+51220066,LCDB EL DOCUMENTAL,lcdb el documental,2023-04-06,2023,4,Nacionales,nacional,True,584,95954,164.3,False,False,False,incaa_estrenos_comerciales.csv
+64230210,EL LATIDO DEL CIELO,el latido del cielo,2023-11-23,2023,11,Extranjeras,extranjera,True,582,1255848,2157.81,False,False,False,incaa_estrenos_comerciales.csv
+61230024,LA MEMORIA QUE HABITAMOS,la memoria que habitamos,2023-09-03,2023,9,Nacionales,nacional,True,578,339491,587.35,False,False,False,incaa_estrenos_comerciales.csv
+61230043,INVISIBLES,invisibles,2023-08-10,2023,8,Nacionales,nacional,True,573,186800,326.0,False,False,False,incaa_estrenos_comerciales.csv
+61230046,SANDRINI,sandrini,2023-08-10,2023,8,Nacionales,nacional,True,568,137885,242.76,False,False,False,incaa_estrenos_comerciales.csv
+31234016,DESPERTÉ CON UN SUEÑO,desperte con un sueno,2023-04-27,2023,4,Nacionales,nacional,True,564,202904,359.76,False,False,False,incaa_estrenos_comerciales.csv
+20254017,EL KAISER DE LA ATLANTIDA,el kaiser de la atlantida,2023-08-10,2023,8,Nacionales,nacional,True,557,365912,656.93,False,False,False,incaa_estrenos_comerciales.csv
+51230063,VIENTO DEL ESTE,viento del este,2023-10-28,2023,10,Nacionales,nacional,True,548,906631,1654.44,False,False,False,incaa_estrenos_comerciales.csv
+51230026,LABERINTOS PERSONALES,laberintos personales,2023-06-08,2023,6,Nacionales,nacional,True,547,94250,172.3,False,False,False,incaa_estrenos_comerciales.csv
+61230054,ESTERTOR,estertor,2023-08-31,2023,8,Nacionales,nacional,True,538,483000,897.77,False,False,False,incaa_estrenos_comerciales.csv
+61230045,RECUERDOS DEL MAL,recuerdos del mal,2023-11-02,2023,11,Nacionales,nacional,True,535,497264,929.47,False,False,False,incaa_estrenos_comerciales.csv
+51220042,LOS CONVENCIDOS,los convencidos,2023-05-18,2023,5,Nacionales,nacional,True,519,178800,344.51,False,False,False,incaa_estrenos_comerciales.csv
+51230012,"CARLOS GESELL, MI PADRE",carlos gesell mi padre,2023-12-14,2023,12,Nacionales,nacional,True,504,130491,258.91,False,False,False,incaa_estrenos_comerciales.csv
+64230083,DE VUELTA AL DESEO,de vuelta al deseo,2023-04-20,2023,4,Extranjeras,extranjera,True,498,353336,709.51,False,False,False,incaa_estrenos_comerciales.csv
+61230031,NOH,noh,2023-07-06,2023,7,Nacionales,nacional,True,495,185773,375.3,False,False,False,incaa_estrenos_comerciales.csv
+41234005,LA RESISTENCIA DE LA ESPECIE,la resistencia de la especie,2023-11-09,2023,11,Nacionales,nacional,True,495,122818,248.12,False,False,False,incaa_estrenos_comerciales.csv
+30244007,EL LEGADO,el legado,2023-06-01,2023,6,Nacionales,nacional,True,488,99588,204.07,False,False,False,incaa_estrenos_comerciales.csv
+20234004,CÓMO DECIRTE QUE TE QUIERO,como decirte que te quiero,2023-05-04,2023,5,Nacionales,nacional,True,483,61154,126.61,False,True,False,incaa_estrenos_comerciales.csv
+64230151,AMO A MI PAPÁ,amo a mi papa,2023-08-24,2023,8,Extranjeras,extranjera,True,471,310619,659.49,False,False,False,incaa_estrenos_comerciales.csv
+64230206,TARJA DARK CHRISTAMS,tarja dark christams,2023-11-06,2023,11,Extranjeras,extranjera,True,470,1318665,2805.67,False,False,False,incaa_estrenos_comerciales.csv
+51220045,LA ULTIMA PIRUETA,la ultima pirueta,2023-01-12,2023,1,Nacionales,nacional,True,465,86732,186.52,False,False,False,incaa_estrenos_comerciales.csv
+51230019,JULIA NO TE CASES,julia no te cases,2023-08-03,2023,8,Nacionales,nacional,True,464,184382,397.38,False,False,False,incaa_estrenos_comerciales.csv
+21224002,AL MORIR LA MATINEÉ,al morir la matinee,2023-01-28,2023,1,Nacionales,nacional,True,463,82936,179.13,False,False,False,incaa_estrenos_comerciales.csv
+61230034,TODOS MIS AMORES,todos mis amores,2023-09-08,2023,9,Nacionales,nacional,True,462,142467,308.37,False,False,False,incaa_estrenos_comerciales.csv
+61230002,EL GRAN SATURAN,el gran saturan,2023-01-19,2023,1,Nacionales,nacional,True,460,64318,139.82,False,True,False,incaa_estrenos_comerciales.csv
+51220074,LA ESPERA,la espera,2023-04-20,2023,4,Nacionales,nacional,True,459,57338,124.92,False,True,False,incaa_estrenos_comerciales.csv
+51220053,"¡OH, POR LENIN!",oh por lenin,2023-06-22,2023,6,Nacionales,nacional,True,452,70464,155.89,False,False,False,incaa_estrenos_comerciales.csv
+61230030,LOS AGITADORES,los agitadores,2023-08-03,2023,8,Nacionales,nacional,True,447,148491,332.19,False,False,False,incaa_estrenos_comerciales.csv
+51230015,TRES COSAS BASICAS,tres cosas basicas,2023-04-15,2023,4,Nacionales,nacional,True,441,56300,127.66,False,True,False,incaa_estrenos_comerciales.csv
+64230232,TOKYO REVENGERS,tokyo revengers,2023-12-14,2023,12,Extranjeras,extranjera,True,439,996470,2269.86,False,False,False,incaa_estrenos_comerciales.csv
+31244004,"LAS MILAGROS EXISTEN, UNA PEQUEÑA HISTORIA DE BÚSQUEDA, AMISTAD Y FE, NARRADA EN DOS ACTOS",las milagros existen una pequena historia de busqueda amistad y fe narrada en dos actos,2023-11-23,2023,11,Nacionales,nacional,True,434,341509,786.89,False,False,False,incaa_estrenos_comerciales.csv
+51230022,MANKEWENÜY,mankewenuy,2023-08-31,2023,8,Nacionales,nacional,True,433,131000,302.54,False,False,False,incaa_estrenos_comerciales.csv
+64230177,IU CONCERT: THE GOLDEN HOUR,iu concert the golden hour,2023-09-28,2023,9,Extranjeras,extranjera,True,427,706934,1655.58,False,False,False,incaa_estrenos_comerciales.csv
+51230001,DOS MANOS TODAS LAS VOCES,dos manos todas las voces,2023-04-09,2023,4,Nacionales,nacional,True,420,198623,472.91,False,False,False,incaa_estrenos_comerciales.csv
+61220015,ALBUM PARA LA JUVENTUD,album para la juventud,2023-01-19,2023,1,Nacionales,nacional,True,413,66591,161.24,False,False,False,incaa_estrenos_comerciales.csv
+51220064,MUJER PERSEVERANTE,mujer perseverante,2023-10-24,2023,10,Nacionales,nacional,True,411,138930,338.03,False,False,False,incaa_estrenos_comerciales.csv
+21214010,"MAMA, MAMA, MAMA",mama mama mama,2023-01-12,2023,1,Nacionales,nacional,True,411,61855,150.5,False,True,False,incaa_estrenos_comerciales.csv
+51230068,PUERTO DESEADO,puerto deseado,2023-10-12,2023,10,Nacionales,nacional,True,406,121749,299.87,False,False,False,incaa_estrenos_comerciales.csv
+21204027,LAS FURIAS,las furias,2023-02-02,2023,2,Nacionales,nacional,True,396,55264,139.56,False,True,False,incaa_estrenos_comerciales.csv
+51220068,DOMADORAS DE DRAGONES,domadoras de dragones,2023-03-09,2023,3,Nacionales,nacional,True,387,61829,159.76,False,False,False,incaa_estrenos_comerciales.csv
+61220041,LENI,leni,2023-10-29,2023,10,Nacionales,nacional,True,382,118309,309.71,False,False,False,incaa_estrenos_comerciales.csv
+64230098,MACHINE GUN KELLY: MAINSTREAM SELLOUT - LIVE FROM CLEVELAND,machine gun kelly mainstream sellout live from cleveland,2023-05-13,2023,5,Extranjeras,extranjera,True,377,410166,1087.97,False,False,False,incaa_estrenos_comerciales.csv
+51234001,YO SOY ALMA,yo soy alma,2023-06-22,2023,6,Nacionales,nacional,True,373,70290,188.45,False,False,False,incaa_estrenos_comerciales.csv
+64230041,INU-OH,inu oh,2023-03-02,2023,3,Extranjeras,extranjera,True,353,569771,1614.08,False,False,False,incaa_estrenos_comerciales.csv
+61230057,OPERACIÓN TRAVESTI,operacion travesti,2023-09-07,2023,9,Nacionales,nacional,True,345,229955,666.54,False,False,False,incaa_estrenos_comerciales.csv
+61230036,REFLEXIONES SOBRE UN MUNDO NUEVO,reflexiones sobre un mundo nuevo,2023-08-10,2023,8,Nacionales,nacional,True,342,70600,206.43,False,False,False,incaa_estrenos_comerciales.csv
+64230069,0 +,0,2023-03-30,2023,3,Extranjeras,extranjera,True,340,76556,225.16,False,False,False,incaa_estrenos_comerciales.csv
+51230036,EL ESPACIO QUE OCUPO,el espacio que ocupo,2023-11-23,2023,11,Nacionales,nacional,True,301,99116,329.29,False,False,False,incaa_estrenos_comerciales.csv
+64230011,PHANTOM: EL MUSICAL,phantom el musical,2023-02-09,2023,2,Extranjeras,extranjera,True,296,318818,1077.09,False,False,False,incaa_estrenos_comerciales.csv
+61220060,"CUANDO LA PRIMAVERA SE ESCAPA, SE LIBERA DEL SUEÑO",cuando la primavera se escapa se libera del sueno,2023-02-16,2023,2,Nacionales,nacional,True,293,40055,136.71,False,True,False,incaa_estrenos_comerciales.csv
+64230100,"BUENA LUZ, BUEN AIRE",buena luz buen aire,2023-05-18,2023,5,Extranjeras,extranjera,True,289,70833,245.1,False,False,False,incaa_estrenos_comerciales.csv
+51230055,"ELAN, IMPULSO VITAL",elan impulso vital,2023-09-14,2023,9,Nacionales,nacional,True,286,79818,279.08,False,False,False,incaa_estrenos_comerciales.csv
+51230029,EL PORTAL,el portal,2023-11-16,2023,11,Nacionales,nacional,True,276,77164,279.58,False,False,False,incaa_estrenos_comerciales.csv
+51230004,PUCAURQUILLO,pucaurquillo,2023-04-06,2023,4,Nacionales,nacional,True,275,34273,124.63,False,True,False,incaa_estrenos_comerciales.csv
+61220023,LAS DELICIAS,las delicias,2023-04-26,2023,4,Nacionales,nacional,True,271,162254,598.72,False,False,False,incaa_estrenos_comerciales.csv
+51220069,LA SED,la sed,2023-01-19,2023,1,Nacionales,nacional,True,267,48282,180.83,False,False,False,incaa_estrenos_comerciales.csv
+51230031,POLITICO,politico,2023-08-10,2023,8,Nacionales,nacional,True,266,69109,259.81,False,False,False,incaa_estrenos_comerciales.csv
+51220040,"LOS 90, AUTORRETRATO DE UNA DECADA",los 90 autorretrato de una decada,2023-01-26,2023,1,Nacionales,nacional,True,266,42673,160.42,False,False,False,incaa_estrenos_comerciales.csv
+51220067,SILENCIO EN LA RIBERA,silencio en la ribera,2023-05-04,2023,5,Nacionales,nacional,True,255,43436,170.34,False,False,False,incaa_estrenos_comerciales.csv
+61234006,DEMONIO ECLIPSE ROJO,demonio eclipse rojo,2023-08-24,2023,8,Nacionales,nacional,True,254,72800,286.61,False,False,False,incaa_estrenos_comerciales.csv
+51230014,PELOTERO DEL MUNDO,pelotero del mundo,2023-06-24,2023,6,Nacionales,nacional,True,248,45995,185.46,False,False,False,incaa_estrenos_comerciales.csv
+51220070,RETRATOS DE EUGENIA,retratos de eugenia,2023-04-27,2023,4,Nacionales,nacional,True,226,33564,148.51,False,True,False,incaa_estrenos_comerciales.csv
+51230030,LEJOS DE LOS HOMBRES,lejos de los hombres,2023-09-21,2023,9,Nacionales,nacional,True,225,61354,272.68,False,False,False,incaa_estrenos_comerciales.csv
+51230052,OTRA SEMILLA,otra semilla,2023-10-12,2023,10,Nacionales,nacional,True,225,60364,268.28,False,False,False,incaa_estrenos_comerciales.csv
+51220035,EL FORTIN MAS ALLA DE LA FRONTERA,el fortin mas alla de la frontera,2023-07-20,2023,7,Nacionales,nacional,True,221,34705,157.04,False,False,False,incaa_estrenos_comerciales.csv
+51150050,MADRES DE LOS DIOSES,madres de los dioses,2023-09-14,2023,9,Nacionales,nacional,True,220,58816,267.35,False,False,False,incaa_estrenos_comerciales.csv
+51200004,SILVIA,silvia,2023-07-13,2023,7,Nacionales,nacional,True,219,30364,138.65,False,True,False,incaa_estrenos_comerciales.csv
+51230061,HACIA AFUERA BLANCO,hacia afuera blanco,2023-09-28,2023,9,Nacionales,nacional,True,207,56109,271.06,False,False,False,incaa_estrenos_comerciales.csv
+51230035,EL RUIDO DEL TIEMPO,el ruido del tiempo,2023-10-05,2023,10,Nacionales,nacional,True,204,57103,279.92,False,False,False,incaa_estrenos_comerciales.csv
+21204051,EDICIÓN ILIMITADA,edicion ilimitada,2023-02-02,2023,2,Nacionales,nacional,True,196,27191,138.73,False,True,False,incaa_estrenos_comerciales.csv
+51220003,ROCK DE LA CARCEL,rock de la carcel,2023-03-24,2023,3,Nacionales,nacional,True,195,31945,163.82,False,False,False,incaa_estrenos_comerciales.csv
+51230065,CASI TODO SUCEDE EN LOS SUEÑOS,casi todo sucede en los suenos,2023-09-21,2023,9,Nacionales,nacional,True,182,115200,632.97,False,False,False,incaa_estrenos_comerciales.csv
+61230018,EL CINE HA MUERTO,el cine ha muerto,2023-08-31,2023,8,Nacionales,nacional,True,173,55691,321.91,False,False,False,incaa_estrenos_comerciales.csv
+51230040,CUENTA REGRESIVA,cuenta regresiva,2023-11-02,2023,11,Nacionales,nacional,True,170,43964,258.61,False,False,False,incaa_estrenos_comerciales.csv
+61234003,AVE MARIA,ave maria,2023-10-05,2023,10,Nacionales,nacional,True,163,45527,279.31,False,False,False,incaa_estrenos_comerciales.csv
+61230041,EL HOMBRE MÁS FUERTE DEL MUNDO,el hombre mas fuerte del mundo,2023-08-25,2023,8,Nacionales,nacional,True,160,56782,354.89,False,False,False,incaa_estrenos_comerciales.csv
+61230050,PROYECTO HIGUERA,proyecto higuera,2023-08-31,2023,8,Nacionales,nacional,True,158,46254,292.75,False,False,False,incaa_estrenos_comerciales.csv
+64230234,ANDRE RIEU: WHITE CHRISTMAS,andre rieu white christmas,2023-12-16,2023,12,Extranjeras,extranjera,True,150,389946,2599.64,False,False,False,incaa_estrenos_comerciales.csv
+61230028,"MIGUEL LITTIN, CLANDESTINO EN CHILE",miguel littin clandestino en chile,2023-09-07,2023,9,Nacionales,nacional,True,150,41718,278.12,False,False,False,incaa_estrenos_comerciales.csv
+64230110,DISCO DE ORO,disco de oro,2023-06-01,2023,6,Extranjeras,extranjera,True,147,174210,1185.1,False,False,False,incaa_estrenos_comerciales.csv
+51220076,VILLA OLIMPICA,villa olimpica,2023-12-21,2023,12,Nacionales,nacional,True,146,43691,299.25,False,False,False,incaa_estrenos_comerciales.csv
+51230024,LAS HERIDAS,las heridas,2023-11-09,2023,11,Nacionales,nacional,True,144,36200,251.39,False,False,False,incaa_estrenos_comerciales.csv
+31234025,EL CANTO DE AURICANTURI,el canto de auricanturi,2023-08-31,2023,8,Nacionales,nacional,True,143,40182,280.99,False,False,False,incaa_estrenos_comerciales.csv
+61220056,UNA ESCUELA EN CERRO HUESO,una escuela en cerro hueso,2023-04-13,2023,4,Nacionales,nacional,True,141,52400,371.63,False,False,False,incaa_estrenos_comerciales.csv
+61230005,DIARIOS DEL ENCIERRO,diarios del encierro,2023-03-24,2023,3,Nacionales,nacional,True,140,27905,199.32,False,False,False,incaa_estrenos_comerciales.csv
+51230018,FUERZAS VIVAS,fuerzas vivas,2023-03-24,2023,3,Nacionales,nacional,True,139,18527,133.29,False,True,False,incaa_estrenos_comerciales.csv
+51230006,REFORMADORES,reformadores,2023-07-27,2023,7,Nacionales,nacional,True,134,37400,279.1,False,False,False,incaa_estrenos_comerciales.csv
+51230010,CAMUFLAJE,camuflaje,2023-05-11,2023,5,Nacionales,nacional,True,128,36691,286.65,False,False,True,incaa_estrenos_comerciales.csv
+51220063,ZOO - EL DERECHO ANIMAL,zoo el derecho animal,2023-02-09,2023,2,Nacionales,nacional,True,123,20300,165.04,False,False,False,incaa_estrenos_comerciales.csv
+64230212,SHIN ULTRAMAN,shin ultraman,2023-11-23,2023,11,Extranjeras,extranjera,True,122,242460,1987.38,False,False,False,incaa_estrenos_comerciales.csv
+64230149,KANGDANIEL: MY PARADE,kangdaniel my parade,2023-08-30,2023,8,Extranjeras,extranjera,True,122,172828,1416.62,False,False,False,incaa_estrenos_comerciales.csv
+64230167,CARLOS THE SANTANA JOURNEY GLOBAL PREMIERE,carlos the santana journey global premiere,2023-09-23,2023,9,Extranjeras,extranjera,True,119,196521,1651.44,False,False,False,incaa_estrenos_comerciales.csv
+51200031,ISRAEL,israel,2023-01-19,2023,1,Nacionales,nacional,True,113,14727,130.33,False,True,False,incaa_estrenos_comerciales.csv
+51230038,LAS VENTANAS,las ventanas,2023-09-08,2023,9,Nacionales,nacional,True,110,28509,259.17,False,False,False,incaa_estrenos_comerciales.csv
+64230002,CIRKUS,cirkus,2023-01-12,2023,1,Extranjeras,extranjera,True,103,75260,730.68,False,False,False,incaa_estrenos_comerciales.csv
+51230047,LLAMEN A JOE,llamen a joe,2023-11-09,2023,11,Nacionales,nacional,True,99,78562,793.56,False,False,False,incaa_estrenos_comerciales.csv
+61230020,BJ: LA VIDA Y LOCURAS DE BOSCO Y JOJO,bj la vida y locuras de bosco y jojo,2023-09-28,2023,9,Nacionales,nacional,True,99,30655,309.65,False,False,False,incaa_estrenos_comerciales.csv
+51230037,CAMBIO DE FRENTE,cambio de frente,2023-12-07,2023,12,Nacionales,nacional,True,99,27400,276.77,False,False,False,incaa_estrenos_comerciales.csv
+64230160,EN LAS AGUAS DEL PASTAZZA,en las aguas del pastazza,2023-08-31,2023,8,Extranjeras,extranjera,True,92,14793,160.79,False,False,False,incaa_estrenos_comerciales.csv
+61204006,DIMENSION AROLDO LEWY. LA HUELLA IMBORRABLE DE UN MAESTRO,dimension aroldo lewy la huella imborrable de un maestro,2023-07-13,2023,7,Nacionales,nacional,True,91,18800,206.59,False,False,False,incaa_estrenos_comerciales.csv
+64230104,LA DANZA DE LOS MIRLOS,la danza de los mirlos,2023-05-27,2023,5,Extranjeras,extranjera,True,82,197000,2402.44,False,False,False,incaa_estrenos_comerciales.csv
+61210039,22 LIBROS ABIERTOS,22 libros abiertos,2023-08-02,2023,8,Nacionales,nacional,True,63,0,,True,False,False,incaa_estrenos_comerciales.csv
+51220061,"COCANIS, CAMINO AL CARNAVAL",cocanis camino al carnaval,2023-02-16,2023,2,Nacionales,nacional,True,60,62600,1043.33,False,False,False,incaa_estrenos_comerciales.csv
+61230003,LA RONDA DE LOS PAÑUELOS AL SUR,la ronda de los panuelos al sur,2023-03-23,2023,3,Nacionales,nacional,True,52,14331,275.6,False,False,False,incaa_estrenos_comerciales.csv
+20214003,LA SANGRE EN EL OJO,la sangre en el ojo,2023-05-16,2023,5,Nacionales,nacional,True,52,10400,200.0,False,False,False,incaa_estrenos_comerciales.csv
+11540206,ALICIA EN EL PAÍS DE LAS MARAVILLAS,alicia en el pais de las maravillas,2023-09-09,2023,9,Extranjeras,extranjera,True,42,21000,500.0,False,False,False,incaa_estrenos_comerciales.csv
+21234020,MALTA,malta,2023-08-31,2023,8,Nacionales,nacional,True,37,10552,285.19,False,False,False,incaa_estrenos_comerciales.csv
+64230238,OFFICE ROYALE,office royale,2023-12-21,2023,12,Extranjeras,extranjera,True,36,90936,2526.0,False,False,False,incaa_estrenos_comerciales.csv
+64230086,MADRE TERESA Y YO,madre teresa y yo,2023-04-24,2023,4,Extranjeras,extranjera,True,36,21856,607.11,False,False,False,incaa_estrenos_comerciales.csv
+61220038,NO NOS CALLAMOS MÁS!,no nos callamos mas,2023-03-08,2023,3,Nacionales,nacional,True,29,4409,152.03,False,True,False,incaa_estrenos_comerciales.csv
+30244003,OBISPO DE NO LUGAR,obispo de no lugar,2023-12-07,2023,12,Nacionales,nacional,True,28,56000,2000.0,False,False,False,incaa_estrenos_comerciales.csv
+51220051,ACTITUD ABEJA,actitud abeja,2023-05-31,2023,5,Nacionales,nacional,True,18,3600,200.0,False,False,False,incaa_estrenos_comerciales.csv
+61200001,LO QUE TENEMOS,lo que tenemos,2023-06-08,2023,6,Nacionales,nacional,True,17,3280,192.94,False,False,False,incaa_estrenos_comerciales.csv
+64230218,LA MEMORIA INFINITA,la memoria infinita,2023-11-27,2023,11,Extranjeras,extranjera,True,7,13115,1873.57,False,False,False,incaa_estrenos_comerciales.csv
+61220001,LA RISA ES COSA SERIA,la risa es cosa seria,2023-04-06,2023,4,Nacionales,nacional,True,5,1100,220.0,False,False,False,incaa_estrenos_comerciales.csv
+31234023,TRESCIENTOS METROS CUADRADOS Y OCHO VENTANAS,trescientos metros cuadrados y ocho ventanas,2023-09-21,2023,9,Nacionales,nacional,True,4,800,200.0,False,False,False,incaa_estrenos_comerciales.csv

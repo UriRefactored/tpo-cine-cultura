@@ -18,3 +18,9 @@ ENV/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Caches and intermediate exports
+tmdb_cache.json
+tmdb_revisar.csv
+encc_con_contexto_mercado.csv
+incaa_limpio.csv

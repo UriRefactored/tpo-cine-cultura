@@ -4,20 +4,26 @@
 
 ---
 
-## 📁 1. Estructura de Datasets Finales
+## 📁 1. Estructura de Datasets y Linaje
 
-Todos los datasets fueron procesados, validados y cuentan con nombres autodescriptivos:
+Todos los datasets fueron procesados, validados y cuentan con nombres autodescriptivos.
 
-| Archivo | Filas | Columnas | Descripción |
-| :--- | :---: | :---: | :--- |
-| `incaa_peliculas_enriquecidas.csv` | 899 | 50 | Base de estrenos comerciales del INCAA (2022-2023) enriquecida con TMDB API. Incluye los 10 géneros de la ENCC, adaptaciones de videojuegos (`es_adaptacion_videojuego`) y taquilla oficial. |
-| `encc_encuesta_limpia_ml.csv` | 3.380 | 86 | Encuesta Nacional de Consumos Culturales limpia, 100% numérica, sin valores nulos (nulos estructurales resueltos) y con encodings listos para Machine Learning. |
-| `diccionario_variables_encc.json` | - | - | Diccionario de datos con el tipo, rango (mínimo, máximo) y media de cada variable de la encuesta limpia. |
-| `cruce_demanda_oferta_generos.csv` | 10 | 6 | Tabla comparativa de la demanda declarada en la población (ENCC) frente a las entradas vendidas en salas comerciales (INCAA). |
-| `cruce_gamers_vs_cine.csv` | 2 | 6 | Métricas comparativas de penetración cinematográfica y consumo de Acción/Animación entre jugadores de videojuegos y no jugadores. |
-| `resultado_hipotesis_descriptivos.csv` | 3 | 10 | Estadísticas ponderadas divididas por los tres segmentos de la hipótesis: Gamer Core (Consola/PC), Gamer Casual (Móvil) y No Gamer. |
-| `resultado_hipotesis_regresiones.csv` | 5 | 6 | Modelos de Regresión Logística multivariada con Odds Ratios controlando por Edad y Nivel Socioeconómico (NSE). |
-| `encc_segmentos_clusters.csv` | 3.380 | 87 | Base de la ENCC con la columna `cluster_id` asignada por el algoritmo K-Means (4 arquetipos culturales). |
+> **💡 Nota sobre `Peliculas_inca_cs_datos.csv`:**  
+> Dicho nombre correspondía al archivo exportado originalmente desde la plataforma Tableau del INCAA. Fue procesado y normalizado mediante `00_limpiar_incaa_raw.py` para generar **`incaa_estrenos_comerciales.csv`** (899 estrenos de salas), y posteriormente enriquecido con la API de TMDB en **`incaa_peliculas_enriquecidas.csv`**. Ambas versiones limpias se encuentran en el repositorio.
+
+| Tipo | Archivo | Filas | Columnas | Descripción |
+| :--- | :--- | :---: | :---: | :--- |
+| **Fuente Raw** | `base-datos-encc-2022-2023.csv` | 3.380 | 548 | Microdatos oficiales de la Encuesta Nacional de Consumos Culturales (SInCA). |
+| **Fuente Raw** | `incaa_estrenos_comerciales.csv` | 899 | 16 | Base oficial limpia de estrenos en salas de cine del INCAA (2022-2023). |
+| **Documento** | `cuestionario-encc-2022-2023.pdf` | - | - | Cuestionario metodológico oficial de la encuesta con reglas de saltos. |
+| **Enriquecido** | `incaa_peliculas_enriquecidas.csv` | 899 | 50 | Base INCAA enriquecida con TMDB: géneros ENCC, adaptaciones de videojuegos (`es_adaptacion_videojuego`) y taquilla. |
+| **Limpio ML** | `encc_encuesta_limpia_ml.csv` | 3.380 | 86 | Encuesta ENCC limpia, 100% numérica, sin valores nulos (nulos estructurales resueltos) y codificaciones listas para ML. |
+| **Diccionario** | `diccionario_variables_encc.json` | - | - | Diccionario de datos con el tipo, rango (mínimo, máximo) y media de cada variable de la encuesta limpia. |
+| **Cruce** | `cruce_demanda_oferta_generos.csv` | 10 | 6 | Tabla comparativa de la demanda declarada en la población (ENCC) frente a las entradas vendidas en salas comerciales (INCAA). |
+| **Cruce** | `cruce_gamers_vs_cine.csv` | 2 | 6 | Métricas comparativas de penetración cinematográfica y consumo de Acción/Animación entre jugadores de videojuegos y no jugadores. |
+| **Hipótesis** | `resultado_hipotesis_descriptivos.csv` | 3 | 10 | Estadísticas ponderadas divididas por los tres segmentos de la hipótesis: Gamer Core (Consola/PC), Gamer Casual (Móvil) y No Gamer. |
+| **Hipótesis** | `resultado_hipotesis_regresiones.csv` | 5 | 6 | Modelos de Regresión Logística multivariada con Odds Ratios controlando por Edad y Nivel Socioeconómico (NSE). |
+| **Clusters** | `encc_segmentos_clusters.csv` | 3.380 | 87 | Base de la ENCC con la columna `cluster_id` asignada por el algoritmo K-Means (4 arquetipos culturales). |
 
 ---
 

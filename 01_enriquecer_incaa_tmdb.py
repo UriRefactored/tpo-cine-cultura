@@ -398,7 +398,8 @@ def armar_revisar(out, min_entradas):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("entrada", help="CSV limpio del INCAA (salida de limpiar_incaa.py)")
+    ap.add_argument("entrada", nargs="?", default="incaa_estrenos_comerciales.csv",
+                    help="CSV limpio del INCAA (por defecto: incaa_estrenos_comerciales.csv)")
     ap.add_argument("--salida", default=".", help="carpeta de salida")
     ap.add_argument("--min-entradas", type=int, default=1000, help="solo busca películas con al menos estas entradas")
     ap.add_argument("--limite", type=int, default=None, help="procesa solo las N más vistas (para probar)")
@@ -413,6 +414,8 @@ def main(argv=None):
 
     salida = Path(args.salida)
     salida.mkdir(parents=True, exist_ok=True)
+    if not Path(args.entrada).exists():
+        sys.exit(f"No se encontró el archivo de entrada '{args.entrada}'. Verificá que exista en el directorio actual.")
     df = pd.read_csv(args.entrada, dtype={"codigo": str})
     requeridas = {"codigo", "titulo", "anio_estreno", "entradas", "tipo_origen", "es_estreno_comercial"}
     if requeridas - set(df.columns):
@@ -425,10 +428,12 @@ def main(argv=None):
     finally:
         tmdb.guardar_cache()
 
+    # Guardar con el nombre oficial del entregable y réplica para compatibilidad
+    out.to_csv(salida / "incaa_peliculas_enriquecidas.csv", index=False, encoding="utf-8")
     out.to_csv(salida / "incaa_con_genero.csv", index=False, encoding="utf-8")
     armar_revisar(out, args.min_entradas).to_csv(salida / "tmdb_revisar.csv", index=False, encoding="utf-8")
     print(resumen(out, args.min_entradas))
-    print(f"\nListo: {salida / 'incaa_con_genero.csv'} y {salida / 'tmdb_revisar.csv'}")
+    print(f"\nListo: {salida / 'incaa_peliculas_enriquecidas.csv'} y {salida / 'tmdb_revisar.csv'}")
     return 0
 
 

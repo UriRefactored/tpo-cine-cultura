@@ -28,13 +28,21 @@ from sklearn.metrics import accuracy_score, classification_report, roc_auc_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
-RUTA_ENCC = Path("encc_limpia_ml.csv")
-SALIDA_CLUSTERS = Path("encc_con_clusters.csv")
+def obtener_ruta_existente(candidatos):
+    for c in candidatos:
+        p = Path(c)
+        if p.exists():
+            return p
+    return Path(candidatos[0])
+
+
+RUTA_ENCC = obtener_ruta_existente(["encc_encuesta_limpia_ml.csv", "encc_limpia_ml.csv"])
+SALIDA_CLUSTERS = Path("encc_segmentos_clusters.csv")
 
 
 def entrenar():
     if not RUTA_ENCC.exists():
-        raise FileNotFoundError(f"No se encontró {RUTA_ENCC}. Ejecutá antes limpiar_encc.py")
+        raise FileNotFoundError(f"No se encontró {RUTA_ENCC}. Ejecutá antes 02_limpiar_encc.py")
 
     print(f"Cargando {RUTA_ENCC}...")
     df = pd.read_csv(RUTA_ENCC)

@@ -16,13 +16,21 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
-RUTA_ENCC = Path("encc_limpia_ml.csv")
-RUTA_INCAA = Path("incaa_con_genero.csv")
+def obtener_ruta_existente(candidatos):
+    for c in candidatos:
+        p = Path(c)
+        if p.exists():
+            return p
+    return Path(candidatos[0])
+
+
+RUTA_ENCC = obtener_ruta_existente(["encc_encuesta_limpia_ml.csv", "encc_limpia_ml.csv"])
+RUTA_INCAA = obtener_ruta_existente(["incaa_peliculas_enriquecidas.csv", "incaa_con_genero.csv"])
 
 
 def vincular():
     if not RUTA_ENCC.exists() or not RUTA_INCAA.exists():
-        raise FileNotFoundError("Faltan archivos requeridos: 'encc_limpia_ml.csv' o 'incaa_con_genero.csv'")
+        raise FileNotFoundError(f"Faltan archivos requeridos: '{RUTA_ENCC}' o '{RUTA_INCAA}'")
 
     print(f"Cargando {RUTA_ENCC} y {RUTA_INCAA}...")
     encc = pd.read_csv(RUTA_ENCC)
@@ -76,8 +84,8 @@ def vincular():
         })
 
     df_generos = pd.DataFrame(tabla_generos).sort_values("entradas_totales", ascending=False)
-    df_generos.to_csv("cruce_encc_incaa_generos.csv", index=False)
-    print("\n[1] Comparación Géneros ENCC vs INCAA generada: cruce_encc_incaa_generos.csv")
+    df_generos.to_csv("cruce_demanda_oferta_generos.csv", index=False)
+    print("\n[1] Comparación Géneros ENCC vs INCAA generada: cruce_demanda_oferta_generos.csv")
     print(df_generos.to_string(index=False))
 
     # 2. Análisis Gamers vs Asistencia al Cine y Preferencias
@@ -115,8 +123,8 @@ def vincular():
             "pref_cine_animacion": f"{anim_no_gamers:.1%}",
         }
     ])
-    df_gamers.to_csv("cruce_gamers_cine.csv", index=False)
-    print("\n[2] Segmentación Gamers vs Cine generada: cruce_gamers_cine.csv")
+    df_gamers.to_csv("cruce_gamers_vs_cine.csv", index=False)
+    print("\n[2] Segmentación Gamers vs Cine generada: cruce_gamers_vs_cine.csv")
     print(df_gamers.to_string(index=False))
 
     # 3. Base ENCC enriquecida con features de mercado INCAA

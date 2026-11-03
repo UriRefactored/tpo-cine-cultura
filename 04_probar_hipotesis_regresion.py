@@ -29,13 +29,21 @@ import pandas as pd
 from pathlib import Path
 from sklearn.linear_model import LogisticRegression
 
-RUTA_ENCC = Path("encc_limpia_ml.csv")
-RUTA_INCAA = Path("incaa_con_genero.csv")
+def obtener_ruta_existente(candidatos):
+    for c in candidatos:
+        p = Path(c)
+        if p.exists():
+            return p
+    return Path(candidatos[0])
+
+
+RUTA_ENCC = obtener_ruta_existente(["encc_encuesta_limpia_ml.csv", "encc_limpia_ml.csv"])
+RUTA_INCAA = obtener_ruta_existente(["incaa_peliculas_enriquecidas.csv", "incaa_con_genero.csv"])
 
 
 def probar():
     if not RUTA_ENCC.exists() or not RUTA_INCAA.exists():
-        raise FileNotFoundError("Faltan archivos requeridos: 'encc_limpia_ml.csv' o 'incaa_con_genero.csv'")
+        raise FileNotFoundError(f"Faltan archivos requeridos: '{RUTA_ENCC}' o '{RUTA_INCAA}'")
 
     df = pd.read_csv(RUTA_ENCC)
     incaa = pd.read_csv(RUTA_INCAA)
