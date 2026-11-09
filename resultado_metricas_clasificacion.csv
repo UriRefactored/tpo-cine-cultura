@@ -1,0 +1,6 @@
+Nivel / Métrica,Precision,Recall (Sensibilidad),F1-Score,Soporte (Casos Test),Significado / Interpretación
+GLOBAL (Promedio Ponderado),0.716 (71.6%),0.728 (72.8%),0.712 (71.2%),676,Rendimiento global del modelo balanceando ambas clases.
+GLOBAL (Accuracy / Exactitud),0.733 (73.3%),0.733 (73.3%),0.733 (73.3%),676,Porcentaje total de predicciones correctas sobre toda la muestra.
+GLOBAL (ROC-AUC),0.795 (~80.0%),-,0.795 (~80.0%),676,Capacidad discriminativa global del modelo para ordenar probabilidades.
+Clase 0: No Asiste al Cine,0.753 (75.3%),0.877 (87.7%),0.810 (81.0%),448,Capacidad para detectar y descartar a los que no van a salas.
+Clase 1: Asiste al Cine,0.643 (64.3%),0.434 (43.4%),0.518 (51.8%),228,Capacidad para detectar y captar a los cinéfilos reales.

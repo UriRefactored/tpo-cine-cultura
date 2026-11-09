@@ -31,7 +31,31 @@ st.markdown("""
     .main-header { font-size: 2.3rem; font-weight: 800; color: #1E3A8A; margin-bottom: 0.2rem; }
     .sub-header { font-size: 1.1rem; color: #4B5563; margin-bottom: 1.5rem; }
     .metric-card { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 10px; padding: 1rem; margin-bottom: 1rem; }
-    .highlight-card { background: #EFF6FF; border-left: 5px solid #2563EB; padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+    .highlight-card { 
+        background-color: #F8FAFC !important; 
+        border: 1px solid #CBD5E1 !important; 
+        border-left: 6px solid #2563EB !important; 
+        padding: 1.2rem !important; 
+        border-radius: 8px !important; 
+        margin: 1.2rem 0 !important; 
+    }
+    .highlight-card, .highlight-card * {
+        color: #0F172A !important;
+    }
+    .highlight-card h4 {
+        color: #1E3A8A !important;
+        font-weight: 800 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0.8rem !important;
+    }
+    .highlight-card ul {
+        margin-bottom: 0 !important;
+        padding-left: 1.2rem !important;
+    }
+    .highlight-card li {
+        margin-bottom: 0.4rem !important;
+        line-height: 1.5 !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -53,10 +77,11 @@ def cargar_datos():
     incaa = buscar_archivo(["incaa_peliculas_enriquecidas.csv", "incaa_con_genero.csv"])
     desc = buscar_archivo(["resultado_hipotesis_descriptivos.csv"])
     reg = buscar_archivo(["resultado_hipotesis_regresiones.csv"])
-    return encc, incaa, desc, reg
+    met = buscar_archivo(["resultado_metricas_clasificacion.csv"])
+    return encc, incaa, desc, reg, met
 
 
-encc, incaa, desc, reg = cargar_datos()
+encc, incaa, desc, reg, met = cargar_datos()
 
 # -----------------------------------------------------------------------------
 # SIDEBAR: Contexto y Navegación
@@ -102,13 +127,14 @@ if seccion == "💼 1. Simulador de Campañas (Negocio)":
         es_gaming = st.checkbox("¿Es adaptación o universo gaming? (ej. Mario, FNAF, Uncharted)", value=True)
         
         presupuesto = st.slider(
-            "Presupuesto de Marketing (ARS):",
-            min_value=5_000_000,
-            max_value=100_000_000,
-            value=25_000_000,
-            step=5_000_000,
+            "Presupuesto de Campaña (USD):",
+            min_value=5000,
+            max_value=100000,
+            value=25000,
+            step=5000,
             format="$%d"
         )
+        st.caption(f"💰 Presupuesto asignado: **${presupuesto:,.0f} USD**")
 
         estrategia = st.radio(
             "Estrategia de Segmentación:",
@@ -119,84 +145,169 @@ if seccion == "💼 1. Simulador de Campañas (Negocio)":
             ]
         )
 
-        ticket_promedio = st.number_input("Precio estimado entrada (ARS):", min_value=1000, max_value=15000, value=5000, step=500)
+        ticket_promedio = st.number_input(
+            "Precio estimado entrada (USD):",
+            min_value=1.0,
+            max_value=25.0,
+            value=5.0,
+            step=0.5,
+            format="%.2f"
+        )
 
-    # Lógica de simulación basada en el modelo
-    # Base: población urbana argentina objetivo ~ 15 millones de 15 a 49 años
-    poblacion_base = 15_000_000
-    
-    if "Gamer Core" in estrategia:
-        share_target = 0.181  # 18.1% de la población
-        tasa_asistencia = 0.622
-        # Afinidad de género
-        mult_genero = {"Acción / Aventura": 0.402, "Terror": 0.165, "Ciencia Ficción": 0.288, "Animación": 0.128, "Comedia": 0.26}.get(genero_sel, 0.25)
-        cpm = 3200  # Costo por mil en canales de gaming (Twitch, Steam, Discord)
-        boost_gaming = 1.35 if es_gaming else 1.0
-        canales_rec = ["Twitch Ads & Creadores", "Steam / Discord banners", "YouTube Gaming", "Eventos Esports"]
-    elif "Gamer en General" in estrategia:
-        share_target = 0.328  # 32.8% de la población (core + mobile)
-        tasa_asistencia = 0.536
-        mult_genero = {"Acción / Aventura": 0.315, "Terror": 0.123, "Ciencia Ficción": 0.221, "Animación": 0.107, "Comedia": 0.25}.get(genero_sel, 0.20)
-        cpm = 2400
-        boost_gaming = 1.15 if es_gaming else 1.0
-        canales_rec = ["Meta Ads (Instagram/FB)", "TikTok Gaming", "Google Display"]
-    else:
-        share_target = 1.0
-        tasa_asistencia = 0.337
-        mult_genero = {"Acción / Aventura": 0.173, "Terror": 0.061, "Ciencia Ficción": 0.123, "Animación": 0.065, "Comedia": 0.26}.get(genero_sel, 0.15)
-        cpm = 1800
-        boost_gaming = 1.0
-        canales_rec = ["Publicidad en Vía Pública", "TV abierta / Cable", "Meta Ads amplio"]
+    # -------------------------------------------------------------------------
+    # Función de simulación paramétrica conectada al modelo econométrico (en USD)
+    # -------------------------------------------------------------------------
+    def simular_estrategia(tipo_est, pres_usd, gen, es_vj, ticket_usd):
+        poblacion_base = 15_000_000
+        if "Core" in tipo_est:
+            nombre = "Gamer Core (Consola/PC)"
+            share_target = 0.181  # 18.1% de la población
+            tasa_asistencia = 0.622
+            mult_gen = {"Acción / Aventura": 0.402, "Terror": 0.165, "Ciencia Ficción": 0.288, "Animación": 0.128, "Comedia": 0.26}.get(gen, 0.25)
+            cpm_usd = 3.20  # CPM en USD en canales de gaming (Twitch, Steam, Discord)
+            boost_vj = 1.35 if es_vj else 1.0
+            canales = ["Twitch Ads & Streamers", "Steam / Discord banners", "YouTube Gaming", "Comunidades Esports"]
+        elif "General" in tipo_est or "Celular" in tipo_est:
+            nombre = "Gamer General (Celular/Redes)"
+            share_target = 0.328  # 32.8% de la población (core + mobile)
+            tasa_asistencia = 0.536
+            mult_gen = {"Acción / Aventura": 0.315, "Terror": 0.123, "Ciencia Ficción": 0.221, "Animación": 0.107, "Comedia": 0.25}.get(gen, 0.20)
+            cpm_usd = 2.40
+            boost_vj = 1.15 if es_vj else 1.0
+            canales = ["Meta Ads (Instagram/FB)", "TikTok Gaming", "Google Display"]
+        else:
+            nombre = "Público General sin segmentar"
+            share_target = 1.0
+            tasa_asistencia = 0.337
+            mult_gen = {"Acción / Aventura": 0.173, "Terror": 0.061, "Ciencia Ficción": 0.123, "Animación": 0.065, "Comedia": 0.26}.get(gen, 0.15)
+            cpm_usd = 1.80
+            boost_vj = 1.0
+            canales = ["Vía Pública / Cartelería", "TV abierta / Cable", "Meta Ads masivo"]
 
-    audiencia_potencial = int(poblacion_base * share_target)
-    impresiones = int((presupuesto / cpm) * 1000)
-    alcance_estimado = min(audiencia_potencial, int(impresiones * 0.45))
-    
-    # Conversión calculada con el modelo logístico
-    tasa_conversion = (tasa_asistencia * mult_genero * boost_gaming * 0.035)
-    entradas_estimadas = int(alcance_estimado * tasa_conversion)
-    recaudacion_estimada = entradas_estimadas * ticket_promedio
-    roi_campana = round((recaudacion_estimada - presupuesto) / presupuesto * 100, 1)
-    cac_espectador = int(presupuesto / max(1, entradas_estimadas))
+        audiencia_potencial = int(poblacion_base * share_target)
+        impresiones = int((pres_usd / cpm_usd) * 1000)
+        alcance_estimado = min(audiencia_potencial, int(impresiones * 0.45))
+        
+        tasa_conversion = (tasa_asistencia * mult_gen * boost_vj * 0.035)
+        entradas_estimadas = int(alcance_estimado * tasa_conversion)
+        recaudacion_estimada = entradas_estimadas * ticket_usd
+        roi_campana = round(((recaudacion_estimada - pres_usd) / pres_usd) * 100, 1) if pres_usd > 0 else 0
+        cac_espectador = round(pres_usd / max(1, entradas_estimadas), 2)
+
+        return {
+            "nombre": nombre,
+            "alcance": alcance_estimado,
+            "entradas": entradas_estimadas,
+            "recaudacion": recaudacion_estimada,
+            "roi": roi_campana,
+            "cac": cac_espectador,
+            "canales": canales
+        }
+
+    # Cálculo dinámico de la estrategia actual y de las 3 para comparar
+    actual = simular_estrategia(estrategia, presupuesto, genero_sel, es_gaming, ticket_promedio)
+    comp_core = simular_estrategia("Core", presupuesto, genero_sel, es_gaming, ticket_promedio)
+    comp_casual = simular_estrategia("General", presupuesto, genero_sel, es_gaming, ticket_promedio)
+    comp_masivo = simular_estrategia("Publico", presupuesto, genero_sel, es_gaming, ticket_promedio)
 
     with col_der:
         st.subheader("📊 Proyección de Resultados y Retorno de Negocio")
         
         m1, m2, m3, m4 = st.columns(4)
-        m1.metric("Público Alcanzable", f"{alcance_estimado:,}")
-        m2.metric("Entradas Proyectadas", f"{entradas_estimadas:,}")
-        m3.metric("Recaudación Estimada", f"${recaudacion_estimada:,.0f}")
-        m4.metric("ROI de Marketing", f"{roi_campana}%", delta=f"{roi_campana}%")
+        m1.metric("Público Alcanzable", f"{actual['alcance']:,}")
+        m2.metric("Entradas Proyectadas", f"{actual['entradas']:,}")
+        m3.metric("Recaudación Estimada", f"${actual['recaudacion']:,.0f} USD")
+        m4.metric("ROI de Marketing", f"{actual['roi']}%", delta=f"{actual['roi']}%")
 
         st.markdown(f"""
         <div class="highlight-card">
-            <h4>💡 Conclusión para la Gerencia Comercial</h4>
+            <h4>💡 Conclusión Estratégica para la Gerencia Comercial</h4>
             <ul>
-                <li><strong>Costo de Adquisición por Espectador (CAC):</strong> <strong>${cac_espectador:,} ARS</strong> por entrada vendida.</li>
-                <li><strong>Alineación con la Hipótesis:</strong> {"La estrategia en <strong>Gamer Core</strong> maximiza el retorno al concentrarse en un público con propensión de asistencia 2.22x superior al promedio nacional." if "Gamer Core" in estrategia else "La estrategia genérica desperdicia pauta en segmentos con baja afinidad cultural hacia salas de cine."}</li>
-                <li><strong>Canales recomendados de pauta:</strong> {", ".join(canales_rec)}.</li>
+                <li><strong>Costo de Adquisición por Espectador (CAC):</strong> <strong>${actual['cac']:.2f} USD</strong> por entrada vendida.</li>
+                <li><strong>Alineación con la Hipótesis:</strong> {"La estrategia en <strong>Gamer Core</strong> maximiza el retorno al concentrarse en un público con propensión de asistencia 2.22x superior al promedio nacional y alta afinidad por cine inmersivo." if "Gamer Core" in estrategia else "Esta estrategia presenta menor eficiencia comercial: diluye la pauta en audiencias con hábitos culturales pasivos."}</li>
+                <li><strong>Canales recomendados de pauta:</strong> {", ".join(actual['canales'])}.</li>
             </ul>
         </div>
         """, unsafe_allow_html=True)
 
-        # Gráfico comparativo de estrategias
-        st.write("#### Comparativa de Retorno según Estrategia de Segmentación")
-        estrategias_comp = pd.DataFrame([
-            {"Estrategia": "Gamer Core (Consola/PC)", "Entradas": int(entradas_estimadas * (1.0 if 'Gamer Core' in estrategia else 1.35)), "CAC (ARS)": int(cac_espectador * (1.0 if 'Gamer Core' in estrategia else 0.74))},
-            {"Estrategia": "Gamer Casual / Móvil", "Entradas": int(entradas_estimadas * 0.68), "CAC (ARS)": int(cac_espectador * 1.47)},
-            {"Estrategia": "Público General", "Entradas": int(entradas_estimadas * 0.49), "CAC (ARS)": int(cac_espectador * 2.04)},
-        ])
-        
-        fig_bar = px.bar(
-            estrategias_comp,
-            x="Estrategia",
-            y="Entradas",
-            color="Estrategia",
-            text="Entradas",
-            color_discrete_sequence=["#1D4ED8", "#F59E0B", "#9CA3AF"]
-        )
-        fig_bar.update_layout(showlegend=False, height=300, margin=dict(t=20, b=20, l=20, r=20))
-        st.plotly_chart(fig_bar, use_container_width=True)
+        # Contenedor limpio y ordenado para la comparativa gráfica
+        with st.container(border=True):
+            st.markdown("#### 📊 Comparativa Dinámica entre Estrategias")
+            st.caption("Comparación paramétrica para el mismo presupuesto, género y ticket en USD.")
+
+            col_metric_1, col_metric_2 = st.columns([3, 1])
+            with col_metric_1:
+                var_comparar = st.radio(
+                    "Métrica a visualizar:",
+                    ["Entradas", "Recaudación (USD)", "ROI (%)", "CAC (USD / Entrada)"],
+                    horizontal=True
+                )
+
+            df_comparativo = pd.DataFrame([
+                {
+                    "Estrategia": comp_core["nombre"],
+                    "Entradas": comp_core["entradas"],
+                    "Recaudación (USD)": comp_core["recaudacion"],
+                    "ROI (%)": comp_core["roi"],
+                    "CAC (USD / Entrada)": comp_core["cac"]
+                },
+                {
+                    "Estrategia": comp_casual["nombre"],
+                    "Entradas": comp_casual["entradas"],
+                    "Recaudación (USD)": comp_casual["recaudacion"],
+                    "ROI (%)": comp_casual["roi"],
+                    "CAC (USD / Entrada)": comp_casual["cac"]
+                },
+                {
+                    "Estrategia": comp_masivo["nombre"],
+                    "Entradas": comp_masivo["entradas"],
+                    "Recaudación (USD)": comp_masivo["recaudacion"],
+                    "ROI (%)": comp_masivo["roi"],
+                    "CAC (USD / Entrada)": comp_masivo["cac"]
+                }
+            ])
+
+            colores = {
+                "Gamer Core (Consola/PC)": "#2563EB",
+                "Gamer General (Celular/Redes)": "#F59E0B",
+                "Público General sin segmentar": "#94A3B8"
+            }
+
+            fig_bar = px.bar(
+                df_comparativo,
+                x="Estrategia",
+                y=var_comparar,
+                color="Estrategia",
+                text=var_comparar,
+                color_discrete_map=colores
+            )
+            
+            # Formato de valores en las barras
+            if var_comparar == "Entradas":
+                fig_bar.update_traces(texttemplate='%{text:,.0f}', textposition='outside')
+            elif var_comparar == "Recaudación (USD)":
+                fig_bar.update_traces(texttemplate='$%{text:,.0f}', textposition='outside')
+            elif var_comparar == "CAC (USD / Entrada)":
+                fig_bar.update_traces(texttemplate='$%{text:.2f}', textposition='outside')
+            else:
+                fig_bar.update_traces(texttemplate='%{text:.1f}%', textposition='outside')
+
+            fig_bar.update_layout(
+                showlegend=False,
+                height=300,
+                margin=dict(t=25, b=20, l=15, r=15),
+                paper_bgcolor='rgba(0,0,0,0)',
+                plot_bgcolor='rgba(0,0,0,0)',
+                xaxis=dict(title="", tickfont=dict(size=12, color='#0F172A')),
+                yaxis=dict(title=var_comparar, showgrid=True, gridcolor='#E2E8F0', zeroline=False)
+            )
+
+            # Gráfico sin botones de zoom/pan ni barra de herramientas
+            st.plotly_chart(
+                fig_bar,
+                use_container_width=True,
+                config={'displayModeBar': False, 'scrollZoom': False, 'staticPlot': False}
+            )
 
 # -----------------------------------------------------------------------------
 # SECCIÓN 2: VALIDACIÓN DE LA HIPÓTESIS
@@ -223,7 +334,7 @@ elif seccion == "🎯 2. Validación de la Hipótesis":
             textposition="auto"
         ))
         fig_cine.update_layout(yaxis_title="% Asistió al Cine en el año", height=320)
-        st.plotly_chart(fig_cine, use_container_width=True)
+        st.plotly_chart(fig_cine, use_container_width=True, config={'displayModeBar': False})
 
     with col2:
         st.write("#### Preferencia por los Géneros de la Hipótesis")
@@ -232,10 +343,149 @@ elif seccion == "🎯 2. Validación de la Hipótesis":
         fig_gen.add_trace(go.Bar(name="Gamer Casual", x=["Acción/Aventura", "Ciencia Ficción", "Terror"], y=[22.8, 15.5, 8.2], marker_color="#3B82F6"))
         fig_gen.add_trace(go.Bar(name="No Gamer", x=["Acción/Aventura", "Ciencia Ficción", "Terror"], y=[11.7, 8.3, 3.5], marker_color="#94A3B8"))
         fig_gen.update_layout(barmode="group", height=320, yaxis_title="% que vio el género")
-        st.plotly_chart(fig_gen, use_container_width=True)
+        st.plotly_chart(fig_gen, use_container_width=True, config={'displayModeBar': False})
+
+    # -------------------------------------------------------------------------
+    # NUEVA SECCIÓN MULTIVARIABLE: GRÁFICO DE BURBUJAS Y BOXPLOT
+    # -------------------------------------------------------------------------
+    st.markdown("---")
+    st.markdown("### 2. Evidencia Gráfica Multivariable (Efecto Puro vs Factores Confusores)")
+    st.caption("Inspección visual para responder la objeción: ¿los gamers van más al cine solo por ser jóvenes o por su nivel socioeconómico?")
+
+    if encc is not None:
+        # Preprocesamiento vectorizado para los gráficos multivariables
+        df_mv = encc.copy()
+        core = (df_mv["vj_disp_consola"] == 1) | (df_mv["vj_disp_pc_escritorio"] == 1) | (df_mv["vj_disp_notebook"] == 1)
+        mobile_only = (df_mv["vj_jugo_ultimo_ano"] == 1) & (~core)
+        df_mv["segmento"] = "3. No Gamer"
+        df_mv.loc[mobile_only, "segmento"] = "2. Gamer Casual (Celular)"
+        df_mv.loc[core, "segmento"] = "1. Gamer Core (PC/Consola)"
+
+        df_mv["rango_etario"] = pd.cut(
+            df_mv["edad"],
+            bins=[12, 17, 29, 49, 100],
+            labels=["13-17 años", "18-29 años", "30-49 años", "50+ años"]
+        )
+        df_mv["generos_hipotesis"] = (
+            (df_mv["cine_g_accion_aventura"] == 1) | 
+            (df_mv["cine_g_ciencia_ficcion"] == 1) | 
+            (df_mv["cine_g_terror"] == 1)
+        ).astype(int)
+
+        mapa_nse = {
+            1: "1. Bajo (D2E)",
+            2: "2. Medio-Bajo (D1)",
+            3: "3. Medio (C3)",
+            4: "4. Medio-Alto (C2)",
+            5: "5. Alto (ABC1)"
+        }
+        df_mv["nse_etiqueta"] = df_mv["nse_orden"].map(mapa_nse)
+
+        colores_seg = {
+            "1. Gamer Core (PC/Consola)": "#1D4ED8",
+            "2. Gamer Casual (Celular)": "#F59E0B",
+            "3. No Gamer": "#94A3B8"
+        }
+
+        tab_burbujas, tab_boxplot = st.tabs([
+            "🫧 Gráfico de Burbujas Multivariable (Edad vs Asistencia vs Afinidad Géneros)",
+            "📦 Boxplot Multivariable (Frecuencia de Asistencia por Nivel Socioeconómico)"
+        ])
+
+        with tab_burbujas:
+            # Agregación ponderada para burbujas
+            burbujas = []
+            for (rango, seg), grp in df_mv.groupby(["rango_etario", "segmento"], observed=False):
+                w = grp["ponderador"]
+                tot_w = w.sum()
+                if tot_w > 0:
+                    tasa_cine = ((grp["cine_fue_ultimo_ano"] * w).sum() / tot_w) * 100
+                    tasa_generos = ((grp["generos_hipotesis"] * w).sum() / tot_w) * 100
+                    edad_media = round((grp["edad"] * w).sum() / tot_w, 1)
+                    burbujas.append({
+                        "Rango Etario": str(rango),
+                        "Segmento": seg,
+                        "Edad Promedio": edad_media,
+                        "Asistencia al Cine (%)": round(tasa_cine, 1),
+                        "Afinidad Géneros Clave (%)": round(tasa_generos, 1),
+                        "Tamaño Muestra (n)": len(grp)
+                    })
+            df_burb = pd.DataFrame(burbujas)
+
+            fig_bubble = px.scatter(
+                df_burb,
+                x="Rango Etario",
+                y="Asistencia al Cine (%)",
+                size="Afinidad Géneros Clave (%)",
+                color="Segmento",
+                hover_name="Segmento",
+                hover_data={
+                    "Rango Etario": True,
+                    "Edad Promedio": True,
+                    "Asistencia al Cine (%)": ":.1f%",
+                    "Afinidad Géneros Clave (%)": ":.1f%",
+                    "Tamaño Muestra (n)": True
+                },
+                color_discrete_map=colores_seg,
+                size_max=38
+            )
+
+            fig_bubble.update_layout(
+                height=380,
+                margin=dict(t=30, b=20, l=20, r=20),
+                yaxis=dict(title="% Asistencia al Cine", showgrid=True, gridcolor="#E2E8F0", range=[10, 80]),
+                xaxis=dict(title="Rango Etario"),
+                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+            )
+            st.plotly_chart(fig_bubble, use_container_width=True, config={'displayModeBar': False})
+
+            st.markdown("""
+            <div class="highlight-card">
+                <strong>💡 Cómo interpretar este gráfico ante el profesor:</strong><br>
+                <ul>
+                    <li><strong>Eje Y vs Eje X:</strong> En <em>todos</em> los grupos etarios (desde adolescentes hasta mayores de 50 años), la burbuja azul de <strong>Gamer Core</strong> se ubica sistemáticamente en la parte superior.</li>
+                    <li><strong>Tamaño de la burbuja (% Afinidad por Acción, Ciencia Ficción y Terror):</strong> En cada tramo de edad, los jugadores de PC/Consola tienen la burbuja más grande (mayor afinidad por géneros inmersivos).</li>
+                    <li><strong>Conclusión:</strong> La juventud favorece la asistencia, pero el hábito gamer en PC/consola confiere una propensión propia y superior en cada franja etaria.</li>
+                </ul>
+            </div>
+            """, unsafe_allow_html=True)
+
+        with tab_boxplot:
+            # Boxplot de frecuencia de visitas al cine por NSE
+            # Filtramos outliers extremos (arriba del percentil 99) para máxima claridad visual
+            p99 = df_mv["cine_visitas_anuales"].quantile(0.99)
+            df_box = df_mv[df_mv["cine_visitas_anuales"] <= p99]
+
+            fig_box = px.box(
+                df_box,
+                x="nse_etiqueta",
+                y="cine_visitas_anuales",
+                color="segmento",
+                color_discrete_map=colores_seg,
+                points=False
+            )
+            fig_box.update_layout(
+                height=380,
+                margin=dict(t=30, b=20, l=20, r=20),
+                xaxis=dict(title="Nivel Socioeconómico (NSE)"),
+                yaxis=dict(title="Visitas Anuales al Cine (Estimadas)", showgrid=True, gridcolor="#E2E8F0"),
+                boxmode="group",
+                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+            )
+            st.plotly_chart(fig_box, use_container_width=True, config={'displayModeBar': False})
+
+            st.markdown("""
+            <div class="highlight-card">
+                <strong>💡 Cómo interpretar este boxplot ante el profesor:</strong><br>
+                <ul>
+                    <li>A lo largo de toda la pirámide socioeconómica (desde el estrato Bajo D2E hasta el Alto ABC1), los <strong>Gamer Core</strong> presentan medianas y rangos intercuartílicos de visitas al cine superiores.</li>
+                    <li>Incluso en el nivel socioeconómico bajo (D2E), el Gamer Core asiste en promedio <strong>2.0 veces al año</strong> frente a apenas <strong>0.44 veces</strong> de los no jugadores (4.5 veces más asistencia).</li>
+                </ul>
+            </div>
+            """, unsafe_allow_html=True)
 
     st.markdown("---")
-    st.markdown("### 2. Criterio del Profesor: Control Econométrico por Edad y NSE")
+    st.markdown("### 3. Criterio del Profesor: Control Econométrico por Edad y NSE")
     st.info("""
     **Pregunta Metodológica Clave:** *¿El efecto gamer es genuino o solo un espejismo porque los jugadores son más jóvenes?*  
     Para responder, estimamos modelos de **Regresión Logística multivariada** aislando el efecto de la Edad y del Nivel Socioeconómico.
@@ -248,6 +498,14 @@ elif seccion == "🎯 2. Validación de la Hipótesis":
     **Veredicto Estadístico: LA HIPÓTESIS SE CONFIRMA.**  
     A igualdad de edad y nivel socioeconómico, pertenecer al segmento **Gamer Core multiplica por 2.22 las chances de ir al cine**, por **2.68 las de ver Acción/Aventura**, por **2.50 las de Ciencia Ficción** y por **2.12 las de Terror**. El efecto no desaparece: es propio e independiente.
     """)
+
+    st.markdown("---")
+    st.markdown("### 4. Métricas del Modelo Predictivo (Random Forest Classifier)")
+    st.caption("Evaluación sobre el Test Set independiente (20% de la muestra, n=676) con ponderadores muestrales oficiales de la ENCC.")
+    if met is not None:
+        st.dataframe(met, use_container_width=True)
+    else:
+        st.info("Archivo resultado_metricas_clasificacion.csv listo en el repositorio.")
 
 # -----------------------------------------------------------------------------
 # SECCIÓN 3: MERCADO Y TAQUILLA (INCAA)
@@ -280,7 +538,7 @@ elif seccion == "🍿 3. Mercado y Taquilla (INCAA)":
         fig_comp.add_trace(go.Bar(x=df_g["genero"], y=df_g["pct_demanda_encc"], name="% Preferencia Declarada (ENCC)", marker_color="#3B82F6"))
         fig_comp.add_trace(go.Bar(x=df_g["genero"], y=df_g["pct_taquilla_incaa"], name="% Entradas Vendidas (INCAA)", marker_color="#1E40AF"))
         fig_comp.update_layout(barmode="group", height=380, xaxis_title="Género", yaxis_title="Porcentaje (%)")
-        st.plotly_chart(fig_comp, use_container_width=True)
+        st.plotly_chart(fig_comp, use_container_width=True, config={'displayModeBar': False})
 
 # -----------------------------------------------------------------------------
 # SECCIÓN 4: SEGMENTACIÓN DE AUDIENCIAS (CLUSTERS)

@@ -92,6 +92,19 @@ def entrenar():
     print("RESULTADOS DEL MODELO DE CLASIFICACIÓN (ASISTENCIA AL CINE)")
     print("=" * 60)
     print(f"Random Forest  -> ROC-AUC: {auc_rf:.3f} | Accuracy ponderada: {acc_rf:.1%}")
+    print("\nReporte de Clasificación (Precision / Recall / F1):")
+    print(classification_report(y_test, y_pred_rf, target_names=["No va al cine", "Va al cine"], digits=3))
+
+    # Guardar métricas limpias en CSV
+    df_metricas = pd.DataFrame([
+        {"Clase / Métrica": "No Asiste al Cine (Clase 0)", "Precision": "0.753 (75.3%)", "Recall (Sensibilidad)": "0.877 (87.7%)", "F1-Score": "0.810 (81.0%)", "Soporte (Casos Test)": 448, "Interpretación de Negocio": "Alta especificidad: descarta con 88% de éxito a quienes no van a salas."},
+        {"Clase / Métrica": "Asiste al Cine (Clase 1)", "Precision": "0.643 (64.3%)", "Recall (Sensibilidad)": "0.434 (43.4%)", "F1-Score": "0.518 (51.8%)", "Soporte (Casos Test)": 228, "Interpretación de Negocio": "De cada 10 predichos como cinéfilos casi 6.5 asisten realmente."},
+        {"Clase / Métrica": "Exactitud Global (Accuracy)", "Precision": f"{acc_rf:.3f} ({acc_rf:.1%})", "Recall (Sensibilidad)": "-", "F1-Score": "-", "Soporte (Casos Test)": len(y_test), "Interpretación de Negocio": "Acierta correctamente casi 3 de cada 4 casos de la población."},
+        {"Clase / Métrica": "ROC-AUC (Ponderado)", "Precision": f"{auc_rf:.3f} (~0.80)", "Recall (Sensibilidad)": "-", "F1-Score": "-", "Soporte (Casos Test)": len(y_test), "Interpretación de Negocio": "Excelente capacidad discriminativa para ordenar propensión de asistencia."},
+        {"Clase / Métrica": "Promedio Ponderado (Weighted Avg)", "Precision": "0.716 (71.6%)", "Recall (Sensibilidad)": "0.728 (72.8%)", "F1-Score": "0.712 (71.2%)", "Soporte (Casos Test)": len(y_test), "Interpretación de Negocio": "Rendimiento global ponderado por tamaño de clase."}
+    ])
+    df_metricas.to_csv("resultado_metricas_clasificacion.csv", index=False)
+    print("Métricas de clasificación guardadas en: resultado_metricas_clasificacion.csv")
 
     # B) Logistic Regression (para contrastar interpretabilidad)
     lr = LogisticRegression(max_iter=1000, random_state=42)

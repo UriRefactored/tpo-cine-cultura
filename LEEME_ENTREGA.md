@@ -23,6 +23,7 @@ Todos los datasets fueron procesados, validados y cuentan con nombres autodescri
 | **Cruce** | `cruce_gamers_vs_cine.csv` | 2 | 6 | Métricas comparativas de penetración cinematográfica y consumo de Acción/Animación entre jugadores de videojuegos y no jugadores. |
 | **Hipótesis** | `resultado_hipotesis_descriptivos.csv` | 3 | 10 | Estadísticas ponderadas divididas por los tres segmentos de la hipótesis: Gamer Core (Consola/PC), Gamer Casual (Móvil) y No Gamer. |
 | **Hipótesis** | `resultado_hipotesis_regresiones.csv` | 5 | 6 | Modelos de Regresión Logística multivariada con Odds Ratios controlando por Edad y Nivel Socioeconómico (NSE). |
+| **Métricas ML** | `resultado_metricas_clasificacion.csv` | 5 | 6 | Métricas completas de clasificación supervisada del Random Forest (Precision, Recall, F1, Accuracy, ROC-AUC). |
 | **Clusters** | `encc_segmentos_clusters.csv` | 3.380 | 87 | Base de la ENCC con la columna `cluster_id` asignada por el algoritmo K-Means (4 arquetipos culturales). |
 
 ---
