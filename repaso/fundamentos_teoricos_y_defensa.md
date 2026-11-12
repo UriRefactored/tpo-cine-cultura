@@ -1,117 +1,91 @@
-# Fundamentos Teóricos, Decisiones Metodológicas y Guía para la Defensa
-**Materia:** Ciencia de Datos — UADE  
-**Docente:** Santiago Martín  
-**Proyecto:** "Cine & Gaming en Argentina: Análisis de Demanda y Oferta para Distribución y Exhibición"
+# Guía para la defensa
 
----
+Las cifras citadas salen de `outputs/` (ver README). Si se vuelve a correr el pipeline, los números son idénticos
+(semilla fija).
 
-## 1. El Problema de Negocio y la Hipótesis
+## 1. El mensaje en 30 segundos
 
-### Hipótesis Validada con la Cátedra
-> *“Los jugadores de consola/PC van más al cine y prefieren Acción/Aventura, Ciencia ficción y Terror; una campaña de películas de universo gaming dirigida a ese segmento y a esos géneros rinde más que una dirigida a jugadores en general.”*
+1. Quienes juegan en PC/consola van más al cine (62% vs. 27% de quienes no juegan).
+2. Comparando personas parecidas en edad, NSE, género, educación, actividad, región y tamaño de localidad, la
+   diferencia se achica pero se mantiene: **+16,5 puntos porcentuales** (IC 95%: 9,9 a 23,1).
+3. **No** encontramos diferencias en los géneros que ven en el cine una vez que se mide correctamente.
+4. Para **predecir** quién va al cine, saber si alguien juega no agrega nada a la demografía; el consumo de streaming sí.
 
-### Las 3 Preguntas de la Diapositiva 4
-1. **¿Qué proponemos resolver?**  
-   Optimizar la asignación presupuestaria publicitaria de distribuidoras y exhibidoras de cine en Argentina. Tradicionalmente, las campañas de películas de videojuegos (ej. *Mario*, *Uncharted*, *Sonic*, *FNAF*) se pautan de manera indiferenciada hacia "gamers" en general o hacia público joven genérico. Demostramos empíricamente que los jugadores de smartphone/tablet tienen un comportamiento cinematográfico pasivo, mientras que los **jugadores Core (PC/Consola)** tienen una tasa de asistencia de **62.2%** y una preferencia 3x superior por Acción, Sci-Fi y Terror.
-2. **¿Para quién?**  
-   La **Gerencia Comercial y de Marketing** (distribuidoras como Warner, Sony, UIP, Disney y cadenas como Hoyts/Cinemark, Cinépolis, Showcase).
-3. **¿Cómo entrega valor?**  
-   **Ahorro de plata y mejora de ROI:** Evita el desperdicio publicitario en audiencias casuales masivas y concentra la pauta en canales de nicho gamer de alta conversión (Twitch, Discord, Steam, YouTube Gaming, eventos esports), reduciendo el Costo por Espectador Adquirido (CAC).
+## 2. Por qué cambiaron las conclusiones respecto de la primera versión
 
----
+| Antes | Problema | Ahora |
+|---|---|---|
+| "Prefieren Acción/Sci-Fi/Terror 3–5 veces más" | Se medía sobre toda la población: quien no va al cine "no ve terror". La diferencia repetía la de asistencia. | Solo entre asistentes, con ajuste y corrección de Holm: ninguna diferencia significativa. |
+| `es_ocupado` | Buscaba "trabaj" y también marcaba "No trabaja" (1.389 errores). | Mapeo explícito de las 5 categorías. |
+| Etiquetas de géneros de videojuego | Desplazadas un lugar respecto del código de variable. | Corregidas por código (V328–V339). |
+| Métricas del Random Forest | Precisión/recall escritas a mano en el código. | Todas calculadas, con IC por bootstrap. |
+| "p < 0,001" | No se calculaba ningún p-valor (sklearn regulariza y no da errores estándar). | Errores estándar con diseño muestral; p-valores calculados. |
+| ">75 millones de entradas en 3 géneros" | Superaba el total: una película tiene varios géneros. | Participación por género, aclarando la superposición. |
+| FNAF/Mario como evidencia | Se estrenaron después de la encuesta. | Cronología explícita. |
+| Simulador de ROI/CAC | CPM y conversiones supuestos, no medidos. | Retirado. |
 
-## 2. Decisiones de Ingeniería de Datos (ETL)
+## 3. Preguntas probables
 
-### A. Integración Multifuente (Heterogeneidad de Datos)
-El trabajo combina **tres fuentes de datos reales e independientes**:
-1. **ENCC 2022-2023 (SInCA):** Base de microdatos de **demanda individual** (3.380 encuestados con factores de expansión y ponderación poblacional).
-2. **Estrenos Comerciales INCAA (2022-2023):** Base oficial de **oferta de mercado** (73.17 millones de entradas y 899 películas comerciales).
-3. **The Movie Database (TMDB API):** Enriquecimiento programático vía requests REST con caché hash local (`tmdb_cache.json`) para clasificar franquicias, presupuestos, palabras clave de videojuegos y mapeo de géneros.
+**"Los gamers son más jóvenes y los jóvenes van más al cine, ¿no es solo edad?"**
+Es la primera explicación alternativa que probamos. Sin ajustar, la diferencia es de 35 pp; ajustando edad (con una
+curva flexible, no lineal) y NSE baja a 18 pp; con todos los controles, 16,5 pp. La edad explica más de la mitad de
+la brecha, pero no toda. Además, en el gráfico por tramos de edad la línea de PC/consola queda arriba en cada tramo.
 
-### B. Tratamiento de Nulos Estructurales (*Structural Missings* vs *MCAR*)
-* **El problema:** En encuestas complejas con saltos de cuestionario, cuando un individuo responde `cine1 == "NO"`, todas las preguntas subsecuentes de frecuencia (`cine3`, `cine4`) y géneros vistos (`cine7_*`) quedan con valores `NaN`.
-* **La decisión metodológica:** En ciencia de datos, imputar estos nulos con la media/mediana o eliminar las filas (*listwise deletion*) generaría un **sesgo de selección (*survivorship bias*) catastrófico**, falseando la penetración real del cine en el país. 
-* **La solución:** Se identificaron como **ceros estructurales**: quien no fue al cine vio 0 películas de acción en salas. Se imputó con `0` (ausencia de consumo), preservando a los 3.380 individuos para entrenar modelos sobre el universo total de la población.
+**"¿Entonces jugar hace que la gente vaya al cine?"**
+No podemos decir eso. Es una encuesta de un solo momento. Puede haber una tercera variable no medida, como el
+interés general por el entretenimiento o el ingreso del hogar, que explique las dos cosas. Hablamos de asociación.
 
-### C. Estandarización de Escalas y Encodings
-* **Ordinal a Continuo:** Frecuencias de consumo expresadas en texto (*"Todas las semanas"*, *"Una vez al mes"*, etc.) fueron convertidas a días/visitas anuales equivalentes (52, 12, 3, 0), permitiendo operaciones matemáticas y distancia euclidiana en modelos.
-* **One-Hot Encoding:** Variables cualitativas no jerárquicas (Región, Género, Tamaño de Aglomerado) fueron descompuestas en columnas binarias `{0, 1}` para evitar inducir un orden artificial que distorsione algoritmos lineales.
+**"¿Por qué ponderan y qué es eso del diseño muestral?"**
+La ENCC no es una muestra aleatoria simple. Selecciona localidades dentro de cada región y después personas dentro
+de las localidades, así que cada persona representa a una cantidad distinta de gente (`ponderador`). Además, las
+personas de una misma localidad se parecen entre sí. Si ignoráramos eso, los intervalos serían demasiado optimistas.
+Calculamos la varianza a partir de las localidades dentro de cada región; es el mismo método que usa el paquete
+`survey` de R. Lo validamos contra statsmodels.
 
-### D. Ponderadores Muestrales (`sample_weight=ponderador`)
-La ENCC utiliza un diseño muestral probabilístico estratificado. Para que los modelos no sobrerrepresenten a regiones sobremuestreadas, se incorporó el `ponderador` muestral oficial en el cálculo de métricas, descriptivos y en la función de pérdida (*loss function*) de los clasificadores.
+**"¿Qué es un odds ratio y por qué también muestran puntos porcentuales?"**
+El OR compara chances (p/(1−p)), no probabilidades. Un OR de 2,3 no significa "2,3 veces más probable". Por eso
+reportamos también la diferencia en puntos porcentuales: si todos jugaran en PC/consola, la asistencia estimada
+sería 47,9%; si nadie jugara, 31,4%.
 
----
+**"¿Por qué corrigieron por comparaciones múltiples?"**
+Probamos 10 géneros. Con un umbral de 5%, por azar es esperable que alguno "dé significativo". Holm controla la
+probabilidad de al menos un falso positivo en la familia. Sin corregir, Comedia tenía p = 0,043 (y a favor de los
+no jugadores); corregido, nada.
 
-## 3. Justificación de los Modelos de Minería de Datos
+**"El modelo tiene AUC 0,76. ¿Es bueno?"**
+Es moderado y honesto. Se mide en un 20% de datos que no se usó para nada antes. Lo importante no es el número en sí
+sino la comparación: con demografía sola, 0,72; sumando gaming, 0,72; sumando streaming, 0,76. El IC de la mejora
+por gaming incluye el cero; el de streaming no.
 
-> *"¿Cuál aplicaron y qué modelo entrenaron? Sobre todo: por qué ese y no otro."* (Diapositiva 6 y 7).
+**"¿Por qué no usaron el Random Forest, si es más potente?"**
+Lo usamos y lo comparamos. Con estas variables (mayormente binarias y ordinales) y unas 2.700 personas de
+entrenamiento, la regresión logística rinde igual o mejor y es interpretable. Un modelo más complejo no siempre gana.
 
-### Modelo 1: Regresión Logística Multivariada con Controles (Inferencia Causal)
-* **¿Por qué se eligió?**  
-  El profesor Santiago Martín estableció una condición metodológica precisa: *"Si la diferencia desaparece al controlar por edad, la hipótesis se refuta"*.  
-  Los árboles de decisión o modelos de ensamble son excelentes predictores pero funcionan como "cajas negras": no aíslan el efecto marginal *ceteris paribus* de una variable específica. La Regresión Logística permite estimar el coeficiente de una variable manteniendo fijas todas las demás.
-* **Mecánica del Modelo:**  
-  Modela el logaritmo de los momios (*log-odds*):
-  $$\ln\left(\frac{p}{1-p}\right) = \beta_0 + \beta_{\text{core}} X_{\text{core}} + \beta_{\text{mobile}} X_{\text{mobile}} + \beta_{\text{edad}} X_{\text{edad}} + \beta_{\text{nse}} X_{\text{nse}}$$
-* **Interpretación de Odds Ratios ($e^\beta$):**  
-  * **Asistencia al cine:** $\text{OR}_{\text{core}} = 2.22$ ($p < 0.001$). A misma edad y mismo nivel socioeconómico, un jugador core tiene **2.22 veces más probabilidades de ir al cine** que un no jugador.
-  * **Acción/Aventura:** $\text{OR}_{\text{core}} = 2.68$.
-  * **Ciencia Ficción:** $\text{OR}_{\text{core}} = 2.50$.
-  * **Terror:** $\text{OR}_{\text{core}} = 2.12$.
-* **Conclusión académica:** **La hipótesis NO se refuta.** El efecto del gaming en consola/PC es propio, robusto e independiente de la juventud o el poder adquisitivo.
+**"¿Cómo evitaron el *leakage*?"**
+Excluimos todas las preguntas del bloque de cine, que solo existen si la persona fue. La imputación y el escalado se
+aprenden dentro de cada partición. El umbral de clasificación se elige en entrenamiento. El test se usa una sola vez.
 
-### Modelo 2: Random Forest Classifier (Modelado Predictivo de Audiencia)
-* **Tipo de tarea:** **CLASIFICACIÓN BINARIA** (`RandomForestClassifier`), **no de regresión**.  
-  El target es categórico binario: $Y=1$ (asistió al cine en el año) vs $Y=0$ (no asistió).
-* **¿Por qué se eligió?**  
-  Para predecir la propensión individual de asistencia al cine capturando interacciones no lineales y relaciones complejas entre variables (por ejemplo, personas de cierta edad con consumo intensivo de streaming y afinidad por géneros específicos).
-* **Parámetros aplicados:** 150 estimadores (*trees*), `max_depth=8` (poda para evitar sobreajuste / *overfitting*), `min_samples_split=10`, y partición estratificada 80/20.
-* **Métricas de Evaluación (Test Set independiente, $n=676$):**
-  * **ROC-AUC (Ponderado): 0.795 (~0.80):** Excelente capacidad discriminativa. El modelo tiene un 80% de probabilidad de rankear a un asistente real por encima de un no asistente (el azar es 0.50 y un modelo sólido en encuestas sociales ronda entre 0.75 y 0.85).
-  * **Accuracy (Exactitud global ponderada): 73.3%:** Acierta correctamente casi 3 de cada 4 casos.
-  * **Precision (Clase "Va al cine"): 64.3%:** De cada 10 personas que el modelo predice como cinéfilas, casi 6.5 efectivamente asisten.
-  * **Recall en no asistentes: 87.7%:** Extremadamente eficaz descartando a quienes no van al cine, minimizando el desperdicio publicitario.
-  * **Recall en asistentes: 43.4%:** Con el umbral estándar ($p > 0.50$) es un modelo conservador que prioriza la precisión sobre el volumen.
-* **Matriz de Confusión ($n=676$):**
-  ```text
-                       Predicho: NO VA     Predicho: SÍ VA
-  Realidad: NO VA            393                 55         <-- Solo 55 falsos positivos
-  Realidad: SÍ VA            129                 99         <-- 99 cinéfilos detectados limpios
-  ```
-* **Feature Importance (Reducción de Impureza de Gini):** Demostró que la *diversidad de géneros en streaming* (11.5%), la *edad* (11.3%), el *nivel educativo y NSE* (8.7%) y la *diversidad de videojuegos jugados* (4.6%) son los predictores más potentes de asistencia a salas.
+**"¿Por qué el clustering está en el apéndice?"**
+Probamos de 2 a 8 grupos. La calidad de separación no tiene un máximo claro y los grupos reproducen combinaciones de
+"va al cine / juega / usa plataformas". No descubren nada que no se vea con una tabla. El k = 4 de la primera versión
+era además el menos estable (en el peor 10% de las réplicas, la asignación de grupos cambia mucho más que con cualquier otro k).
 
-### Modelo 3: K-Means Clustering (Segmentación No Supervisada de Audiencias)
-* **¿Por qué se eligió?**  
-  Permite descubrir agrupamientos naturales de consumidores sin forzar etiquetas preexistentes.
-* **Preprocesamiento:** Se aplicó `StandardScaler` (normalización $Z$-score) para equiparar la escala entre variables de frecuencia continua y variables binarias, evitando distorsiones de distancia euclidiana.
-* **Arquetipos identificados ($k=4$):**
-  * **Cluster 2 ("Gamer y Cinéfilo Joven" - 21.4% de los argentinos):** 100% jugadores de videojuegos activos (205 días al año), 53% va a salas de cine y tienen el mayor apetito por estrenos de impacto visual y comunitario.
+**"¿Cómo conectan la ENCC con el INCAA?"**
+Solo como contexto agregado. No hay forma de saber quién compró cada entrada. Comparamos la proporción de asistentes
+que dice haber visto cada género con la participación de ese género en las entradas de 2022, el período que cubre la
+encuesta. Son medidas distintas, y lo aclaramos en el gráfico.
 
----
+**"¿Qué le recomendarían a una distribuidora?"**
+Que la afinidad PC/consola–cine es real, pero para estimar público el consumo de streaming y la demografía dicen más
+que el gaming. No tenemos datos para afirmar que una campaña dirigida a gamers rinda más; eso requeriría un
+experimento o datos de campañas.
 
-## 4. Herramientas y Stack Tecnológico
+## 4. Glosario mínimo
 
-| Capa | Tecnología | Justificación |
-| :--- | :--- | :--- |
-| **Lenguaje** | Python 3.9 | Estándar de la industria para ciencia de datos y reproducibilidad. |
-| **Manipulación** | Pandas & NumPy | Procesamiento vectorizado eficiente sobre 548 columnas y 3.380 registros. |
-| **Machine Learning** | Scikit-Learn | Implementación de Regresión Logística, Random Forest, K-Means, métricas (ROC-AUC, F1) y pipelines de preprocesamiento. |
-| **Visualización** | Plotly Express & Graph Objects | Gráficos vectoriales e interactivos que permiten inspeccionar valores al pasar el cursor y que *"se leen desde el fondo del aula"*. |
-| **Aplicación Funcional** | Streamlit | Framework de aplicaciones ejecutivas en Python, permitiendo sliders, simulaciones en vivo y visualizaciones sin latencia. |
-
----
-
-## 5. Preguntas Típicas del Docente y Cómo Responderlas
-
-### P1: *"¿Por qué dicen que la hipótesis se confirma si los gamers son más jóvenes y los jóvenes van más al cine?"*
-> **Respuesta:** *"Justamente para evitar esa trampa metodológica aplicamos una Regresión Logística multivariada introduciendo la Edad y el Nivel Socioeconómico como variables de control. Si el fenómeno fuera puramente etario, el coeficiente de Gamer Core se hubiera reducido a cero (Odds Ratio cercano a 1.0). Sin embargo, el Odds Ratio se mantuvo en 2.22 ($p < 0.001$), lo que demuestra que a idéntica edad y nivel económico, jugar en PC/consola confiere una afinidad cultural independiente y estadísticamente significativa con la asistencia a salas."*
-
-### P2: *"¿Por qué dividieron entre Gamer Core (PC/Consola) y Gamer Casual (Celular)?"*
-> **Respuesta:** *"Porque el mercado del gaming es heterogéneo. La persona que juega Candy Crush en el colectivo tiene hábitos culturales pasivos similares al no jugador (45% de asistencia al cine y baja afinidad por géneros narrativos). En cambio, el usuario de PC/Consola invierte tiempo, hardware y dinero en experiencias inmersivas, lo que se traduce en un 62.2% de asistencia al cine y un 40% de preferencia por Acción y Aventura. Tratar a todos como 'gamers' diluye el presupuesto publicitario."*
-
-### P3: *"¿Cómo se conecta esto con la taquilla real del INCAA?"*
-> **Respuesta:** *"La ENCC nos muestra la demanda declarada, pero el INCAA nos muestra la plata real que se pagó en boleterías. Comprobamos que las 5 películas de franquicias de videojuegos vendieron 6.18 millones de entradas (el 8.4% de toda la taquilla argentina), y que los 3 géneros preferidos por los gamers core (Acción, Ciencia Ficción y Terror) concentraron más de 75 millones de entradas acumuladas. El caso de 'Five Nights at Freddy's' (1.2M de entradas) es el ejemplo perfecto de cómo el cruce entre Gaming y Terror llena salas en Argentina."*
-
-### P4: *"¿El modelo que entrenaron es de regresión o de clasificación? ¿Y qué tan bueno es?"*
-> **Respuesta:** *"Es 100% de **clasificación binaria** (`RandomForestClassifier` y `LogisticRegression`), porque la variable a predecir es categórica: si el individuo asiste al cine o no ($Y \in \{0, 1\}$). En cuanto a su rendimiento, el Random Forest es **muy sólido y realista**: alcanzó un **ROC-AUC de 0.795** y una **accuracy ponderada de 73.3%** sobre datos de prueba no vistos ($n=676$). Además, tiene una **especificidad de 87.7%** descartando a no asistentes y una **precisión de 64.3%**, lo que para el negocio de marketing es ideal porque evita el desperdicio publicitario en personas que no van a salas. El modelo fue podado a profundidad 8 (`max_depth=8`) para asegurar que generaliza bien sin sobreajuste."*
-
+- **IC 95%**: rango de valores compatibles con los datos; si se repitiera la encuesta muchas veces, el 95% de esos
+  intervalos contendría el valor real.
+- **pp (puntos porcentuales)**: diferencia absoluta entre porcentajes (62% − 27% = 35 pp).
+- **ROC-AUC**: probabilidad de que el modelo ordene a una persona que fue al cine por encima de una que no fue (0,5 = azar).
+- **Holm**: corrección que ajusta p-valores cuando se hacen varias pruebas a la vez.
+- **Tamaño efectivo de muestra**: cuántas observaciones "valen" las 3.380 una vez considerada la desigualdad de los
+  ponderadores (≈ 1.500).

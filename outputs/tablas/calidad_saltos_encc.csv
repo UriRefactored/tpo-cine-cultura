@@ -1,0 +1,13 @@
+pregunta,columna,universo,n_universo,n_respuesta_valida,n_ns_nc,n_faltante_en_universo,n_fuera_universo_con_dato,n_salto_estructural
+CINE 1,cine1,toda la muestra,3380,3380,0,0,0,0
+CINE 2,cine2,no asistió al cine,2242,2180,62,0,0,1138
+CINE 3,cine3,asistió al cine,1138,1134,4,0,0,2242
+CINE 4,cine4,asistió al cine,1138,1127,11,0,0,2242
+CINE 7 (ítem 1),cine7_1,asistió al cine,1138,1138,0,0,0,2242
+VJ 1,vj1,toda la muestra,3380,3380,0,0,0,0
+VJ 2,vj2,jugó videojuegos,898,898,0,0,0,2482
+VJ 3 (ítem 1),vj3_1,jugó videojuegos,898,898,0,0,0,2482
+VJ 6,vj6,jugó videojuegos,898,870,28,0,0,2482
+TV 15 (ítem 1),tv15_1,miró plataformas (TV 9 = Sí),2122,2122,0,0,0,1258
+SOC 13.1,soc13.1,toda la muestra,3380,3377,3,0,0,0
+SOC 14.1,soc14.1,toda la muestra,3380,3369,11,0,0,0

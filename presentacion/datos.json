@@ -1,0 +1,2115 @@
+{
+ "resumen": {
+  "muestra": {
+   "n": 3380,
+   "columnas_originales": 548,
+   "localidades": 50,
+   "regiones": 7,
+   "poblacion_expandida": 29468180.0,
+   "n_efectivo_kish": 1501.3,
+   "deff_ponderacion": 2.25,
+   "ponderador_min": 0.03,
+   "ponderador_max": 28.41
+  },
+  "diseno": {
+   "gl": 43,
+   "upm": 50,
+   "estratos": 7
+  },
+  "asistencia": {
+   "descriptiva": {
+    "pc_consola": {
+     "n": 452,
+     "asistencia": 0.6218444858103914,
+     "asistencia_ic_inf": 0.5679493240632545,
+     "asistencia_ic_sup": 0.6757396475575284,
+     "pct_poblacion": 0.1812488716708742,
+     "edad_media": 26.34153032232781
+    },
+    "solo_movil": {
+     "n": 445,
+     "asistencia": 0.45088735892103626,
+     "asistencia_ic_inf": 0.40789919101855043,
+     "asistencia_ic_sup": 0.4938755268235221,
+     "pct_poblacion": 0.14658364137335042,
+     "edad_media": 32.9564699468998
+    },
+    "no_juega": {
+     "n": 2482,
+     "asistencia": 0.2699081534708829,
+     "asistencia_ic_inf": 0.24192572526711506,
+     "asistencia_ic_sup": 0.29789058167465077,
+     "pct_poblacion": 0.6721674869557756,
+     "edad_media": 47.787097455948
+    },
+    "total": {
+     "n": 3379,
+     "asistencia": 0.3602248075551438,
+     "asistencia_ic_inf": 0.32726738392372684,
+     "asistencia_ic_sup": 0.39318223118656076,
+     "pct_poblacion": 1.0,
+     "edad_media": 41.7261852265093
+    }
+   },
+   "ajustada": {
+    "pc_consola": {
+     "prob_ajustada": 0.47893099398843514,
+     "ic_inf": 0.4263707449122984,
+     "ic_sup": 0.5314912430645718
+    },
+    "solo_movil": {
+     "prob_ajustada": 0.39840447041306015,
+     "ic_inf": 0.3576119700396101,
+     "ic_sup": 0.4391969707865102
+    },
+    "no_juega": {
+     "prob_ajustada": 0.3140992568064595,
+     "ic_inf": 0.2838158206934592,
+     "ic_sup": 0.34438269291945983
+    }
+   },
+   "contrastes_completo": {
+    "pc_consola vs no_juega": {
+     "or": 2.2861148923772223,
+     "or_ic_inf": 1.6637305188874212,
+     "or_ic_sup": 3.1413268205501765,
+     "p_valor": 4.488545194057048e-06,
+     "dif_pp": 16.483173718197563,
+     "dif_ic_inf": 9.862324121407767,
+     "dif_ic_sup": 23.10402331498736
+    },
+    "solo_movil vs no_juega": {
+     "or": 1.542359689154523,
+     "or_ic_inf": 1.2230154555310198,
+     "or_ic_sup": 1.9450885922745402,
+     "p_valor": 0.0004980216836370219,
+     "dif_pp": 8.430521360660064,
+     "dif_ic_inf": 3.7618495718176046,
+     "dif_ic_sup": 13.099193149502526
+    },
+    "pc_consola vs solo_movil": {
+     "or": 1.482219036488437,
+     "or_ic_inf": 1.1084586549057798,
+     "or_ic_sup": 1.9820074139936734,
+     "p_valor": 0.009110796132221164,
+     "dif_pp": 8.052652357537498,
+     "dif_ic_inf": 2.057897822158278,
+     "dif_ic_sup": 14.047406892916719
+    }
+   },
+   "n_modelo": 3365,
+   "sensibilidad_or_rango": [
+    2.226458782084651,
+    2.5626436725876993
+   ]
+  },
+  "generos": {
+   "n_asistentes": 1136,
+   "significativos_holm": [],
+   "p_min_sin_ajustar": 0.04277777260098366
+  },
+  "prediccion": {
+   "n_train": 2703,
+   "n_test": 676,
+   "auc_test": {
+    "baseline|1_demografia": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "logistica|1_demografia": [
+     0.7209310600994648,
+     0.6670198272675026,
+     0.7901566505335971
+    ],
+    "random_forest|1_demografia": [
+     0.6941127062306497,
+     0.6278900310551357,
+     0.7778991723740943
+    ],
+    "logistica|2_demo_segmento": [
+     0.7202082387119334,
+     0.6536012992827547,
+     0.8018074046241072
+    ],
+    "random_forest|2_demo_segmento": [
+     0.7077547923496254,
+     0.6410299514858556,
+     0.7943657580803181
+    ],
+    "logistica|3_demo_gaming": [
+     0.7152258955214784,
+     0.6372813829702604,
+     0.8056891675762441
+    ],
+    "random_forest|3_demo_gaming": [
+     0.7055234077347003,
+     0.6313982676048211,
+     0.7960584128405741
+    ],
+    "logistica|4_demo_gaming_streaming": [
+     0.7630468840761268,
+     0.7080577485906039,
+     0.8240408008826275
+    ],
+    "random_forest|4_demo_gaming_streaming": [
+     0.7405981814647367,
+     0.6701960233358651,
+     0.8173538025202035
+    ]
+   },
+   "dif_auc": {
+    "logistica|2_demo_segmento − logistica|1_demografia": [
+     -0.000722821387531436,
+     -0.019853168599010474,
+     0.02076528098017419
+    ],
+    "logistica|3_demo_gaming − logistica|2_demo_segmento": [
+     -0.004982343190454985,
+     -0.0286655929585182,
+     0.01855270543932156
+    ],
+    "logistica|4_demo_gaming_streaming − logistica|3_demo_gaming": [
+     0.047820988554648336,
+     0.008803601418162067,
+     0.08033685071611524
+    ],
+    "random_forest|2_demo_segmento − random_forest|1_demografia": [
+     0.01364208611897566,
+     -0.00359830840626697,
+     0.0301255209287748
+    ],
+    "random_forest|3_demo_gaming − random_forest|2_demo_segmento": [
+     -0.0022313846149250027,
+     -0.016694342509710906,
+     0.01645080242622913
+    ],
+    "random_forest|4_demo_gaming_streaming − random_forest|3_demo_gaming": [
+     0.03507477373003631,
+     0.00037582733541085547,
+     0.06377610067920567
+    ],
+    "logistica|3_demo_gaming − logistica|1_demografia": [
+     -0.005705164577986421,
+     -0.04274482316476862,
+     0.03415293791543171
+    ],
+    "random_forest|3_demo_gaming − random_forest|1_demografia": [
+     0.011410701504050658,
+     -0.010137551042092203,
+     0.03732987724189365
+    ],
+    "logistica|4_demo_gaming_streaming − logistica|1_demografia": [
+     0.042115823976661915,
+     0.009344394107605083,
+     0.07041041334574158
+    ],
+    "random_forest|4_demo_gaming_streaming − random_forest|1_demografia": [
+     0.04648547523408697,
+     0.004576614454637884,
+     0.08243220934315912
+    ],
+    "random_forest|1_demografia − logistica|1_demografia": [
+     -0.026818353868815148,
+     -0.04848799597674959,
+     0.0004736147877642194
+    ],
+    "random_forest|2_demo_segmento − logistica|2_demo_segmento": [
+     -0.012453446362308052,
+     -0.024895241331210485,
+     0.0033737462706820384
+    ],
+    "random_forest|3_demo_gaming − logistica|3_demo_gaming": [
+     -0.009702487786778069,
+     -0.027350596266363637,
+     0.009149718038850506
+    ],
+    "random_forest|4_demo_gaming_streaming − logistica|4_demo_gaming_streaming": [
+     -0.022448702611390092,
+     -0.04874750449553223,
+     0.0075150181724327235
+    ]
+   },
+   "top_importancia": [
+    [
+     "edad",
+     0.01712548088625195
+    ],
+    [
+     "educacion_orden",
+     0.016516999551461766
+    ],
+    [
+     "stream_pago_frecuencia_orden",
+     0.006191227333033959
+    ],
+    [
+     "stream_g_accion_aventura",
+     0.005136268061920194
+    ],
+    [
+     "tamanio",
+     0.0047695390116257895
+    ],
+    [
+     "stream_g_suspenso",
+     0.0034927183388508308
+    ],
+    [
+     "actividad",
+     0.003348966186791946
+    ],
+    [
+     "vj_g_shooters",
+     0.0029303310255430833
+    ]
+   ]
+  },
+  "clustering": {
+   "k": 3,
+   "silueta": 0.3512469101262143,
+   "ari_media": 0.9794097369270813,
+   "silueta_max": 0.44141038854569065,
+   "silueta_maximo_interior": false,
+   "ari_k4": 0.8603380101084026,
+   "ari_p10_k4": 0.4975726224754706
+  },
+  "mercado": {
+   "estrenos": 899,
+   "entradas_total": 74466992,
+   "entradas_por_anio": {
+    "2022": 34453839,
+    "2023": 40013153
+   },
+   "pct_entradas_match_confiable": 0.970203496335665,
+   "titulos_match_confiable": 407,
+   "suma_pct_generos_2022_2023": 2.4535010148912355,
+   "adaptaciones_vj": 5,
+   "entradas_vj": 6180758,
+   "pct_entradas_vj": 0.08299996863039667,
+   "vj_antes_del_campo": [
+    "UNCHARTED: FUERA DEL MAPA",
+    "SONIC 2: LA PELICULA"
+   ]
+  }
+ },
+ "descriptivos": [
+  {
+   "segmento": "pc_consola",
+   "etiqueta": "Juega en PC/consola",
+   "n": 452,
+   "pct_poblacion": 0.1812488717,
+   "pct_poblacion_ic_inf": 0.1556696549,
+   "pct_poblacion_ic_sup": 0.2068280885,
+   "personas_expandidas": 5339934.0,
+   "edad_media": 26.3415303223,
+   "pct_menores_30": 0.696139904,
+   "pct_abc1_c2": 0.3114529245,
+   "pct_mujer": 0.239982365,
+   "asistencia": 0.6218444858,
+   "asistencia_ic_inf": 0.5679493241,
+   "asistencia_ic_sup": 0.6757396476,
+   "n_asistentes": 283
+  },
+  {
+   "segmento": "solo_movil",
+   "etiqueta": "Juega solo en celular/tablet",
+   "n": 445,
+   "pct_poblacion": 0.1465836414,
+   "pct_poblacion_ic_inf": 0.1262066817,
+   "pct_poblacion_ic_sup": 0.166960601,
+   "personas_expandidas": 4318167.0,
+   "edad_media": 32.9564699469,
+   "pct_menores_30": 0.5128712471,
+   "pct_abc1_c2": 0.1575036847,
+   "pct_mujer": 0.5900381595,
+   "asistencia": 0.4508873589,
+   "asistencia_ic_inf": 0.407899191,
+   "asistencia_ic_sup": 0.4938755268,
+   "n_asistentes": 195
+  },
+  {
+   "segmento": "no_juega",
+   "etiqueta": "No jugó videojuegos",
+   "n": 2482,
+   "pct_poblacion": 0.672167487,
+   "pct_poblacion_ic_inf": 0.6372759988,
+   "pct_poblacion_ic_sup": 0.7070589751,
+   "personas_expandidas": 19800306.0,
+   "edad_media": 47.7870974559,
+   "pct_menores_30": 0.1903944205,
+   "pct_abc1_c2": 0.2351332787,
+   "pct_mujer": 0.574054016,
+   "asistencia": 0.2699081535,
+   "asistencia_ic_inf": 0.2419257253,
+   "asistencia_ic_sup": 0.2978905817,
+   "n_asistentes": 660
+  },
+  {
+   "segmento": "total",
+   "etiqueta": "Total",
+   "n": 3379,
+   "pct_poblacion": 1.0,
+   "pct_poblacion_ic_inf": null,
+   "pct_poblacion_ic_sup": null,
+   "personas_expandidas": 29458407.0,
+   "edad_media": 41.7261852265,
+   "pct_menores_30": 0.3293300463,
+   "pct_abc1_c2": 0.2375868998,
+   "pct_mujer": 0.5158469201,
+   "asistencia": 0.3602248076,
+   "asistencia_ic_inf": 0.3272673839,
+   "asistencia_ic_sup": 0.3931822312,
+   "n_asistentes": 1138
+  }
+ ],
+ "edad": [
+  {
+   "tramo_edad": "13–17",
+   "segmento": "pc_consola",
+   "asistencia": 0.7166645799,
+   "ic_inf": 0.6057375866,
+   "ic_sup": 0.8275915733,
+   "n": 83,
+   "muestra_chica": false
+  },
+  {
+   "tramo_edad": "13–17",
+   "segmento": "solo_movil",
+   "asistencia": 0.5763625642,
+   "ic_inf": 0.4233111594,
+   "ic_sup": 0.7294139691,
+   "n": 76,
+   "muestra_chica": false
+  },
+  {
+   "tramo_edad": "13–17",
+   "segmento": "no_juega",
+   "asistencia": 0.374939759,
+   "ic_inf": 0.2255960735,
+   "ic_sup": 0.5242834446,
+   "n": 44,
+   "muestra_chica": true
+  },
+  {
+   "tramo_edad": "18–29",
+   "segmento": "pc_consola",
+   "asistencia": 0.6458231742,
+   "ic_inf": 0.5694857165,
+   "ic_sup": 0.7221606319,
+   "n": 192,
+   "muestra_chica": false
+  },
+  {
+   "tramo_edad": "18–29",
+   "segmento": "solo_movil",
+   "asistencia": 0.4842214175,
+   "ic_inf": 0.3712627154,
+   "ic_sup": 0.5971801196,
+   "n": 127,
+   "muestra_chica": false
+  },
+  {
+   "tramo_edad": "18–29",
+   "segmento": "no_juega",
+   "asistencia": 0.410243942,
+   "ic_inf": 0.3508841045,
+   "ic_sup": 0.4696037794,
+   "n": 383,
+   "muestra_chica": false
+  },
+  {
+   "tramo_edad": "30–39",
+   "segmento": "pc_consola",
+   "asistencia": 0.5120404214,
+   "ic_inf": 0.4133833954,
+   "ic_sup": 0.6106974475,
+   "n": 95,
+   "muestra_chica": false
+  },
+  {
+   "tramo_edad": "30–39",
+   "segmento": "solo_movil",
+   "asistencia": 0.4034486831,
+   "ic_inf": 0.2742873054,
+   "ic_sup": 0.5326100609,
+   "n": 85,
+   "muestra_chica": false
+  },
+  {
+   "tramo_edad": "30–39",
+   "segmento": "no_juega",
+   "asistencia": 0.3746331294,
+   "ic_inf": 0.3013205257,
+   "ic_sup": 0.4479457331,
+   "n": 415,
+   "muestra_chica": false
+  },
+  {
+   "tramo_edad": "40–49",
+   "segmento": "pc_consola",
+   "asistencia": 0.5073126143,
+   "ic_inf": 0.3005572675,
+   "ic_sup": 0.714067961,
+   "n": 47,
+   "muestra_chica": true
+  },
+  {
+   "tramo_edad": "40–49",
+   "segmento": "solo_movil",
+   "asistencia": 0.4616912599,
+   "ic_inf": 0.3284656437,
+   "ic_sup": 0.5949168761,
+   "n": 67,
+   "muestra_chica": false
+  },
+  {
+   "tramo_edad": "40–49",
+   "segmento": "no_juega",
+   "asistencia": 0.2700818497,
+   "ic_inf": 0.2057572,
+   "ic_sup": 0.3344064993,
+   "n": 471,
+   "muestra_chica": false
+  },
+  {
+   "tramo_edad": "50+",
+   "segmento": "pc_consola",
+   "asistencia": 0.4830477579,
+   "ic_inf": 0.3012017538,
+   "ic_sup": 0.6648937621,
+   "n": 35,
+   "muestra_chica": true
+  },
+  {
+   "tramo_edad": "50+",
+   "segmento": "solo_movil",
+   "asistencia": 0.2633534603,
+   "ic_inf": 0.1459774231,
+   "ic_sup": 0.3807294975,
+   "n": 90,
+   "muestra_chica": false
+  },
+  {
+   "tramo_edad": "50+",
+   "segmento": "no_juega",
+   "asistencia": 0.1751459468,
+   "ic_inf": 0.1266639408,
+   "ic_sup": 0.2236279528,
+   "n": 1169,
+   "muestra_chica": false
+  }
+ ],
+ "ajustada": [
+  {
+   "segmento": "pc_consola",
+   "prob_ajustada": 0.478930994,
+   "ic_inf": 0.4263707449,
+   "ic_sup": 0.5314912431
+  },
+  {
+   "segmento": "solo_movil",
+   "prob_ajustada": 0.3984044704,
+   "ic_inf": 0.35761197,
+   "ic_sup": 0.4391969708
+  },
+  {
+   "segmento": "no_juega",
+   "prob_ajustada": 0.3140992568,
+   "ic_inf": 0.2838158207,
+   "ic_sup": 0.3443826929
+  }
+ ],
+ "contrastes": [
+  {
+   "desenlace": "asistencia",
+   "especificacion": "crudo",
+   "contraste": "pc_consola vs no_juega",
+   "or": 4.425086887,
+   "or_ic_inf": 3.4844573849,
+   "or_ic_sup": 5.6196393855,
+   "p_valor": 5.692826138e-16,
+   "p_a": 0.6218444858,
+   "p_b": 0.2709307635,
+   "dif_pp": 35.0913722342,
+   "dif_ic_inf": 29.6422375266,
+   "dif_ic_sup": 40.5405069418,
+   "n": 3365
+  },
+  {
+   "desenlace": "asistencia",
+   "especificacion": "crudo",
+   "contraste": "solo_movil vs no_juega",
+   "or": 2.2483898137,
+   "or_ic_inf": 1.8728615032,
+   "or_ic_sup": 2.6992154763,
+   "p_valor": 0.0,
+   "p_a": 0.4551977171,
+   "p_b": 0.2709307635,
+   "dif_pp": 18.4266953613,
+   "dif_ic_inf": 14.1842982048,
+   "dif_ic_sup": 22.6690925178,
+   "n": 3365
+  },
+  {
+   "desenlace": "asistencia",
+   "especificacion": "crudo",
+   "contraste": "pc_consola vs solo_movil",
+   "or": 1.9681137408,
+   "or_ic_inf": 1.5590628231,
+   "or_ic_sup": 2.484487244,
+   "p_valor": 5.831e-07,
+   "p_a": 0.6218444858,
+   "p_b": 0.4551977171,
+   "dif_pp": 16.6646768729,
+   "dif_ic_inf": 11.0974897525,
+   "dif_ic_sup": 22.2318639933,
+   "n": 3365
+  },
+  {
+   "desenlace": "asistencia",
+   "especificacion": "edad_nse",
+   "contraste": "pc_consola vs no_juega",
+   "or": 2.3451415875,
+   "or_ic_inf": 1.8094237778,
+   "or_ic_sup": 3.0394698761,
+   "p_valor": 4.46e-08,
+   "p_a": 0.4914221987,
+   "p_b": 0.3103280114,
+   "dif_pp": 18.1094187245,
+   "dif_ic_inf": 12.6130929399,
+   "dif_ic_sup": 23.6057445091,
+   "n": 3365
+  },
+  {
+   "desenlace": "asistencia",
+   "especificacion": "edad_nse",
+   "contraste": "solo_movil vs no_juega",
+   "or": 1.5946676001,
+   "or_ic_inf": 1.2682816445,
+   "or_ic_sup": 2.0050473534,
+   "p_valor": 0.0001746706,
+   "p_a": 0.406738338,
+   "p_b": 0.3103280114,
+   "dif_pp": 9.6410326559,
+   "dif_ic_inf": 4.8586282009,
+   "dif_ic_sup": 14.4234371109,
+   "n": 3365
+  },
+  {
+   "desenlace": "asistencia",
+   "especificacion": "edad_nse",
+   "contraste": "pc_consola vs solo_movil",
+   "or": 1.4706146833,
+   "or_ic_inf": 1.135391278,
+   "or_ic_sup": 1.9048125421,
+   "p_valor": 0.0043998043,
+   "p_a": 0.4914221987,
+   "p_b": 0.406738338,
+   "dif_pp": 8.4683860687,
+   "dif_ic_inf": 2.8424515823,
+   "dif_ic_sup": 14.094320555,
+   "n": 3365
+  },
+  {
+   "desenlace": "asistencia",
+   "especificacion": "completo",
+   "contraste": "pc_consola vs no_juega",
+   "or": 2.2861148924,
+   "or_ic_inf": 1.6637305189,
+   "or_ic_sup": 3.1413268206,
+   "p_valor": 4.4885e-06,
+   "p_a": 0.478930994,
+   "p_b": 0.3140992568,
+   "dif_pp": 16.4831737182,
+   "dif_ic_inf": 9.8623241214,
+   "dif_ic_sup": 23.104023315,
+   "n": 3365
+  },
+  {
+   "desenlace": "asistencia",
+   "especificacion": "completo",
+   "contraste": "solo_movil vs no_juega",
+   "or": 1.5423596892,
+   "or_ic_inf": 1.2230154555,
+   "or_ic_sup": 1.9450885923,
+   "p_valor": 0.0004980217,
+   "p_a": 0.3984044704,
+   "p_b": 0.3140992568,
+   "dif_pp": 8.4305213607,
+   "dif_ic_inf": 3.7618495718,
+   "dif_ic_sup": 13.0991931495,
+   "n": 3365
+  },
+  {
+   "desenlace": "asistencia",
+   "especificacion": "completo",
+   "contraste": "pc_consola vs solo_movil",
+   "or": 1.4822190365,
+   "or_ic_inf": 1.1084586549,
+   "or_ic_sup": 1.982007414,
+   "p_valor": 0.0091107961,
+   "p_a": 0.478930994,
+   "p_b": 0.3984044704,
+   "dif_pp": 8.0526523575,
+   "dif_ic_inf": 2.0578978222,
+   "dif_ic_sup": 14.0474068929,
+   "n": 3365
+  }
+ ],
+ "sensibilidad": [
+  {
+   "variante": "Principal (diseño completo)",
+   "n": 3365,
+   "or": 2.2861148924,
+   "or_ic_inf": 1.6637305189,
+   "or_ic_sup": 3.1413268206,
+   "p_valor": 4.4885e-06,
+   "p_a": 0.478930994,
+   "p_b": 0.3140992568,
+   "dif_pp": 16.4831737182,
+   "dif_ic_inf": 9.8623241214,
+   "dif_ic_sup": 23.104023315
+  },
+  {
+   "variante": "Sin ponderar",
+   "n": 3365,
+   "or": 2.5626436726,
+   "or_ic_inf": 2.0239198919,
+   "or_ic_sup": 3.2447640932,
+   "p_valor": 4e-10,
+   "p_a": 0.4824496349,
+   "p_b": 0.2964017842,
+   "dif_pp": 18.6047850722,
+   "dif_ic_inf": 13.7811135028,
+   "dif_ic_sup": 23.4284566415
+  },
+  {
+   "variante": "Varianza: solo conglomerado por localidad",
+   "n": 3365,
+   "or": 2.2861148924,
+   "or_ic_inf": 1.6811989748,
+   "or_ic_sup": 3.1086869427,
+   "p_valor": 1.8943e-06,
+   "p_a": 0.478930994,
+   "p_b": 0.3140992568,
+   "dif_pp": 16.4831737182,
+   "dif_ic_inf": 10.0925853925,
+   "dif_ic_sup": 22.8737620439
+  },
+  {
+   "variante": "Varianza: robusta por persona (sin diseño)",
+   "n": 3365,
+   "or": 2.2861148924,
+   "or_ic_inf": 1.6195611141,
+   "or_ic_sup": 3.2269985095,
+   "p_valor": 2.6648e-06,
+   "p_a": 0.478930994,
+   "p_b": 0.3140992568,
+   "dif_pp": 16.4831737182,
+   "dif_ic_inf": 9.3947351059,
+   "dif_ic_sup": 23.5716123305
+  },
+  {
+   "variante": "Edad lineal y NSE ordinal (especificación original)",
+   "n": 3365,
+   "or": 2.2264587821,
+   "or_ic_inf": 1.7545289749,
+   "or_ic_sup": 2.8253273552,
+   "p_valor": 2.72e-08,
+   "p_a": 0.4846761136,
+   "p_b": 0.3136479835,
+   "dif_pp": 17.1028130097,
+   "dif_ic_inf": 12.0174903155,
+   "dif_ic_sup": 22.1881357038
+  },
+  {
+   "variante": "Solo 13 a 49 años (zona con jugadores de PC/consola)",
+   "n": 2075,
+   "or": 2.3815631091,
+   "or_ic_inf": 1.7313311588,
+   "or_ic_sup": 3.2760011358,
+   "p_valor": 2.0192e-06,
+   "p_a": 0.5677549711,
+   "p_b": 0.3774626586,
+   "dif_pp": 19.0292312465,
+   "dif_ic_inf": 11.8924015676,
+   "dif_ic_sup": 26.1660609254
+  },
+  {
+   "variante": "Ponderadores recortados al percentil 99",
+   "n": 3365,
+   "or": 2.3731171243,
+   "or_ic_inf": 1.811538798,
+   "or_ic_sup": 3.1087851345,
+   "p_valor": 7.98e-08,
+   "p_a": 0.4785441789,
+   "p_b": 0.3071370288,
+   "dif_pp": 17.1407150099,
+   "dif_ic_inf": 11.4700193342,
+   "dif_ic_sup": 22.8114106857
+  },
+  {
+   "variante": "Segmento PC/consola sin notebook (notebook pasa a 'otros jugadores')",
+   "n": 3365,
+   "or": 2.4264814262,
+   "or_ic_inf": 1.6724642541,
+   "or_ic_sup": 3.5204412275,
+   "p_valor": 1.91997e-05,
+   "p_a": 0.4909305725,
+   "p_b": 0.3137627081,
+   "dif_pp": 17.7167864415,
+   "dif_ic_inf": 9.9366337361,
+   "dif_ic_sup": 25.4969391469
+  }
+ ],
+ "generos_desc": [
+  {
+   "genero": "accion_aventura",
+   "etiqueta": "Acción/Aventura",
+   "segmento": "pc_consola",
+   "pct_entre_asistentes": 0.6459837723,
+   "ic_inf": 0.520841663,
+   "ic_sup": 0.7711258816,
+   "n_asistentes": 283,
+   "pct_en_toda_la_poblacion": 0.4017014467
+  },
+  {
+   "genero": "accion_aventura",
+   "etiqueta": "Acción/Aventura",
+   "segmento": "solo_movil",
+   "pct_entre_asistentes": 0.5059555794,
+   "ic_inf": 0.410408482,
+   "ic_sup": 0.6015026769,
+   "n_asistentes": 195,
+   "pct_en_toda_la_poblacion": 0.2281289749
+  },
+  {
+   "genero": "accion_aventura",
+   "etiqueta": "Acción/Aventura",
+   "segmento": "no_juega",
+   "pct_entre_asistentes": 0.4314370327,
+   "ic_inf": 0.3502833502,
+   "ic_sup": 0.5125907152,
+   "n_asistentes": 658,
+   "pct_en_toda_la_poblacion": 0.1167102563
+  },
+  {
+   "genero": "ciencia_ficcion",
+   "etiqueta": "Ciencia ficción",
+   "segmento": "pc_consola",
+   "pct_entre_asistentes": 0.4638290051,
+   "ic_inf": 0.3786626011,
+   "ic_sup": 0.5489954091,
+   "n_asistentes": 283,
+   "pct_en_toda_la_poblacion": 0.2884295092
+  },
+  {
+   "genero": "ciencia_ficcion",
+   "etiqueta": "Ciencia ficción",
+   "segmento": "solo_movil",
+   "pct_entre_asistentes": 0.3454236074,
+   "ic_inf": 0.2334714372,
+   "ic_sup": 0.4573757775,
+   "n_asistentes": 195,
+   "pct_en_toda_la_poblacion": 0.155747138
+  },
+  {
+   "genero": "ciencia_ficcion",
+   "etiqueta": "Ciencia ficción",
+   "segmento": "no_juega",
+   "pct_entre_asistentes": 0.3070567254,
+   "ic_inf": 0.250654173,
+   "ic_sup": 0.3634592778,
+   "n_asistentes": 658,
+   "pct_en_toda_la_poblacion": 0.0828247871
+  },
+  {
+   "genero": "suspenso",
+   "etiqueta": "Suspenso",
+   "segmento": "pc_consola",
+   "pct_entre_asistentes": 0.2050783814,
+   "ic_inf": 0.1444886462,
+   "ic_sup": 0.2656681167,
+   "n_asistentes": 283,
+   "pct_en_toda_la_poblacion": 0.1275268607
+  },
+  {
+   "genero": "suspenso",
+   "etiqueta": "Suspenso",
+   "segmento": "solo_movil",
+   "pct_entre_asistentes": 0.1933996059,
+   "ic_inf": 0.1091157302,
+   "ic_sup": 0.2776834817,
+   "n_asistentes": 195,
+   "pct_en_toda_la_poblacion": 0.0872014375
+  },
+  {
+   "genero": "suspenso",
+   "etiqueta": "Suspenso",
+   "segmento": "no_juega",
+   "pct_entre_asistentes": 0.20620429,
+   "ic_inf": 0.166347788,
+   "ic_sup": 0.246060792,
+   "n_asistentes": 658,
+   "pct_en_toda_la_poblacion": 0.0554909783
+  },
+  {
+   "genero": "terror",
+   "etiqueta": "Terror",
+   "segmento": "pc_consola",
+   "pct_entre_asistentes": 0.2648163222,
+   "ic_inf": 0.193666196,
+   "ic_sup": 0.3359664485,
+   "n_asistentes": 283,
+   "pct_en_toda_la_poblacion": 0.1646745697
+  },
+  {
+   "genero": "terror",
+   "etiqueta": "Terror",
+   "segmento": "solo_movil",
+   "pct_entre_asistentes": 0.1828318109,
+   "ic_inf": 0.1063936039,
+   "ic_sup": 0.2592700178,
+   "n_asistentes": 195,
+   "pct_en_toda_la_poblacion": 0.0824365523
+  },
+  {
+   "genero": "terror",
+   "etiqueta": "Terror",
+   "segmento": "no_juega",
+   "pct_entre_asistentes": 0.1285197729,
+   "ic_inf": 0.0971693495,
+   "ic_sup": 0.1598701963,
+   "n_asistentes": 658,
+   "pct_en_toda_la_poblacion": 0.0345855458
+  },
+  {
+   "genero": "drama",
+   "etiqueta": "Drama",
+   "segmento": "pc_consola",
+   "pct_entre_asistentes": 0.1794238899,
+   "ic_inf": 0.1317782067,
+   "ic_sup": 0.2270695732,
+   "n_asistentes": 283,
+   "pct_en_toda_la_poblacion": 0.1115737566
+  },
+  {
+   "genero": "drama",
+   "etiqueta": "Drama",
+   "segmento": "solo_movil",
+   "pct_entre_asistentes": 0.1474565646,
+   "ic_inf": 0.0799724915,
+   "ic_sup": 0.2149406376,
+   "n_asistentes": 195,
+   "pct_en_toda_la_poblacion": 0.066486301
+  },
+  {
+   "genero": "drama",
+   "etiqueta": "Drama",
+   "segmento": "no_juega",
+   "pct_entre_asistentes": 0.2143032445,
+   "ic_inf": 0.1617863543,
+   "ic_sup": 0.2668201347,
+   "n_asistentes": 658,
+   "pct_en_toda_la_poblacion": 0.0576704621
+  },
+  {
+   "genero": "comedia",
+   "etiqueta": "Comedia",
+   "segmento": "pc_consola",
+   "pct_entre_asistentes": 0.2171047449,
+   "ic_inf": 0.1420341666,
+   "ic_sup": 0.2921753232,
+   "n_asistentes": 283,
+   "pct_en_toda_la_poblacion": 0.1350053885
+  },
+  {
+   "genero": "comedia",
+   "etiqueta": "Comedia",
+   "segmento": "solo_movil",
+   "pct_entre_asistentes": 0.222998388,
+   "ic_inf": 0.1491773436,
+   "ic_sup": 0.2968194323,
+   "n_asistentes": 195,
+   "pct_en_toda_la_poblacion": 0.1005471542
+  },
+  {
+   "genero": "comedia",
+   "etiqueta": "Comedia",
+   "segmento": "no_juega",
+   "pct_entre_asistentes": 0.3070240024,
+   "ic_inf": 0.2238683223,
+   "ic_sup": 0.3901796824,
+   "n_asistentes": 658,
+   "pct_en_toda_la_poblacion": 0.0826222492
+  },
+  {
+   "genero": "romantico",
+   "etiqueta": "Romántico",
+   "segmento": "pc_consola",
+   "pct_entre_asistentes": 0.0516766011,
+   "ic_inf": 0.0154789492,
+   "ic_sup": 0.087874253,
+   "n_asistentes": 283,
+   "pct_en_toda_la_poblacion": 0.0321348094
+  },
+  {
+   "genero": "romantico",
+   "etiqueta": "Romántico",
+   "segmento": "solo_movil",
+   "pct_entre_asistentes": 0.0693175712,
+   "ic_inf": 0.0,
+   "ic_sup": 0.1392302023,
+   "n_asistentes": 195,
+   "pct_en_toda_la_poblacion": 0.0312544166
+  },
+  {
+   "genero": "romantico",
+   "etiqueta": "Romántico",
+   "segmento": "no_juega",
+   "pct_entre_asistentes": 0.0900211064,
+   "ic_inf": 0.0519053934,
+   "ic_sup": 0.1281368193,
+   "n_asistentes": 658,
+   "pct_en_toda_la_poblacion": 0.0242252926
+  },
+  {
+   "genero": "documental",
+   "etiqueta": "Documental",
+   "segmento": "pc_consola",
+   "pct_entre_asistentes": 0.0922196256,
+   "ic_inf": 0.0628795508,
+   "ic_sup": 0.1215597003,
+   "n_asistentes": 283,
+   "pct_en_toda_la_poblacion": 0.0573462656
+  },
+  {
+   "genero": "documental",
+   "etiqueta": "Documental",
+   "segmento": "solo_movil",
+   "pct_entre_asistentes": 0.0288375425,
+   "ic_inf": 0.007302433,
+   "ic_sup": 0.0503726521,
+   "n_asistentes": 195,
+   "pct_en_toda_la_poblacion": 0.0130024834
+  },
+  {
+   "genero": "documental",
+   "etiqueta": "Documental",
+   "segmento": "no_juega",
+   "pct_entre_asistentes": 0.1014741733,
+   "ic_inf": 0.0661659072,
+   "ic_sup": 0.1367824395,
+   "n_asistentes": 658,
+   "pct_en_toda_la_poblacion": 0.0279150045
+  },
+  {
+   "genero": "infantiles",
+   "etiqueta": "Infantiles",
+   "segmento": "pc_consola",
+   "pct_entre_asistentes": 0.2109340126,
+   "ic_inf": 0.1100280298,
+   "ic_sup": 0.3118399953,
+   "n_asistentes": 283,
+   "pct_en_toda_la_poblacion": 0.1311681526
+  },
+  {
+   "genero": "infantiles",
+   "etiqueta": "Infantiles",
+   "segmento": "solo_movil",
+   "pct_entre_asistentes": 0.2537614186,
+   "ic_inf": 0.1767719868,
+   "ic_sup": 0.3307508504,
+   "n_asistentes": 195,
+   "pct_en_toda_la_poblacion": 0.1144178158
+  },
+  {
+   "genero": "infantiles",
+   "etiqueta": "Infantiles",
+   "segmento": "no_juega",
+   "pct_entre_asistentes": 0.2336916507,
+   "ic_inf": 0.1844105834,
+   "ic_sup": 0.2829727181,
+   "n_asistentes": 658,
+   "pct_en_toda_la_poblacion": 0.0634956278
+  },
+  {
+   "genero": "animacion",
+   "etiqueta": "Animación",
+   "segmento": "pc_consola",
+   "pct_entre_asistentes": 0.2062074942,
+   "ic_inf": 0.1057378787,
+   "ic_sup": 0.3066771097,
+   "n_asistentes": 283,
+   "pct_en_toda_la_poblacion": 0.1282289932
+  },
+  {
+   "genero": "animacion",
+   "etiqueta": "Animación",
+   "segmento": "solo_movil",
+   "pct_entre_asistentes": 0.1921457997,
+   "ic_inf": 0.1183726256,
+   "ic_sup": 0.2659189739,
+   "n_asistentes": 195,
+   "pct_en_toda_la_poblacion": 0.0866361122
+  },
+  {
+   "genero": "animacion",
+   "etiqueta": "Animación",
+   "segmento": "no_juega",
+   "pct_entre_asistentes": 0.1872085603,
+   "ic_inf": 0.0782108665,
+   "ic_sup": 0.2962062542,
+   "n_asistentes": 658,
+   "pct_en_toda_la_poblacion": 0.0503790981
+  }
+ ],
+ "generos_contrastes": [
+  {
+   "genero": "accion_aventura",
+   "etiqueta": "Acción/Aventura",
+   "n": 1136,
+   "casos": 561,
+   "or": 1.7081206881,
+   "or_ic_inf": 0.7122979844,
+   "or_ic_sup": 4.0961456426,
+   "p_valor": 0.2234180324,
+   "dif_pp": 12.6291233426,
+   "dif_ic_inf": -8.0449593267,
+   "dif_ic_sup": 33.3032060119,
+   "or_vs_movil": 1.4227136314,
+   "p_vs_movil": 0.2743889044,
+   "p_holm": 1.0,
+   "significativo_holm_5pct": false
+  },
+  {
+   "genero": "ciencia_ficcion",
+   "etiqueta": "Ciencia ficción",
+   "n": 1136,
+   "casos": 409,
+   "or": 1.5951978093,
+   "or_ic_inf": 0.9617867754,
+   "or_ic_sup": 2.6457590352,
+   "p_valor": 0.0694899695,
+   "dif_pp": 10.2310704652,
+   "dif_ic_inf": -1.0004296345,
+   "dif_ic_sup": 21.4625705648,
+   "or_vs_movil": 1.2859291715,
+   "p_vs_movil": 0.277518987,
+   "p_holm": 0.6254097256,
+   "significativo_holm_5pct": false
+  },
+  {
+   "genero": "suspenso",
+   "etiqueta": "Suspenso",
+   "n": 1136,
+   "casos": 227,
+   "or": 0.7237316822,
+   "or_ic_inf": 0.3926480952,
+   "or_ic_sup": 1.3339872375,
+   "p_valor": 0.2918430518,
+   "dif_pp": -4.9305313529,
+   "dif_ic_inf": -13.7590967036,
+   "dif_ic_sup": 3.8980339978,
+   "or_vs_movil": 0.7862498653,
+   "p_vs_movil": 0.3424899312,
+   "p_holm": 1.0,
+   "significativo_holm_5pct": false
+  },
+  {
+   "genero": "terror",
+   "etiqueta": "Terror",
+   "n": 1136,
+   "casos": 172,
+   "or": 1.3946494981,
+   "or_ic_inf": 0.753094772,
+   "or_ic_sup": 2.5827389789,
+   "p_valor": 0.2819930885,
+   "dif_pp": 4.5790604701,
+   "dif_ic_inf": -4.1309293499,
+   "dif_ic_sup": 13.2890502902,
+   "or_vs_movil": 1.4801954091,
+   "p_vs_movil": 0.3115484723,
+   "p_holm": 1.0,
+   "significativo_holm_5pct": false
+  },
+  {
+   "genero": "drama",
+   "etiqueta": "Drama",
+   "n": 1136,
+   "casos": 226,
+   "or": 1.0025121937,
+   "or_ic_inf": 0.5710910674,
+   "or_ic_sup": 1.7598431422,
+   "p_valor": 0.9928590164,
+   "dif_pp": 0.0363580306,
+   "dif_ic_inf": -8.1184353027,
+   "dif_ic_sup": 8.1911513639,
+   "or_vs_movil": 1.1376365288,
+   "p_vs_movil": 0.7032751961,
+   "p_holm": 1.0,
+   "significativo_holm_5pct": false
+  },
+  {
+   "genero": "comedia",
+   "etiqueta": "Comedia",
+   "n": 1136,
+   "casos": 291,
+   "or": 0.6360948969,
+   "or_ic_inf": 0.4109115081,
+   "or_ic_sup": 0.9846809102,
+   "p_valor": 0.0427777726,
+   "dif_pp": -8.159358517,
+   "dif_ic_inf": -16.017959225,
+   "dif_ic_sup": -0.3007578091,
+   "or_vs_movil": 0.9278737406,
+   "p_vs_movil": 0.7262460783,
+   "p_holm": 0.427777726,
+   "significativo_holm_5pct": false
+  },
+  {
+   "genero": "romantico",
+   "etiqueta": "Romántico",
+   "n": 1136,
+   "casos": 100,
+   "or": 0.656165488,
+   "or_ic_inf": 0.1976545565,
+   "or_ic_sup": 2.1783112682,
+   "p_valor": 0.4822373494,
+   "dif_pp": -2.7182277898,
+   "dif_ic_inf": -10.2170760165,
+   "dif_ic_sup": 4.780620437,
+   "or_vs_movil": 1.0414004581,
+   "p_vs_movil": 0.9339388845,
+   "p_holm": 1.0,
+   "significativo_holm_5pct": false
+  },
+  {
+   "genero": "documental",
+   "etiqueta": "Documental",
+   "n": 1136,
+   "casos": 110,
+   "or": 1.1013120457,
+   "or_ic_inf": 0.6309619897,
+   "or_ic_sup": 1.922284134,
+   "p_valor": 0.7282158481,
+   "dif_pp": 0.7827581645,
+   "dif_ic_inf": -3.7564779707,
+   "dif_ic_sup": 5.3219942998,
+   "or_vs_movil": 3.355133219,
+   "p_vs_movil": 0.0104268073,
+   "p_holm": 1.0,
+   "significativo_holm_5pct": false
+  },
+  {
+   "genero": "infantiles",
+   "etiqueta": "Infantiles",
+   "n": 1136,
+   "casos": 294,
+   "or": 1.3982799688,
+   "or_ic_inf": 0.8086639927,
+   "or_ic_sup": 2.4177988494,
+   "p_valor": 0.2233690105,
+   "dif_pp": 5.6240078223,
+   "dif_ic_inf": -3.803495583,
+   "dif_ic_sup": 15.0515112276,
+   "or_vs_movil": 1.075236199,
+   "p_vs_movil": 0.8276044054,
+   "p_holm": 1.0,
+   "significativo_holm_5pct": false
+  },
+  {
+   "genero": "animacion",
+   "etiqueta": "Animación",
+   "n": 1136,
+   "casos": 208,
+   "or": 1.0667960096,
+   "or_ic_inf": 0.6425579426,
+   "or_ic_sup": 1.7711301202,
+   "p_valor": 0.7980183024,
+   "dif_pp": 0.9780308731,
+   "dif_ic_inf": -6.7242129137,
+   "dif_ic_sup": 8.6802746598,
+   "or_vs_movil": 1.0129154643,
+   "p_vs_movil": 0.9631985232,
+   "p_holm": 1.0,
+   "significativo_holm_5pct": false
+  }
+ ],
+ "pred_test": [
+  {
+   "modelo": "baseline",
+   "bloque": "1_demografia",
+   "roc_auc": 0.5,
+   "pr_auc": 0.3797683375,
+   "brier": 0.2361442964,
+   "umbral": 0.5,
+   "precision": 0.0,
+   "recall": 0.0,
+   "especificidad": 1.0,
+   "f1": 0.0,
+   "exactitud": 0.6202316625,
+   "vp": 0,
+   "fp": 0,
+   "fn": 228,
+   "vn": 448,
+   "auc_ic_inf": 0.5,
+   "auc_ic_sup": 0.5
+  },
+  {
+   "modelo": "logistica",
+   "bloque": "1_demografia",
+   "roc_auc": 0.7209310601,
+   "pr_auc": 0.5707523385,
+   "brier": 0.2066261344,
+   "umbral": 0.32,
+   "precision": 0.5254941567,
+   "recall": 0.7022055988,
+   "especificidad": 0.6117577618,
+   "f1": 0.6011322187,
+   "exactitud": 0.6461069865,
+   "vp": 177,
+   "fp": 169,
+   "fn": 51,
+   "vn": 279,
+   "auc_ic_inf": 0.6670198273,
+   "auc_ic_sup": 0.7901566505
+  },
+  {
+   "modelo": "random_forest",
+   "bloque": "1_demografia",
+   "roc_auc": 0.6941127062,
+   "pr_auc": 0.5223063458,
+   "brier": 0.2146008114,
+   "umbral": 0.32,
+   "precision": 0.491480736,
+   "recall": 0.6684661063,
+   "especificidad": 0.5765080864,
+   "f1": 0.5664711553,
+   "exactitud": 0.6114308307,
+   "vp": 170,
+   "fp": 188,
+   "fn": 58,
+   "vn": 260,
+   "auc_ic_inf": 0.6278900311,
+   "auc_ic_sup": 0.7778991724
+  },
+  {
+   "modelo": "logistica",
+   "bloque": "2_demo_segmento",
+   "roc_auc": 0.7202082387,
+   "pr_auc": 0.5601452991,
+   "brier": 0.2084559009,
+   "umbral": 0.28,
+   "precision": 0.5049227955,
+   "recall": 0.7237603146,
+   "especificidad": 0.5654822335,
+   "f1": 0.5948532674,
+   "exactitud": 0.6255912372,
+   "vp": 183,
+   "fp": 191,
+   "fn": 45,
+   "vn": 257,
+   "auc_ic_inf": 0.6536012993,
+   "auc_ic_sup": 0.8018074046
+  },
+  {
+   "modelo": "random_forest",
+   "bloque": "2_demo_segmento",
+   "roc_auc": 0.7077547923,
+   "pr_auc": 0.5418356756,
+   "brier": 0.2109104824,
+   "umbral": 0.38,
+   "precision": 0.5377989461,
+   "recall": 0.6139045269,
+   "especificidad": 0.6769448707,
+   "f1": 0.5733371745,
+   "exactitud": 0.6530041442,
+   "vp": 149,
+   "fp": 127,
+   "fn": 79,
+   "vn": 321,
+   "auc_ic_inf": 0.6410299515,
+   "auc_ic_sup": 0.7943657581
+  },
+  {
+   "modelo": "logistica",
+   "bloque": "3_demo_gaming",
+   "roc_auc": 0.7152258955,
+   "pr_auc": 0.5762578837,
+   "brier": 0.2110806928,
+   "umbral": 0.31,
+   "precision": 0.5329746721,
+   "recall": 0.6799568134,
+   "especificidad": 0.6351788455,
+   "f1": 0.5975601491,
+   "exactitud": 0.6521840999,
+   "vp": 171,
+   "fp": 162,
+   "fn": 57,
+   "vn": 286,
+   "auc_ic_inf": 0.637281383,
+   "auc_ic_sup": 0.8056891676
+  },
+  {
+   "modelo": "random_forest",
+   "bloque": "3_demo_gaming",
+   "roc_auc": 0.7055234077,
+   "pr_auc": 0.5486690066,
+   "brier": 0.2125799986,
+   "umbral": 0.36,
+   "precision": 0.5192468749,
+   "recall": 0.6454846919,
+   "especificidad": 0.6340691772,
+   "f1": 0.575524728,
+   "exactitud": 0.6384044282,
+   "vp": 162,
+   "fp": 151,
+   "fn": 66,
+   "vn": 297,
+   "auc_ic_inf": 0.6313982676,
+   "auc_ic_sup": 0.7960584128
+  },
+  {
+   "modelo": "logistica",
+   "bloque": "4_demo_gaming_streaming",
+   "roc_auc": 0.7630468841,
+   "pr_auc": 0.6340769666,
+   "brier": 0.1936641481,
+   "umbral": 0.33,
+   "precision": 0.5552650644,
+   "recall": 0.6797254569,
+   "especificidad": 0.6666509267,
+   "f1": 0.6112237999,
+   "exactitud": 0.6716162193,
+   "vp": 172,
+   "fp": 149,
+   "fn": 56,
+   "vn": 299,
+   "auc_ic_inf": 0.7080577486,
+   "auc_ic_sup": 0.8240408009
+  },
+  {
+   "modelo": "random_forest",
+   "bloque": "4_demo_gaming_streaming",
+   "roc_auc": 0.7405981815,
+   "pr_auc": 0.6143684186,
+   "brier": 0.2002588161,
+   "umbral": 0.38,
+   "precision": 0.590057414,
+   "recall": 0.6617953266,
+   "especificidad": 0.7184747964,
+   "f1": 0.6238708857,
+   "exactitud": 0.6969497284,
+   "vp": 159,
+   "fp": 127,
+   "fn": 69,
+   "vn": 321,
+   "auc_ic_inf": 0.6701960233,
+   "auc_ic_sup": 0.8173538025
+  }
+ ],
+ "pred_difs": [
+  {
+   "comparacion": "logistica|2_demo_segmento − logistica|1_demografia",
+   "dif_auc": -0.0007228214,
+   "ic_inf": -0.0198531686,
+   "ic_sup": 0.020765281
+  },
+  {
+   "comparacion": "logistica|3_demo_gaming − logistica|2_demo_segmento",
+   "dif_auc": -0.0049823432,
+   "ic_inf": -0.028665593,
+   "ic_sup": 0.0185527054
+  },
+  {
+   "comparacion": "logistica|4_demo_gaming_streaming − logistica|3_demo_gaming",
+   "dif_auc": 0.0478209886,
+   "ic_inf": 0.0088036014,
+   "ic_sup": 0.0803368507
+  },
+  {
+   "comparacion": "random_forest|2_demo_segmento − random_forest|1_demografia",
+   "dif_auc": 0.0136420861,
+   "ic_inf": -0.0035983084,
+   "ic_sup": 0.0301255209
+  },
+  {
+   "comparacion": "random_forest|3_demo_gaming − random_forest|2_demo_segmento",
+   "dif_auc": -0.0022313846,
+   "ic_inf": -0.0166943425,
+   "ic_sup": 0.0164508024
+  },
+  {
+   "comparacion": "random_forest|4_demo_gaming_streaming − random_forest|3_demo_gaming",
+   "dif_auc": 0.0350747737,
+   "ic_inf": 0.0003758273,
+   "ic_sup": 0.0637761007
+  },
+  {
+   "comparacion": "logistica|3_demo_gaming − logistica|1_demografia",
+   "dif_auc": -0.0057051646,
+   "ic_inf": -0.0427448232,
+   "ic_sup": 0.0341529379
+  },
+  {
+   "comparacion": "random_forest|3_demo_gaming − random_forest|1_demografia",
+   "dif_auc": 0.0114107015,
+   "ic_inf": -0.010137551,
+   "ic_sup": 0.0373298772
+  },
+  {
+   "comparacion": "logistica|4_demo_gaming_streaming − logistica|1_demografia",
+   "dif_auc": 0.042115824,
+   "ic_inf": 0.0093443941,
+   "ic_sup": 0.0704104133
+  },
+  {
+   "comparacion": "random_forest|4_demo_gaming_streaming − random_forest|1_demografia",
+   "dif_auc": 0.0464854752,
+   "ic_inf": 0.0045766145,
+   "ic_sup": 0.0824322093
+  },
+  {
+   "comparacion": "random_forest|1_demografia − logistica|1_demografia",
+   "dif_auc": -0.0268183539,
+   "ic_inf": -0.048487996,
+   "ic_sup": 0.0004736148
+  },
+  {
+   "comparacion": "random_forest|2_demo_segmento − logistica|2_demo_segmento",
+   "dif_auc": -0.0124534464,
+   "ic_inf": -0.0248952413,
+   "ic_sup": 0.0033737463
+  },
+  {
+   "comparacion": "random_forest|3_demo_gaming − logistica|3_demo_gaming",
+   "dif_auc": -0.0097024878,
+   "ic_inf": -0.0273505963,
+   "ic_sup": 0.009149718
+  },
+  {
+   "comparacion": "random_forest|4_demo_gaming_streaming − logistica|4_demo_gaming_streaming",
+   "dif_auc": -0.0224487026,
+   "ic_inf": -0.0487475045,
+   "ic_sup": 0.0075150182
+  }
+ ],
+ "importancia": [
+  {
+   "variable": "edad",
+   "caida_auc_media": 0.0171254809,
+   "caida_auc_desvio": 0.0157592694,
+   "bloque": "demografia"
+  },
+  {
+   "variable": "educacion_orden",
+   "caida_auc_media": 0.0165169996,
+   "caida_auc_desvio": 0.0112581794,
+   "bloque": "demografia"
+  },
+  {
+   "variable": "stream_pago_frecuencia_orden",
+   "caida_auc_media": 0.0061912273,
+   "caida_auc_desvio": 0.0073893145,
+   "bloque": "streaming"
+  },
+  {
+   "variable": "stream_g_accion_aventura",
+   "caida_auc_media": 0.0051362681,
+   "caida_auc_desvio": 0.004712702,
+   "bloque": "streaming"
+  },
+  {
+   "variable": "tamanio",
+   "caida_auc_media": 0.004769539,
+   "caida_auc_desvio": 0.0054979089,
+   "bloque": "demografia"
+  },
+  {
+   "variable": "stream_g_suspenso",
+   "caida_auc_media": 0.0034927183,
+   "caida_auc_desvio": 0.0045263395,
+   "bloque": "streaming"
+  },
+  {
+   "variable": "actividad",
+   "caida_auc_media": 0.0033489662,
+   "caida_auc_desvio": 0.003215942,
+   "bloque": "demografia"
+  },
+  {
+   "variable": "vj_g_shooters",
+   "caida_auc_media": 0.002930331,
+   "caida_auc_desvio": 0.0026149184,
+   "bloque": "gaming"
+  }
+ ],
+ "adaptaciones": [
+  {
+   "titulo": "UNCHARTED: FUERA DEL MAPA",
+   "fecha_estreno": "2022-02-17",
+   "anio_estreno": 2022,
+   "entradas": 548429,
+   "pct_entradas_del_anio": 0.0159177908,
+   "generos_tmdb": "Acción|Aventura|Misterio",
+   "tmdb_confianza": "alta",
+   "respecto_campo_encc": "antes del trabajo de campo"
+  },
+  {
+   "titulo": "SONIC 2: LA PELICULA",
+   "fecha_estreno": "2022-04-07",
+   "anio_estreno": 2022,
+   "entradas": 1295715,
+   "pct_entradas_del_anio": 0.0376072751,
+   "generos_tmdb": "Acción|Aventura|Familia|Comedia",
+   "tmdb_confianza": "alta",
+   "respecto_campo_encc": "antes del trabajo de campo"
+  },
+  {
+   "titulo": "SUPER MARIO BROS. LA PELICULA",
+   "fecha_estreno": "2023-04-05",
+   "anio_estreno": 2023,
+   "entradas": 3015606,
+   "pct_entradas_del_anio": 0.075365368,
+   "generos_tmdb": "Familia|Comedia|Aventura|Fantasía|Animación",
+   "tmdb_confianza": "alta",
+   "respecto_campo_encc": "después del trabajo de campo"
+  },
+  {
+   "titulo": "GRAN TURISMO: DE JUGADOR A CORREDOR",
+   "fecha_estreno": "2023-08-24",
+   "anio_estreno": 2023,
+   "entradas": 118335,
+   "pct_entradas_del_anio": 0.0029574025,
+   "generos_tmdb": "Aventura|Drama|Acción",
+   "tmdb_confianza": "alta",
+   "respecto_campo_encc": "después del trabajo de campo"
+  },
+  {
+   "titulo": "FIVE NIGHTS AT FREDDY'S",
+   "fecha_estreno": "2023-10-26",
+   "anio_estreno": 2023,
+   "entradas": 1202673,
+   "pct_entradas_del_anio": 0.0300569415,
+   "generos_tmdb": "Terror|Suspense",
+   "tmdb_confianza": "alta",
+   "respecto_campo_encc": "después del trabajo de campo"
+  }
+ ],
+ "mario_puesto": 4,
+ "top10": [
+  {
+   "anio_estreno": 2022,
+   "titulo": "MINIONS: NACE UN VILLANO",
+   "tipo_origen": "extranjera",
+   "entradas": 4641601,
+   "generos_tmdb": "Animación|Comedia|Crimen|Ciencia ficción|Familia",
+   "es_adaptacion_videojuego": false
+  },
+  {
+   "anio_estreno": 2023,
+   "titulo": "BARBIE",
+   "tipo_origen": "extranjera",
+   "entradas": 3562856,
+   "generos_tmdb": "Comedia|Aventura|Fantasía",
+   "es_adaptacion_videojuego": false
+  },
+  {
+   "anio_estreno": 2022,
+   "titulo": "AVATAR: EL CAMINO DEL AGUA",
+   "tipo_origen": "extranjera",
+   "entradas": 3316165,
+   "generos_tmdb": "Acción|Aventura|Ciencia ficción",
+   "es_adaptacion_videojuego": false
+  },
+  {
+   "anio_estreno": 2023,
+   "titulo": "SUPER MARIO BROS. LA PELICULA",
+   "tipo_origen": "extranjera",
+   "entradas": 3015606,
+   "generos_tmdb": "Familia|Comedia|Aventura|Fantasía|Animación",
+   "es_adaptacion_videojuego": true
+  },
+  {
+   "anio_estreno": 2023,
+   "titulo": "ELEMENTOS",
+   "tipo_origen": "extranjera",
+   "entradas": 2633079,
+   "generos_tmdb": "Animación|Comedia|Familia|Romance",
+   "es_adaptacion_videojuego": false
+  },
+  {
+   "anio_estreno": 2022,
+   "titulo": "JURASSIC WORLD DOMINIO",
+   "tipo_origen": "extranjera",
+   "entradas": 2455215,
+   "generos_tmdb": "Aventura|Ciencia ficción|Suspense",
+   "es_adaptacion_videojuego": false
+  },
+  {
+   "anio_estreno": 2023,
+   "titulo": "RAPIDOS Y FURIOSOS X",
+   "tipo_origen": "extranjera",
+   "entradas": 2329300,
+   "generos_tmdb": "Acción|Crimen|Suspense",
+   "es_adaptacion_videojuego": false
+  },
+  {
+   "anio_estreno": 2022,
+   "titulo": "THOR: AMOR Y TRUENO",
+   "tipo_origen": "extranjera",
+   "entradas": 2115706,
+   "generos_tmdb": "Fantasía|Acción|Comedia",
+   "es_adaptacion_videojuego": false
+  },
+  {
+   "anio_estreno": 2022,
+   "titulo": "DOCTOR STRANGE EN EL MULTIVERSO DE LA LOCURA",
+   "tipo_origen": "extranjera",
+   "entradas": 1992645,
+   "generos_tmdb": "Fantasía|Acción|Aventura",
+   "es_adaptacion_videojuego": false
+  },
+  {
+   "anio_estreno": 2022,
+   "titulo": "LIGHTYEAR",
+   "tipo_origen": "extranjera",
+   "entradas": 1619040,
+   "generos_tmdb": "Animación|Ciencia ficción|Familia|Aventura",
+   "es_adaptacion_videojuego": false
+  },
+  {
+   "anio_estreno": 2023,
+   "titulo": "GUARDIANES DE LA GALAXIA VOL 3",
+   "tipo_origen": "extranjera",
+   "entradas": 1430164,
+   "generos_tmdb": "Ciencia ficción|Aventura|Acción",
+   "es_adaptacion_videojuego": false
+  },
+  {
+   "anio_estreno": 2023,
+   "titulo": "LA SIRENITA",
+   "tipo_origen": "extranjera",
+   "entradas": 1385516,
+   "generos_tmdb": "Aventura|Familia|Fantasía|Romance",
+   "es_adaptacion_videojuego": false
+  },
+  {
+   "anio_estreno": 2022,
+   "titulo": "SONIC 2: LA PELICULA",
+   "tipo_origen": "extranjera",
+   "entradas": 1295715,
+   "generos_tmdb": "Acción|Aventura|Familia|Comedia",
+   "es_adaptacion_videojuego": true
+  },
+  {
+   "anio_estreno": 2023,
+   "titulo": "LA MONJA II",
+   "tipo_origen": "extranjera",
+   "entradas": 1293020,
+   "generos_tmdb": "Terror",
+   "es_adaptacion_videojuego": false
+  },
+  {
+   "anio_estreno": 2022,
+   "titulo": "BATMAN",
+   "tipo_origen": "extranjera",
+   "entradas": 1286209,
+   "generos_tmdb": "Crimen|Misterio|Suspense",
+   "es_adaptacion_videojuego": false
+  },
+  {
+   "anio_estreno": 2023,
+   "titulo": "FIVE NIGHTS AT FREDDY'S",
+   "tipo_origen": "extranjera",
+   "entradas": 1202673,
+   "generos_tmdb": "Terror|Suspense",
+   "es_adaptacion_videojuego": true
+  },
+  {
+   "anio_estreno": 2023,
+   "titulo": "OPPENHEIMER",
+   "tipo_origen": "extranjera",
+   "entradas": 1167395,
+   "generos_tmdb": "Drama|Historia|Bélica",
+   "es_adaptacion_videojuego": false
+  },
+  {
+   "anio_estreno": 2022,
+   "titulo": "ARGENTINA, 1985",
+   "tipo_origen": "nacional",
+   "entradas": 1160067,
+   "generos_tmdb": "Drama|Historia|Crimen",
+   "es_adaptacion_videojuego": false
+  },
+  {
+   "anio_estreno": 2023,
+   "titulo": "MUCHACHOS. LA PELICULA DE LA GENTE",
+   "tipo_origen": "nacional",
+   "entradas": 1145881,
+   "generos_tmdb": "Documental",
+   "es_adaptacion_videojuego": false
+  },
+  {
+   "anio_estreno": 2022,
+   "titulo": "TOP GUN: MAVERICK",
+   "tipo_origen": "extranjera",
+   "entradas": 1053999,
+   "generos_tmdb": "Acción|Drama",
+   "es_adaptacion_videojuego": false
+  }
+ ],
+ "encc_vs_incaa": [
+  {
+   "genero": "accion_aventura",
+   "etiqueta": "Acción/Aventura",
+   "pct_asistentes_que_vieron": 0.5127263466,
+   "ic_inf": 0.4482144114,
+   "ic_sup": 0.5772382817,
+   "pct_entradas_2022": 0.5914282763
+  },
+  {
+   "genero": "ciencia_ficcion",
+   "etiqueta": "Ciencia ficción",
+   "pct_asistentes_que_vieron": 0.3630500509,
+   "ic_inf": 0.3130694288,
+   "ic_sup": 0.4130306731,
+   "pct_entradas_2022": 0.4678890561
+  },
+  {
+   "genero": "suspenso",
+   "etiqueta": "Suspenso",
+   "pct_asistentes_que_vieron": 0.2031943212,
+   "ic_inf": 0.1675354825,
+   "ic_sup": 0.2388531599,
+   "pct_entradas_2022": 0.419945361
+  },
+  {
+   "genero": "terror",
+   "etiqueta": "Terror",
+   "pct_asistentes_que_vieron": 0.1809375924,
+   "ic_inf": 0.1501297417,
+   "ic_sup": 0.2117454432,
+   "pct_entradas_2022": 0.089173149
+  },
+  {
+   "genero": "drama",
+   "etiqueta": "Drama",
+   "pct_asistentes_que_vieron": 0.1908048243,
+   "ic_inf": 0.1598843517,
+   "ic_sup": 0.2217252969,
+   "pct_entradas_2022": 0.1103365088
+  },
+  {
+   "genero": "comedia",
+   "etiqueta": "Comedia",
+   "pct_asistentes_que_vieron": 0.2630139012,
+   "ic_inf": 0.1936784347,
+   "ic_sup": 0.3323493677,
+   "pct_entradas_2022": 0.3708797623
+  },
+  {
+   "genero": "romantico",
+   "etiqueta": "Romántico",
+   "pct_asistentes_que_vieron": 0.0740905058,
+   "ic_inf": 0.0519894319,
+   "ic_sup": 0.0961915796,
+   "pct_entradas_2022": 0.0337218684
+  },
+  {
+   "genero": "documental",
+   "etiqueta": "Documental",
+   "pct_asistentes_que_vieron": 0.0862335272,
+   "ic_inf": 0.063015479,
+   "ic_sup": 0.1094515755,
+   "pct_entradas_2022": 0.0017249135
+  },
+  {
+   "genero": "infantiles",
+   "etiqueta": "Infantiles",
+   "pct_asistentes_que_vieron": 0.2310378258,
+   "ic_inf": 0.1928520552,
+   "ic_sup": 0.2692235963,
+   "pct_entradas_2022": 0.3014915157
+  },
+  {
+   "genero": "animacion",
+   "etiqueta": "Animación",
+   "pct_asistentes_que_vieron": 0.1937789609,
+   "ic_inf": 0.1050192759,
+   "ic_sup": 0.2825386458,
+   "pct_entradas_2022": 0.2845005448
+  }
+ ],
+ "cobertura": [
+  {
+   "calidad_match": "match confiable (alta/media)",
+   "titulos": 407,
+   "entradas": 72248136,
+   "pct_titulos": 0.4527252503,
+   "pct_entradas": 0.9702034963
+  },
+  {
+   "calidad_match": "sin resultados en TMDB",
+   "titulos": 90,
+   "entradas": 1149186,
+   "pct_titulos": 0.1001112347,
+   "pct_entradas": 0.0154321528
+  },
+  {
+   "calidad_match": "match dudoso (baja)",
+   "titulos": 67,
+   "entradas": 926466,
+   "pct_titulos": 0.0745272525,
+   "pct_entradas": 0.0124412975
+  },
+  {
+   "calidad_match": "no buscado (< 1.000 entradas)",
+   "titulos": 335,
+   "entradas": 143204,
+   "pct_titulos": 0.3726362625,
+   "pct_entradas": 0.0019230534
+  }
+ ],
+ "clustering_k": [
+  {
+   "k": 2,
+   "silueta": 0.3927044062,
+   "ari_media": 0.9734923873,
+   "ari_p10": 0.9354888588,
+   "inercia": 22726.7492324106
+  },
+  {
+   "k": 3,
+   "silueta": 0.3512469101,
+   "ari_media": 0.9794097369,
+   "ari_p10": 0.948073752,
+   "inercia": 18517.35996227
+  },
+  {
+   "k": 4,
+   "silueta": 0.368189474,
+   "ari_media": 0.8603380101,
+   "ari_p10": 0.4975726225,
+   "inercia": 16176.1630584592
+  },
+  {
+   "k": 5,
+   "silueta": 0.3824447974,
+   "ari_media": 0.9397977524,
+   "ari_p10": 0.9151947296,
+   "inercia": 14048.8357716274
+  },
+  {
+   "k": 6,
+   "silueta": 0.4239240128,
+   "ari_media": 0.8603920461,
+   "ari_p10": 0.7855518414,
+   "inercia": 12541.3195594899
+  },
+  {
+   "k": 7,
+   "silueta": 0.4401459577,
+   "ari_media": 0.904680814,
+   "ari_p10": 0.8009942535,
+   "inercia": 11323.5406707242
+  },
+  {
+   "k": 8,
+   "silueta": 0.4414103885,
+   "ari_media": 0.923132275,
+   "ari_p10": 0.8611686862,
+   "inercia": 10449.7241392585
+  }
+ ],
+ "clustering_perfiles": [
+  {
+   "cluster": 0,
+   "n": 691,
+   "pct_poblacion": 0.1897035808,
+   "asistencia_cine": 1.0,
+   "juega": 0.0439644417,
+   "pc_consola": 0.0182938241,
+   "usa_plataformas": 0.8057548347,
+   "generos_streaming": 4.0203056769,
+   "edad_media": 40.3609950094,
+   "pct_abc1_c2": 0.3199625702
+  },
+  {
+   "cluster": 2,
+   "n": 741,
+   "pct_poblacion": 0.2785672232,
+   "asistencia_cine": 0.6117082289,
+   "juega": 1.0,
+   "pc_consola": 0.6045817579,
+   "usa_plataformas": 0.8910319045,
+   "generos_streaming": 4.877607375,
+   "edad_media": 27.838417095,
+   "pct_abc1_c2": 0.2512001359
+  },
+  {
+   "cluster": 1,
+   "n": 1948,
+   "pct_poblacion": 0.5317291961,
+   "asistencia_cine": 0.0,
+   "juega": 0.0773848936,
+   "pc_consola": 0.0174933927,
+   "usa_plataformas": 0.4737738211,
+   "generos_streaming": 1.8562971206,
+   "edad_media": 49.4828321046,
+   "pct_abc1_c2": 0.2009180693
+  }
+ ],
+ "transformaciones": {
+  "genero": 1,
+  "educacion": 3,
+  "ocupado": 1389,
+  "actividad": 11,
+  "cine_veces": 11,
+  "cine_veces_peliculas_arg": 8,
+  "cine_g_*": 2242,
+  "vj_disp_* / vj_con_* / vj_g_*": 2482,
+  "vj_g_*": 0,
+  "vj_juegos_comprados": 28,
+  "segmento": 1,
+  "stream_*": 1258
+ },
+ "calidad": [
+  {
+   "pregunta": "CINE 1",
+   "columna": "cine1",
+   "universo": "toda la muestra",
+   "n_universo": 3380,
+   "n_respuesta_valida": 3380,
+   "n_ns_nc": 0,
+   "n_faltante_en_universo": 0,
+   "n_fuera_universo_con_dato": 0,
+   "n_salto_estructural": 0
+  },
+  {
+   "pregunta": "CINE 2",
+   "columna": "cine2",
+   "universo": "no asistió al cine",
+   "n_universo": 2242,
+   "n_respuesta_valida": 2180,
+   "n_ns_nc": 62,
+   "n_faltante_en_universo": 0,
+   "n_fuera_universo_con_dato": 0,
+   "n_salto_estructural": 1138
+  },
+  {
+   "pregunta": "CINE 3",
+   "columna": "cine3",
+   "universo": "asistió al cine",
+   "n_universo": 1138,
+   "n_respuesta_valida": 1134,
+   "n_ns_nc": 4,
+   "n_faltante_en_universo": 0,
+   "n_fuera_universo_con_dato": 0,
+   "n_salto_estructural": 2242
+  },
+  {
+   "pregunta": "CINE 4",
+   "columna": "cine4",
+   "universo": "asistió al cine",
+   "n_universo": 1138,
+   "n_respuesta_valida": 1127,
+   "n_ns_nc": 11,
+   "n_faltante_en_universo": 0,
+   "n_fuera_universo_con_dato": 0,
+   "n_salto_estructural": 2242
+  },
+  {
+   "pregunta": "CINE 7 (ítem 1)",
+   "columna": "cine7_1",
+   "universo": "asistió al cine",
+   "n_universo": 1138,
+   "n_respuesta_valida": 1138,
+   "n_ns_nc": 0,
+   "n_faltante_en_universo": 0,
+   "n_fuera_universo_con_dato": 0,
+   "n_salto_estructural": 2242
+  },
+  {
+   "pregunta": "VJ 1",
+   "columna": "vj1",
+   "universo": "toda la muestra",
+   "n_universo": 3380,
+   "n_respuesta_valida": 3380,
+   "n_ns_nc": 0,
+   "n_faltante_en_universo": 0,
+   "n_fuera_universo_con_dato": 0,
+   "n_salto_estructural": 0
+  },
+  {
+   "pregunta": "VJ 2",
+   "columna": "vj2",
+   "universo": "jugó videojuegos",
+   "n_universo": 898,
+   "n_respuesta_valida": 898,
+   "n_ns_nc": 0,
+   "n_faltante_en_universo": 0,
+   "n_fuera_universo_con_dato": 0,
+   "n_salto_estructural": 2482
+  },
+  {
+   "pregunta": "VJ 3 (ítem 1)",
+   "columna": "vj3_1",
+   "universo": "jugó videojuegos",
+   "n_universo": 898,
+   "n_respuesta_valida": 898,
+   "n_ns_nc": 0,
+   "n_faltante_en_universo": 0,
+   "n_fuera_universo_con_dato": 0,
+   "n_salto_estructural": 2482
+  },
+  {
+   "pregunta": "VJ 6",
+   "columna": "vj6",
+   "universo": "jugó videojuegos",
+   "n_universo": 898,
+   "n_respuesta_valida": 870,
+   "n_ns_nc": 28,
+   "n_faltante_en_universo": 0,
+   "n_fuera_universo_con_dato": 0,
+   "n_salto_estructural": 2482
+  },
+  {
+   "pregunta": "TV 15 (ítem 1)",
+   "columna": "tv15_1",
+   "universo": "miró plataformas (TV 9 = Sí)",
+   "n_universo": 2122,
+   "n_respuesta_valida": 2122,
+   "n_ns_nc": 0,
+   "n_faltante_en_universo": 0,
+   "n_fuera_universo_con_dato": 0,
+   "n_salto_estructural": 1258
+  },
+  {
+   "pregunta": "SOC 13.1",
+   "columna": "soc13.1",
+   "universo": "toda la muestra",
+   "n_universo": 3380,
+   "n_respuesta_valida": 3377,
+   "n_ns_nc": 3,
+   "n_faltante_en_universo": 0,
+   "n_fuera_universo_con_dato": 0,
+   "n_salto_estructural": 0
+  },
+  {
+   "pregunta": "SOC 14.1",
+   "columna": "soc14.1",
+   "universo": "toda la muestra",
+   "n_universo": 3380,
+   "n_respuesta_valida": 3369,
+   "n_ns_nc": 11,
+   "n_faltante_en_universo": 0,
+   "n_fuera_universo_con_dato": 0,
+   "n_salto_estructural": 0
+  }
+ ],
+ "auditoria_ok": true,
+ "n_controles_auditoria": 15
+}

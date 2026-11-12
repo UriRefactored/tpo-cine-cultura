@@ -1,0 +1,10 @@
+modelo,bloque,auc_cv_media,auc_cv_desvio,params
+baseline,1_demografia,0.5,0.0,{}
+logistica,1_demografia,0.7481955873332751,0.030729822030525787,"{""modelo__C"": 0.1}"
+random_forest,1_demografia,0.7436349837597216,0.03512599697742251,"{""modelo__min_samples_leaf"": 20, ""modelo__max_features"": ""sqrt""}"
+logistica,2_demo_segmento,0.759629036809872,0.026801396146757826,"{""modelo__C"": 0.1}"
+random_forest,2_demo_segmento,0.7517110119413518,0.029991112553746566,"{""modelo__min_samples_leaf"": 20, ""modelo__max_features"": ""sqrt""}"
+logistica,3_demo_gaming,0.7607975821132856,0.028625661842197975,"{""modelo__C"": 0.01}"
+random_forest,3_demo_gaming,0.7512864198985003,0.03257909119384966,"{""modelo__min_samples_leaf"": 20, ""modelo__max_features"": 0.5}"
+logistica,4_demo_gaming_streaming,0.7780098313155418,0.038911039852263934,"{""modelo__C"": 0.01}"
+random_forest,4_demo_gaming_streaming,0.7758828342662786,0.03951045390500786,"{""modelo__min_samples_leaf"": 5, ""modelo__max_features"": ""sqrt""}"

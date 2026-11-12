@@ -1,0 +1,294 @@
+{
+  "muestra": {
+    "n": 3380,
+    "columnas_originales": 548,
+    "localidades": 50,
+    "regiones": 7,
+    "poblacion_expandida": 29468180.0,
+    "n_efectivo_kish": 1501.3,
+    "deff_ponderacion": 2.25,
+    "ponderador_min": 0.03,
+    "ponderador_max": 28.41
+  },
+  "diseno": {
+    "gl": 43,
+    "upm": 50,
+    "estratos": 7
+  },
+  "asistencia": {
+    "descriptiva": {
+      "pc_consola": {
+        "n": 452,
+        "asistencia": 0.6218444858103914,
+        "asistencia_ic_inf": 0.5679493240632545,
+        "asistencia_ic_sup": 0.6757396475575284,
+        "pct_poblacion": 0.1812488716708742,
+        "edad_media": 26.34153032232781
+      },
+      "solo_movil": {
+        "n": 445,
+        "asistencia": 0.45088735892103626,
+        "asistencia_ic_inf": 0.40789919101855043,
+        "asistencia_ic_sup": 0.4938755268235221,
+        "pct_poblacion": 0.14658364137335042,
+        "edad_media": 32.9564699468998
+      },
+      "no_juega": {
+        "n": 2482,
+        "asistencia": 0.2699081534708829,
+        "asistencia_ic_inf": 0.24192572526711506,
+        "asistencia_ic_sup": 0.29789058167465077,
+        "pct_poblacion": 0.6721674869557756,
+        "edad_media": 47.787097455948
+      },
+      "total": {
+        "n": 3379,
+        "asistencia": 0.3602248075551438,
+        "asistencia_ic_inf": 0.32726738392372684,
+        "asistencia_ic_sup": 0.39318223118656076,
+        "pct_poblacion": 1.0,
+        "edad_media": 41.7261852265093
+      }
+    },
+    "ajustada": {
+      "pc_consola": {
+        "prob_ajustada": 0.47893099398843514,
+        "ic_inf": 0.4263707449122984,
+        "ic_sup": 0.5314912430645718
+      },
+      "solo_movil": {
+        "prob_ajustada": 0.39840447041306015,
+        "ic_inf": 0.3576119700396101,
+        "ic_sup": 0.4391969707865102
+      },
+      "no_juega": {
+        "prob_ajustada": 0.3140992568064595,
+        "ic_inf": 0.2838158206934592,
+        "ic_sup": 0.34438269291945983
+      }
+    },
+    "contrastes_completo": {
+      "pc_consola vs no_juega": {
+        "or": 2.2861148923772223,
+        "or_ic_inf": 1.6637305188874212,
+        "or_ic_sup": 3.1413268205501765,
+        "p_valor": 4.488545194057048e-06,
+        "dif_pp": 16.483173718197563,
+        "dif_ic_inf": 9.862324121407767,
+        "dif_ic_sup": 23.10402331498736
+      },
+      "solo_movil vs no_juega": {
+        "or": 1.542359689154523,
+        "or_ic_inf": 1.2230154555310198,
+        "or_ic_sup": 1.9450885922745402,
+        "p_valor": 0.0004980216836370219,
+        "dif_pp": 8.430521360660064,
+        "dif_ic_inf": 3.7618495718176046,
+        "dif_ic_sup": 13.099193149502526
+      },
+      "pc_consola vs solo_movil": {
+        "or": 1.482219036488437,
+        "or_ic_inf": 1.1084586549057798,
+        "or_ic_sup": 1.9820074139936734,
+        "p_valor": 0.009110796132221164,
+        "dif_pp": 8.052652357537498,
+        "dif_ic_inf": 2.057897822158278,
+        "dif_ic_sup": 14.047406892916719
+      }
+    },
+    "n_modelo": 3365,
+    "sensibilidad_or_rango": [
+      2.226458782084651,
+      2.5626436725876993
+    ]
+  },
+  "generos": {
+    "n_asistentes": 1136,
+    "significativos_holm": [],
+    "p_min_sin_ajustar": 0.04277777260098366
+  },
+  "prediccion": {
+    "n_train": 2703,
+    "n_test": 676,
+    "auc_test": {
+      "baseline|1_demografia": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "logistica|1_demografia": [
+        0.7209310600994648,
+        0.6670198272675026,
+        0.7901566505335971
+      ],
+      "random_forest|1_demografia": [
+        0.6941127062306497,
+        0.6278900310551357,
+        0.7778991723740943
+      ],
+      "logistica|2_demo_segmento": [
+        0.7202082387119334,
+        0.6536012992827547,
+        0.8018074046241072
+      ],
+      "random_forest|2_demo_segmento": [
+        0.7077547923496254,
+        0.6410299514858556,
+        0.7943657580803181
+      ],
+      "logistica|3_demo_gaming": [
+        0.7152258955214784,
+        0.6372813829702604,
+        0.8056891675762441
+      ],
+      "random_forest|3_demo_gaming": [
+        0.7055234077347003,
+        0.6313982676048211,
+        0.7960584128405741
+      ],
+      "logistica|4_demo_gaming_streaming": [
+        0.7630468840761268,
+        0.7080577485906039,
+        0.8240408008826275
+      ],
+      "random_forest|4_demo_gaming_streaming": [
+        0.7405981814647367,
+        0.6701960233358651,
+        0.8173538025202035
+      ]
+    },
+    "dif_auc": {
+      "logistica|2_demo_segmento − logistica|1_demografia": [
+        -0.000722821387531436,
+        -0.019853168599010474,
+        0.02076528098017419
+      ],
+      "logistica|3_demo_gaming − logistica|2_demo_segmento": [
+        -0.004982343190454985,
+        -0.0286655929585182,
+        0.01855270543932156
+      ],
+      "logistica|4_demo_gaming_streaming − logistica|3_demo_gaming": [
+        0.047820988554648336,
+        0.008803601418162067,
+        0.08033685071611524
+      ],
+      "random_forest|2_demo_segmento − random_forest|1_demografia": [
+        0.01364208611897566,
+        -0.00359830840626697,
+        0.0301255209287748
+      ],
+      "random_forest|3_demo_gaming − random_forest|2_demo_segmento": [
+        -0.0022313846149250027,
+        -0.016694342509710906,
+        0.01645080242622913
+      ],
+      "random_forest|4_demo_gaming_streaming − random_forest|3_demo_gaming": [
+        0.03507477373003631,
+        0.00037582733541085547,
+        0.06377610067920567
+      ],
+      "logistica|3_demo_gaming − logistica|1_demografia": [
+        -0.005705164577986421,
+        -0.04274482316476862,
+        0.03415293791543171
+      ],
+      "random_forest|3_demo_gaming − random_forest|1_demografia": [
+        0.011410701504050658,
+        -0.010137551042092203,
+        0.03732987724189365
+      ],
+      "logistica|4_demo_gaming_streaming − logistica|1_demografia": [
+        0.042115823976661915,
+        0.009344394107605083,
+        0.07041041334574158
+      ],
+      "random_forest|4_demo_gaming_streaming − random_forest|1_demografia": [
+        0.04648547523408697,
+        0.004576614454637884,
+        0.08243220934315912
+      ],
+      "random_forest|1_demografia − logistica|1_demografia": [
+        -0.026818353868815148,
+        -0.04848799597674959,
+        0.0004736147877642194
+      ],
+      "random_forest|2_demo_segmento − logistica|2_demo_segmento": [
+        -0.012453446362308052,
+        -0.024895241331210485,
+        0.0033737462706820384
+      ],
+      "random_forest|3_demo_gaming − logistica|3_demo_gaming": [
+        -0.009702487786778069,
+        -0.027350596266363637,
+        0.009149718038850506
+      ],
+      "random_forest|4_demo_gaming_streaming − logistica|4_demo_gaming_streaming": [
+        -0.022448702611390092,
+        -0.04874750449553223,
+        0.0075150181724327235
+      ]
+    },
+    "top_importancia": [
+      [
+        "edad",
+        0.01712548088625195
+      ],
+      [
+        "educacion_orden",
+        0.016516999551461766
+      ],
+      [
+        "stream_pago_frecuencia_orden",
+        0.006191227333033959
+      ],
+      [
+        "stream_g_accion_aventura",
+        0.005136268061920194
+      ],
+      [
+        "tamanio",
+        0.0047695390116257895
+      ],
+      [
+        "stream_g_suspenso",
+        0.0034927183388508308
+      ],
+      [
+        "actividad",
+        0.003348966186791946
+      ],
+      [
+        "vj_g_shooters",
+        0.0029303310255430833
+      ]
+    ]
+  },
+  "clustering": {
+    "k": 3,
+    "silueta": 0.3512469101262143,
+    "ari_media": 0.9794097369270813,
+    "silueta_max": 0.44141038854569065,
+    "silueta_maximo_interior": false,
+    "ari_k4": 0.8603380101084026,
+    "ari_p10_k4": 0.4975726224754706
+  },
+  "mercado": {
+    "estrenos": 899,
+    "entradas_total": 74466992,
+    "entradas_por_anio": {
+      "2022": 34453839,
+      "2023": 40013153
+    },
+    "pct_entradas_match_confiable": 0.970203496335665,
+    "titulos_match_confiable": 407,
+    "suma_pct_generos_2022_2023": 2.4535010148912355,
+    "adaptaciones_vj": 5,
+    "entradas_vj": 6180758,
+    "pct_entradas_vj": 0.08299996863039667,
+    "vj_antes_del_campo": [
+      "UNCHARTED: FUERA DEL MAPA",
+      "SONIC 2: LA PELICULA"
+    ]
+  }
+}

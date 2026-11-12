@@ -1,0 +1,16 @@
+control,resultado,detalle
+sha256 data/raw/encc/base-datos-encc-2022-2023.csv,OK,53f25ac800599e450775578d7d6cb30a4be82afb5c748edbecb382372e0dc212
+sha256 data/raw/incaa/incaa_estrenos_comerciales.csv,OK,ec58595a9810ceecd3808d06464e575401907f8dd2e4311a134b88458a09572f
+sha256 data/raw/tmdb/incaa_peliculas_enriquecidas_snapshot.csv,OK,06a5f1e3ed9c7f1ef47ab0d43731a1a7ddb0caf809e1565fca9dc206cc0cb0ad
+sha256 docs/fuentes/encc_2022_23_metodologia.pdf,OK,d6123698d5ff04107440e5da6713cefaccf5adbdbf935237c134221b6701533a
+sha256 docs/fuentes/encc_2022_23_diseno_muestral.pdf,OK,be12645d6ac27e10c57b42bdf85b186d013e6e886a3f81dede8c8b37988da6ed
+sha256 docs/fuentes/encc_2022_23_cuestionario.pdf,OK,55216644275d36663db4a0be178a390580675ee3c3ecc60c7e5e055f282128de
+ENCC dimensiones,OK,3380 filas x 548 columnas
+ENCC id único,OK,3380 ids distintos
+ENCC ponderador > 0,OK,rango 0.030–28.410
+ENCC expansor > 0,OK,"suma expansor = 29,468,180 personas"
+ENCC edad 13+,OK,rango 13–91
+ENCC localidades (UPM),OK,50 localidades en 7 regiones
+INCAA código único,OK,899 estrenos
+INCAA solo estrenos comerciales,OK,nacionales y extranjeros; sin festivales ni muestras
+TMDB snapshot = INCAA (títulos y entradas),OK,899 filas en snapshot

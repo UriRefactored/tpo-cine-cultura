@@ -1,0 +1,48 @@
+[
+  {
+    "path": "data/raw/encc/base-datos-encc-2022-2023.csv",
+    "fuente": "Encuesta Nacional de Consumos Culturales 2022/23 — Secretaría de Cultura de la Nación (SInCA)",
+    "url": "https://datos.cultura.gob.ar/dataset/251c2ac2-e670-451c-9dbf-a4212af225b5/resource/b635d1fc-2161-4901-a21d-7f93d56d99a4/download/base-datos-encc-2022-2023.csv",
+    "retrieved_date": "2026-11-02",
+    "bytes": 8379066,
+    "sha256": "53f25ac800599e450775578d7d6cb30a4be82afb5c748edbecb382372e0dc212",
+    "estado": "original oficial, sin editar"
+  },
+  {
+    "path": "data/raw/incaa/incaa_estrenos_comerciales.csv",
+    "fuente": "INCAA — tablero 'Cantidad de espectadores por película estrenada' (Gerencia de Fiscalización), estrenos 2022 y 2023",
+    "url": "https://www.incaa.gob.ar/cantidad-de-espectadores-por-pelicula-estrenada/",
+    "retrieved_date": "desconocida (versionado en el repositorio el 2026-10-25)",
+    "sha256": "ec58595a9810ceecd3808d06464e575401907f8dd2e4311a134b88458a09572f",
+    "estado": "derivado: salida de src/00_limpiar_incaa_raw.py. El export crudo de Tableau (Peliculas_inca_cs_datos.csv) no está disponible; este es el insumo más temprano reproducible. Fecha de corte de los acumulados de entradas: no documentada."
+  },
+  {
+    "path": "data/raw/tmdb/incaa_peliculas_enriquecidas_snapshot.csv",
+    "fuente": "The Movie Database (TMDB) API v3, consultada por src/01_enriquecer_incaa_tmdb.py sobre el archivo anterior",
+    "url": "https://api.themoviedb.org/3",
+    "retrieved_date": "desconocida (última versión registrada en el repositorio el 2026-11-03)",
+    "sha256": "06a5f1e3ed9c7f1ef47ab0d43731a1a7ddb0caf809e1565fca9dc206cc0cb0ad",
+    "estado": "snapshot congelado; el análisis no vuelve a consultar la API"
+  },
+  {
+    "path": "docs/fuentes/encc_2022_23_metodologia.pdf",
+    "url": "https://www.argentina.gob.ar/sites/default/files/encc_2022_23_metodologia_y_manual_de_uso_de_la_base_de_datos.pdf",
+    "retrieved_date": "2026-11-02",
+    "bytes": 128906,
+    "sha256": "d6123698d5ff04107440e5da6713cefaccf5adbdbf935237c134221b6701533a"
+  },
+  {
+    "path": "docs/fuentes/encc_2022_23_diseno_muestral.pdf",
+    "url": "https://www.argentina.gob.ar/sites/default/files/encc_2022_23_diseno_muestral_y_ponderadores.pdf",
+    "retrieved_date": "2026-11-02",
+    "bytes": 147536,
+    "sha256": "be12645d6ac27e10c57b42bdf85b186d013e6e886a3f81dede8c8b37988da6ed"
+  },
+  {
+    "path": "docs/fuentes/encc_2022_23_cuestionario.pdf",
+    "url": "https://www.argentina.gob.ar/sites/default/files/encc_2022_23_cuestionario.pdf",
+    "retrieved_date": "2026-11-02",
+    "bytes": 670424,
+    "sha256": "55216644275d36663db4a0be178a390580675ee3c3ecc60c7e5e055f282128de"
+  }
+]

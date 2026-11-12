@@ -1,0 +1,6 @@
+{
+  "name": "tpo-presentacion",
+  "private": true,
+  "description": "Genera la presentación a partir de presentacion/datos.json",
+  "dependencies": { "pptxgenjs": "3.12.0" }
+}

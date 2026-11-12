@@ -1,0 +1,79 @@
+variable,columna_original,definicion,universo,tipo,n_validos,n_nan,valores
+id,id,Identificador de persona,todos,int64,3380,0,1 – 3380 (mediana 1690.5)
+ponderador,ponderador,Coeficiente de corrección muestral (usar para proporciones y modelos),todos,float64,3380,0,0.03 – 28.41 (mediana 0.67)
+expansor,expansor,Coeficiente de corrección y expansión a totales de población,todos,int64,3380,0,228 – 247652 (mediana 5831.5)
+region,region,Región geográfica (estrato del diseño muestral),todos,str,3380,0,caba: 388; centro: 608; cuyo: 431; gba: 620; nea: 448; noa: 446; patagonia: 439
+provincia,provincia,Provincia,todos,str,3380,0,Buenos Aires: 813; Catamarca: 34; Chaco: 131; Chubut: 103; Ciudad Autónoma de Buenos Aires: 388; Corrientes: 130; Córdoba: 185; Entre Ríos: 60; Formosa: 65; Jujuy: 99; La Pampa: 75; La Rioja: 30; Mendoza: 256; Misiones: 122; Neuquén: 149; Río Negro: 71; Salta: 87; San Juan: 113; San Luis: 62; Santa Cruz: 21; Santa Fe: 168; Santiago del Estero: 57; Tierra del Fuego: 20; Tucumán: 141
+localidad,localidad,Localidad (unidad primaria de muestreo),todos,str,3380,0,Aguilares: 24; Bahía Blanca: 39; CABA: 388; Caleta Olivia: 21; Concordia: 20; Corrientes: 82; Formosa: 65; GBA NORTE: 177; GBA OESTE: 219; GBA SUR: 218; Gdor. Valentín Virasoro: 24; General Alvear: 18; Gran Córdoba: 138; Gran Mendoza: 195; Gran Posadas: 100; Gran Salta: 64; Gran San Juan: 113; Gran San Miguel de Tucumán: 117; Gualeguaychú: 20; La Plata - Berisso: 59; La Rioja: 30; Libertador General San Martin: 23; Mar del Plata: 37; Neuquén / Cipolletti: 149; Oberá: 22; Olavarría: 21; Paraná: 20; Paso de Los Libres: 24; Perico: 18; Rawson / Trelew / Playa Union: 103; Reconquista / Avellaneda: 22; Resistencia / Barranqueras: 107; Rosario / Villa Gobernador Gálvez: 99; Río Cuarto: 24; San Carlos Bariloche: 71; San Fernando del Valle Catamarca: 34; San Luis: 45; San Martín: 22; San Nicolás de los Arroyos: 22; San Rafael: 21; San Ramón de la Nueva Orán: 23; San Salvador de Jujuy: 58; Santa Fe / Santo Tomé: 49; Santa Rosa / Toay: 75; Santiago del Estero / La Banda: 55; Tres Arroyos: 21; Ushuaia: 20; Villa María: 23; Villa Mercedes: 17; Villa Ángela: 24
+tamanio,tamanio,Tamaño de la localidad,todos,str,3380,0,80k_400k: 1142; mas_400k: 1976; menos_80k: 262
+edad,edad,Edad en años,todos,int64,3380,0,13 – 91 (mediana 43)
+grupo_edad,grupos_edad,Grupo de edad (original),todos,str,3380,0,13 a 17 años: 203; 18 a 29 años: 702; 30 a 49 años: 1181; 50 a 64 años: 691; 65 años y mas: 603
+genero,genero,Género declarado,todos,str,3380,0,mujer: 2005; no_binario: 1; varon: 1374
+es_mujer,genero,1 = mujer,todos,int64,3380,0,0: 1375; 1: 2005
+nse,niv_socioe,Nivel socioeconómico (5 categorías),todos,str,3380,0,ABC1: 327; C2: 648; C3: 1119; D1: 953; D2E: 333
+nse_orden,niv_socioe,NSE ordinal: 1 = D2E … 5 = ABC1,todos,int64,3380,0,1: 333; 2: 953; 3: 1119; 4: 648; 5: 327
+educacion_orden,soc13.1,"Máximo nivel educativo, 0 = sin estudios … 9 = posgrado",todos (Ns/Nc = NaN),float64,3377,3,0.0: 21; 1.0: 136; 2.0: 381; 3.0: 634; 4.0: 940; 5.0: 204; 6.0: 393; 7.0: 312; 8.0: 318; 9.0: 38
+educacion_grupo,soc13.1,Nivel educativo agrupado en 5 categorías,todos (Ns/Nc = NaN),str,3377,3,hasta_primario: 538; secundario_completo: 940; secundario_incompleto: 634; superior_completo: 749; superior_incompleto: 516
+actividad,soc14.1,Condición de actividad,todos (Ns/Nc = NaN),str,3369,11,busca_trabajo: 140; estudiante: 329; jubilado: 695; tareas_hogar: 225; trabaja: 1980
+ocupado,soc14.1,1 = trabaja,todos (Ns/Nc = NaN),float64,3369,11,0.0: 1389; 1.0: 1980
+cine_asistio,cine1,CINE 1: ¿Fue al cine en el último año? (1 = Sí). Variable objetivo.,todos,int64,3380,0,0: 2242; 1: 1138
+cine_motivo_no_asistir,cine2,CINE 2: motivo principal por el que no fue,no asistió,str,2180,1200,cerrados_por_la_pandemia: 66; falta_de_habito_costumbre: 7; falta_de_tiempo: 89; miedo_al_contagio_pandemia: 104; motivos_economicos: 478; no_le_gusta_no_le_interesa: 429; no_le_interesan_las_peliculas_que_se_estrenan: 233; no_se_da_la_oportunidad: 11; no_tengo_ningun_cine_cerca: 141; no_tiene_con_quien_ir: 11; nunca_fue: 6; otro: 8; prefiere_otras_actividades: 4; prefiere_ver_peliculas_en_su_casa: 402; problemas_de_salud_edad_avanzada: 105; seguridad_movilidad: 8; tiene_que_cuidar_hijos_as_familiares: 78
+cine_frecuencia,cine3,CINE 3: frecuencia de asistencia,asistió,str,1134,2246,algunas_al_anio: 944; mensual: 183; semanal: 7
+cine_veces,cine4,CINE 4: cantidad de veces que asistió en el año,asistió (Ns/Nc = NaN),float64,1127,2253,1 – 30 (mediana 2)
+cine_veces_peliculas_arg,cine5,CINE 5: veces que vio películas argentinas,asistió (Ns/Nc = NaN),float64,1130,2250,0.0: 733; 1.0: 260; 2.0: 81; 3.0: 27; 4.0: 11; 5.0: 7; 6.0: 3; 7.0: 3; 8.0: 1; 10.0: 2; 12.0: 1; 20.0: 1
+cine_g_accion_aventura,cine7_1,CINE 7: vio en el cine el género 'accion_aventura',asistió (NaN fuera de universo),float64,1138,2242,0.0: 576; 1.0: 562
+cine_g_ciencia_ficcion,cine7_2,CINE 7: vio en el cine el género 'ciencia_ficcion',asistió (NaN fuera de universo),float64,1138,2242,0.0: 728; 1.0: 410
+cine_g_suspenso,cine7_3,CINE 7: vio en el cine el género 'suspenso',asistió (NaN fuera de universo),float64,1138,2242,0.0: 911; 1.0: 227
+cine_g_terror,cine7_4,CINE 7: vio en el cine el género 'terror',asistió (NaN fuera de universo),float64,1138,2242,0.0: 966; 1.0: 172
+cine_g_drama,cine7_5,CINE 7: vio en el cine el género 'drama',asistió (NaN fuera de universo),float64,1138,2242,0.0: 912; 1.0: 226
+cine_g_comedia,cine7_6,CINE 7: vio en el cine el género 'comedia',asistió (NaN fuera de universo),float64,1138,2242,0.0: 847; 1.0: 291
+cine_g_romantico,cine7_7,CINE 7: vio en el cine el género 'romantico',asistió (NaN fuera de universo),float64,1138,2242,0.0: 1038; 1.0: 100
+cine_g_documental,cine7_8,CINE 7: vio en el cine el género 'documental',asistió (NaN fuera de universo),float64,1138,2242,0.0: 1027; 1.0: 111
+cine_g_infantiles,cine7_9,CINE 7: vio en el cine el género 'infantiles',asistió (NaN fuera de universo),float64,1138,2242,0.0: 843; 1.0: 295
+cine_g_animacion,cine7_10,CINE 7: vio en el cine el género 'animacion',asistió (NaN fuera de universo),float64,1138,2242,0.0: 930; 1.0: 208
+cine_g_otro,cine7_11,CINE 7: vio en el cine el género 'otro',asistió (NaN fuera de universo),float64,1138,2242,0.0: 1109; 1.0: 29
+vj_jugo,vj1,VJ 1: ¿Jugó videojuegos en el último año? (1 = Sí),todos,int64,3380,0,0: 2482; 1: 898
+vj_frecuencia_orden,vj2,"VJ 2: frecuencia de juego, 0 = no juega … 4 = casi todos los días",todos (0 estructural),float64,3380,0,0.0: 2482; 1.0: 52; 2.0: 143; 3.0: 414; 4.0: 289
+vj_disp_celular,vj3_1,VJ 3: jugó en 'celular',todos (0 estructural),float64,3380,0,0.0: 2668; 1.0: 712
+vj_disp_tablet,vj3_2,VJ 3: jugó en 'tablet',todos (0 estructural),float64,3380,0,0.0: 3333; 1.0: 47
+vj_disp_pc_escritorio,vj3_3,VJ 3: jugó en 'pc_escritorio',todos (0 estructural),float64,3380,0,0.0: 3155; 1.0: 225
+vj_disp_notebook,vj3_4,VJ 3: jugó en 'notebook',todos (0 estructural),float64,3380,0,0.0: 3314; 1.0: 66
+vj_disp_consola,vj3_5,VJ 3: jugó en 'consola',todos (0 estructural),float64,3380,0,0.0: 3094; 1.0: 286
+vj_con_solo,vj4_1,VJ 4: jugó 'solo',todos (0 estructural),float64,3380,0,0.0: 2679; 1.0: 701
+vj_con_amigos_presencial,vj4_2,VJ 4: jugó 'amigos_presencial',todos (0 estructural),float64,3380,0,0.0: 3119; 1.0: 261
+vj_con_conocidos_online,vj4_3,VJ 4: jugó 'conocidos_online',todos (0 estructural),float64,3380,0,0.0: 3244; 1.0: 136
+vj_con_desconocidos,vj4_4,VJ 4: jugó 'desconocidos',todos (0 estructural),float64,3380,0,0.0: 3310; 1.0: 70
+vj_con_amigos_online,vj4_5,VJ 4: jugó 'amigos_online',todos (0 estructural),float64,3380,0,0.0: 3182; 1.0: 198
+vj_con_familiares,vj4_6,VJ 4: jugó 'familiares',todos (0 estructural),float64,3380,0,0.0: 3143; 1.0: 237
+vj_g_accion_aventura,vj5_1,VJ 5: jugó género 'accion_aventura',todos (0 estructural),float64,3380,0,0.0: 2927; 1.0: 453
+vj_g_v329_sin_etiqueta,vj5_2,VJ 5: jugó género 'v329_sin_etiqueta',todos (0 estructural),float64,3380,0,0.0: 3033; 1.0: 347
+vj_g_simuladores,vj5_3,VJ 5: jugó género 'simuladores',todos (0 estructural),float64,3380,0,0.0: 3173; 1.0: 207
+vj_g_deportivos,vj5_4,VJ 5: jugó género 'deportivos',todos (0 estructural),float64,3380,0,0.0: 3064; 1.0: 316
+vj_g_estrategia,vj5_5,VJ 5: jugó género 'estrategia',todos (0 estructural),float64,3380,0,0.0: 3033; 1.0: 347
+vj_g_rol,vj5_6,VJ 5: jugó género 'rol',todos (0 estructural),float64,3380,0,0.0: 3244; 1.0: 136
+vj_g_shooters,vj5_7,VJ 5: jugó género 'shooters',todos (0 estructural),float64,3380,0,0.0: 3211; 1.0: 169
+vj_g_preguntas,vj5_8,VJ 5: jugó género 'preguntas',todos (0 estructural),float64,3380,0,0.0: 3133; 1.0: 247
+vj_g_puzzle,vj5_9,VJ 5: jugó género 'puzzle',todos (0 estructural),float64,3380,0,0.0: 2980; 1.0: 400
+vj_g_novela_visual,vj5_10,VJ 5: jugó género 'novela_visual',todos (0 estructural),float64,3380,0,0.0: 3339; 1.0: 41
+vj_g_otro,vj5_12,VJ 5: jugó género 'otro',todos (0 estructural),float64,3380,0,0.0: 3341; 1.0: 39
+vj_juegos_comprados,vj6,VJ 6: videojuegos comprados en el año,todos (0 estructural; Ns/Nc = NaN),float64,3352,28,0 – 60 (mediana 0)
+vj_n_dispositivos,vj3_*,Cantidad de dispositivos de juego declarados,todos,float64,3380,0,0.0: 2483; 1.0: 577; 2.0: 222; 3.0: 79; 4.0: 17; 5.0: 2
+vj_n_generos,vj5_*,Cantidad de géneros de videojuego declarados (sin 'Otro'),todos,float64,3380,0,0.0: 2487; 1.0: 264; 2.0: 223; 3.0: 123; 4.0: 94; 5.0: 61; 6.0: 59; 7.0: 25; 8.0: 29; 9.0: 8; 10.0: 7
+segmento,"vj1, vj3_*","pc_consola = jugó en consola, PC de escritorio o notebook; solo_movil = jugó solo en celular/tablet; no_juega",todos (1 jugador sin dispositivo = NaN),str,3379,1,no_juega: 2482; pc_consola: 452; solo_movil: 445
+segmento_sin_notebook,"vj1, vj3_*",Sensibilidad: pc_consola = consola o PC de escritorio; otros_jugadores = resto de jugadores,todos,str,3379,1,no_juega: 2482; otros_jugadores: 465; pc_consola: 432
+tv_mira,tv1,TV 1: ¿Miró televisión? (1 = Sí),todos,int64,3380,0,0: 347; 1: 3033
+stream_usa_plataformas,tv15_*,1 = miró películas/series en plataformas (respondió el bloque TV 11–16),todos,int64,3380,0,0: 1258; 1: 2122
+stream_pago_frecuencia_orden,tv13.1,"TV 13.1: frecuencia en plataformas pagas, 0 = nunca … 4 = diaria",todos (0 estructural; Ns/Nc = NaN),float64,3379,1,0.0: 1391; 1.0: 46; 2.0: 248; 3.0: 1037; 4.0: 657
+stream_gratis_frecuencia_orden,tv13.2,"TV 13.2: frecuencia en plataformas gratuitas, 0 = nunca … 4 = diaria",todos (0 estructural; Ns/Nc = NaN),float64,3345,35,0.0: 2700; 1.0: 122; 2.0: 157; 3.0: 259; 4.0: 107
+stream_g_accion_aventura,tv15_1,TV 15: vio en plataformas el género 'accion_aventura',todos (0 estructural),float64,3380,0,0.0: 1912; 1.0: 1468
+stream_g_ciencia_ficcion,tv15_2,TV 15: vio en plataformas el género 'ciencia_ficcion',todos (0 estructural),float64,3380,0,0.0: 2361; 1.0: 1019
+stream_g_suspenso,tv15_3,TV 15: vio en plataformas el género 'suspenso',todos (0 estructural),float64,3380,0,0.0: 2337; 1.0: 1043
+stream_g_terror,tv15_4,TV 15: vio en plataformas el género 'terror',todos (0 estructural),float64,3380,0,0.0: 2723; 1.0: 657
+stream_g_drama,tv15_5,TV 15: vio en plataformas el género 'drama',todos (0 estructural),float64,3380,0,0.0: 2477; 1.0: 903
+stream_g_comedia,tv15_6,TV 15: vio en plataformas el género 'comedia',todos (0 estructural),float64,3380,0,0.0: 2084; 1.0: 1296
+stream_g_romantico,tv15_7,TV 15: vio en plataformas el género 'romantico',todos (0 estructural),float64,3380,0,0.0: 2589; 1.0: 791
+stream_g_documental,tv15_8,TV 15: vio en plataformas el género 'documental',todos (0 estructural),float64,3380,0,0.0: 2485; 1.0: 895
+stream_g_infantiles,tv15_9,TV 15: vio en plataformas el género 'infantiles',todos (0 estructural),float64,3380,0,0.0: 2746; 1.0: 634
+stream_g_realities,tv15_10,TV 15: vio en plataformas el género 'realities',todos (0 estructural),float64,3380,0,0.0: 2882; 1.0: 498
+stream_g_animacion,tv15_11,TV 15: vio en plataformas el género 'animacion',todos (0 estructural),float64,3380,0,0.0: 2852; 1.0: 528
+stream_n_generos,tv15_*,Cantidad de géneros vistos en plataformas,todos,float64,3380,0,0.0: 1263; 1.0: 214; 2.0: 351; 3.0: 328; 4.0: 267; 5.0: 252; 6.0: 196; 7.0: 150; 8.0: 136; 9.0: 98; 10.0: 67; 11.0: 58

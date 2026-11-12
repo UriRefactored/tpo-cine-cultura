@@ -1,222 +1,179 @@
-# Cine & Gaming Analytics: Asistencia a Salas y Universo Gamer en Argentina
-**Universidad Argentina de la Empresa (UADE)**  
-**Materia:** Ciencia de Datos — Trabajo Práctico Obligatorio  
-**Docente:** Santiago Martín  
+# Cine y videojuegos en Argentina
+
+**Trabajo Práctico Obligatorio — Ciencia de Datos (UADE)**
+
+> ¿Quienes juegan videojuegos en PC o consola van más al cine que quienes juegan solo en el celular o no juegan?
+> ¿Esa diferencia se sostiene al comparar personas de la misma edad y nivel socioeconómico?
+> ¿Y qué agrega saber si alguien juega, cuando ya conocemos su perfil demográfico?
+
+Fuentes: **Encuesta Nacional de Consumos Culturales 2022/23** (microdatos oficiales, 3.380 personas) + **estrenos
+comerciales INCAA 2022–2023** (899 películas, 74,5 millones de entradas) enriquecidos con **TMDB**.
 
 ---
 
-## 🎯 Objetivo e Hipótesis del Proyecto
+## Resultados principales
 
-> **Hipótesis Validada con la Cátedra:**  
-> *“Los jugadores de consola/PC van más al cine y prefieren Acción/Aventura, Ciencia ficción y Terror; una campaña de películas de universo gaming dirigida a ese segmento y a esos géneros rinde más que una dirigida a jugadores en general.”*
+Las cifras salen de `outputs/` (generadas por `run_all.py`; las clave están en `outputs/resumen.json`).
+Universo: personas de 13 años o más en localidades urbanas de más de 30.000 habitantes.
 
-* **Pregunta de Negocio:** ¿A qué segmento de jugadores y con qué géneros cinematográficos conviene apuntar las campañas de marketing de una distribuidora o exhibidora en Argentina?
-* **Audiencia del Proyecto:** Gerencia Comercial y Técnica. Enfocado en decisiones de inversión, ahorro publicitario y retorno de taquilla.
-* **Fuentes de Datos Integradas:**
-  1. **ENCC 2022-2023 (SInCA):** Encuesta representativa nacional de 3.380 individuos con factores de expansión y ponderación muestral.
-  2. **Estrenos Comerciales INCAA (2022-2023):** 73.17 millones de entradas en 899 títulos en salas de cine.
-  3. **The Movie Database (TMDB API):** Enriquecimiento de franquicias, adaptaciones de videojuegos y presupuestos.
+| Pregunta | Resultado | Evidencia |
+|---|---|---|
+| ¿Quienes juegan en PC/consola van más al cine? | **Sí.** 62% fue al cine en el último año, contra 45% de quienes juegan solo en el celular y 27% de quienes no juegan. | `descriptivos_segmentos.csv` |
+| ¿Se sostiene a igual edad, NSE, género, educación, actividad, región y tamaño de localidad? | **Sí, más chica.** La diferencia ajustada PC/consola vs. no juega es de **+16,5 pp** (IC 95%: 9,9 a 23,1); OR 2,29 (1,66–3,14). Quien juega solo en el celular también va más (+8,4 pp). En 8 variantes de sensibilidad el OR queda entre 2,23 y 2,56. | `asistencia_contrastes.csv`, `asistencia_sensibilidad.csv` |
+| Entre quienes fueron al cine, ¿difieren los géneros que vieron? | **No se puede afirmar.** Ningún género difiere tras corregir por 10 comparaciones (Holm). Las diferencias "3 a 5 veces" de la versión anterior medían, sobre toda la población, que unos van más al cine que otros. | `generos_contrastes.csv` |
+| ¿El gaming mejora la predicción de quién va al cine? | **No.** Agregar variables de gaming a la demografía no cambia el AUC (−0,006; IC incluye 0). Agregar consumo de streaming sí: +0,048 (IC 0,009–0,080). La regresión logística iguala o supera al Random Forest. | `prediccion_test.csv`, `prediccion_diferencias_auc.csv` |
+| ¿Cuánto pesan las adaptaciones de videojuegos en la taquilla? | 5 títulos, 8,3% de las entradas 2022–2023. Solo 2 (Uncharted, Sonic 2) se estrenaron **antes** de la encuesta; Mario, Gran Turismo y FNAF son posteriores y no pudieron influir en las respuestas. | `incaa_adaptaciones_videojuegos.csv` |
+
+**Lectura conjunta.** Jugar en PC/consola está asociado a ir más al cine, y la asociación no se explica solo por la
+edad. Pero, para *predecir* asistencia, esa información es en gran parte redundante con la edad y la educación. La
+hipótesis inicial ("prefieren Acción, Ciencia ficción y Terror") no tiene respaldo una vez que la medición se hace
+correctamente. Todo lo anterior es asociación: la encuesta es transversal y no permite inferir causalidad.
 
 ---
 
-## 🚀 Guía de Inicio Rápido (Para correr en cualquier compu)
+## Cómo reproducir
 
-Seguí estos pasos para clonar y levantar el proyecto en tu máquina en menos de 2 minutos:
+Requiere Python 3.12 (probado en macOS).
 
-### 1. Clonar el repositorio
-Abrí tu terminal y ejecutá:
 ```bash
-git clone <URL_DE_ESTE_REPOSITORIO>
-cd <CARPETA_DEL_REPOSITORIO>
-```
-
-### 2. (Opcional recomendado) Crear entorno virtual
-```bash
-python3 -m venv venv
-source venv/bin/activate       # En Mac / Linux
-# venv\Scripts\activate        # En Windows PowerShell
-```
-
-### 3. Instalar dependencias
-```bash
+python3.12 -m venv .venv
+source .venv/bin/activate            # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
+
+python run_all.py                    # todo el pipeline, ≈ 3 minutos
+streamlit run app.py                 # tablero interactivo en http://localhost:8501
+open outputs/historia.html           # relato visual (Windows: start outputs\historia.html)
 ```
 
-### 4. Abrir la Aplicación Interactiva (Entregable 6)
-```bash
-streamlit run app.py
-```
-*(Si no te abre automáticamente, ingresá en tu navegador a: **`http://localhost:8501`**)*.
+`run_all.py` verifica primero el SHA-256 de cada fuente contra `docs/fuentes/manifest.json` y se detiene si algo no
+coincide. Todo procedimiento aleatorio usa la semilla `20221101`.
 
 ---
 
-## 💻 ¿Qué hace la Aplicación Funcional (`app.py`)?
-
-La app cuenta con 4 módulos interactivos pensados para la defensa oral de 15 minutos:
-
-1. **💼 Simulador de Campañas (Gerencia Comercial):** Permite simular el lanzamiento de una película (género, presupuesto en ARS y target gamer) para estimar público alcanzable, venta de entradas, recaudación proyectada, ROI publicitario y Costo por Espectador Adquirido (CAC).
-2. **🎯 Validación de la Hipótesis:** Gráficos de penetración y la tabla de **Regresión Logística con controles de Edad y NSE** que comprueban que la hipótesis se sostiene.
-3. **🍿 Mercado y Taquilla (INCAA):** Explorador de los estrenos de cartelera argentina y análisis de las 5 películas de franquicias gaming (*Super Mario Bros*, *Sonic 2*, *FNAF*, *Uncharted*, *Gran Turismo*) que vendieron 6.18 millones de entradas.
-4. **👥 Segmentación de Audiencias (Clusters):** Visualización de los 4 arquetipos culturales identificados con K-Means.
-
----
-
-## 📂 Estructura del Repositorio
+## Estructura
 
 ```text
-├── README.md                               <-- Este archivo
-├── requirements.txt                        <-- Dependencias de Python
-├── app.py                                  <-- Aplicación interactiva Streamlit (Entregable 6)
-│
-├── 📁 Fuentes Originales y Datos Crudos:
-│   ├── base-datos-encc-2022-2023.csv       <-- Microdatos oficiales ENCC (SInCA), 3.380 encuestados
-│   ├── cuestionario-encc-2022-2023.pdf     <-- Cuestionario oficial y manual de saltos
-│   └── incaa_estrenos_comerciales.csv      <-- 899 estrenos de salas comerciales limpios del INCAA
-│
-├── 🐍 Scripts del Pipeline (Ejecutables en orden de reproducción):
-│   ├── 00_limpiar_incaa_raw.py             <-- Limpieza del export crudo de Tableau del INCAA
-│   ├── 01_enriquecer_incaa_tmdb.py         <-- Cruce de taquilla INCAA con API de TMDB
-│   ├── 02_limpiar_encc.py                  <-- Limpieza y resolución de nulos estructurales de la ENCC
-│   ├── 03_vincular_encc_incaa.py           <-- Cruce cuantitativo de oferta (salas) vs demanda (encuesta)
-│   ├── 04_probar_hipotesis_regresion.py    <-- Modelos de Regresión Logística con controles de Edad y NSE
-│   └── 05_modelos_ml_y_clustering.py       <-- Random Forest (ROC-AUC 0.80) y K-Means (k=4)
-│
-├── 📊 Datasets Procesados y Enriquecidos:
-│   ├── incaa_peliculas_enriquecidas.csv    <-- 899 estrenos comerciales con 10 géneros y tags gaming
-│   ├── encc_encuesta_limpia_ml.csv         <-- 3.380 encuestados, 86 columnas numéricas listas para ML
-│   ├── diccionario_variables_encc.json     <-- Diccionario con tipos, rangos y medias de variables
-│   ├── cruce_demanda_oferta_generos.csv    <-- Comparativa de % de preferencia vs % de taquilla real
-│   ├── cruce_gamers_vs_cine.csv            <-- Métricas de cine en gamers vs no gamers
-│   ├── resultado_hipotesis_descriptivos.csv<-- Descriptivos ponderados: Core vs Mobile vs No Gamer
-│   ├── resultado_hipotesis_regresiones.csv <-- Tabla de Odds Ratios controlando por Edad y NSE
-│   └── encc_segmentos_clusters.csv         <-- Base ENCC con la asignación de arquetipos culturales (k=4)
-│
-└── 📘 repaso/
-    └── fundamentos_teoricos_y_defensa.md   <-- Guía de estudio para la defensa: justificación de cada modelo y respuestas a preguntas del profesor
+data/raw/encc/        Microdatos oficiales ENCC 2022/23 (sin editar)
+data/raw/incaa/       Estrenos comerciales INCAA 2022–2023 (insumo más temprano disponible, ver abajo)
+data/raw/tmdb/        Snapshot del enriquecimiento TMDB (no se vuelve a consultar la API)
+data/processed/       Base analítica ENCC + diccionario de variables
+docs/fuentes/         Cuestionario, metodología y diseño muestral oficiales + manifest.json (URL, fecha, SHA-256)
+src/
+  comun.py            Rutas, semilla, constantes
+  encuesta.py         Estimación con diseño muestral (linealización de Taylor; logística con varianza sándwich)
+  graficos.py         Todas las figuras (una sola fuente para la app y los PNG)
+  00_, 01_            Limpieza del export crudo INCAA y consulta TMDB (documentados; no se re-ejecutan)
+  02_auditar_fuentes  Hashes y controles estructurales
+  03_limpiar_encc     Limpieza, auditoría de saltos, registro de transformaciones, diccionario
+  04_inferencia       Descriptivos, modelos de asistencia, sensibilidad, géneros con Holm
+  05_prediccion       Bloques de variables, CV, test reservado, bootstrap, permutación
+  07_mercado_incaa    Cobertura TMDB, géneros en taquilla, cronología de adaptaciones
+  08_figuras          Exporta outputs/figuras/*.png
+  09_historia         Genera outputs/historia.html desde src/historia_plantilla.html
+outputs/tablas/       Todas las tablas de resultados (CSV)
+outputs/figuras/      PNG listos para diapositivas
+outputs/resumen.json  Cifras clave consumidas por la app
+outputs/historia.html Relato visual (storytelling) autocontenido; funciona sin internet
+app.py                Demo Streamlit (lee solo de outputs/)
+presentacion/         Diapositivas (.pptx) generadas desde outputs/:
+                        python presentacion/datos_presentacion.py
+                        cd presentacion && npm install && node construir.js
+repaso/               Guía para la defensa oral
 ```
 
 ---
 
-## 📊 Datasets del Proyecto: Origen, Linaje, Transformaciones y Uso
+## Datos y transformaciones
 
-El proyecto integra dos fuentes oficiales de datos de Argentina (oferta y demanda) y las enriquece con la base internacional de The Movie Database (TMDB):
+### Fuentes y frontera de reproducibilidad
 
-```text
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                                 1. DATOS CRUDOS / FUENTES                              │
-│                                                                                        │
-│  [Peliculas_inca_cs_datos.csv]                [base-datos-encc-2022-2023.csv]          │
-│  (Export crudo Tableau INCAA)                  (Microdatos ENCC SInCA, 3.380 indiv.)   │
-│              │                                                │                        │
-│     00_limpiar_incaa_raw.py                           02_limpiar_encc.py               │
-│              ▼                                                ▼                        │
-│  [incaa_estrenos_comerciales.csv]             [encc_encuesta_limpia_ml.csv]            │
-│  (899 estrenos comerciales limpios)           (86 variables numéricas, sin nulos)      │
-│              │                                                │                        │
-│     01_enriquecer_incaa_tmdb.py                               │                        │
-│              ▼                                                │                        │
-│  [incaa_peliculas_enriquecidas.csv]                           │                        │
-│  (Adaptaciones VJ, géneros, presupuesto)                      │                        │
-└───────────────────────┬───────────────────────────────────────┬────────────────────────┘
-                        │                                       │
-                        ▼                                       ▼
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                              2. CRUCE, HIPÓTESIS Y MODELOS                             │
-│                                                                                        │
-│   03_vincular_encc_incaa.py ──────► [cruce_demanda_oferta_generos.csv]                 │
-│                                ──────► [cruce_gamers_vs_cine.csv]                      │
-│                                                                                        │
-│   04_probar_hipotesis_regresion.py ─► [resultado_hipotesis_regresiones.csv] (Odds Ratios)│
-│                                    ─► [resultado_hipotesis_descriptivos.csv]           │
-│                                                                                        │
-│   05_modelos_ml_y_clustering.py ───► [encc_segmentos_clusters.csv] (K-Means k=4)      │
-│                                ───► Random Forest (ROC-AUC 0.80, Accuracy 73.3%)      │
-└───────────────────────────────────────────────────┬────────────────────────────────────┘
-                                                    │
-                                                    ▼
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                         3. APLICACIÓN INTERACTIVA (STREAMLIT)                          │
-│                                                                                        │
-│                                      [app.py]                                          │
-│         • Simulador Comercial de Inversión y Retorno en Taquilla                       │
-│         • Validación de Hipótesis (Regresión Logística multivariada)                   │
-│         • Explorador de Cartelera y Adaptaciones Gaming INCAA                          │
-│         • Segmentación de Arquetipos Culturales                                        │
-└────────────────────────────────────────────────────────────────────────────────────────┘
-```
+| Fuente | Estado | Verificación |
+|---|---|---|
+| ENCC 2022/23 (SInCA) | Original oficial descargado el 2026-11-02 | SHA-256 en el manifest; 3.380 × 548; IDs únicos |
+| Cuestionario, metodología, diseño muestral | PDF oficiales | SHA-256 |
+| INCAA estrenos comerciales | **Derivado.** El export crudo de Tableau (`Peliculas_inca_cs_datos.csv`) no está disponible; `src/00_limpiar_incaa_raw.py` documenta cómo se generó. La fecha de corte de los acumulados de entradas no está documentada. | SHA-256; códigos únicos |
+| TMDB | Snapshot. La API no se vuelve a consultar. | Títulos y entradas coinciden con el archivo INCAA |
 
-### 💡 Aclaración sobre `Peliculas_inca_cs_datos.csv` vs `incaa_estrenos_comerciales.csv`
-* **¿Qué era `Peliculas_inca_cs_datos.csv`?**  
-  Fue el nombre original del archivo exportado directamente desde el tablero de Tableau de la Gerencia de Fiscalización del INCAA (*"Cantidad de espectadores por película estrenada"*). Venía en formato de texto tabulado con codificación UTF-16, separadores de miles estadounidenses (`3,562,856`) y fechas en formato `M/D/YYYY`.
-* **¿Por cuál fue transformado y reemplazado?**  
-  1. El script `00_limpiar_incaa_raw.py` procesó ese archivo crudo, filtró eventos y muestras no comerciales, normalizó números y fechas y generó **`incaa_estrenos_comerciales.csv`** (899 estrenos de salas comerciales).  
-  2. Luego, el script `01_enriquecer_incaa_tmdb.py` tomó esa base y consultó la API de TMDB para clasificar los 10 géneros e identificar adaptaciones de videojuegos, generando el dataset enriquecido definitivo: **`incaa_peliculas_enriquecidas.csv`**.
-* En el repositorio y en todos los scripts se utiliza directamente **`incaa_estrenos_comerciales.csv`** como fuente base y **`incaa_peliculas_enriquecidas.csv`** como dataset final enriquecido, garantizando total reproducibilidad.
+### Decisiones de limpieza (ENCC)
+
+Todas están registradas, con cantidad de casos afectados, en `outputs/tablas/transformaciones_encc.csv`.
+
+- **Mapeos estrictos.** Cada etiqueta original se mapea explícitamente; una etiqueta no prevista hace fallar el script.
+- **Salto estructural vs. no respuesta.** `calidad_saltos_encc.csv` verifica, pregunta por pregunta, que solo hay
+  datos dentro del universo definido por el cuestionario (cero inconsistencias).
+  - Quien no jugó tiene 0 en dispositivos y géneros de juego. Es un cero verdadero, no una imputación.
+  - Los géneros vistos en el cine solo existen para quien fue al cine. Fuera de ese universo quedan vacíos (antes se completaban con 0).
+  - Ns/Nc queda vacío, sin imputación oculta.
+- **Correcciones respecto de la versión anterior:**
+  - `ocupado`: buscar la subcadena "trabaj" marcaba como ocupadas también las respuestas "No trabaja…". Había 1.389 casos mal clasificados.
+  - Géneros de videojuego (VJ 5): la base trae 12 columnas para los códigos V328–V339, y el cuestionario publicado omite dos.
+    La versión anterior desplazaba las etiquetas un lugar (llamaba "novela visual" a Puzzle). Se corrigió por código de variable.
+    Evidencia: el 100% de quienes escribieron "¿Cuál?" tiene marcada la columna 12 ("Otro").
+  - Educación Ns/Nc ya no se imputa como "secundario completo".
+- **Segmentos.**
+  - `pc_consola`: jugó en consola, PC de escritorio o notebook.
+  - `solo_movil`: jugó solo en celular o tablet.
+  - `no_juega`.
+  - Un jugador sin dispositivo declarado queda sin segmento.
+- **Diccionario semántico** (`data/processed/diccionario_variables.csv`): pregunta de origen, universo, codificación y
+  valores observados para cada variable.
 
 ---
 
-### 📋 Detalle de Datasets y su Uso en el Proyecto
+## Métodos
 
-#### A. Fuentes Originales y Datos Crudos
-1. **`base-datos-encc-2022-2023.csv`** (8.4 MB | 3.380 filas × 548 columnas):
-   * **Origen:** Sistema de Información Cultural de la Argentina (SInCA) - Secretaría de Cultura de la Nación.
-   * **Contenido:** Microdatos completos a nivel individuo representativos de la población argentina urbana de 13 años y más. Contiene factores de expansión (`ponderador`), módulos de cine, hábitos digitales, plataformas de streaming y uso de videojuegos.
-   * **Uso:** Archivo de entrada para `02_limpiar_encc.py`.
-2. **`cuestionario-encc-2022-2023.pdf`** (670 KB):
-   * **Origen:** Documento metodológico oficial del SInCA.
-   * **Uso:** Consulta de reglas de ruteo y saltos de preguntas del cuestionario (fundamental para justificar los nulos estructurales).
-3. **`incaa_estrenos_comerciales.csv`** (142 KB | 899 filas × 16 columnas):
-   * **Origen:** Tablero oficial de fiscalización del INCAA (estrenos 2022 y 2023).
-   * **Contenido:** Código de película, título, fecha y mes de estreno, origen (nacional vs extranjero), entradas vendidas y recaudación en ARS.
-   * **Uso:** Archivo de entrada para `01_enriquecer_incaa_tmdb.py` y análisis de taquilla base.
+### Inferencia con diseño muestral (`src/encuesta.py`, `src/04_inferencia.py`)
 
-#### B. Datasets Limpios y Enriquecidos para Modelado
-4. **`incaa_peliculas_enriquecidas.csv`** (309 KB | 899 filas × 50 columnas):
-   * **Origen:** Generado por `01_enriquecer_incaa_tmdb.py` a partir de `incaa_estrenos_comerciales.csv` cruzado con la API v3 de TMDB.
-   * **Contenido:** Variables de catálogo enriquecidas: 10 géneros cinematográficos mapeados a las preguntas de la ENCC (`g_accion_aventura`, `g_ciencia_ficcion`, `g_terror`, etc.), flag de franquicia de videojuegos (`es_adaptacion_videojuego`), presupuesto (`presupuesto_usd`), recaudación mundial (`recaudacion_mundial_usd`), rating y popularidad.
-   * **Uso:** Insumo principal de oferta para `03_vincular_encc_incaa.py`, `04_probar_hipotesis_regresion.py` y la pestaña de Mercado en `app.py`.
-5. **`encc_encuesta_limpia_ml.csv`** (660 KB | 3.380 filas × 86 columnas):
-   * **Origen:** Generado por `02_limpiar_encc.py` a partir de `base-datos-encc-2022-2023.csv`.
-   * **Contenido:** Base 100% numérica, sin valores nulos. Los nulos estructurales (personas que no asisten al cine o no juegan videojuegos) fueron imputados en 0 en lugar de eliminar filas. Incluye variables de segmentación gamer (`vj_disp_consola`, `vj_disp_pc_escritorio`, `vj_frecuencia_anual_est`), hábitos de streaming, nivel educativo ordenado y nivel socioeconómico (`nse_orden`).
-   * **Uso:** Insumo de demanda para `03_vincular_encc_incaa.py`, `04_probar_hipotesis_regresion.py`, entrenamiento de Random Forest en `05_modelos_ml_y_clustering.py` y el simulador de `app.py`.
-6. **`diccionario_variables_encc.json`** (8.8 KB):
-   * **Origen:** Generado automáticamente por `02_limpiar_encc.py`.
-   * **Contenido:** Metadatos de cada una de las 86 variables (tipo de dato, valor mínimo, valor máximo y promedio muestral).
+- **Diseño ENCC:** estratificado por región; primera etapa = localidades. Siguen radios censales, hogares y una
+  persona por hogar con cuotas de sexo y edad.
+- **Varianza:** linealización de Taylor con estrato = región y UPM = localidad (43 grados de libertad), el mismo
+  estimador que `svyglm` en R. CABA tiene una sola localidad; allí se usan las personas como unidades de varianza.
+  La base no trae radios censales, así que la aproximación está documentada.
+- **Ponderación:** `ponderador` para proporciones y modelos; `expansor` solo para totales de población. El tamaño
+  efectivo de muestra por ponderación es ≈ 1.500.
+- **Regresión logística ponderada sin regularización.** Se validó contra statsmodels: coeficientes idénticos, y los
+  errores estándar difieren solo en el factor de corrección de muestra finita.
+- **Especificaciones fijadas antes de estimar:**
+  - Cruda.
+  - Edad + NSE: spline de edad y NSE categórico.
+  - Completa: se suman género, educación, actividad, región y tamaño de localidad.
+- **Resultados:** odds ratios y probabilidades ajustadas por estandarización marginal, con diferencias en puntos
+  porcentuales.
+- **Géneros:** solo entre quienes fueron al cine; familia de 10 contrastes con corrección de Holm.
+- **Sensibilidad:** sin ponderar; varianza sin estratos o sin diseño; especificación original; solo 13–49 años;
+  ponderadores recortados; segmento sin notebook.
 
-#### C. Datasets de Validación de Hipótesis y Resultados
-7. **`cruce_demanda_oferta_generos.csv`** (10 filas × 6 columnas):
-   * **Origen:** Generado por `03_vincular_encc_incaa.py`.
-   * **Contenido:** Comparación entre el porcentaje de la población que declara preferir cada género en la ENCC y el porcentaje de entradas reales vendidas en salas de cine según el INCAA, con el ratio de saturación taquilla vs demanda.
-8. **`cruce_gamers_vs_cine.csv`** (2 filas × 6 columnas):
-   * **Origen:** Generado por `03_vincular_encc_incaa.py`.
-   * **Contenido:** Resumen comparativo de penetración cinematográfica y preferencia de géneros entre jugadores de videojuegos y no jugadores.
-9. **`resultado_hipotesis_descriptivos.csv`** (3 filas × 10 columnas):
-   * **Origen:** Generado por `04_probar_hipotesis_regresion.py`.
-   * **Contenido:** Métricas descriptivas ponderadas divididas en los tres grupos de la hipótesis: Gamer Core (18.1% de la población, edad media 26.3), Gamer Casual (14.7%, edad media 33.0) y No Gamer (67.2%, edad media 47.8).
-10. **`resultado_hipotesis_regresiones.csv`** (5 filas × 6 columnas):
-    * **Origen:** Generado por `04_probar_hipotesis_regresion.py`.
-    * **Contenido:** Resultados econométricos de las 5 Regresiones Logísticas multivariadas (Odds Ratios con controles simultáneos de Edad y NSE) demostrando que la hipótesis se sostiene de forma independiente y estadísticamente significativa.
+### Minería predictiva (`src/05_prediccion.py`)
 
-#### D. Datasets de Segmentación y Machine Learning
-11. **`encc_segmentos_clusters.csv`** (667 KB | 3.380 filas × 87 columnas):
-    * **Origen:** Generado por `05_modelos_ml_y_clustering.py`.
-    * **Contenido:** Base limpia de la ENCC con la columna adicional `cluster_id` generada por el algoritmo K-Means ($k=4$), clasificando a cada individuo en un arquetipo cultural para segmentación comercial.
+- **Objetivo:** asistencia al cine en el último año. Se excluye todo el bloque de cine para evitar *leakage*.
+- **Partición:** 80/20 estratificada. El test se usa una sola vez, al final.
+- **Selección:** validación cruzada estratificada 5 × 3 en entrenamiento. Imputación, escalado y one-hot se ajustan
+  dentro de cada partición (Pipeline).
+- **Bloques acumulativos:** demografía → + segmento → + gaming completo → + streaming.
+- **Modelos:** baseline, regresión logística y Random Forest.
+- **Métricas ponderadas:** ROC-AUC, PR-AUC, Brier, precisión, recall, especificidad, F1 y matriz de confusión
+  (umbral elegido en entrenamiento), más calibración.
+- **Incertidumbre:** bootstrap por localidad (2.000 réplicas), también para las diferencias de AUC entre bloques.
+- **Importancia por permutación** en test (asociación predictiva, no causalidad).
+- **Reproducibilidad:** configuración, hiperparámetros elegidos y versiones en `outputs/prediccion_config.json`;
+  predicciones del test en `outputs/tablas/`.
 
 ---
 
-## 📈 Hallazgos Clave para la Defensa Oral (15 Minutos)
+## Límites
 
-1. **El jugador Core de Consola / PC va el doble al cine:** Su tasa de asistencia anual es del **62.2%**, frente al **45.0%** del jugador casual de celular y al **27.0%** del no jugador.
-2. **Preferencia marcada por 3 géneros:** Los jugadores Core consumen entre 3 y 5 veces más **Acción / Aventura (40.2%)**, **Ciencia Ficción (28.8%)** y **Terror (16.5%)**.
-3. **El control por Edad y NSE confirma la Hipótesis:** Al estimar modelos de Regresión Logística multivariados, el efecto **no desaparece**: a misma edad y mismo nivel socioeconómico, ser Gamer Core multiplica por **2.22** las probabilidades de ir al cine, por **2.68** las de ver Acción, por **2.50** las de Ciencia Ficción y por **2.12** las de Terror.
-4. **Respuesta a la Gerencia Comercial:** No conviene pautar hacia "gamers en general". El presupuesto rinde hasta un 38% más concentrándolo en canales específicos de PC/Consola (Steam, Twitch, Discord, YouTube Gaming) para estrenos de Acción, Sci-Fi y Terror comunitario.
+- **Asociación, no causalidad.** Puede haber variables no medidas, como el ingreso del hogar o el interés general
+  por el entretenimiento.
+- **Diseño muestral aproximado.** No hay radios censales y CABA tiene una sola UPM.
+- **Pocos jugadores de PC/consola mayores de 50** (35 casos).
+- **Género "visto" según la ENCC ≠ género de catálogo de TMDB.** Las participaciones por género en taquilla suman más
+  de 100% porque un título tiene varios géneros.
+- **INCAA:** export crudo no disponible y fecha de corte de entradas no documentada.
+- **Predicción retrospectiva.** No mide respuesta a campañas ni retorno publicitario. Por eso se retiró el
+  simulador de ROI de la versión anterior: sus supuestos (CPM, conversión) no estaban medidos.
 
 ---
 
-## 👥 Integrantes del Grupo y Roles (A completar)
-* Integrante 1: Dominio del Negocio & Problemática
-* Integrante 2: Arquitectura de Datos & ETL
-* Integrante 3: Análisis Exploratorio de Datos (EDA)
-* Integrante 4: Técnicas de Minería & Modelos Estadísticos
-* Integrante 5: Visualización & Storytelling
-* Integrante 6: Demostración en vivo de la Aplicación Funcional
+## Integrantes
+
+_A completar._

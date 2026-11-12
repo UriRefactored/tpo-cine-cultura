@@ -24,3 +24,7 @@ tmdb_cache.json
 tmdb_revisar.csv
 encc_con_contexto_mercado.csv
 incaa_limpio.csv
+
+# Presentación
+presentacion/node_modules/
+presentacion/package-lock.json

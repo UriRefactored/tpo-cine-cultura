@@ -1,0 +1,341 @@
+{
+  "baseline|1_demografia": {
+    "params": {},
+    "umbral": 0.5,
+    "n_variables": 7,
+    "variables": [
+      "edad",
+      "es_mujer",
+      "educacion_orden",
+      "nse_orden",
+      "actividad",
+      "region",
+      "tamanio"
+    ]
+  },
+  "logistica|1_demografia": {
+    "params": {
+      "modelo__C": 0.1
+    },
+    "umbral": 0.31999999999999995,
+    "n_variables": 7,
+    "variables": [
+      "edad",
+      "es_mujer",
+      "educacion_orden",
+      "nse_orden",
+      "actividad",
+      "region",
+      "tamanio"
+    ]
+  },
+  "random_forest|1_demografia": {
+    "params": {
+      "modelo__min_samples_leaf": 20,
+      "modelo__max_features": "sqrt"
+    },
+    "umbral": 0.31999999999999995,
+    "n_variables": 7,
+    "variables": [
+      "edad",
+      "es_mujer",
+      "educacion_orden",
+      "nse_orden",
+      "actividad",
+      "region",
+      "tamanio"
+    ]
+  },
+  "logistica|2_demo_segmento": {
+    "params": {
+      "modelo__C": 0.1
+    },
+    "umbral": 0.27999999999999997,
+    "n_variables": 9,
+    "variables": [
+      "edad",
+      "es_mujer",
+      "educacion_orden",
+      "nse_orden",
+      "seg_pc_consola",
+      "seg_solo_movil",
+      "actividad",
+      "region",
+      "tamanio"
+    ]
+  },
+  "random_forest|2_demo_segmento": {
+    "params": {
+      "modelo__min_samples_leaf": 20,
+      "modelo__max_features": "sqrt"
+    },
+    "umbral": 0.37999999999999995,
+    "n_variables": 9,
+    "variables": [
+      "edad",
+      "es_mujer",
+      "educacion_orden",
+      "nse_orden",
+      "seg_pc_consola",
+      "seg_solo_movil",
+      "actividad",
+      "region",
+      "tamanio"
+    ]
+  },
+  "logistica|3_demo_gaming": {
+    "params": {
+      "modelo__C": 0.01
+    },
+    "umbral": 0.30999999999999994,
+    "n_variables": 36,
+    "variables": [
+      "edad",
+      "es_mujer",
+      "educacion_orden",
+      "nse_orden",
+      "seg_pc_consola",
+      "seg_solo_movil",
+      "vj_jugo",
+      "vj_frecuencia_orden",
+      "vj_juegos_comprados",
+      "vj_n_dispositivos",
+      "vj_n_generos",
+      "vj_disp_celular",
+      "vj_disp_tablet",
+      "vj_disp_pc_escritorio",
+      "vj_disp_notebook",
+      "vj_disp_consola",
+      "vj_con_solo",
+      "vj_con_amigos_presencial",
+      "vj_con_conocidos_online",
+      "vj_con_desconocidos",
+      "vj_con_amigos_online",
+      "vj_con_familiares",
+      "vj_g_accion_aventura",
+      "vj_g_v329_sin_etiqueta",
+      "vj_g_simuladores",
+      "vj_g_deportivos",
+      "vj_g_estrategia",
+      "vj_g_rol",
+      "vj_g_shooters",
+      "vj_g_preguntas",
+      "vj_g_puzzle",
+      "vj_g_novela_visual",
+      "vj_g_otro",
+      "actividad",
+      "region",
+      "tamanio"
+    ]
+  },
+  "random_forest|3_demo_gaming": {
+    "params": {
+      "modelo__min_samples_leaf": 20,
+      "modelo__max_features": 0.5
+    },
+    "umbral": 0.35999999999999993,
+    "n_variables": 36,
+    "variables": [
+      "edad",
+      "es_mujer",
+      "educacion_orden",
+      "nse_orden",
+      "seg_pc_consola",
+      "seg_solo_movil",
+      "vj_jugo",
+      "vj_frecuencia_orden",
+      "vj_juegos_comprados",
+      "vj_n_dispositivos",
+      "vj_n_generos",
+      "vj_disp_celular",
+      "vj_disp_tablet",
+      "vj_disp_pc_escritorio",
+      "vj_disp_notebook",
+      "vj_disp_consola",
+      "vj_con_solo",
+      "vj_con_amigos_presencial",
+      "vj_con_conocidos_online",
+      "vj_con_desconocidos",
+      "vj_con_amigos_online",
+      "vj_con_familiares",
+      "vj_g_accion_aventura",
+      "vj_g_v329_sin_etiqueta",
+      "vj_g_simuladores",
+      "vj_g_deportivos",
+      "vj_g_estrategia",
+      "vj_g_rol",
+      "vj_g_shooters",
+      "vj_g_preguntas",
+      "vj_g_puzzle",
+      "vj_g_novela_visual",
+      "vj_g_otro",
+      "actividad",
+      "region",
+      "tamanio"
+    ]
+  },
+  "logistica|4_demo_gaming_streaming": {
+    "params": {
+      "modelo__C": 0.01
+    },
+    "umbral": 0.32999999999999996,
+    "n_variables": 52,
+    "variables": [
+      "edad",
+      "es_mujer",
+      "educacion_orden",
+      "nse_orden",
+      "seg_pc_consola",
+      "seg_solo_movil",
+      "vj_jugo",
+      "vj_frecuencia_orden",
+      "vj_juegos_comprados",
+      "vj_n_dispositivos",
+      "vj_n_generos",
+      "vj_disp_celular",
+      "vj_disp_tablet",
+      "vj_disp_pc_escritorio",
+      "vj_disp_notebook",
+      "vj_disp_consola",
+      "vj_con_solo",
+      "vj_con_amigos_presencial",
+      "vj_con_conocidos_online",
+      "vj_con_desconocidos",
+      "vj_con_amigos_online",
+      "vj_con_familiares",
+      "vj_g_accion_aventura",
+      "vj_g_v329_sin_etiqueta",
+      "vj_g_simuladores",
+      "vj_g_deportivos",
+      "vj_g_estrategia",
+      "vj_g_rol",
+      "vj_g_shooters",
+      "vj_g_preguntas",
+      "vj_g_puzzle",
+      "vj_g_novela_visual",
+      "vj_g_otro",
+      "tv_mira",
+      "stream_usa_plataformas",
+      "stream_pago_frecuencia_orden",
+      "stream_gratis_frecuencia_orden",
+      "stream_n_generos",
+      "stream_g_accion_aventura",
+      "stream_g_ciencia_ficcion",
+      "stream_g_suspenso",
+      "stream_g_terror",
+      "stream_g_drama",
+      "stream_g_comedia",
+      "stream_g_romantico",
+      "stream_g_documental",
+      "stream_g_infantiles",
+      "stream_g_realities",
+      "stream_g_animacion",
+      "actividad",
+      "region",
+      "tamanio"
+    ]
+  },
+  "random_forest|4_demo_gaming_streaming": {
+    "params": {
+      "modelo__min_samples_leaf": 5,
+      "modelo__max_features": "sqrt"
+    },
+    "umbral": 0.37999999999999995,
+    "n_variables": 52,
+    "variables": [
+      "edad",
+      "es_mujer",
+      "educacion_orden",
+      "nse_orden",
+      "seg_pc_consola",
+      "seg_solo_movil",
+      "vj_jugo",
+      "vj_frecuencia_orden",
+      "vj_juegos_comprados",
+      "vj_n_dispositivos",
+      "vj_n_generos",
+      "vj_disp_celular",
+      "vj_disp_tablet",
+      "vj_disp_pc_escritorio",
+      "vj_disp_notebook",
+      "vj_disp_consola",
+      "vj_con_solo",
+      "vj_con_amigos_presencial",
+      "vj_con_conocidos_online",
+      "vj_con_desconocidos",
+      "vj_con_amigos_online",
+      "vj_con_familiares",
+      "vj_g_accion_aventura",
+      "vj_g_v329_sin_etiqueta",
+      "vj_g_simuladores",
+      "vj_g_deportivos",
+      "vj_g_estrategia",
+      "vj_g_rol",
+      "vj_g_shooters",
+      "vj_g_preguntas",
+      "vj_g_puzzle",
+      "vj_g_novela_visual",
+      "vj_g_otro",
+      "tv_mira",
+      "stream_usa_plataformas",
+      "stream_pago_frecuencia_orden",
+      "stream_gratis_frecuencia_orden",
+      "stream_n_generos",
+      "stream_g_accion_aventura",
+      "stream_g_ciencia_ficcion",
+      "stream_g_suspenso",
+      "stream_g_terror",
+      "stream_g_drama",
+      "stream_g_comedia",
+      "stream_g_romantico",
+      "stream_g_documental",
+      "stream_g_infantiles",
+      "stream_g_realities",
+      "stream_g_animacion",
+      "actividad",
+      "region",
+      "tamanio"
+    ]
+  },
+  "_global": {
+    "semilla": 20221101,
+    "n_train": 2703,
+    "n_test": 676,
+    "prevalencia_train_pond": 0.35527448071216616,
+    "cv": "RepeatedStratifiedKFold(5 x 3)",
+    "bootstrap": "2000 réplicas por localidad",
+    "grillas": {
+      "logistica": [
+        {
+          "modelo__C": 0.01
+        },
+        {
+          "modelo__C": 0.1
+        },
+        {
+          "modelo__C": 1.0
+        }
+      ],
+      "random_forest": [
+        {
+          "modelo__min_samples_leaf": 5,
+          "modelo__max_features": "sqrt"
+        },
+        {
+          "modelo__min_samples_leaf": 5,
+          "modelo__max_features": 0.5
+        },
+        {
+          "modelo__min_samples_leaf": 20,
+          "modelo__max_features": "sqrt"
+        },
+        {
+          "modelo__min_samples_leaf": 20,
+          "modelo__max_features": 0.5
+        }
+      ]
+    },
+    "python": "3.12.13",
+    "sklearn": "1.9.1"
+  }
+}

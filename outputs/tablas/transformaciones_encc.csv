@@ -1,0 +1,13 @@
+variable,decision,casos_afectados
+genero,Se usa es_mujer (mujer vs. resto) en los modelos; 'No binario' tiene 1 caso y no permite estimar una categoría propia.,1
+educacion,Ns/Nc queda como NaN (antes se imputaba 'secundario completo' sin registrarlo).,3
+ocupado,Corrección: la versión anterior buscaba la subcadena 'trabaj' y marcaba como ocupadas también respuestas 'No trabaja…'. Casos que estaban mal clasificados:,1389
+actividad,Ns/Nc queda como NaN.,11
+cine_veces,CINE 4 'Ns/Nc' (código 999 o texto) → NaN; sin imputación ni recorte de extremos.,11
+cine_veces_peliculas_arg,CINE 5 código 99/999 → NaN.,8
+cine_g_*,Géneros vistos en el cine: solo definidos para quien asistió; NaN para el resto (antes se imputaba 0 y se medía 'preferencia' sobre toda la población).,2242
+vj_disp_* / vj_con_* / vj_g_*,"Cero estructural para quien no jugó (respuesta verdadera, no imputación).",2482
+vj_g_*,Etiquetas de VJ5 corregidas por código de variable (V328–V339); la versión anterior las desplazaba un lugar (p. ej. llamaba 'novela visual' a Puzzle). vj5_2 (V329) no tiene etiqueta en el cuestionario publicado.,0
+vj_juegos_comprados,VJ 6 código 99/999 → NaN (el cuestionario define 999 como Ns/Nc; 99 se trata igual por su frecuencia anómala).,28
+segmento,Jugador sin ningún dispositivo declarado: queda sin segmento (no se asume 'solo móvil').,1
+stream_*,Cero estructural para quien no miró plataformas (filtro TV 9).,1258
