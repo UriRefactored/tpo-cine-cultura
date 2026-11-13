@@ -57,6 +57,7 @@ data/raw/encc/        Microdatos oficiales ENCC 2022/23 (sin editar)
 data/raw/incaa/       Estrenos comerciales INCAA 2022–2023 (insumo más temprano disponible, ver abajo)
 data/raw/tmdb/        Snapshot del enriquecimiento TMDB (no se vuelve a consultar la API)
 data/processed/       Base analítica ENCC + diccionario de variables
+docs/                 Informe académico oficial (Informe_TPO_Cine_y_Videojuegos.pdf)
 docs/fuentes/         Cuestionario, metodología y diseño muestral oficiales + manifest.json (URL, fecha, SHA-256)
 src/
   comun.py            Rutas, semilla, constantes
