@@ -41,7 +41,6 @@ source .venv/bin/activate            # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
 python run_all.py                    # todo el pipeline, ≈ 3 minutos
-streamlit run app.py                 # tablero interactivo en http://localhost:8501
 open outputs/historia.html           # relato visual (Windows: start outputs\historia.html)
 ```
 
@@ -75,7 +74,6 @@ outputs/tablas/       Todas las tablas de resultados (CSV)
 outputs/figuras/      PNG listos para diapositivas
 outputs/resumen.json  Cifras clave consumidas por la app
 outputs/historia.html Relato visual (storytelling) autocontenido; funciona sin internet
-app.py                Demo Streamlit (lee solo de outputs/)
 presentacion/         Diapositivas (.pptx) generadas desde outputs/:
                         python presentacion/datos_presentacion.py
                         cd presentacion && npm install && node construir.js
