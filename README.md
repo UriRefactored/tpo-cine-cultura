@@ -177,4 +177,8 @@ Todas están registradas, con cantidad de casos afectados, en `outputs/tablas/tr
 
 ## Integrantes
 
-_A completar._
+- **Escudero, Morena** — L.U.: 1218480
+- **Fredes, Augusto** — L.U.: 1133080
+- **Gonzalez, Juan Ignacio** — L.U.: 1170833
+- **Gonzalez R., Matías** — L.U.: 1166442
+- **Uanin, Uriel** — L.U.: 1132235
